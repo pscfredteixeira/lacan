@@ -58,7 +58,7 @@
     updateTrialProgress();
     const area=$("trialContent");
     if(phase>=data.trials.length){
-      area.innerHTML=`<div class="trial-finished"><span class="kicker">SÍNTESE / CONCLUÍDA</span><h3>Você atravessou os três problemas.</h3><p>Você distinguiu a forma especular, a identificação imaginária e os limites de reduzir o estádio do espelho ao reconhecimento de um rosto.</p><p><strong>Para continuar:</strong> releia a passagem de 1949 observando a relação entre imaturidade motora, imagem de unidade e formação do eu. A construção teórica não constitui prova empírica de um processo psicológico.</p><div class="trial-controls"><button type="button" class="trial-button secondary" data-trial-action="restart">Refazer investigação</button><a class="trial-button" href="index.html#modulos">Voltar ao percurso ↗</a></div></div>`;
+      area.innerHTML=`<div class="trial-finished"><span class="kicker">SÍNTESE / CONCLUÍDA</span><h3>Você atravessou os três problemas.</h3><p>Você distinguiu a forma especular, a identificação imaginária e os limites de reduzir o estádio do espelho ao reconhecimento de um rosto.</p><p><strong>Para continuar:</strong> releia a passagem de 1949 observando a relação entre imaturidade motora, imagem de unidade e formação do eu. A construção teórica não constitui prova empírica de um processo psicológico.</p><div class="trial-controls"><button type="button" class="trial-button secondary" data-trial-action="restart">Refazer investigação</button><a class="trial-button" href="modulo-4.html?aula=4.2">Retomar as aulas do espelho ↗</a></div></div>`;
       return;
     }
     const t=data.trials[phase];
