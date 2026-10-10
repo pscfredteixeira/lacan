@@ -1,115 +1,112 @@
-/* Formação Lacaniana · Módulo 01 · leitura para iniciantes absolutos (edição de 10/10/2026). */
+/* Formação Lacaniana · Módulo 01 · roteiro de estudo. */
 window.LACAN_LESSONS = [
   {
     "id": "1.1",
     "title": "Quem foi Jacques Lacan?",
-    "subtitle": "Quem foi Lacan, o que ele estudava e como começaremos juntos",
-    "duration": "30–45 min",
-    "question": "Quem foi Jacques Lacan e por que existe uma formação dedicada a ele?",
-    "introduction": "Vamos começar do começo. <strong>Jacques Lacan</strong> foi um médico e psicanalista francês que viveu de 1901 a 1981. Ele dedicou grande parte do seu trabalho a estudar e discutir as ideias de Sigmund Freud, criador da psicanálise. Nesta primeira aula, não vamos aprender teorias difíceis. Vamos entender quem foi Lacan, o que é a psicanálise e por que seu pensamento é estudado até hoje.",
+    "subtitle": "Conheça a trajetória de Lacan e sua relação com a psicanálise",
+    "duration": "25–35 min",
+    "question": "Quem foi Jacques Lacan?",
+    "introduction": "Jacques Lacan nasceu em Paris, na França, em 1901. Foi médico, trabalhou com psiquiatria e se tornou psicanalista. Ao longo de sua vida, estudou as ideias de Sigmund Freud, escreveu textos e deu aulas que despertaram muitos debates. Para entender por que Lacan se tornou importante, vamos conhecer primeiro o seu trabalho e o que significa fazer psicanálise.",
     "sections": [
       {
-        "title": "1. Primeiro: o que é psicanálise?",
+        "title": "Quem foi Lacan?",
         "paragraphs": [
-          "Antes de falar de Lacan, precisamos conhecer a palavra <strong>psicanálise</strong>. Sigmund Freud começou a desenvolver uma forma de investigar o sofrimento psíquico, os sonhos, os conflitos e aspectos da vida mental que nem sempre percebemos conscientemente. A psicanálise é tanto uma tradição de investigação e tratamento pela fala quanto um conjunto de teorias sobre o funcionamento psíquico.",
-          "Um exemplo simples: às vezes alguém diz «Eu queria agir de outro jeito, mas fiz exatamente o contrário». A psicanálise pode se interessar pela diferença entre o que a pessoa pretende e o que acontece. Isso <strong>não</strong> significa que todo comportamento esconda um segredo pronto para ser decifrado. Significa apenas que nossas intenções conscientes talvez não contem toda a história.",
-          "Nesta aula, guarde uma definição provisória: <strong>psicanálise é uma maneira de investigar a experiência humana que dá importância à fala, à história de cada pessoa e ao que pode escapar ao seu conhecimento consciente.</strong> O curso explicará os conceitos e os debates dessa tradição sem tratá-los como verdades científicas indiscutíveis."
+          "Jacques Lacan viveu entre 1901 e 1981. Ele estudou medicina e trabalhou com <strong>psiquiatria</strong>, a especialidade médica que cuida de questões relacionadas à saúde mental.",
+          "Depois, Lacan passou a dedicar grande parte de seu trabalho à <strong>psicanálise</strong>. Um psicanalista trabalha com uma tradição de estudo e de atendimento em que a fala e a história de cada pessoa têm muita importância. Psiquiatria e psicanálise não são a mesma profissão, embora Lacan tenha trabalhado nas duas áreas.",
+          "Lacan também foi professor. Durante muitos anos, reuniu pessoas interessadas em psicanálise para estudar, apresentar ideias e discutir perguntas. Foi assim que sua obra se desenvolveu: em textos, aulas e debates."
         ],
-        "inShort": "Guarde isto: Freud criou a psicanálise; Lacan voltou a estudá-la e propôs novas interpretações."
+        "inShort": "Lacan foi um médico francês que também trabalhou como psicanalista e professor."
       },
       {
-        "title": "2. Quem foi Lacan na prática?",
+        "title": "O que é a psicanálise?",
         "paragraphs": [
-          "Lacan nasceu em Paris, na França, em 1901. Estudou medicina e se especializou em psiquiatria, área médica que lida com questões de saúde mental. Mais tarde, tornou-se psicanalista, escreveu textos e ensinou durante muitos anos. Morreu em 1981.",
-          "Quando jovem, investigou questões relacionadas à psicose e à experiência das pessoas atendidas na psiquiatria. Com o passar do tempo, interessou-se cada vez mais pelas ideias de Freud e por perguntas como: o que acontece quando alguém fala de si? Como uma pessoa passa a dizer «eu»? Por que nem sempre sabemos explicar o que sentimos ou repetimos?",
-          "Você não precisa responder a essas perguntas agora. Elas aparecem aqui como um <strong>mapa do que estudaremos</strong>, não como um teste dos seus conhecimentos. O trabalho de Lacan é conhecido também por ser difícil de ler. Nossa proposta é construir as explicações antes de apresentar os termos técnicos."
+          "A psicanálise começou a ser desenvolvida por <strong>Sigmund Freud</strong>, um médico que viveu antes de Lacan. Freud se interessava por perguntas como: por que às vezes sentimos algo que não conseguimos explicar? Por que repetimos certas atitudes? O que nossos sonhos podem dizer sobre nossa vida?",
+          "A psicanálise é uma forma de investigar essas questões. Em um atendimento psicanalítico, a pessoa pode falar sobre suas experiências, lembranças, conflitos e sentimentos. O trabalho não consiste em receber uma resposta pronta para cada problema: a fala e a história de quem procura atendimento fazem parte da investigação.",
+          "Pense em uma situação comum: alguém diz «Eu sempre fico nervoso antes de uma conversa importante, mas não entendo bem por quê». Essa frase pode abrir perguntas sobre sua experiência. Ela <strong>não permite adivinhar</strong> o motivo do nervosismo, mas mostra o tipo de dúvida que pode interessar à psicanálise.",
+          "Você também encontrará ideias da psicanálise em livros, pesquisas e debates. Portanto, a palavra pode se referir tanto a uma prática de atendimento quanto a uma maneira de estudar a vida psíquica."
         ],
-        "inShort": "Lacan foi médico, psiquiatra, psicanalista e professor. Ele não criou a psicanálise do zero."
+        "inShort": "Freud iniciou a psicanálise, que procura investigar aspectos da experiência humana por meio da fala, da história e de perguntas sobre aquilo que nem sempre compreendemos em nós."
       },
       {
-        "title": "3. Como ele ensinava? Entenda os seminários",
+        "title": "O que Lacan fez com as ideias de Freud?",
         "paragraphs": [
-          "Imagine um professor que reúne estudantes e profissionais regularmente para ler textos, apresentar ideias e debater perguntas. Lacan fez algo parecido durante muitos anos. A essas aulas e encontros de estudo damos o nome de <strong>seminários</strong>.",
-          "Muitos seminários foram realizados oralmente: Lacan falava para um público e suas aulas foram registradas e publicadas em livros depois. Ele também escreveu textos. Uma coletânea famosa desses trabalhos se chama <em>Escritos</em>, publicada em 1966. Uma coletânea é um livro que reúne textos produzidos em ocasiões diferentes.",
-          "Aqui há uma distinção fácil e útil: <strong>dar uma aula, escrever um texto e publicar um livro são acontecimentos diferentes</strong>. Por isso, você poderá encontrar um seminário com a data em que foi ensinado e outra data indicando a edição do livro. Isso não é uma teoria de Lacan, apenas uma informação para localizar o material."
+          "Quando Lacan começou a trabalhar, a psicanálise já existia. Ele não a criou. O que fez foi estudar os textos de Freud com atenção e perguntar se algumas de suas ideias estavam sendo bem compreendidas.",
+          "Imagine um professor que volta a ler um livro importante. Ele percebe que determinadas passagens podem ser discutidas de outra forma, conversa com outros estudiosos e propõe novas explicações. Essa comparação ajuda a entender o trabalho de Lacan.",
+          "Lacan voltou várias vezes às perguntas de Freud, mas também desenvolveu ideias próprias. Por isso, estudar Lacan envolve conhecer o que Freud havia proposto e observar o que Lacan acrescentou ou modificou.",
+          "Um dos interesses de Lacan era a maneira como as pessoas falam sobre si. Quando contamos uma história, não escolhemos apenas as informações: também escolhemos palavras, mudamos o jeito de contar e, às vezes, nos surpreendemos com o que dizemos. Lacan deu muita atenção a essas questões em seu trabalho."
         ],
-        "inShort": "Seminário = conjunto de aulas e debates. Publicação = quando o material chegou ao livro."
+        "inShort": "Lacan não criou a psicanálise. Ele estudou Freud, questionou certas interpretações e desenvolveu suas próprias ideias."
       },
       {
-        "title": "4. E as datas? Precisamos decorar alguma coisa?",
+        "title": "Como Lacan compartilhava seu trabalho?",
         "paragraphs": [
-          "<strong>Não.</strong> Nesta formação, a linha do tempo é um calendário de acontecimentos, não uma teoria psicanalítica. Ela serve para saber, por exemplo, que Lacan estudava psiquiatria antes de tornar-se conhecido por seus seminários. Você não precisa memorizar congressos, cidades ou números de seminários para acompanhar o começo do curso.",
-          "Veja uma situação comum: uma cantora grava uma música em um ano, apresenta-a em um show no ano seguinte e lança uma coletânea anos depois. Essas datas são diferentes, mas se referem à história daquela música. Algo parecido acontece com textos de Lacan. A diferença ajuda quem pesquisa a não dizer que um texto nasceu na data da coletânea.",
-          "Talvez você ouça o nome <strong>estádio do espelho</strong>. Por enquanto, entenda apenas que é um tema sobre como a imagem participa da formação da ideia que temos de nós mesmos. <strong>Vamos explicar isso desde o início no Módulo 4.</strong> Você não precisa saber agora o que significa «identificação» nessa teoria, muito menos decorar 1936, 1949 e 1966.",
-          "Terminamos a aula com três ideias: Freud criou a psicanálise; Lacan releu Freud e ensinou por seminários; as datas servem para localizar textos. Esse é o aprendizado esperado neste momento."
+          "Lacan escreveu textos e também ensinou em encontros regulares chamados <strong>seminários</strong>. Um seminário é uma série de aulas e discussões sobre determinado assunto.",
+          "Imagine uma professora que se reúne com uma turma toda semana para ler um livro, explicar ideias e responder a perguntas. Durante muitos anos, Lacan conduziu encontros de estudo desse tipo, voltados principalmente para profissionais e pessoas interessadas em psicanálise.",
+          "Mais tarde, muitas dessas aulas foram organizadas e publicadas em livros. Por isso, ao longo da formação, você encontrará tanto textos escritos por Lacan quanto volumes que reúnem seu ensino oral.",
+          "Essa é a informação importante sobre os seminários por enquanto: <strong>eles eram encontros em que Lacan ensinava e desenvolvia suas ideias</strong>. Não é preciso conhecer a numeração ou as datas das aulas para entender o que estamos estudando aqui."
         ],
-        "inShort": "A linha do tempo é um recurso para se orientar. As teorias serão ensinadas nas aulas certas."
+        "inShort": "Os seminários eram encontros de estudo conduzidos por Lacan. Parte desse ensino chegou até nós em livros."
       }
     ],
     "example": {
-      "title": "Um exemplo bem concreto: curso, aula e livro",
-      "text": "Uma pessoa dá uma aula em 2020. Em 2022, escreve um texto a partir dela. Em 2025, esse texto entra numa coletânea. São três datas, mas não três teorias diferentes. Ao estudar Lacan, o calendário serve para reconhecer essas diferenças. Você não precisa decorar as datas para entender a explicação."
+      "title": "Uma comparação: estudar uma obra e propor novas perguntas",
+      "text": "Uma professora passa anos estudando a obra de outro pesquisador. Em suas aulas, ela explica o que o autor disse, aponta questões que considera importantes e apresenta ideias que desenvolveu a partir dessa leitura. Esse exemplo ajuda a entender a relação entre Lacan e Freud: ele partiu do trabalho de Freud, mas não se limitou a repeti-lo."
     },
-    "takeaway": "Jacques Lacan foi um psicanalista francês que estudou e reinterpretou Freud. Ensinou em seminários e publicou textos. Neste começo, o essencial é saber quem ele foi; os conceitos difíceis e a cronologia detalhada virão no momento adequado.",
+    "takeaway": "Jacques Lacan foi um médico, psicanalista e professor francês. Freud iniciou a psicanálise; Lacan voltou a estudar suas ideias e elaborou novas questões. Grande parte de seu ensino aconteceu em seminários, que eram encontros de estudo.",
     "references": [
-      "Lacan, J. <em>Da psicose paranoica em suas relações com a personalidade</em> (tese de 1932).",
-      "Lacan, J. <em>Função e campo da fala e da linguagem em psicanálise</em> (1953), em <em>Escritos</em>.",
-      "Lacan, J. <em>O Seminário, livro 1: Os escritos técnicos de Freud</em> (ensino de 1953–1954).",
-      "Johnston, A. «Jacques Lacan», <em>Stanford Encyclopedia of Philosophy</em> (revisão de 2026)."
+      "Johnston, A. «Jacques Lacan», <em>Stanford Encyclopedia of Philosophy</em>. Referência biográfica e introdução ao trabalho de Lacan.",
+      "Lacan, J. <em>O Seminário, livro 1: Os escritos técnicos de Freud</em> (ensino de 1953–1954). Exemplo de volume baseado em seu ensino oral.",
+      "Lacan, J. <em>Escritos</em> (coletânea publicada em 1966). Reúne textos produzidos em diferentes momentos."
     ],
     "quiz": [
       {
         "phase": "Reconhecimento",
         "prompt": "Quem foi Jacques Lacan?",
         "options": [
-          "O criador da psicanálise, antes de Freud.",
-          "Um médico e psicanalista que estudou Freud e desenvolveu novas ideias.",
-          "Um escritor que publicou apenas um único livro de ficção."
+          "Um médico francês que se tornou psicanalista e professor.",
+          "O médico que iniciou a psicanálise antes de Freud.",
+          "Um escritor que só trabalhava com histórias de ficção."
         ],
-        "correct": 1,
-        "explanation": "Lacan foi médico e psicanalista. A psicanálise começou com Freud; Lacan retomou e modificou debates dessa tradição."
+        "correct": 0,
+        "explanation": "Lacan foi médico, psicanalista e professor francês. Quem iniciou a psicanálise foi Freud."
       },
       {
         "phase": "Compreensão",
-        "prompt": "Neste começo do curso, para que serve uma linha do tempo sobre Lacan?",
+        "prompt": "Qual foi a relação de Lacan com Freud?",
         "options": [
-          "Para provar que uma teoria é verdadeira.",
-          "Para obrigar o estudante a decorar anos antes de aprender conceitos.",
-          "Para situar acontecimentos, aulas e publicações sem confundi-los."
+          "Lacan não conhecia as obras de Freud.",
+          "Lacan estudou as ideias de Freud e desenvolveu novas interpretações e questões.",
+          "Lacan escreveu todos os livros de Freud."
         ],
-        "correct": 2,
-        "explanation": "Um calendário ajuda a saber quando algo aconteceu. Ele não explica, por si, uma teoria."
+        "correct": 1,
+        "explanation": "A psicanálise já existia quando Lacan começou seu trabalho. Ele releu Freud e propôs desenvolvimentos próprios."
       },
       {
         "phase": "Aplicação",
-        "prompt": "Você encontra o termo «estádio do espelho» na apresentação do curso. O que deve fazer?",
+        "prompt": "Alguém diz: «Lacan ensinava em seminários». O que significa isso?",
         "options": [
-          "Saber que será explicado no Módulo 4 e continuar aprendendo os fundamentos.",
-          "Interromper os estudos até decorar todo o conceito.",
-          "Concluir que não consegue estudar Lacan."
+          "Que ele atendia pacientes em uma sala chamada seminário.",
+          "Que ele publicava exclusivamente romances.",
+          "Que ele conduzia encontros regulares de estudo e discussão sobre psicanálise."
         ],
-        "correct": 0,
-        "explanation": "Nesta primeira aula, basta reconhecer que o termo existe e será explicado depois. A explicação deve vir antes da cobrança."
+        "correct": 2,
+        "explanation": "Seminário é uma série de aulas e discussões. Lacan usava esse formato para compartilhar e desenvolver ideias."
       }
     ],
-    "goal": [
-      "Saber quem foi Lacan e o que ele fazia.",
-      "Entender, em linguagem simples, o que é a psicanálise.",
-      "Saber para que servem os seminários e as datas que aparecerão no curso."
-    ],
-    "later": "Você <strong>não precisa aprender agora</strong> estádio do espelho, identificação, Imaginário, Simbólico, Real ou fórmulas. Esses temas terão aulas próprias. Hoje basta saber que Lacan fez perguntas sobre o ser humano e que suas respostas foram mudando.",
+    "goal": [],
+    "later": "",
     "glossary": [
       {
-        "term": "Psicanálise",
-        "meaning": "Tradição iniciada por Freud para investigar a experiência psíquica, incluindo aspectos que escapam à consciência, e uma prática clínica ligada à fala."
+        "term": "Psiquiatria",
+        "meaning": "Especialidade médica dedicada à saúde mental. Lacan estudou medicina e trabalhou nessa área."
       },
       {
-        "term": "Psiquiatria",
-        "meaning": "Especialidade médica relacionada à saúde mental. Lacan se formou nessa área."
+        "term": "Psicanálise",
+        "meaning": "Tradição iniciada por Freud que reúne teorias e uma prática de atendimento baseada na escuta e na investigação da experiência de cada pessoa."
       },
       {
         "term": "Seminário",
-        "meaning": "Conjunto de aulas e debates em que Lacan desenvolvia e discutia suas ideias."
+        "meaning": "Série de aulas e discussões. Lacan usou esse formato para ensinar e desenvolver suas ideias."
       }
     ]
   },
