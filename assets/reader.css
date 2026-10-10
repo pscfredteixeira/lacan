@@ -61,3 +61,8 @@
 .reader-quiz .quiz-option{min-height:58px}.reader-option-index{min-width:27px;width:27px;height:27px}
 }
 @media(prefers-reduced-motion:reduce){.reader-content *{scroll-behavior:auto!important}}
+
+/* Sprint 7: explicit bridge from the Freud foundations to Module 3 */
+.reader-next-steps{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.reader-next-steps .action-button{max-width:none;font-size:.78rem;line-height:1.45;text-align:center;text-decoration:none}
+@media(max-width:700px){.reader-next-steps{flex-direction:column;align-items:stretch;width:100%}.reader-next-steps .action-button{max-width:100%;min-height:48px}}
