@@ -42,8 +42,9 @@
       <h3 class="lesson-heading">Aulas do módulo</h3>
       ${m.lessons.map((lesson,i) => `<article class="lesson"><span class="lesson-index">${String(m.id).padStart(2,"0")}.${i+1}</span><div><h4>${escapeHTML(lesson[0])}</h4><p>${escapeHTML(lesson[1])}</p><small>${m.id===1?'Aula disponível para estudo':'Conteúdo em preparação'}</small></div></article>`).join("")}
       ${m.id===1?'<a class="button primary start-module" href="modulo-1.html?aula=1.1">Começar o Módulo 1 <span>↗</span></a>':''}
+      ${m.id===3?'<a class="button primary start-module" href="significantes.html">Abrir o ateliê dos significantes <span>↗</span></a>':''}
       ${m.id===4?'<a class="button primary start-module" href="espelho.html">Explorar o laboratório do espelho <span>↗</span></a>':''}
-      <div class="detail-notice"><strong>Nota editorial:</strong> ${m.id===1?'As seis aulas introdutórias já estão disponíveis, com textos, avaliações em três fases e caderno de estudo.':m.id===4?'As aulas integrais deste módulo continuam em preparação. O laboratório do estádio do espelho já está disponível como exploração conceitual independente.':'Este módulo está planejado; suas aulas completas e atividades serão publicadas progressivamente.'}</div>`;
+      <div class="detail-notice"><strong>Nota editorial:</strong> ${m.id===1?'As seis aulas introdutórias já estão disponíveis, com textos, avaliações em três fases e caderno de estudo.':m.id===3?'As aulas integrais deste módulo continuam em preparação. O Laboratório dos Significantes está disponível como experiência conceitual independente.':m.id===4?'As aulas integrais deste módulo continuam em preparação. O laboratório do estádio do espelho já está disponível como exploração conceitual independente.':'Este módulo está planejado; suas aulas completas e atividades serão publicadas progressivamente.'}</div>`;
     overlay.hidden = false;
     document.body.style.overflow = "hidden";
     document.getElementById("closeDetail").focus();
