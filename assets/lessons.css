@@ -73,3 +73,13 @@
 @media(max-width:1000px){.lesson-shell{grid-template-columns:250px minmax(0,1fr)}.lesson-sidebar{padding-left:20px}.lesson-content{padding:38px 35px 75px}}
 @media(max-width:700px){.lesson-shell{display:block}.lesson-sidebar{position:static;max-height:none;border-right:0;border-bottom:1px solid var(--line);padding:27px 20px 18px}.lesson-sidebar h2{font-size:1.38rem}.lesson-sidebar>p:not(.kicker){font-size:.76rem;margin:8px 0}.progress-label{margin-top:13px}.lesson-nav{display:flex;overflow-x:auto;gap:8px;overscroll-behavior-x:contain;scroll-snap-type:x proximity;padding-bottom:7px;margin:18px 0 5px}.lesson-link{min-width:178px;max-width:210px;scroll-snap-align:start;padding:12px 10px;background:#f9f4eb;border:1px solid var(--line)}.lesson-link-title{font-size:.76rem}.returnlink{margin-top:12px}.lesson-content{padding:36px 20px 65px}.lesson-question{padding:20px}.lesson-article-section p{font-size:.96rem;line-height:1.9}.quiz-wrap{padding:20px 16px}.quiz-question{font-size:1.06rem}.lesson-example,.lesson-takeaway,.lesson-notebook{padding:20px}.lesson-info{gap:10px}.lesson-pager{gap:8px}.lesson-pager .action-button{padding:11px 12px;font-size:.73rem}}
 @media(prefers-reduced-motion:reduce){.progress-fill{transition:none}}
+
+/* Laboratório conectado às aulas do Sprint 2 */
+.lesson-lab-link{display:flex;align-items:center;gap:13px;padding:14px 15px;margin:12px 0;border:1px solid #b9a4c9;background:#e9dff0;color:var(--wine);font-size:.75rem;line-height:1.55}
+.lesson-lab-link:hover{background:#ded0e9}
+.lesson-lab-link>span:first-child{font-size:1.3rem}
+.lesson-interactive{border:1px solid #c9b6d8;background:linear-gradient(120deg,#eee4f4,#faf4e9);padding:28px 30px;margin:38px 0}
+.lesson-interactive h2{font-family:"Libre Baskerville",Georgia,serif;font-size:1.6rem;letter-spacing:-.035em;margin:10px 0}
+.lesson-interactive p{font-size:.86rem;color:var(--muted);line-height:1.85;margin:5px 0 20px}
+.lesson-interactive .action-button{display:inline-flex;text-decoration:none}
+@media(max-width:700px){.lesson-lab-link{margin:12px 0}.lesson-interactive{padding:22px}}
