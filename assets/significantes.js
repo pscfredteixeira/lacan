@@ -122,15 +122,20 @@
       if(operation===c.type){
         solvedCases.add(c.id);write("solvedCases",[...solvedCases]);
       }
-      renderCase();return;
+      renderCase();
+      const feedback=$("operationStage").querySelector(".operation-feedback");
+      if(feedback){feedback.tabIndex=-1;feedback.focus({preventScroll:true});}
+      return;
     }
     const action=event.target.closest("[data-operation-action]")?.dataset.operationAction;
-    if(action==="retry"){chosenOperation=null;renderCase();}
+    if(action==="retry"){chosenOperation=null;renderCase();$("operationStage").querySelector(".operation-choice")?.focus();}
     if(action==="next"){
       const index=d.machineCases.findIndex(x=>x.id===activeCase);
       const order=[...d.machineCases.slice(index+1),...d.machineCases.slice(0,index+1)];
       const next=order.find(x=>!solvedCases.has(x.id)) || d.machineCases[(index+1)%d.machineCases.length];
       activeCase=next.id;chosenOperation=null;renderCase();
+      const heading=$("operationStage").querySelector("h3");
+      if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true});}
       $("operationStage").scrollIntoView({block:"start",behavior:"smooth"});
     }
   });
@@ -159,10 +164,12 @@
       const index=Number(choice.dataset.quizChoice);
       if(!d.quiz[quizPhase]?.answers[index])return;
       quizChoice=index;renderQuiz();
+      const feedback=$("signQuiz").querySelector(".sign-quiz-feedback");
+      if(feedback){feedback.tabIndex=-1;feedback.focus({preventScroll:true});}
       return;
     }
     const action=event.target.closest("[data-quiz-action]")?.dataset.quizAction;
-    if(action==="retry"){quizChoice=null;renderQuiz();}
+    if(action==="retry"){quizChoice=null;renderQuiz();$("signQuiz").querySelector(".sign-quiz-choice")?.focus();}
     if(action==="advance"){
       if(!d.quiz[quizPhase]?.answers[quizChoice]?.correct)return;
       quizPhase++;quizChoice=null;
