@@ -14,6 +14,7 @@
   function persist(key,value) {try{localStorage.setItem(PREFIX+"-"+key,JSON.stringify(value));}catch{}}
   let mode="tensao", relation="imagem", phase=0, answer=null;
   let completed=restore("completed",false)===true;
+  if(completed)phase=data.trials.length;
   let seenModes=new Set(Array.isArray(restore("modes",[]))?restore("modes",[]):[]);
   let seenRelations=new Set(Array.isArray(restore("relations",[]))?restore("relations",[]):[]);
   // Primeira mesa de estudo: comparar planos e explicar o descompasso.
@@ -50,7 +51,7 @@
   $("mirrorSources").innerHTML=data.sources.map(src=>`<a href="${safe(src.url)}" target="_blank" rel="noopener noreferrer">${safe(src.label)} ↗<small>${safe(src.note)}</small></a>`).join("");
   // Terceira mesa: seleção com explicação contextual, uma fase por vez.
   function updateTrialProgress(){
-    $("trialProgressText").textContent=(completed ? data.trials.length : phase)+" / "+data.trials.length;
+    $("trialProgressText").textContent=phase+" / "+data.trials.length;
     $("trialProgressBars").innerHTML=data.trials.map((_,i)=>`<span class="trial-bar ${completed||i<phase?"completed":i===phase?"current":""}"></span>`).join("");
   }
   function renderTrial(){
