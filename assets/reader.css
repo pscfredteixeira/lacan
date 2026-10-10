@@ -1,0 +1,63 @@
+/* Sprint 6 · Leitor editorial reutilizável. Complementa styles.css + lessons.css. */
+.reader-context{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center;padding:14px max(5vw,24px);border-bottom:1px solid #dfd0df;background:#eee4f0;color:#6e587d;font-size:.63rem;letter-spacing:.13em;font-weight:700}
+.reader-shell{background:#fcf8f1}
+.reader-shell .lesson-sidebar{background:#f4eced;border-right:1px solid #ddcfdd}
+.reader-prereq{padding:16px 18px;border:1px solid #dccddd;background:#fffbf4;margin:20px 0;color:#655968;font-size:.76rem;line-height:1.8}
+.reader-prereq strong{color:#735d81;font-size:.76rem}
+.reader-prereq p{margin:5px 0 0}
+.reader-content{max-width:1050px;padding-top:49px}
+.reader-path{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:0 0 25px;margin-bottom:33px;border-bottom:1px solid var(--line);font-size:.66rem;letter-spacing:.1em;color:#786484;font-weight:700}
+.reader-content .lesson-title{max-width:850px;line-height:1.23;font-size:clamp(2.35rem,4.2vw,4.2rem)}
+.reader-content .lesson-subtitle{font-family:"Libre Baskerville",Georgia,serif;color:#685875;font-size:1.03rem}
+.reader-objectives{background:linear-gradient(112deg,#e9def0,#f4eaf1);border-left:4px solid #9175a5;padding:26px clamp(20px,3vw,34px);margin:29px 0}
+.reader-objectives h2{font-family:"Libre Baskerville",Georgia,serif;font-size:clamp(1.25rem,2.25vw,1.8rem);letter-spacing:-.035em;line-height:1.6;margin:12px 0 0}
+.reader-lead{max-width:800px;margin:37px auto 42px}
+.reader-lead p{font-size:1.1rem;line-height:2.04;color:#443b49;margin:0}
+.reader-separator{margin:40px 0 13px;border-top:1px solid #dfd3dc;border-bottom:1px solid #dfd3dc;display:flex;justify-content:space-between;gap:10px;padding:15px 0;font-size:.64rem;letter-spacing:.13em;font-weight:700;color:#8b7690}
+.reader-chapter{margin:45px 0 48px}
+.reader-chapter-label{font-family:"Libre Baskerville",Georgia,serif;font-size:.91rem;color:#856d95;margin-bottom:14px}
+.reader-chapter h2{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.43;letter-spacing:-.04em;padding-left:15px;border-left:2px solid #bfa8cb;margin-bottom:19px}
+.reader-chapter p{line-height:2;font-size:1rem;color:#514956}
+.reader-chapter p strong{color:#4b3a59}
+.reader-example{background:#f4edf6;border-color:#d9c8e0}
+.reader-example small{display:block;font-size:.73rem;color:#7c6a85;margin-top:13px}
+.reader-inline-head h2,.reader-practice h2{font-family:"Libre Baskerville",serif;font-size:1.45rem;font-weight:400;line-height:1.45;margin:11px 0 19px}
+.reader-concepts{margin:46px 0 36px}
+.reader-concept-grid{display:grid;grid-template-columns:1fr;gap:9px}
+.reader-concept-grid details{background:#f9f3ec;border:1px solid #e3d6df}
+.reader-concept-grid summary{cursor:pointer;display:flex;align-items:center;gap:16px;padding:17px 20px;color:#5c496b;font-size:.94rem;font-weight:700;min-height:53px}
+.reader-concept-grid summary span{font-family:"Libre Baskerville",serif;color:#9076a2;font-size:.88rem}
+.reader-concept-grid summary:hover{background:#eee3f2}
+.reader-concept-grid details[open] summary{background:#eee4f2;border-bottom:1px solid #dac8df}
+.reader-concept-grid details p{font-size:.88rem;line-height:1.9;color:#5d5362;padding:5px 21px 19px;margin:13px 0 0}
+.reader-practice{border:1px solid #d3c0db;background:#f0e6f1;padding:28px;margin:42px 0}
+.reader-practice>p:not(.reader-storage){font-size:.89rem;color:#574a61;line-height:1.9;margin:14px 0 21px}
+.reader-practice label{display:block;font-size:.79rem;color:#5d486d;font-weight:700;margin:15px 0 10px}
+.reader-practice textarea{width:100%;min-height:145px;resize:vertical;border:1px solid #cbb8d3;background:#fffcf7;padding:16px;font-size:.93rem;line-height:1.85;color:#3e3642}
+.reader-storage{font-size:.76rem;color:#776782;line-height:1.7;margin:10px 0 0}
+.reader-content .lesson-interactive{border:1px solid #c4afd2;background:linear-gradient(130deg,#e9deef,#fcf5ed)}
+.reader-reference-note{font-size:.79rem;color:var(--muted);margin:0 0 13px;line-height:1.7}
+.reader-quiz{background:#fffbf4;border:1px solid #d9c8de}
+.reader-quiz .quiz-finished h3{font-family:"Libre Baskerville",serif;font-size:1.45rem;margin:7px 0}
+.reader-quiz .quiz-option{display:flex;align-items:center;gap:14px}
+.reader-option-index{display:grid;place-items:center;width:30px;height:30px;min-width:30px;border:1px solid #c9b5d1;color:var(--wine);font-family:"Libre Baskerville",serif}
+.reader-quiz .quiz-option.right{border-color:#60826b;background:#eaf4ec}
+.reader-quiz .quiz-option.picked:not(.right){background:#f4e2ec}
+.reader-quiz .quiz-feedback p{margin:0}
+.reader-content .lesson-pager{padding-bottom:20px}
+@media(max-width:980px){.reader-content{padding:40px 37px 80px}}
+@media(max-width:700px){
+.reader-context{padding:12px 20px}.reader-context span:last-child{display:none}
+.reader-content{padding:36px 20px 68px}
+.reader-path{font-size:.61rem;margin-bottom:26px}
+.reader-content .lesson-title{font-size:clamp(2.05rem,9vw,3.1rem)}
+.reader-content .lesson-subtitle{font-size:.95rem}
+.reader-objectives{padding:22px 18px}
+.reader-lead{margin:29px 0}.reader-lead p{font-size:1.01rem;line-height:1.9}
+.reader-chapter{margin:35px 0}.reader-chapter p{font-size:.96rem;line-height:1.9}
+.reader-separator{font-size:.58rem}
+.reader-concept-grid summary{padding:16px;min-height:55px}
+.reader-practice{padding:21px 16px}.reader-practice textarea{font-size:1rem}
+.reader-quiz .quiz-option{min-height:58px}.reader-option-index{min-width:27px;width:27px;height:27px}
+}
+@media(prefers-reduced-motion:reduce){.reader-content *{scroll-behavior:auto!important}}
