@@ -32,6 +32,7 @@
     const n=lessons.filter(l=>completed.includes(l.id)).length;
     $("progressText").textContent=n+" de "+lessons.length;
     $("progressBar").style.width=(100*n/lessons.length)+"%";
+    $("progressBar").setAttribute("aria-valuenow",String(n));
     menu.innerHTML=lessons.map(lesson=>`<button type="button" class="lesson-link" data-lesson="${safe(lesson.id)}" ${current===lesson.id?'aria-current="step"':''}><span class="lesson-link-index">${safe(lesson.id)}</span><span class="lesson-link-title">${safe(lesson.title)}</span>${completed.includes(lesson.id)?'<span class="lesson-check" aria-label="Avaliação concluída">✓</span>':''}</button>`).join("");
   };
   const renderConcepts=lesson=>{
