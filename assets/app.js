@@ -38,7 +38,7 @@
     returnFocus = document.activeElement;
     code.textContent = `MÓDULO ${String(m.id).padStart(2,"0")} / CICLO ${roman[m.cycle]}`;
     body.innerHTML = `<h2 id="detailTitle">${escapeHTML(m.title)}</h2><p class="summary">${escapeHTML(m.description)}</p>
-      <div class="detail-meta"><div><span>Nível</span><p>${escapeHTML(m.level)}</p></div><div><span>Pré-requisitos</span><p>${escapeHTML(m.prereqs)}</p></div><div><span>Resultado esperado</span><p>${escapeHTML(m.outcome)}</p></div><div><span>Estrutura</span><p>6 aulas planejadas</p></div></div>
+      <div class="detail-meta"><div><span>Nível</span><p>${escapeHTML(m.level)}</p></div><div><span>Pré-requisitos</span><p>${escapeHTML(m.prereqs)}</p></div><div><span>Resultado esperado</span><p>${escapeHTML(m.outcome)}</p></div><div><span>Estrutura</span><p>${[1,2,3,4,5,6].includes(m.id)?'6 aulas disponíveis':'6 aulas planejadas'}</p></div></div>
       <h3 class="lesson-heading">Aulas do módulo</h3>
       ${m.lessons.map((lesson,i) => `<article class="lesson"><span class="lesson-index">${String(m.id).padStart(2,"0")}.${i+1}</span><div><h4>${escapeHTML(lesson[0])}</h4><p>${escapeHTML(lesson[1])}</p><small>${[1,2,3,4,5,6].includes(m.id)?'Aula disponível para estudo':'Conteúdo em preparação'}</small></div></article>`).join("")}
       ${m.id===1?'<a class="button primary start-module" href="modulo-1.html?aula=1.1">Começar o Módulo 1 <span>↗</span></a>':''}
