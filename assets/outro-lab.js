@@ -41,7 +41,7 @@
     const output=$("otherRoom-"+id);
     if(index>=count){output.innerHTML=done(r);return;}
     const caseItem=(r.cases||r.quizzes)[index];
-    const opts=id==="lugares"?r.options.map(x=>({...x,correct:x.id===caseItem.correct})):caseItem.options;
+    const opts=id==="lugares"?r.options.map(x=>({...x,correct:x.id===caseItem.correct})):caseItem.options.map((x,i)=>({...x,id:String(i)}));
     const answer=opts.find(x=>x.id===selected);
     const success=answer?.correct===true;
     output.innerHTML=heading(r)+`<div class="other-challenge">
