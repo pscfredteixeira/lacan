@@ -111,3 +111,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .sprint8-num strong{font-family:"Libre Baskerville",serif;font-size:5rem;font-weight:400;line-height:1;color:#765d88}
 .sprint8-num small,.sprint8-num span{font-size:.59rem;letter-spacing:.13em;font-weight:700;color:#806c8d;text-align:center}
 @media(max-width:700px){.sprint8-spotlight{padding:44px 20px}.sprint8-spotlight-inner{grid-template-columns:1fr;gap:20px}.sprint8-num{min-height:125px}.sprint8-num strong{font-size:3.5rem}.sprint8-spotlight .button{gap:12px}}
+
+/* Link discreto para instalação do app, visível também na navegação móvel. */
+.install-hero-link{display:inline-flex;align-items:center;gap:10px;min-height:47px;padding:12px 8px;color:#705a85;font-size:.82rem;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.install-hero-link:hover{color:#4d3b60}
+@media(max-width:700px){.install-hero-link{width:100%;justify-content:flex-start;padding:8px 2px;min-height:42px}.hero-buttons{row-gap:5px}}
