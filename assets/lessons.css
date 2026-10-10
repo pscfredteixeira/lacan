@@ -135,3 +135,21 @@
 .module-01 .lesson-link-title{font-size:.94rem}
 .module-01 .quiz-option{font-size:.94rem;min-height:59px}
 }
+
+/* Revisão 1.1 — inicia com conteúdo, mantendo referências acessíveis sem interromper a leitura. */
+.module-01 .lesson-content>.lesson-intro{margin:5px 0 35px;max-width:760px;font-size:1.075rem;line-height:1.95}
+.module-01 .lesson-content>.lesson-intro strong{color:#5f4772}
+.module-01 .lesson-content>.lesson-question{margin:0 0 38px}
+.module-01 details.lesson-references{margin-top:42px;background:#fcf7f0;border:1px solid #dfd4dd;padding:0;border-radius:5px}
+.module-01 details.lesson-references>summary{cursor:pointer;padding:19px 23px;min-height:58px;font-size:.94rem;line-height:1.6;font-weight:700;color:#6d557f}
+.module-01 details.lesson-references[open]>summary{background:#f3e9f5;border-bottom:1px solid #dfd4dd}
+.module-01 .lesson-references-inner{padding:17px 25px 23px}
+.module-01 .lesson-references-inner li{overflow-wrap:break-word}
+.module-01 .lesson-lab-link{font-size:.81rem;line-height:1.6}
+.module-01 .lesson-short{margin-top:23px}
+.module-01 .quiz-wrap{margin-top:40px}
+@media(max-width:700px){
+.module-01 .lesson-content>.lesson-intro{font-size:1.03rem;line-height:1.87;margin:4px 0 31px}
+.module-01 details.lesson-references>summary{padding:17px 15px;font-size:.91rem}
+.module-01 .lesson-references-inner{padding:16px 16px 20px}
+}
