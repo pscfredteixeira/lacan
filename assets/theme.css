@@ -88,3 +88,15 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .module3-promo-notes span,.module3-promo-notes small{font-size:.64rem;letter-spacing:.11em;color:#816b8b}
 .module3-promo-notes strong{font-family:"Libre Baskerville",Georgia,serif;font-size:clamp(4.3rem,9vw,8rem);font-weight:400;line-height:1;color:#795f8d}
 @media(max-width:700px){.module3-promo{padding:58px 20px}.module3-promo-inner{grid-template-columns:1fr;gap:30px}.module3-promo-notes{min-height:150px}.module3-promo-notes strong{font-size:4rem}}
+
+/* Sprint 7: percurso freudiano em bege e lilás */
+.freud-promo{padding:77px max(5vw,24px);background:linear-gradient(118deg,#f0e6ee,#f9f1e5);border-bottom:1px solid #d6c6dc}
+.freud-promo-inner{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(275px,.72fr);gap:65px;align-items:center}
+.freud-promo h2{font-size:clamp(2.3rem,4.5vw,4.15rem);line-height:1.25;margin:15px 0 18px}
+.freud-promo p:not(.kicker){font-size:.92rem;color:#5e5467;line-height:1.95;max-width:700px}
+.freud-promo-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:23px}
+.freud-promo-card{background:#fdf8f0;border:1px solid #d9c6dd;box-shadow:15px 16px 0 rgba(100,79,119,.08);max-width:410px;width:100%;min-height:295px;display:flex;align-items:center;justify-content:space-between;flex-direction:column;padding:25px;justify-self:center}
+.freud-promo-card small,.freud-promo-card em{font-size:.64rem;letter-spacing:.11em;color:#846d8d;font-weight:700;font-style:normal}
+.freud-promo-card strong{font-family:"Libre Baskerville",serif;color:#745e86;font-size:7rem;line-height:1;font-weight:400}
+.freud-promo-card>span{font-family:"Libre Baskerville",serif;color:#796389;font-size:1.18rem}
+@media(max-width:740px){.freud-promo{padding:58px 20px}.freud-promo-inner{grid-template-columns:1fr;gap:28px}.freud-promo-card{min-height:190px;max-width:100%}.freud-promo-card strong{font-size:4.1rem}}
