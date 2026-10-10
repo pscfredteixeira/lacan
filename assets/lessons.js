@@ -46,27 +46,23 @@
       <h1 class="lesson-title">${safe(lesson.title)}</h1>
       <p class="lesson-subtitle">${safe(lesson.subtitle)}</p>
       <div class="lesson-info"><span>◷ ${safe(lesson.duration)} de estudo orientado</span><span>◈ Módulo 01 de 18</span><span>◎ ${completed.includes(id)?"Avaliação concluída":"Estudo em andamento"}</span></div>
-      <section class="lesson-question"><span class="prompt-label">A pergunta que abre esta aula</span><p>${safe(lesson.question)}</p></section>
-      <section class="lesson-steps" aria-label="O que você vai aprender nesta aula">
-        <div class="lesson-guided-intro"><span class="section-label">Seu ponto de partida</span>
-        <h2>Você não precisa saber nada antes.</h2>
-        <p>Vamos começar pelo básico. Nesta aula, seu objetivo é:</p>
-        <ul>${(lesson.goal||[]).map(goal=>`<li>${safe(goal)}</li>`).join("")}</ul></div>
-        <div class="lesson-no-rush"><span class="section-label">Pode deixar para depois</span><p>${lesson.later||""}</p></div>
-      </section>
       <div class="lesson-intro" aria-label="Introdução à aula">${lesson.introduction}</div>
+      ${id==="1.1"?"":`<section class="lesson-question"><span class="prompt-label">A pergunta desta aula</span><p>${safe(lesson.question)}</p></section>`}
       <div class="lesson-text">${paragraphs}</div>
       <aside class="lesson-example"><span class="section-label">Um exemplo para pensar</span><h2>${safe(lesson.example.title)}</h2><p>${safe(lesson.example.text)}</p></aside>
       <section class="lesson-glossary" aria-label="Palavras importantes desta aula">
       <span class="section-label">Mini glossário · opcional</span>
-      <h2>Se alguma palavra ainda estiver difícil...</h2>
-      <p>Toque em cada termo para ver a explicação. Não é necessário memorizar estas definições agora.</p>
+      <h2>Palavras que apareceram na aula</h2>
+      <p>Abra um termo para rever sua explicação.</p>
       <div class="lesson-glossary-grid">${(lesson.glossary||[]).map((word,i)=>`<details class="lesson-glossary-item"><summary><span>${String(i+1).padStart(2,"0")}</span>${safe(word.term)}</summary><p>${safe(word.meaning)}</p></details>`).join("")}</div>
       </section>
       <aside class="lesson-takeaway"><span class="section-label">O que levar desta aula</span><h2>Uma ideia para guardar</h2><p>${safe(lesson.takeaway)}</p></aside>
-      ${(id==="1.1" || id==="1.6") ? '<aside class="lesson-interactive lesson-optional"><span class="section-label">Atividade complementar · opcional</span><h2>Uma linha do tempo para se orientar</h2><p>O Arquivo de Lacan reúne datas de aulas, textos e livros. <strong>Não é uma teoria e você não precisa decorar os anos.</strong> É apenas um material de consulta para usar agora ou depois.</p><a href="arquivo.html" class="action-button primary">Conhecer a linha do tempo ↗</a></aside>' : ""}
-      <section class="lesson-references"><h2>Para consultar quando quiser</h2><p class="lesson-source-hint">Esses são textos e estudos que ajudam a conferir as informações. <strong>Não são leitura obrigatória para concluir esta aula introdutória.</strong></p><ul>${lesson.references.map(ref=>'<li>'+ref+'</li>').join("")}</ul></section>
-      <section class="quiz-wrap" id="assessment" aria-labelledby="quizHeading"><span class="section-label">Avaliação formativa</span><h2 class="quiz-heading" id="quizHeading">Três fases de compreensão</h2><p class="quiz-help">São três perguntas sobre aquilo que acabamos de explicar: uma para lembrar, uma para entender e uma para usar a ideia em um exemplo. Você pode errar e tentar novamente.</p><div id="quizArea" aria-live="polite"></div></section>
+      ${id==="1.6" ? '<aside class="lesson-interactive lesson-optional"><span class="section-label">Material complementar</span><h2>Conheça o Arquivo de Lacan</h2><p>Consulte uma linha do tempo com acontecimentos, aulas e publicações. Ela ajuda a localizar os textos que aparecem na formação.</p><a href="arquivo.html" class="action-button primary">Abrir a linha do tempo ↗</a></aside>' : ""}
+      <details class="lesson-references"><summary>Livros e fontes para aprofundar</summary>
+        <div class="lesson-references-inner"><p class="lesson-source-hint">Referências utilizadas na preparação da aula. A leitura desses textos é complementar ao conteúdo explicado aqui.</p>
+        <ul>${lesson.references.map(ref=>'<li>'+ref+'</li>').join("")}</ul></div>
+      </details>
+      <section class="quiz-wrap" id="assessment" aria-labelledby="quizHeading"><span class="section-label">Revisão da aula</span><h2 class="quiz-heading" id="quizHeading">Confira o que aprendeu</h2><p class="quiz-help">Responda a três perguntas sobre o que acabamos de estudar. Depois de cada resposta, você verá uma explicação.</p><div id="quizArea" aria-live="polite"></div></section>
       <section class="lesson-notebook" aria-labelledby="notebookHeading"><span class="section-label">Caderno pessoal</span><h2 id="notebookHeading">O que ficou em aberto?</h2><p>Escreva uma dúvida, relação ou descoberta. Suas anotações ficam apenas neste navegador; não são enviadas à plataforma.</p><label for="notes">Minhas anotações da aula ${safe(id)}</label><textarea id="notes" placeholder="Que pergunta esta aula deixou para você?"></textarea><p class="notes-status" id="notesStatus">Salvo apenas neste dispositivo.</p></section>
       <nav class="lesson-pager" aria-label="Mudar de aula">
         ${index>0?`<button class="action-button" type="button" data-goto="${safe(lessons[index-1].id)}">← Aula anterior</button>`:'<span></span>'}
