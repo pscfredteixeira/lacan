@@ -16,7 +16,9 @@ Plataforma de estudo progressivo do pensamento de Jacques Lacan, em português. 
 
 **Sprint 6 — publicado no repositório:** Módulo 3, *Linguagem e inconsciente*, com seis aulas de leitura (3.1 a 3.6), desenvolvimento teórico, exemplos delimitados, bibliografia, conceitos em foco expansíveis, perguntas de reflexão, dois cadernos de anotações por aula e avaliação em três fases. O Ateliê dos Significantes é acessível das aulas 3.2, 3.3, 3.4 e 3.6, e o módulo completo pode ser aberto do catálogo e da página inicial. Introduzido um leitor modular independente (`assets/reader.js`) para facilitar novos módulos sem aumentar arquivos gigantescos.
 
-**Próximos sprints:** desenvolver o Módulo 2 (*Freud: fundamentos necessários*), aprofundar verificações de bibliografia primária e testes de acessibilidade e de aprendizagem com estudantes.
+**Sprint 7 — publicado no repositório:** Módulo 2, *Freud: fundamentos necessários* (`modulo-2.html`), com seis aulas (2.1–2.6), exemplos historicamente delimitados, bibliografia primária, glossários, reflexão guiada e avaliações em três fases. A **Oficina do Inconsciente** (`oficina-freud.html`) acrescenta três mesas lúdico-conceituais: comparação de tópicas, operações do trabalho do sonho e ordenação da cronologia freudiana. O laboratório fornece feedback e conserva apenas os indicadores de conclusão no navegador. Integração com página inicial, matriz curricular e leitor modular já existente.
+
+**Próximos sprints:** revisar bibliografia primária, testar o fluxo completo em celulares e leitores de tela, aprofundar os exercícios e começar as aulas do Módulo 4 (espelho e formação do eu).
 
 ## Acessar
 
@@ -27,6 +29,8 @@ Site do GitHub Pages, quando a publicação pela branch `main` estiver ativa: ht
 - Laboratório 01: `arquivo.html`
 - Laboratório 02: `espelho.html`
 - Laboratório 03: `significantes.html`
+- Seis aulas do Módulo 2: `modulo-2.html?aula=2.1`
+- Laboratório 04: `oficina-freud.html`
 - Seis aulas do Módulo 3: `modulo-3.html?aula=3.1`
 - Dados dos 18 módulos: `assets/course-data.js`
 - Conteúdo do módulo 1: `assets/module-01-content.js`
@@ -34,17 +38,20 @@ Site do GitHub Pages, quando a publicação pela branch `main` estiver ativa: ht
 - Arquivo histórico: `assets/archive-data.js`, `assets/archive.js`, `assets/archive.css`
 - Espelho: `assets/mirror-data.js`, `assets/mirror.js`, `assets/mirror.css`
 - Significantes: `assets/significantes-data.js`, `assets/significantes.js`, `assets/significantes.css`
-- Leitor reutilizável do Módulo 3: `assets/reader.js`, `assets/reader.css`, `assets/module-03-content.js`
+- Leitor reutilizável (Módulos 2 e 3): `assets/reader.js`, `assets/reader.css`
+- Aulas do Módulo 2: `assets/module-02-content.js`
+- Oficina do Inconsciente: `assets/freud-lab-data.js`, `assets/freud-lab.js`, `assets/freud-lab.css`
+- Aulas do Módulo 3: `assets/module-03-content.js`
 - Sistema visual: `assets/styles.css`, `assets/theme.css`, `assets/lessons.css`
 
 ## Limitações desta versão
 
 - O progresso e as anotações ficam **somente no navegador utilizado**, via localStorage. Não há login, sincronização entre dispositivos ou backup automático.
 - A conclusão de uma avaliação não substitui leitura integral das obras de Lacan, discussão teórica ou formação clínica.
-- Os Módulos 1 e 3 oferecem atualmente **12 aulas com conteúdos desenvolvidos**. A publicação é pedagógica e continua sujeita a revisão bibliográfica e aprofundamento editorial.
-- Os outros 16 módulos têm títulos, descrições e objetivos planejados; **ainda não têm aulas integrais publicadas**.
-- As aulas publicadas contêm três questões por aula. Os três laboratórios atuais são experiências conceituais adicionais e não substituem a formação teórica nem a leitura das fontes.
-- O Módulo 2 aparece como pré-requisito na matriz pedagógica, mas ainda não está publicado; o Módulo 3 pode ser lido de maneira independente, com explicações introdutórias.
+- Os Módulos 1, 2 e 3 oferecem atualmente **18 aulas com conteúdos desenvolvidos**. A publicação é pedagógica e continua sujeita a revisão bibliográfica e aprofundamento editorial.
+- Os outros 15 módulos têm títulos, descrições e objetivos planejados; **ainda não têm aulas integrais publicadas**.
+- As aulas publicadas contêm três questões por aula. Os quatro laboratórios atuais são experiências conceituais adicionais e não substituem a formação teórica nem a leitura das fontes.
+- O Módulo 2 agora está disponível. A sequência introdutória recomendada é Módulo 1 → Módulo 2 → Módulo 3.
 - O laboratório do espelho **não simula a vida mental de uma criança** e não serve como prova empírica da teoria. Seu foco é exercitar distinções conceituais presentes no texto de 1949.
 
 ## Publicação
