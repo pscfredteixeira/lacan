@@ -83,3 +83,55 @@
 .lesson-interactive p{font-size:.86rem;color:var(--muted);line-height:1.85;margin:5px 0 20px}
 .lesson-interactive .action-button{display:inline-flex;text-decoration:none}
 @media(max-width:700px){.lesson-lab-link{margin:12px 0}.lesson-interactive{padding:22px}}
+
+
+/* Revisão pedagógica do Módulo 01: hierarquia para o aluno que começa do zero.
+   Seletores isolados para não alterar os Módulos 2–6. */
+.module-01 .lesson-sidebar>p:not(.kicker){font-size:.89rem;line-height:1.85}
+.module-01 .lesson-link-title{font-size:.87rem;line-height:1.48}
+.module-01 .lesson-content{max-width:960px}
+.module-01 .lesson-intro{font-size:1.075rem;line-height:1.95;margin:29px 0 40px}
+.module-01 .lesson-article-section{margin:37px 0 43px}
+.module-01 .lesson-article-section h2{font-size:clamp(1.35rem,2.35vw,1.68rem);line-height:1.45}
+.module-01 .lesson-article-section>p{font-size:1rem;line-height:2.04}
+.module-01 .lesson-steps{border:1px solid #dacbdf;background:#fffbf5;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(200px,.82fr);gap:0;margin:0 0 27px}
+.module-01 .lesson-guided-intro{padding:26px 27px}
+.module-01 .lesson-guided-intro h2{font-family:"Libre Baskerville",Georgia,serif;font-size:clamp(1.25rem,2.25vw,1.55rem);font-weight:400;letter-spacing:-.025em;line-height:1.48;margin:13px 0}
+.module-01 .lesson-guided-intro>p{font-size:.87rem;color:#5b5361;line-height:1.78;margin:0 0 12px}
+.module-01 .lesson-guided-intro ul{margin:0;padding-left:20px;display:grid;gap:10px}
+.module-01 .lesson-guided-intro li{color:#4e4655;font-size:.89rem;line-height:1.67;padding-left:3px}
+.module-01 .lesson-guided-intro li::marker{color:#897098}
+.module-01 .lesson-no-rush{padding:27px 24px;background:#f2e9f5;border-left:1px solid #d8c7dc}
+.module-01 .lesson-no-rush p{color:#594d62;line-height:1.83;margin:14px 0 0;font-size:.87rem}
+.module-01 .lesson-short{border-left:3px solid #9b81ab;background:#f5edf6;padding:16px 20px;margin:16px 0 27px}
+.module-01 .lesson-short strong{display:block;color:#6a557b;font-size:.8rem;line-height:1.5;margin:0 0 6px}
+.module-01 .lesson-short p{font-size:.91rem;line-height:1.85;color:#52485a;margin:0}
+.module-01 .lesson-glossary{margin:45px 0;background:#faf4ed;border:1px solid #e3d7df;padding:27px}
+.module-01 .lesson-glossary h2{font-family:"Libre Baskerville",Georgia,serif;font-size:1.32rem;font-weight:400;line-height:1.5;margin:11px 0}
+.module-01 .lesson-glossary>p{font-size:.85rem;color:#655c69;line-height:1.86;margin:0 0 20px}
+.module-01 .lesson-glossary-grid{display:grid;gap:8px}
+.module-01 .lesson-glossary-item{border:1px solid #decfe1;background:#fffdf8}
+.module-01 .lesson-glossary-item summary{cursor:pointer;color:#5b496b;display:flex;align-items:center;gap:13px;min-height:55px;padding:13px 16px;font-size:.91rem;font-weight:700;line-height:1.5}
+.module-01 .lesson-glossary-item summary span{font-family:"Libre Baskerville",Georgia,serif;font-size:.84rem;color:#987eab}
+.module-01 .lesson-glossary-item[open] summary{border-bottom:1px solid #decfe1;background:#f3e9f5}
+.module-01 .lesson-glossary-item>p{font-size:.89rem;line-height:1.85;padding:2px 18px 17px;margin:12px 0 0;color:#5e5264}
+.module-01 .lesson-source-hint{font-size:.85rem;line-height:1.85;color:#62556a;margin:0 0 16px}
+.module-01 .lesson-optional{background:#f4edf6;border:1px solid #d3c2df}
+.module-01 .lesson-optional p{font-size:.87rem;line-height:1.85}
+.module-01 .quiz-help{font-size:.87rem;line-height:1.8}
+.module-01 .quiz-option{font-size:.91rem;line-height:1.7;min-height:58px}
+.module-01 .quiz-feedback{font-size:.9rem;line-height:1.85}
+.module-01 .lesson-info{line-height:1.6}
+@media(max-width:850px){.module-01 .lesson-steps{grid-template-columns:1fr}.module-01 .lesson-no-rush{border-left:0;border-top:1px solid #d8c7dc}}
+@media(max-width:700px){
+.module-01 .lesson-content{padding:34px 20px 65px}
+.module-01 .lesson-guided-intro{padding:23px 20px}
+.module-01 .lesson-no-rush{padding:21px 20px}
+.module-01 .lesson-intro{font-size:1.025rem;line-height:1.87}
+.module-01 .lesson-article-section>p{font-size:1rem;line-height:1.88}
+.module-01 .lesson-steps{margin-bottom:23px}
+.module-01 .lesson-glossary{padding:20px 16px}
+.module-01 .lesson-short{padding:15px 17px}
+.module-01 .lesson-link-title{font-size:.94rem}
+.module-01 .quiz-option{font-size:.94rem;min-height:59px}
+}
