@@ -26,6 +26,7 @@
     const count = lessons.filter(l => completed.includes(l.id)).length;
     progressText.textContent = count + " de " + lessons.length;
     progressBar.style.width = lessons.length ? (count / lessons.length * 100) + "%" : "0%";
+    progressBar.setAttribute("aria-valuenow",String(count));
     nav.innerHTML = lessons.map(lesson => `<button type="button" class="lesson-link" data-lesson="${safe(lesson.id)}" ${lesson.id===active?'aria-current="step"':''}><span class="lesson-link-index">${safe(lesson.id)}</span><span class="lesson-link-title">${safe(lesson.title)}</span>${completed.includes(lesson.id)?'<span class="lesson-check" aria-label="Avaliação concluída">✓</span>':''}</button>`).join("");
   }
   function selectLesson(id, changeURL = true, focus = false) {
@@ -35,20 +36,37 @@
     if (changeURL) history.pushState({aula:id},"", "?aula="+encodeURIComponent(id));
     updateProgress();
     const index = lessons.findIndex(l=>l.id===id);
-    const paragraphs = lesson.sections.map((section,i)=>`<section class="lesson-article-section" aria-labelledby="sect-${i}"><h2 id="sect-${i}">${safe(section.title)}</h2>${section.paragraphs.map(p=>'<p>'+p+'</p>').join("")}</section>`).join("");
+    const paragraphs = lesson.sections.map((section,i)=>`<section class="lesson-article-section" aria-labelledby="sect-${i}">
+      <h2 id="sect-${i}">${safe(section.title)}</h2>
+      ${section.paragraphs.map(p=>'<p>'+p+'</p>').join("")}
+      ${section.inShort?`<div class="lesson-short"><strong>Em palavras simples</strong><p>${safe(section.inShort)}</p></div>`:""}
+      </section>`).join("");
     content.innerHTML = `
       <p class="kicker">AULA ${safe(lesson.id)} / PRIMEIRO CICLO</p>
       <h1 class="lesson-title">${safe(lesson.title)}</h1>
       <p class="lesson-subtitle">${safe(lesson.subtitle)}</p>
       <div class="lesson-info"><span>◷ ${safe(lesson.duration)} de estudo orientado</span><span>◈ Módulo 01 de 18</span><span>◎ ${completed.includes(id)?"Avaliação concluída":"Estudo em andamento"}</span></div>
       <section class="lesson-question"><span class="prompt-label">A pergunta que abre esta aula</span><p>${safe(lesson.question)}</p></section>
-      <p class="lesson-intro">${safe(lesson.introduction)}</p>
+      <section class="lesson-steps" aria-label="O que você vai aprender nesta aula">
+        <div class="lesson-guided-intro"><span class="section-label">Seu ponto de partida</span>
+        <h2>Você não precisa saber nada antes.</h2>
+        <p>Vamos começar pelo básico. Nesta aula, seu objetivo é:</p>
+        <ul>${(lesson.goal||[]).map(goal=>`<li>${safe(goal)}</li>`).join("")}</ul></div>
+        <div class="lesson-no-rush"><span class="section-label">Pode deixar para depois</span><p>${lesson.later||""}</p></div>
+      </section>
+      <div class="lesson-intro" aria-label="Introdução à aula">${lesson.introduction}</div>
       <div class="lesson-text">${paragraphs}</div>
       <aside class="lesson-example"><span class="section-label">Um exemplo para pensar</span><h2>${safe(lesson.example.title)}</h2><p>${safe(lesson.example.text)}</p></aside>
+      <section class="lesson-glossary" aria-label="Palavras importantes desta aula">
+      <span class="section-label">Mini glossário · opcional</span>
+      <h2>Se alguma palavra ainda estiver difícil...</h2>
+      <p>Toque em cada termo para ver a explicação. Não é necessário memorizar estas definições agora.</p>
+      <div class="lesson-glossary-grid">${(lesson.glossary||[]).map((word,i)=>`<details class="lesson-glossary-item"><summary><span>${String(i+1).padStart(2,"0")}</span>${safe(word.term)}</summary><p>${safe(word.meaning)}</p></details>`).join("")}</div>
+      </section>
       <aside class="lesson-takeaway"><span class="section-label">O que levar desta aula</span><h2>Uma ideia para guardar</h2><p>${safe(lesson.takeaway)}</p></aside>
-      ${(id==="1.1" || id==="1.6") ? '<aside class="lesson-interactive"><span class="section-label">Laboratório 01 · Sprint 3</span><h2>O Arquivo de Lacan</h2><p>Abra fichas históricas, diferencie anos de ensino de datas editoriais e investigue como certos conceitos mudaram ao longo do percurso.</p><a href="arquivo.html" class="action-button primary">Explorar o arquivo ↗</a></aside>' : ""}
-      <section class="lesson-references"><h2>Fontes e leituras</h2><ul>${lesson.references.map(ref=>'<li>'+ref+'</li>').join("")}</ul></section>
-      <section class="quiz-wrap" id="assessment" aria-labelledby="quizHeading"><span class="section-label">Avaliação formativa</span><h2 class="quiz-heading" id="quizHeading">Três fases de compreensão</h2><p class="quiz-help">Reconhecer, compreender e aplicar. Cada resposta recebe uma explicação antes de você avançar.</p><div id="quizArea" aria-live="polite"></div></section>
+      ${(id==="1.1" || id==="1.6") ? '<aside class="lesson-interactive lesson-optional"><span class="section-label">Atividade complementar · opcional</span><h2>Uma linha do tempo para se orientar</h2><p>O Arquivo de Lacan reúne datas de aulas, textos e livros. <strong>Não é uma teoria e você não precisa decorar os anos.</strong> É apenas um material de consulta para usar agora ou depois.</p><a href="arquivo.html" class="action-button primary">Conhecer a linha do tempo ↗</a></aside>' : ""}
+      <section class="lesson-references"><h2>Para consultar quando quiser</h2><p class="lesson-source-hint">Esses são textos e estudos que ajudam a conferir as informações. <strong>Não são leitura obrigatória para concluir esta aula introdutória.</strong></p><ul>${lesson.references.map(ref=>'<li>'+ref+'</li>').join("")}</ul></section>
+      <section class="quiz-wrap" id="assessment" aria-labelledby="quizHeading"><span class="section-label">Avaliação formativa</span><h2 class="quiz-heading" id="quizHeading">Três fases de compreensão</h2><p class="quiz-help">São três perguntas sobre aquilo que acabamos de explicar: uma para lembrar, uma para entender e uma para usar a ideia em um exemplo. Você pode errar e tentar novamente.</p><div id="quizArea" aria-live="polite"></div></section>
       <section class="lesson-notebook" aria-labelledby="notebookHeading"><span class="section-label">Caderno pessoal</span><h2 id="notebookHeading">O que ficou em aberto?</h2><p>Escreva uma dúvida, relação ou descoberta. Suas anotações ficam apenas neste navegador; não são enviadas à plataforma.</p><label for="notes">Minhas anotações da aula ${safe(id)}</label><textarea id="notes" placeholder="Que pergunta esta aula deixou para você?"></textarea><p class="notes-status" id="notesStatus">Salvo apenas neste dispositivo.</p></section>
       <nav class="lesson-pager" aria-label="Mudar de aula">
         ${index>0?`<button class="action-button" type="button" data-goto="${safe(lessons[index-1].id)}">← Aula anterior</button>`:'<span></span>'}
@@ -86,7 +104,7 @@
     const nextLesson = e.target.closest("[data-goto]");
     if (nextLesson) {selectLesson(nextLesson.dataset.goto,true,true);return;}
     const option = e.target.closest("[data-option]");
-    if (option && result===null) {result=Number(option.dataset.option);renderQuiz(lessons.find(l=>l.id===active));return;}
+    if (option && result===null) {result=Number(option.dataset.option);renderQuiz(lessons.find(l=>l.id===active));const box=document.querySelector("#quizArea .quiz-feedback");if(box){box.tabIndex=-1;box.focus({preventScroll:true});}return;}
     const action = e.target.closest("[data-quiz-action]");
     if (!action) return;
     if (action.dataset.quizAction==="retry") result=null;
@@ -101,6 +119,7 @@
       }
     }
     renderQuiz(lessons.find(l=>l.id===active));
+    document.querySelector("#quizArea .quiz-option:not([disabled]),#quizArea .quiz-finished button")?.focus({preventScroll:true});
     document.getElementById("assessment").scrollIntoView({block:"start",behavior:"smooth"});
   });
   nav.addEventListener("click",e=>{
