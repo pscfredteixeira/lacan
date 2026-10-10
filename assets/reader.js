@@ -77,7 +77,7 @@
     <p class="lesson-subtitle">${safe(lesson.subtitle)}</p>
     <div class="lesson-info"><span>◷ ${safe(lesson.duration)} de estudo estimado</span><span>◈ Módulo ${String(config.moduleNumber).padStart(2,"0")} de 18</span><span>◎ ${completed.includes(id)?"Avaliação já concluída":"Estudo em andamento"}</span></div>
     <div class="reader-objectives"><span class="section-label">A pergunta que organiza esta aula</span><h2>${safe(lesson.question)}</h2></div>
-    <div class="reader-lead"><p>${safe(lesson.introduction)}</p></div>
+    <div class="reader-lead"><p>${canRenderHTML(lesson.introduction)}</p></div>
     <div class="reader-separator"><span>DESENVOLVIMENTO TEÓRICO</span><span>${String(lesson.sections.length).padStart(2,"0")} PASSAGENS</span></div>
     ${lesson.sections.map((section,i)=>`<section class="lesson-article-section reader-chapter" aria-labelledby="chapter-${i}"><div class="reader-chapter-label">${String(i+1).padStart(2,"0")} / ${String(lesson.sections.length).padStart(2,"0")}</div><h2 id="chapter-${i}">${safe(section.title)}</h2>${section.paragraphs.map(text=>'<p>'+canRenderHTML(text)+'</p>').join("")}</section>`).join("")}
     <aside class="lesson-example reader-example"><span class="section-label">Uma cena para examinar</span><h2>${safe(lesson.example.title)}</h2><p>${safe(lesson.example.text)}</p><small>Exemplo construído para fins pedagógicos, não interpretação clínica.</small></aside>
@@ -95,7 +95,7 @@
       <p class="notes-status" id="generalStorage" role="status">Sua anotação fica somente neste navegador.</p></section>
     <nav class="lesson-pager" aria-label="Navegação entre as aulas">
       ${index>0?`<button class="action-button" type="button" data-goto="${safe(lessons[index-1].id)}">← Aula anterior</button>`:'<span></span>'}
-      ${index<lessons.length-1?`<button class="action-button primary" type="button" data-goto="${safe(lessons[index+1].id)}">Próxima aula →</button>`:`<a href="${safe(config.laboratoryUrl)}" class="action-button primary">Revisitar o laboratório ↗</a>`}
+      ${index<lessons.length-1?`<button class="action-button primary" type="button" data-goto="${safe(lessons[index+1].id)}">Próxima aula →</button>`:`<div class="reader-next-steps"><a href="${safe(config.laboratoryUrl)}" class="action-button">Revisitar o laboratório ↗</a>${config.nextUrl && !config.nextUrl.startsWith("index") ? `<a href="${safe(config.nextUrl)}" class="action-button primary">Avançar ao próximo módulo →</a>` : ""}</div>`}
     </nav>`;
     storageEditor("practiceNotes",config.notesPrefix+"practice-","practiceStorage");
     storageEditor("generalNotes",config.notesPrefix+"general-","generalStorage");
