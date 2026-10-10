@@ -1,0 +1,119 @@
+/* Arquivo de Lacan — Sprint 3: linguagem editorial bege + lavanda */
+.archive-hero{background:linear-gradient(120deg,#f7efe4 25%,#ece2f1 100%);border-bottom:1px solid var(--line)}
+.archive-hero-inner{max-width:1480px;margin:auto;padding:80px 5vw 70px;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.77fr);align-items:center;gap:70px}
+.archive-mark{font-size:1rem;vertical-align:middle;color:#75628c;margin-right:7px}
+.archive-hero h1{font-size:clamp(3.3rem,6.4vw,6.4rem);line-height:1.16;margin:25px 0}
+.archive-standfirst{font-size:1rem;color:var(--muted);max-width:600px;line-height:2}
+.archive-hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.archive-poster{aspect-ratio:4/4.3;background:#eee4d8;max-width:455px;justify-self:center;width:100%;padding:35px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid #d4c3ca;box-shadow:20px 24px 0 rgba(125,99,150,.11);position:relative;overflow:hidden}
+.archive-poster:before{content:"";position:absolute;width:75%;height:75%;border:1px solid rgba(113,88,140,.22);border-radius:50%;top:12%;left:13%;box-shadow:0 0 0 45px rgba(132,103,159,.045),0 0 0 96px rgba(132,103,159,.032)}
+.poster-index,.poster-caption{position:relative;z-index:1;font-size:.69rem;color:#6d5b70;letter-spacing:.1em}
+.poster-glyph{position:relative;z-index:1;font-family:"Libre Baskerville",serif;letter-spacing:-.1em;line-height:1.2;font-size:clamp(2.6rem,5.5vw,5rem);color:#695075}
+.poster-glyph span{display:block;text-align:center;font-size:2.3rem;line-height:1;color:#a58eb3;letter-spacing:0;transform:rotate(-25deg)}
+.poster-line{height:1px;background:#c6b6cb;position:relative;z-index:1}
+.archive-meta{border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:17px 5vw;font-size:.64rem;color:var(--muted);letter-spacing:.13em}
+.archive-section{padding:92px max(5vw,22px)}
+.archive-intro{background:#fbf6ed}
+.archive-section-heading{max-width:1400px;margin:0 auto 34px;display:flex;justify-content:space-between;align-items:end;gap:35px}
+.archive-section-heading h2{font-size:clamp(2rem,4vw,3.75rem);margin:14px 0 0}
+.archive-section-heading>p{max-width:340px;color:var(--muted);font-size:.87rem;line-height:1.8}
+.archive-progress{max-width:1400px;margin:0 auto 24px;display:flex;gap:18px;align-items:center}
+.archive-progress>div:first-child{display:flex;justify-content:space-between;gap:14px;min-width:265px;font-size:.76rem}
+.archive-progress-label{color:var(--muted)}
+.archive-progress strong{color:var(--wine)}
+.archive-progress-track{height:7px;background:#e3d8df;flex:1;border-radius:20px;overflow:hidden}
+.archive-progress-track>div{height:100%;width:0;background:var(--wine);transition:width .25s}
+.archive-filters{max-width:1400px;margin:0 auto 25px;display:flex;gap:7px;flex-wrap:wrap}
+.archive-filter{padding:12px 16px;background:#fffaf4;border:1px solid var(--line);color:#584f5b;font-size:.78rem;border-radius:2px;min-height:45px}
+.archive-filter span{font-size:.66rem;color:var(--muted);margin-left:8px}
+.archive-filter.active{background:#705984;border-color:#705984;color:#fff}
+.archive-filter.active span{color:#f1eaf5}
+.archive-desk{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(290px,410px) minmax(0,1fr);border:1px solid var(--line);min-height:620px;box-shadow:0 12px 40px rgba(65,47,73,.035);background:#fffdf8}
+.archive-list-wrap{padding:23px 0;border-right:1px solid var(--line);background:#f4ede9}
+.archive-small-heading{padding:0 22px;margin:0 0 16px;font-size:.65rem;color:var(--muted);font-weight:700;letter-spacing:.11em}
+.archive-timeline{max-height:710px;overflow-y:auto;scrollbar-color:#c0adcb transparent}
+.archive-event{width:100%;display:grid;grid-template-columns:94px 1fr;gap:14px;text-align:left;padding:18px 20px;align-items:start;border:0;border-top:1px solid rgba(209,196,204,.6);background:transparent;color:var(--ink);min-height:90px}
+.archive-event:hover{background:#f9f3f9}
+.archive-event.active{background:#e6dbee;box-shadow:inset 4px 0 #735b8a}
+.archive-event-year{font-family:"Libre Baskerville",serif;font-size:1rem;color:var(--wine);line-height:1.4}
+.archive-event-title{font-size:.86rem;font-weight:700;display:block;line-height:1.4}
+.archive-event-kind{font-size:.66rem;color:var(--muted);display:block;margin-top:5px}
+.archive-visited{font-size:.65rem;color:#48705a;margin-top:5px;display:block}
+.archive-detail{padding:clamp(24px,3.5vw,55px);min-width:0}
+.archive-index{display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:.67rem;font-weight:700;letter-spacing:.13em;color:var(--wine)}
+.archive-kind{padding:6px 9px;background:#f0e7f4;letter-spacing:0;font-size:.67rem}
+.archive-detail h3{font-family:"Libre Baskerville",serif;font-weight:400;letter-spacing:-.05em;font-size:clamp(2rem,3.4vw,3.3rem);line-height:1.24;margin:22px 0 12px}
+.archive-detail .archive-subtitle{font-size:.87rem;color:#796c7e;margin:0 0 25px}
+.archive-detail .archive-summary{font-size:1rem;line-height:1.96;margin:0 0 25px;color:#4b4350}
+.archive-work{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0;margin:21px 0}
+.archive-work span,.archive-mini-block .archive-label{font-size:.66rem;letter-spacing:.12em;color:var(--wine);font-weight:700;text-transform:uppercase}
+.archive-work p{font-size:.86rem;margin:5px 0}
+.archive-mini-block{padding:20px 22px;margin:13px 0;background:#f3edf5;border-left:3px solid #967fb0}
+.archive-mini-block:nth-of-type(odd){background:#f9f1e9;border-left-color:#bb9d8e}
+.archive-mini-block p{margin:6px 0 0;font-size:.86rem;line-height:1.8}
+.archive-source-line{border-top:1px solid var(--line);padding-top:15px;margin-top:18px;color:var(--muted);font-size:.72rem;line-height:1.7}
+.archive-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:18px}
+.archive-tag{background:#f0e8ed;border:1px solid #e1d6e2;padding:5px 9px;font-size:.68rem;color:#69566e}
+.archive-detail-footer{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:25px}
+.archive-step-btn{border:1px solid #c8b4d1;background:transparent;color:var(--wine);padding:10px 13px;font-size:.76rem;font-weight:700}
+.archive-step-btn:hover{background:#f0e7f4}
+.archive-detail-footer a{font-size:.75rem;font-weight:700;color:var(--wine);text-decoration:underline;text-underline-offset:4px}
+.investigation{background:#eee6ee}
+.missions-intro{max-width:1400px;margin:0 auto 22px;padding:24px;background:#faf5ed;border:1px solid #d8c9db;display:flex;gap:28px;align-items:center}
+.missions-index{font-family:"Libre Baskerville",serif;font-size:3rem;display:flex;flex-direction:column;line-height:1;color:var(--wine)}
+.missions-index span{font-family:"DM Sans",sans-serif;font-size:.66rem;letter-spacing:.1em;line-height:2;margin-top:9px}
+.missions-intro p{font-size:.84rem;color:var(--muted);max-width:690px;line-height:1.75}
+.mission-tabs{max-width:1400px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.mission-tab{text-align:left;border:1px solid #d8c9db;background:#f8f2f4;padding:16px 20px;font-size:.85rem;color:#51465c;font-weight:700}
+.mission-tab span{font-family:"Libre Baskerville",serif;font-size:1.18rem;color:var(--wine);margin-right:12px}
+.mission-tab.active{background:#6e577f;color:#fff;border-color:#6e577f}
+.mission-tab.active span{color:#e5d8f0}
+.mission-surface{max-width:1400px;margin:0 auto;background:#fffcf7;border:1px solid #dbcedd;min-height:460px;padding:clamp(22px,4vw,46px)}
+.mission-panel[hidden]{display:none}
+.mission-heading h3{font-family:"Libre Baskerville",serif;font-size:clamp(1.5rem,2.6vw,2.4rem);letter-spacing:-.045em;font-weight:400;margin:6px 0 12px}
+.mission-heading p{color:var(--muted);line-height:1.85;max-width:800px;font-size:.9rem}
+.mission-subtitle{color:var(--wine);font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.sequence-board{display:grid;gap:10px;max-width:850px;margin:25px 0}
+.sequence-row{display:grid;grid-template-columns:36px 88px minmax(0,1fr) auto;align-items:center;gap:13px;background:#f7f0e8;border:1px solid #e0d3d9;padding:11px 14px;min-height:77px}
+.sequence-position{color:#9c8c9f;font-size:.8rem}
+.sequence-year{font-family:"Libre Baskerville",serif;color:var(--wine);font-size:1.15rem}
+.sequence-name{line-height:1.45;font-size:.82rem;font-weight:600}
+.sequence-controls{display:flex;gap:4px}
+.sequence-controls button{width:40px;height:40px;border:1px solid #cdbbd3;color:var(--wine);background:#fff;font-size:1.1rem}
+.sequence-controls button:disabled{opacity:.3;cursor:default}
+.mission-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.mission-button{background:var(--wine);color:#fff;border:1px solid var(--wine);padding:13px 20px;font-size:.84rem;font-weight:700;min-height:47px}
+.mission-button.secondary{background:transparent;color:var(--wine)}
+.mission-feedback{max-width:920px;margin-top:22px;border-left:4px solid #aa7896;background:#f1e7ef;padding:20px;font-size:.84rem;line-height:1.8}
+.mission-feedback.success{background:#edf3eb;border-color:#597d60}
+.mission-feedback h4{font-size:1rem;margin:0 0 8px}
+.mission-feedback p{margin:5px 0 0}
+.date-board{display:grid;gap:14px;max-width:900px;margin:28px 0}
+.date-question{display:grid;grid-template-columns:minmax(0,1fr) minmax(138px,185px);gap:18px;align-items:center;padding:20px;background:#f9f2ea;border:1px solid #e3d8df}
+.date-question label{font-size:.86rem;line-height:1.7;font-weight:600}
+.date-question select{width:100%;padding:12px 32px 12px 12px;border:1px solid #c6b8c8;background:white;color:var(--ink);min-height:45px}
+.date-question.good{border-color:#709273}
+.date-question.bad{border-color:#c18b95}
+.date-note{grid-column:1/-1;font-size:.78rem;color:var(--muted);margin:0;line-height:1.8}
+.thesis-board{display:grid;gap:10px;max-width:960px;margin:25px 0}
+.thesis-row{display:grid;grid-template-columns:26px minmax(0,1fr);gap:13px;align-items:start;padding:17px 20px;background:#faf3eb;border:1px solid #e0d4dc;cursor:pointer}
+.thesis-row input{width:20px;height:20px;accent-color:#71598a;margin-top:3px}
+.thesis-row span{font-size:.86rem;line-height:1.7}
+.thesis-row:has(input:checked){background:#e8dff0;border-color:#bba7c8}
+.thesis-row.good{border-color:#709273}
+.thesis-row.bad{border-color:#c18b95}
+.thesis-note{grid-column:2/-1;margin:0;color:var(--muted);font-size:.78rem;line-height:1.75}
+.mission-progress{max-width:1400px;margin:20px auto 0;padding:14px 20px;background:#f7f1f7;font-size:.8rem;color:var(--wine);border:1px solid #d8c9db}
+.research-notes{background:#f9f4ea}
+.research-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1400px;margin:auto}
+.research-columns article{border-top:2px solid #9e85ae;background:#fffdf7;padding:25px}
+.research-columns article span{font-size:.65rem;color:var(--wine);font-weight:700;letter-spacing:.15em}
+.research-columns article h3{font-family:"Libre Baskerville",serif;font-size:1.17rem;margin:18px 0 8px}
+.research-columns article p{font-size:.82rem;line-height:1.8;color:var(--muted)}
+.archive-sources{max-width:1400px;margin:45px auto 27px;padding-top:30px;border-top:1px solid var(--line)}
+.archive-sources h3{font-size:1.1rem;font-weight:600}
+.archive-sources a{display:block;max-width:800px;padding:8px 0;text-decoration:underline;text-underline-offset:4px;font-size:.82rem;color:var(--wine)}
+.archive-section >.button{margin-left:max(0px,calc((100% - 1400px)/2))}
+@media(max-width:1020px){.archive-desk{grid-template-columns:325px minmax(0,1fr)}.archive-hero-inner{gap:25px}.archive-event{grid-template-columns:70px 1fr;padding:15px 13px}.archive-poster{padding:25px}}
+@media(max-width:720px){.archive-hero-inner{grid-template-columns:1fr;padding:60px 22px}.archive-hero h1{font-size:clamp(2.7rem,12vw,4rem)}.archive-poster{max-width:340px;aspect-ratio:5/3;box-shadow:11px 12px 0 rgba(125,99,150,.1);padding:20px}.poster-glyph{font-size:2.6rem}.poster-glyph span{font-size:1.2rem}.poster-caption{font-size:.6rem}.archive-meta{padding:15px 22px;justify-content:flex-start}.archive-meta span:last-child{display:none}.archive-section{padding:65px 20px}.archive-section-heading{display:block}.archive-section-heading>p{max-width:580px}.archive-progress{display:block}.archive-progress-track{margin-top:12px}.archive-filters{display:flex;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:thin;padding-bottom:8px}.archive-filter{flex:0 0 auto}.archive-desk{display:block}.archive-list-wrap{border-right:0;border-bottom:1px solid var(--line);padding:18px 0 12px}.archive-timeline{display:flex;overflow-x:auto;max-height:none;gap:8px;padding:0 14px 12px;scroll-snap-type:x proximity}.archive-small-heading{padding:0 14px}.archive-event{min-width:210px;max-width:220px;display:block;min-height:142px;border:1px solid var(--line);scroll-snap-align:start}.archive-event-year{display:block;margin-bottom:10px}.archive-event-title{font-size:.78rem}.archive-event-kind{font-size:.64rem}.archive-event.active{box-shadow:inset 0 4px #735b8a}.archive-detail{padding:28px 21px}.archive-detail h3{font-size:2rem}.archive-detail .archive-summary{font-size:.94rem}.missions-intro{display:block}.missions-index{font-size:2.2rem}.mission-tabs{grid-template-columns:1fr;gap:5px}.mission-tab{padding:13px}.mission-surface{padding:23px 18px;min-height:0}.sequence-row{grid-template-columns:27px 73px minmax(0,1fr);gap:8px;padding:12px 8px}.sequence-name{font-size:.74rem}.sequence-controls{grid-column:2/-1;justify-content:flex-end}.sequence-controls button{height:44px;width:50px}.date-question{grid-template-columns:1fr;gap:12px}.date-question select{max-width:100%}.research-columns{grid-template-columns:1fr}.archive-detail-footer{align-items:flex-start}.mission-feedback{padding:15px}}
+@media(prefers-reduced-motion:reduce){.archive-progress-track>div{transition:none}}
