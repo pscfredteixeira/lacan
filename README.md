@@ -60,6 +60,17 @@ Site do GitHub Pages, quando a publicação pela branch `main` estiver ativa: ht
 - Circuito do Desejo: `assets/desejo-lab-data.js`, `assets/desejo-lab.js`, `assets/desejo-lab.css`
 - Sistema visual: `assets/styles.css`, `assets/theme.css`, `assets/lessons.css`
 
+## Aplicativo instalável no iPhone (PWA)
+
+O site também funciona como **aplicativo web instalável**, sem App Store nem hospedagem adicional. A implementação segue a mesma abordagem adotada no projeto ARCANA:
+
+- `manifest.webmanifest`: nome `Lacan`, ícone, tema lilás, inicialização `index.html`, `scope: "./"` para funcionar em `/lacan/` no GitHub Pages e `display: standalone`.
+- `apple-touch-icon.png` (180 × 180) e `icons/icon-32.png`, `icon-192.png`, `icon-512.png`: ícones próprios em bege e lilás, com marca vetorial em `icons/lacan-mark.svg`.
+- `assets/pwa.js`: registro do service worker em todas as páginas HTML; `sw.js`: cache de páginas, módulos e laboratórios do curso com tentativa de conteúdo atualizado pela rede e recuperação de arquivos já armazenados quando offline.
+- `instalar.html`: orientações no iPhone — Safari → Compartilhar → Adicionar à Tela de Início → Abrir como App da Web → Adicionar. Também acessível pelo menu principal do site.
+
+**Limitações:** continua sendo um site estático, e não um app nativo publicado na App Store. O cache permite acesso parcial quando offline; fontes externas e arquivos ainda não armazenados podem depender de internet. Progresso e anotações continuam salvos **localmente**. A instalação na tela inicial do iPhone pode criar armazenamento separado do Safari, e os dados existentes não são automaticamente sincronizados. Não remova o atalho sem antes guardar anotações importantes.
+
 ## Limitações desta versão
 
 - O progresso e as anotações ficam **somente no navegador utilizado**, via localStorage. Não há login, sincronização entre dispositivos ou backup automático.
