@@ -139,7 +139,14 @@
   }
   $("datesMission").addEventListener("change",e=>{
     const select=e.target.closest("[data-date]");
-    if(select){dateAnswers[select.dataset.date]=select.value;datesFeedback=null;datesMission();}
+    if(select){
+      const current=select.dataset.date;
+      dateAnswers[current]=select.value;
+      datesFeedback=null;
+      datesMission();
+      const nextSelect=Array.from($("datesMission").querySelectorAll("[data-date]")).find(el=>el.dataset.date===current);
+      if(nextSelect) nextSelect.focus();
+    }
   });
   $("datesMission").addEventListener("click",e=>{
     const action=e.target.closest("[data-action]")?.dataset.action;
