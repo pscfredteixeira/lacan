@@ -4,9 +4,9 @@ window.LACAN_LESSONS = [
     "id": "1.1",
     "title": "Quem foi Jacques Lacan?",
     "subtitle": "Conheça a trajetória de Lacan e sua relação com a psicanálise",
-    "duration": "25–35 min",
+    "duration": "15–20 min",
     "question": "Quem foi Jacques Lacan?",
-    "introduction": "Jacques Lacan nasceu em Paris, na França, em 1901. Foi médico, trabalhou com psiquiatria e se tornou psicanalista. Ao longo de sua vida, estudou as ideias de Sigmund Freud, escreveu textos e deu aulas que despertaram muitos debates. Para entender por que Lacan se tornou importante, vamos conhecer primeiro o seu trabalho e o que significa fazer psicanálise.",
+    "introduction": "Jacques Lacan foi um médico e psicanalista francês. Tornou-se conhecido por estudar e discutir as ideias de Sigmund Freud, que iniciou a psicanálise, e por suas aulas sobre o assunto. Nesta primeira aula, vamos conhecer sua trajetória e entender melhor esse trabalho.",
     "sections": [
       {
         "title": "Quem foi Lacan?",
@@ -43,7 +43,7 @@ window.LACAN_LESSONS = [
           "Lacan escreveu textos e também ensinou em encontros regulares chamados <strong>seminários</strong>. Um seminário é uma série de aulas e discussões sobre determinado assunto.",
           "Imagine uma professora que se reúne com uma turma toda semana para ler um livro, explicar ideias e responder a perguntas. Durante muitos anos, Lacan conduziu encontros de estudo desse tipo, voltados principalmente para profissionais e pessoas interessadas em psicanálise.",
           "Mais tarde, muitas dessas aulas foram organizadas e publicadas em livros. Por isso, ao longo da formação, você encontrará tanto textos escritos por Lacan quanto volumes que reúnem seu ensino oral.",
-          "Essa é a informação importante sobre os seminários por enquanto: <strong>eles eram encontros em que Lacan ensinava e desenvolvia suas ideias</strong>. Não é preciso conhecer a numeração ou as datas das aulas para entender o que estamos estudando aqui."
+          "Esses encontros ajudaram Lacan a compartilhar suas perguntas e desenvolver suas ideias, que continuam sendo estudadas e debatidas."
         ],
         "inShort": "Os seminários eram encontros de estudo conduzidos por Lacan. Parte desse ensino chegou até nós em livros."
       }
