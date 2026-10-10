@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6efe3">
+<meta name="description" content="Laboratório dos Significantes: explore a cadeia, investigue metáfora e metonímia e teste sua compreensão de Lacan.">
+<title>Laboratório dos Significantes · Formação Lacaniana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css"><link rel="stylesheet" href="assets/theme.css"><link rel="stylesheet" href="assets/significantes.css">
+</head>
+<body>
+<a href="#signMain" class="skip">Ir para o laboratório</a>
+<header class="topbar">
+<a class="brand" href="index.html" aria-label="Formação Lacaniana, início"><span class="brandmark">L<span class="brand-dot">.</span></span><span class="brandname">FORMAÇÃO<br>LACANIANA</span></a>
+<nav class="topnav" aria-label="Navegação principal"><a href="index.html#modulos">Módulos</a><a href="arquivo.html">Arquivo</a><a href="espelho.html">Espelho</a></nav>
+<div class="topactions"><button id="fontDown" class="fontbtn" aria-label="Diminuir tamanho da fonte">A−</button><button id="fontUp" class="fontbtn" aria-label="Aumentar tamanho da fonte">A+</button></div>
+</header>
+<main id="signMain">
+<section class="sign-hero">
+<div class="sign-hero-grid"><div class="sign-hero-copy">
+<p class="kicker">LABORATÓRIO 03 · MÓDULO 03 / LINGUAGEM E INCONSCIENTE</p>
+<h1>O ateliê dos<br><em>significantes.</em></h1>
+<p class="sign-lead">Uma palavra muda. Uma relação se reorganiza. O sentido já não passa pelo mesmo caminho.</p>
+<p class="sign-deck">Três experiências para investigar relações entre significantes — sem transformar a linguagem em um detector automático do inconsciente.</p>
+<div class="sign-hero-buttons"><a class="button primary" href="#montagem">Entrar no ateliê ↘</a><a class="button ghost" href="#fundamento">Compreender o ponto de partida ↓</a></div>
+<div class="sign-hero-stats"><span>01 <strong>Montagem</strong></span><span>02 <strong>Operações</strong></span><span>03 <strong>Investigação</strong></span></div>
+</div><div class="sign-art" aria-hidden="true">
+<div class="sign-art-top">ESQUEMA 03 / A CADEIA</div>
+<div class="sign-art-body"><span class="art-word art-word-one">casa</span><span class="art-connector">↔</span><span class="art-word art-word-two">falta</span><span class="art-connector">↘</span><span class="art-word art-word-three">desejo</span></div>
+<div class="sign-art-bottom">NENHUM TERMO EXPLICA TUDO SOZINHO</div>
+</div></div>
+</section>
+<section id="fundamento" class="sign-foundation">
+<div class="sign-section-head"><div><p class="kicker">O PROBLEMA ANTES DA FERRAMENTA</p><h2>Uma cadeia não é <em>um dicionário.</em></h2></div><p>Para Lacan, os significantes se articulam diferencialmente. As substituições e conexões permitem investigar efeitos de significação. O exercício abaixo não demonstra, por si, uma formação do inconsciente.</p></div>
+<div class="foundation-grid">
+<article><span>01 / RELAÇÕES</span><h3>O significante não atua isolado.</h3><p>Um termo pode ganhar valores diferentes conforme a posição e as relações que estabelece com outros.</p></article>
+<article><span>02 / SUBSTITUIÇÃO</span><h3>Uma palavra toma o lugar de outra.</h3><p>Na formulação lacaniana da metáfora, a substituição de significantes é central para um efeito de significação.</p></article>
+<article><span>03 / CONEXÃO</span><h3>Um termo remete a outro.</h3><p>Na metonímia, Lacan trabalha com a conexão entre significantes, em uma articulação mais ampla com a questão do desejo.</p></article>
+</div>
+<p class="sign-disclaimer"><strong>Distinção necessária:</strong> os exemplos literários foram inventados para estudar relações de linguagem. Eles não interpretam pacientes, não oferecem significados universais de palavras e não comprovam teses clínicas.</p>
+</section>
+<section id="montagem" class="sign-section sign-bench-section">
+<div class="sign-section-head"><div><p class="kicker">MESA 01 / MONTAGEM DE UMA CENA</p><h2>A mesma frase, <em>outro percurso.</em></h2></div><p>Escolha palavras para três posições de uma pequena narrativa fictícia. Registre duas versões e compare. A atividade não calcula um significado verdadeiro: ela torna visíveis diferenças possíveis de leitura.</p></div>
+<div class="sign-bench">
+<div class="sign-bench-controls">
+<p class="sign-label">PEÇAS DISPONÍVEIS</p><div id="wordSlots" class="word-slots"></div>
+<p class="bench-help">Toque nas opções. Você pode mudar as três palavras quantas vezes quiser.</p>
+<div class="bench-save"><button id="saveVersion" class="sign-button" type="button">Guardar esta versão ↗</button><button id="resetBench" class="sign-button secondary" type="button">Recomeçar montagem</button></div>
+<div id="benchMessage" class="sign-feedback-inline" aria-live="polite"></div>
+</div>
+<div class="sign-bench-preview">
+<div class="bench-preview-top"><span>O TEXTO EM MOVIMENTO</span><span>FICÇÃO DIDÁTICA</span></div>
+<div class="bench-paper">
+<p class="paper-index">Fragmento nº 01 — palavras em relação</p>
+<p id="liveSentence" class="live-sentence" aria-live="polite"></p>
+<div id="wordEffects" class="word-effects"></div>
+</div>
+<div class="bench-preview-foot"><span>ALTERE UM TERMO → OBSERVE O CONTEXTO</span></div>
+</div>
+</div>
+<div class="compare-area">
+<div class="compare-title"><div><p class="sign-label">ARQUIVO DE VERSÕES</p><h3>O que mudou?</h3></div><p>Salve pelo menos duas versões distintas para abrir a comparação.</p></div>
+<div id="versionCards" class="version-grid"></div>
+<div id="compareResult" class="compare-result" aria-live="polite"></div>
+</div>
+</section>
+<section id="operacoes" class="sign-section sign-operation-section">
+<div class="sign-section-head"><div><p class="kicker">MESA 02 / AS OPERAÇÕES</p><h2>Substituir <em>ou conectar?</em></h2></div><p>Quatro pequenos dossiês apresentam operações diferentes. Escolha uma, examine as relações visuais e decida qual operação está em destaque. O erro explicará a distinção.</p></div>
+<div class="operation-lab">
+<div class="operation-list"><p class="sign-label">DOSSIÊS DO ATELIÊ</p><div id="operationCards" class="operation-cards"></div><p class="operation-count" id="operationCount" aria-live="polite">0 de 4 dossiês resolvidos.</p></div>
+<div class="operation-stage" id="operationStage" aria-live="polite"></div>
+</div>
+</section>
+<section id="investigacao" class="sign-section sign-quiz-section">
+<div class="sign-section-head"><div><p class="kicker">MESA 03 / TESTE DE LEITURA</p><h2>Uma teoria exige <em>distinções.</em></h2></div><p>Três fases de avaliação: reconhecimento, compreensão e aplicação crítica. O objetivo é justificar uma leitura — não decorar palavras.</p></div>
+<div class="sign-quiz-shell">
+<div class="quiz-header"><span>TRÊS FASES DE APRENDIZAGEM</span><strong id="quizCounter">01 / 03</strong></div>
+<div id="quizSteps" class="quiz-steps" aria-hidden="true"></div>
+<div id="signQuiz" aria-live="polite"></div>
+</div>
+</section>
+<section class="sign-end">
+<div><p class="kicker">PARA CONTINUAR A LEITURA</p><h2>A linguagem <em>não é uma cifra simples.</em></h2><p>O próximo passo é retornar a Lacan, especialmente ao texto de 1957, para investigar como a substituição e a conexão são formalizadas. Este laboratório oferece uma primeira aproximação, não a formalização completa.</p><a class="button primary" href="index.html#modulos">Voltar à formação <span>↗</span></a></div>
+<div class="sign-sources"><h3>Fontes de estudo</h3><div id="signSources"></div><p>A versão usada, o ano de apresentação e a edição consultada devem sempre ser distinguidos em trabalhos acadêmicos.</p></div>
+</section>
+</main>
+<footer class="footer"><span class="footerbrand">L<span>.</span> <small>FORMAÇÃO LACANIANA</small></span><p>Um termo leva a outro.</p><span>LABORATÓRIO 03 · SPRINT 05</span></footer>
+<script src="assets/significantes-data.js"></script><script src="assets/significantes.js"></script>
+</body></html>
