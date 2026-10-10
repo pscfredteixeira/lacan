@@ -65,3 +65,15 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .mirror-promo p:not(.kicker){font-size:.92rem;line-height:1.9;max-width:720px;color:#605769}
 .mirror-promo .button{margin-top:16px}
 @media(max-width:700px){.mirror-promo{padding:54px 20px}.mirror-promo-inner{grid-template-columns:1fr;gap:27px}.mirror-promo-art{max-width:100%;width:100%;aspect-ratio:1.8}.mirror-promo-art>span:not(.mirror-promo-caption){font-size:3.8rem}}
+
+/* Sprint 5 — módulo de destaque, bege e lilás */
+.sign-promo{background:linear-gradient(125deg,#eee4ef 0%,#f7efe5 80%);border-bottom:1px solid #d7c9dd;padding:70px max(5vw,24px)}
+.sign-promo-inner{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(280px,.88fr);align-items:center;gap:65px}
+.sign-promo h2{font-size:clamp(2.1rem,4vw,3.8rem);margin:11px 0 15px}
+.sign-promo p:not(.kicker){font-size:.91rem;color:#61566b;max-width:700px;line-height:1.9}
+.sign-promo .button{margin-top:15px}
+.sign-promo-diagram{min-height:265px;border:1px solid #cbb7d1;background:#f9f5ed;box-shadow:13px 15px 0 rgba(101,78,118,.08);display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;position:relative;padding:30px}
+.sign-promo-diagram>span:not(.sign-promo-arrow){font-family:"Libre Baskerville",serif;font-size:clamp(.95rem,1.6vw,1.23rem);padding:17px 12px;background:#e6d8ee;color:#665275;border:1px solid #cbb7d9}
+.sign-promo-arrow{font-size:1.4rem;color:#9780a8}
+.sign-promo-diagram small{position:absolute;bottom:20px;font-size:.6rem;letter-spacing:.12em;color:#6d5a78}
+@media(max-width:740px){.sign-promo{padding:55px 20px}.sign-promo-inner{grid-template-columns:1fr;gap:26px}.sign-promo-diagram{min-height:170px;padding:24px 13px}.sign-promo-diagram small{font-size:.55rem}.sign-promo-diagram>span:not(.sign-promo-arrow){padding:13px 7px;font-size:.85rem}.sign-promo-arrow{font-size:1rem}}
