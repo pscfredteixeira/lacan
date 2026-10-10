@@ -39,3 +39,15 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 
 .start-module{margin:10px 0 24px;display:inline-flex}
 .detail a.start-module:focus-visible{outline:3px solid #735a90}
+
+/* Sprint 3: editorial callout for O Arquivo de Lacan */
+.archive-promo{padding:65px max(5vw,24px);background:#e9e0ef;border-top:1px solid #d5c7df;border-bottom:1px solid #d5c7df}
+.archive-promo-inner{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(200px,.52fr);align-items:center;gap:45px}
+.archive-promo h2{font-size:clamp(2.2rem,4vw,3.9rem);margin:12px 0 18px}
+.archive-promo p:not(.kicker){max-width:630px;color:#5f5668;font-size:.92rem;line-height:1.9}
+.archive-promo .button{margin-top:14px}
+.archive-promo-figure{border:1px solid #c9b7d2;background:#f7f0e5;min-height:240px;padding:24px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;position:relative;box-shadow:12px 13px 0 rgba(100,74,126,.08)}
+.archive-promo-year{font-family:"Libre Baskerville",serif;color:#725d86;font-size:clamp(1.6rem,3vw,2.6rem)}
+.archive-promo-rule{font-size:2rem;color:#aa93bb}
+.archive-promo-figure small{position:absolute;bottom:16px;font-size:.6rem;letter-spacing:.1em;color:#796988}
+@media(max-width:700px){.archive-promo{padding:55px 20px}.archive-promo-inner{grid-template-columns:1fr;gap:28px}.archive-promo-figure{min-height:150px}.archive-promo-figure small{font-size:.55rem}}
