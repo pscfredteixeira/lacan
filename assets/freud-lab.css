@@ -1,0 +1,100 @@
+/* Sprint 7 • Oficina do Inconsciente — base editorial bege + lilás */
+.freud-hero{background:linear-gradient(125deg,#faf3e8 10%,#f2e8ec 60%,#e8dbef);border-bottom:1px solid var(--line)}
+.freud-hero-inner{max-width:1450px;margin:auto;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(290px,.88fr);gap:65px;align-items:center;padding:90px 5vw}
+.freud-hero h1{font-size:clamp(3.2rem,6.5vw,6.4rem);margin:20px 0}
+.freud-lead{font-family:"Libre Baskerville",serif;font-size:clamp(1.12rem,2.1vw,1.45rem);line-height:1.75;max-width:670px}
+.freud-sub{color:var(--muted);font-size:.92rem;line-height:1.9;max-width:600px}
+.freud-hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:31px}
+.freud-poster{width:100%;max-width:440px;aspect-ratio:1/1.03;background:#f0e5ee;border:1px solid #d3bedb;box-shadow:17px 20px 0 rgba(109,80,132,.11);padding:26px;display:flex;flex-direction:column;justify-content:space-between;justify-self:center}
+.poster-kicker,.poster-foot{font-size:.65rem;color:#745e83;letter-spacing:.11em;font-weight:700}
+.poster-foot{text-align:right}
+.freud-poster-art{flex:1;position:relative;display:grid;place-items:center}
+.freud-poster-art strong{font-family:"Libre Baskerville",serif;font-size:10rem;line-height:1;font-weight:400;color:#735d88;position:relative;z-index:2}
+.art-r{position:absolute;border:1px solid #ad94be;border-radius:50%}
+.art-r1{height:82%;aspect-ratio:1}.art-r2{height:65%;aspect-ratio:1;border-style:dashed}.art-r3{height:45%;aspect-ratio:1;background:rgba(200,177,214,.13)}
+.freud-hero-bottom{padding:17px 5vw;border-top:1px solid #d7c7dd;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.62rem;letter-spacing:.12em;color:#7b6884}
+.freud-context,.freud-workshop,.freud-conclusion{padding:85px max(5vw,22px)}
+.freud-context{background:#f9f3e9}
+.freud-context-grid{max-width:1400px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:37px}
+.freud-context h2{font-size:clamp(2.1rem,3.4vw,3.3rem);margin:16px 0}
+.freud-context-grid>p{font-size:.89rem;line-height:1.95;color:var(--muted);margin:25px 0 0}
+.freud-ethics{max-width:1400px;margin:29px auto 0;padding:19px 24px;background:#eee5f1;border-left:3px solid #9176a4;color:#584b64;font-size:.85rem;line-height:1.8}
+.freud-workshop{background:#ece4f0}
+.freud-sectionhead{max-width:1400px;margin:0 auto 30px;display:flex;justify-content:space-between;align-items:end;gap:30px}
+.freud-sectionhead h2{font-size:clamp(2.15rem,4vw,3.7rem);margin:10px 0}
+.freud-sectionhead>p{font-size:.84rem;color:var(--muted);line-height:1.9;max-width:370px}
+.freud-progress{max-width:1400px;margin:0 auto 22px;display:flex;align-items:center;gap:20px;color:#675773;font-size:.77rem}
+.freud-progress>div:first-child{display:flex;justify-content:space-between;gap:15px;min-width:240px}
+.freud-progress strong{color:var(--wine)}
+.freud-progress-track{height:7px;background:#dbcee2;flex:1;overflow:hidden;border-radius:20px}
+.freud-progress-track span{display:block;width:0;height:100%;background:var(--wine);transition:width .2s}
+.freud-tabs{max-width:1400px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.freud-tab{min-height:66px;background:#faf6ee;text-align:left;padding:14px 18px;border:1px solid #d9c9dd;color:#5c4d68;font-size:.87rem;font-weight:700;display:flex;align-items:center;gap:12px}
+.freud-tab span{font-family:"Libre Baskerville",serif;font-size:1.3rem;color:var(--wine)}
+.freud-tab.selected{background:var(--wine);color:#fff;border-color:var(--wine)}
+.freud-tab.selected span{color:#efe5f5}
+.freud-panels{max-width:1400px;margin:0 auto;background:#fffcf6;border:1px solid #d6c9db;min-height:550px;padding:clamp(22px,4vw,42px)}
+.freud-panel[hidden]{display:none}
+.freud-room-heading>span,.freud-activity-label{font-size:.66rem;color:var(--wine);letter-spacing:.12em;font-weight:700}
+.freud-room-heading h3{font-family:"Libre Baskerville",serif;font-size:clamp(1.7rem,3vw,2.55rem);font-weight:400;line-height:1.35;margin:10px 0}
+.freud-room-heading p{color:var(--muted);font-size:.88rem;max-width:830px;line-height:1.85}
+.freud-activity{margin-top:27px;max-width:930px}
+.freud-question-counter{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.68rem;letter-spacing:.1em;color:var(--wine);font-weight:700}
+.freud-question-step{margin-top:13px;display:flex;gap:6px}
+.freud-step{height:6px;flex:1;background:#e8dfea;border-radius:10px}
+.freud-step.past{background:#a990bd}.freud-step.active{background:#725a89}
+.freud-question{font-family:"Libre Baskerville",serif;font-size:clamp(1.12rem,2vw,1.45rem);line-height:1.65;margin:25px 0 19px}
+.freud-options{display:grid;gap:10px}
+.freud-option{width:100%;min-height:54px;border:1px solid #d7c6dc;text-align:left;padding:15px 17px;background:#fbf7f0;color:var(--ink);font-size:.88rem;line-height:1.7;display:flex;gap:14px;align-items:center}
+.freud-option .freud-option-letter{width:29px;height:29px;min-width:29px;display:grid;place-items:center;border:1px solid #c7b3d0;color:var(--wine);font-family:"Libre Baskerville",serif}
+.freud-option:hover:not(:disabled){background:#ede3f3}
+.freud-option[aria-pressed="true"]{border-color:var(--wine);background:#eadff0}
+.freud-option:disabled{cursor:default;opacity:1}
+.freud-feedback{margin-top:20px;border-left:4px solid #ad7f96;background:#f5e7ed;padding:20px 23px;line-height:1.85;font-size:.85rem}
+.freud-feedback.correct{background:#edf4ee;border-color:#698a70}
+.freud-feedback strong{display:block;margin-bottom:8px;color:#534659}
+.freud-feedback p{margin:0}
+.freud-button-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.freud-button{min-height:47px;border:1px solid var(--wine);background:var(--wine);color:#fff;padding:12px 18px;font-size:.83rem;font-weight:700}
+.freud-button.secondary{background:transparent;color:var(--wine)}
+.freud-finish{background:#f0e8f3;padding:24px;line-height:1.86}
+.freud-finish h3{font-family:"Libre Baskerville",serif;font-size:1.55rem;margin:7px 0}
+.freud-finish p{font-size:.9rem}
+.freud-sequence{display:grid;gap:9px;max-width:920px;margin:25px 0}
+.freud-sequence-row{display:grid;grid-template-columns:35px 75px minmax(0,1fr) auto;gap:13px;align-items:center;border:1px solid #e0d2db;background:#f9f2eb;padding:13px;min-height:77px}
+.freud-seq-num{font-size:.74rem;color:#88758d}
+.freud-seq-year{font-family:"Libre Baskerville",serif;color:var(--wine);font-size:1.2rem}
+.freud-seq-name{font-size:.84rem;font-weight:700;line-height:1.5}
+.freud-seq-name small{display:block;font-size:.73rem;color:var(--muted);font-weight:400;line-height:1.5;margin-top:4px}
+.freud-seq-controls{display:flex;gap:6px}
+.freud-seq-controls button{min-width:42px;min-height:42px;border:1px solid #cbb7d3;background:#fffaf5;color:var(--wine);font-size:1.2rem}
+.freud-seq-controls button:disabled{opacity:.35;cursor:default}
+.freud-conclusion{background:#f8f0e6;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(275px,.85fr);gap:55px}
+.freud-conclusion>div{max-width:710px}
+.freud-conclusion h2{font-size:clamp(2.2rem,4vw,3.7rem);margin:15px 0}
+.freud-conclusion p{font-size:.9rem;color:var(--muted);line-height:1.9}
+.freud-conclusion .button{margin-top:16px}
+.freud-bibliography{border-left:1px solid #d9c7d7;padding-left:30px}
+.freud-bibliography h3{font-family:"Libre Baskerville",serif;font-size:1.32rem;margin:6px 0 22px}
+.freud-bibliography a{display:block;margin:0 0 17px;font-size:.82rem;color:var(--wine);line-height:1.7;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+@media(max-width:1050px){.freud-hero-inner{gap:35px}.freud-context-grid{gap:18px}}
+@media(max-width:730px){
+.freud-hero-inner{grid-template-columns:1fr;padding:57px 21px 44px}
+.freud-hero h1{font-size:clamp(2.8rem,11vw,4rem)}
+.freud-poster{max-width:330px;aspect-ratio:1.5;box-shadow:11px 12px 0 rgba(109,80,132,.1)}
+.freud-poster-art strong{font-size:6rem}
+.freud-hero-bottom{padding:15px 20px}.freud-hero-bottom span:last-child{display:none}
+.freud-context,.freud-workshop,.freud-conclusion{padding:64px 20px}
+.freud-context-grid{grid-template-columns:1fr;gap:10px}
+.freud-context-grid>p{margin:0}.freud-ethics{margin-top:24px}
+.freud-sectionhead{display:block}
+.freud-progress{display:block}.freud-progress-track{margin-top:12px}
+.freud-tabs{grid-template-columns:1fr;gap:6px}.freud-tab{min-height:54px;padding:12px 14px}
+.freud-panels{padding:22px 16px;min-height:0}
+.freud-option{min-height:58px;padding:13px}
+.freud-sequence-row{grid-template-columns:29px 68px minmax(0,1fr);gap:9px;padding:12px 10px}
+.freud-seq-controls{grid-column:2/-1;justify-content:flex-end}.freud-seq-controls button{min-width:54px;min-height:46px}
+.freud-conclusion{grid-template-columns:1fr;gap:30px}
+.freud-bibliography{border-left:0;border-top:1px solid #d9c7d7;padding:23px 0 0}
+}
+@media(prefers-reduced-motion:reduce){.freud-progress-track span{transition:none}}
