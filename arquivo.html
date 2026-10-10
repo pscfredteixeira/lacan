@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6efe3">
+<meta name="description" content="O Arquivo de Lacan: laboratório interativo de história, fontes e transformações de conceitos.">
+<title>O Arquivo de Lacan · Formação Lacaniana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/theme.css">
+<link rel="stylesheet" href="assets/archive.css">
+</head>
+<body>
+<a class="skip" href="#archiveMain">Ir para o laboratório</a>
+<header class="topbar">
+<a class="brand" href="index.html"><span class="brandmark">L<span class="brand-dot">.</span></span><span class="brandname">FORMAÇÃO<br>LACANIANA</span></a>
+<nav class="topnav" aria-label="Navegação principal"><a href="index.html#modulos">Módulos</a><a href="modulo-1.html?aula=1.6">Aula 1.6</a></nav>
+<div class="topactions"><button id="fontDown" class="fontbtn" aria-label="Diminuir tamanho da fonte">A−</button><button id="fontUp" class="fontbtn" aria-label="Aumentar tamanho da fonte">A+</button><a class="toplink" href="modulo-1.html?aula=1.6">Voltar à aula ↗</a></div>
+</header>
+<main id="archiveMain">
+<section class="archive-hero">
+<div class="archive-hero-inner">
+<div class="archive-hero-copy">
+<p class="kicker"><span class="archive-mark">✳</span> LABORATÓRIO 01 / HISTÓRIA DAS IDEIAS</p>
+<h1>O Arquivo<br><em>de Lacan.</em></h1>
+<p class="archive-standfirst">Uma obra não nasce pronta. Abra documentos, compare datas e descubra como o pensamento lacaniano se desloca sem apagar sua própria história.</p>
+<div class="archive-hero-buttons"><a class="button primary" href="#acervo">Explorar o acervo ↘</a><a class="button ghost" href="#investigacoes">Resolver investigações ↘</a></div>
+</div>
+<div class="archive-poster" aria-hidden="true"><div class="poster-index">FIG. 01 — TEMPO / LEITURA</div><div class="poster-glyph">1932<span>↘</span>1980</div><div class="poster-line"></div><div class="poster-caption">A diferença entre uma data<br>e uma formulação.</div></div>
+</div>
+<div class="archive-meta"><span>10 DOCUMENTOS DE REFERÊNCIA</span><span>03 INVESTIGAÇÕES ORIENTADAS</span><span>LEITURA NO SEU RITMO</span></div>
+</section>
+<section class="archive-section archive-intro" id="acervo">
+<div class="archive-section-heading"><div><p class="kicker">01 / MESA DE PESQUISA</p><h2>As fichas de um <em>pensamento.</em></h2></div><p>Explore os acontecimentos em sequência ou por tema. Cada ficha apresenta a questão teórica, um movimento posterior e um cuidado de leitura.</p></div>
+<div class="archive-progress"><div><span class="archive-progress-label">Fichas já examinadas</span><strong id="archiveProgress">0 / 10</strong></div><div class="archive-progress-track" aria-hidden="true"><div id="archiveProgressFill"></div></div></div>
+<div class="archive-filters" aria-label="Filtrar documentos por período" role="group">
+<button type="button" class="archive-filter active" data-epoch="all" aria-pressed="true">Toda a trajetória <span>10</span></button>
+<button type="button" class="archive-filter" data-epoch="origens" aria-pressed="false">1932—1949 <span>Origens</span></button>
+<button type="button" class="archive-filter" data-epoch="linguagem" aria-pressed="false">1953—1966 <span>Retorno a Freud</span></button>
+<button type="button" class="archive-filter" data-epoch="formalizacoes" aria-pressed="false">1969—1980 <span>Formalizações</span></button>
+</div>
+<div class="archive-desk">
+<div class="archive-list-wrap"><p class="archive-small-heading">ACERVO / SELECIONE UM DOCUMENTO</p><div class="archive-timeline" id="archiveTimeline" role="group" aria-label="Documentos cronológicos"></div></div>
+<article class="archive-detail" id="archiveDetail" aria-live="polite"></article>
+</div>
+</section>
+<section class="archive-section investigation" id="investigacoes">
+<div class="archive-section-heading"><div><p class="kicker">02 / INVESTIGAÇÃO ATIVA</p><h2>Agora é você quem <em>organiza o arquivo.</em></h2></div><p>Não basta saber uma data. É preciso distinguir acontecimentos, versões, edições e mudanças de função conceitual.</p></div>
+<div class="missions-intro"><div class="missions-index">03 <span>mesas de trabalho</span></div><p>Você poderá tentar novamente, consultar as fichas e comparar a explicação de cada resposta. O progresso é salvo apenas neste navegador.</p></div>
+<div class="mission-tabs" id="missionTabs" role="tablist" aria-label="Investigações">
+<button type="button" class="mission-tab active" id="tab-sequence" role="tab" aria-selected="true" aria-controls="panel-sequence" data-mission="sequence"><span>01</span> Cronologia</button>
+<button type="button" class="mission-tab" id="tab-dates" role="tab" aria-selected="false" aria-controls="panel-dates" data-mission="dates" tabindex="-1"><span>02</span> Datas e versões</button>
+<button type="button" class="mission-tab" id="tab-theses" role="tab" aria-selected="false" aria-controls="panel-theses" data-mission="theses" tabindex="-1"><span>03</span> Leitura crítica</button>
+</div>
+<div class="mission-surface">
+<section id="panel-sequence" class="mission-panel" role="tabpanel" aria-labelledby="tab-sequence"><div id="sequenceMission"></div></section>
+<section id="panel-dates" class="mission-panel" role="tabpanel" aria-labelledby="tab-dates" hidden><div id="datesMission"></div></section>
+<section id="panel-theses" class="mission-panel" role="tabpanel" aria-labelledby="tab-theses" hidden><div id="thesesMission"></div></section>
+</div>
+<div id="missionProgress" class="mission-progress" aria-live="polite"></div>
+</section>
+<section class="archive-section research-notes">
+<div class="archive-section-heading"><div><p class="kicker">03 / PARA CONTINUAR</p><h2>O que uma data <em>não explica.</em></h2></div><p>O calendário ajuda a situar problemas. Mas nenhuma linha do tempo substitui a análise de um texto em sua formulação específica.</p></div>
+<div class="research-columns"><article><span>LEMBRE-SE</span><h3>Ensino oral não é edição em livro.</h3><p>Os seminários foram proferidos em anos determinados. Suas edições podem ter sido estabelecidas e publicadas muito depois.</p></article><article><span>LEMBRE-SE</span><h3>Períodos não são caixas fechadas.</h3><p>Falar em Imaginário, Simbólico e Real como focos de momentos diferentes é uma simplificação útil apenas se suas continuidades e tensões forem mantidas.</p></article><article><span>PRÓXIMO PASSO</span><h3>Volte aos textos.</h3><p>Use a questão inicial de cada documento para reler os seminários e escritos com uma pergunta mais precisa.</p></article></div>
+<div class="archive-sources"><h3>Referências para conferência</h3><div id="archiveSources"></div></div>
+<a class="button primary" href="modulo-1.html?aula=1.6">Retomar a aula 1.6 <span>↗</span></a>
+</section>
+</main>
+<footer class="footer"><span class="footerbrand">L<span>.</span><small>FORMAÇÃO LACANIANA</small></span><p>O arquivo permanece aberto.</p><span>LABORATÓRIO PEDAGÓGICO · SPRINT 03</span></footer>
+<script src="assets/archive-data.js"></script><script src="assets/archive.js"></script>
+</body></html>
