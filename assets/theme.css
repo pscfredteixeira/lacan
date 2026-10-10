@@ -77,3 +77,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .sign-promo-arrow{font-size:1.4rem;color:#9780a8}
 .sign-promo-diagram small{position:absolute;bottom:20px;font-size:.6rem;letter-spacing:.12em;color:#6d5a78}
 @media(max-width:740px){.sign-promo{padding:55px 20px}.sign-promo-inner{grid-template-columns:1fr;gap:26px}.sign-promo-diagram{min-height:170px;padding:24px 13px}.sign-promo-diagram small{font-size:.55rem}.sign-promo-diagram>span:not(.sign-promo-arrow){padding:13px 7px;font-size:.85rem}.sign-promo-arrow{font-size:1rem}}
+
+/* Sprint 6: nova sala de leitura do Módulo 3 */
+.module3-promo{padding:75px max(5vw,24px);background:#e9e0ed;border-bottom:1px solid #d3c4da}
+.module3-promo-inner{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.65fr);gap:60px;align-items:center}
+.module3-promo h2{font-size:clamp(2.3rem,4.3vw,4rem);margin:16px 0}
+.module3-promo p:not(.kicker){font-size:.92rem;line-height:1.9;max-width:700px;color:#584d63}
+.module3-promo .button{margin-top:20px}
+.module3-promo-notes{min-height:265px;border:1px solid #c9b4d4;background:#f8f3ea;display:flex;align-items:center;justify-content:space-between;flex-direction:column;padding:25px;box-shadow:13px 16px 0 rgba(105,76,124,.08)}
+.module3-promo-notes span,.module3-promo-notes small{font-size:.64rem;letter-spacing:.11em;color:#816b8b}
+.module3-promo-notes strong{font-family:"Libre Baskerville",Georgia,serif;font-size:clamp(4.3rem,9vw,8rem);font-weight:400;line-height:1;color:#795f8d}
+@media(max-width:700px){.module3-promo{padding:58px 20px}.module3-promo-inner{grid-template-columns:1fr;gap:30px}.module3-promo-notes{min-height:150px}.module3-promo-notes strong{font-size:4rem}}
