@@ -61,36 +61,36 @@ window.LACAN_LESSONS = [
     "quiz": [
       {
         "phase": "Reconhecimento",
-        "prompt": "Quem foi Jacques Lacan?",
+        "prompt": "Qual alternativa descreve corretamente a trajetória de Jacques Lacan?",
         "options": [
-          "Um médico francês que se tornou psicanalista e professor.",
-          "O médico que iniciou a psicanálise antes de Freud.",
-          "Um escritor que só trabalhava com histórias de ficção."
+          "Ele iniciou a psicanálise e Freud passou a estudá-la depois.",
+          "Ele estudou medicina, trabalhou com psiquiatria e tornou-se psicanalista.",
+          "Ele foi professor, mas nunca trabalhou com questões de saúde mental."
         ],
-        "correct": 0,
-        "explanation": "Lacan foi médico, psicanalista e professor francês. Quem iniciou a psicanálise foi Freud."
+        "correct": 1,
+        "explanation": "Lacan foi médico, trabalhou na psiquiatria e também na psicanálise. Freud iniciou a psicanálise antes dele."
       },
       {
         "phase": "Compreensão",
-        "prompt": "Qual foi a relação de Lacan com Freud?",
+        "prompt": "O que Lacan fez em relação às ideias de Freud?",
         "options": [
-          "Lacan não conhecia as obras de Freud.",
-          "Lacan estudou as ideias de Freud e desenvolveu novas interpretações e questões.",
-          "Lacan escreveu todos os livros de Freud."
+          "Voltou a estudá-las, discutiu suas interpretações e desenvolveu ideias próprias.",
+          "Considerou que os trabalhos de Freud não tinham nenhuma importância.",
+          "Limitou-se a repetir cada frase de Freud, sem apresentar questões novas."
         ],
-        "correct": 1,
-        "explanation": "A psicanálise já existia quando Lacan começou seu trabalho. Ele releu Freud e propôs desenvolvimentos próprios."
+        "correct": 0,
+        "explanation": "Lacan retomou problemas estudados por Freud e propôs novas maneiras de discuti-los; não criou a psicanálise nem apenas copiou Freud."
       },
       {
         "phase": "Aplicação",
-        "prompt": "Alguém diz: «Lacan ensinava em seminários». O que significa isso?",
+        "prompt": "Você lê que um livro reúne «seminários de Lacan». O que essa expressão indica?",
         "options": [
-          "Que ele atendia pacientes em uma sala chamada seminário.",
-          "Que ele publicava exclusivamente romances.",
-          "Que ele conduzia encontros regulares de estudo e discussão sobre psicanálise."
+          "Que o livro reúne exclusivamente relatos de atendimentos médicos.",
+          "Que ele reúne regras sobre como criar uma associação profissional.",
+          "Que ele apresenta um ensino desenvolvido por Lacan em aulas e encontros de estudo."
         ],
         "correct": 2,
-        "explanation": "Seminário é uma série de aulas e discussões. Lacan usava esse formato para compartilhar e desenvolver ideias."
+        "explanation": "Os seminários eram encontros de ensino e discussão. Muitos foram organizados e publicados em livros posteriormente."
       }
     ],
     "goal": [],
