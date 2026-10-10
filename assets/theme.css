@@ -36,3 +36,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .detail{background:#faf5ed}
 .detail-notice{background:#ece3f3;color:#493a5c}
 .footer{background:#f6efe3}
+
+.start-module{margin:10px 0 24px;display:inline-flex}
+.detail a.start-module:focus-visible{outline:3px solid #735a90}
