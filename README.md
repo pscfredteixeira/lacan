@@ -22,7 +22,9 @@ Plataforma de estudo progressivo do pensamento de Jacques Lacan, em português. 
 
 **Sprint 9 — publicado no repositório:** Módulo 5, *Grande Outro e sujeito* (`modulo-5.html`), com seis aulas 5.1–5.6 sobre o grande Outro, ordem simbólica, sujeito barrado, S1 e S2, ponto de basta e falta no Outro. Cada aula tem explicação em quatro seções, exemplos com limites claros, glossário, referências, reflexão pessoal, caderno local e avaliação em três fases. O **Enigma do Outro** (`enigma-outro.html`) oferece três salas interativas: distinguir pessoa e funções imaginárias/simbólicas; comparar finais de uma frase e a retroação do sentido; e investigar sujeito, cadeia e falta no Outro. Inclui navegação por teclado, toques acessíveis e progresso local. Ligado às aulas e à matriz curricular.
 
-**Próximos sprints:** Módulo 6, *Necessidade, demanda e desejo*, revisão aprofundada de fontes, auditoria pedagógica e testes reais de acessibilidade em iPhone e leitores de tela.
+**Sprint 10 — publicado no repositório:** Módulo 6, *Necessidade, demanda e desejo* (`modulo-6.html`), com seis aulas 6.1–6.6: da necessidade à demanda, dimensão do amor, distinção do desejo, desejo do Outro, falta e síntese. Cada aula traz quatro seções teóricas, conceitos, referências, reflexão guiada, caderno pessoal e avaliação em três fases. O **Circuito do Desejo** (`circuito-desejo.html`) possui três experiências: exame crítico de pedidos fictícios; comparação interativa de respostas alternativas e seus limites; e investigação em três fases. Responsivo, com botões para toque e teclado, feedback fundamentado e conclusão salva no navegador. Página inicial, catálogo e ligação do Módulo 5 atualizados.
+
+**Próximos sprints:** Módulo 7, *Édipo, falo e função paterna*, com atenção histórica e crítica; auditoria bibliográfica e testes visuais e de acessibilidade em aparelhos reais.
 
 ## Acessar
 
@@ -38,6 +40,8 @@ Site do GitHub Pages, quando a publicação pela branch `main` estiver ativa: ht
 - Seis aulas do Módulo 3: `modulo-3.html?aula=3.1`
 - Seis aulas do Módulo 4: `modulo-4.html?aula=4.1`
 - Seis aulas do Módulo 5: `modulo-5.html?aula=5.1`
+- Seis aulas do Módulo 6: `modulo-6.html?aula=6.1`
+- Laboratório 06: `circuito-desejo.html`
 - Laboratório 05: `enigma-outro.html`
 - Dados dos 18 módulos: `assets/course-data.js`
 - Conteúdo do módulo 1: `assets/module-01-content.js`
@@ -45,23 +49,25 @@ Site do GitHub Pages, quando a publicação pela branch `main` estiver ativa: ht
 - Arquivo histórico: `assets/archive-data.js`, `assets/archive.js`, `assets/archive.css`
 - Espelho: `assets/mirror-data.js`, `assets/mirror.js`, `assets/mirror.css`
 - Significantes: `assets/significantes-data.js`, `assets/significantes.js`, `assets/significantes.css`
-- Leitor reutilizável (Módulos 2 a 5): `assets/reader.js`, `assets/reader.css`
+- Leitor reutilizável (Módulos 2 a 6): `assets/reader.js`, `assets/reader.css`
 - Aulas do Módulo 2: `assets/module-02-content.js`
 - Oficina do Inconsciente: `assets/freud-lab-data.js`, `assets/freud-lab.js`, `assets/freud-lab.css`
 - Aulas do Módulo 3: `assets/module-03-content.js`
 - Aulas do Módulo 4: `assets/module-04-content.js`
 - Aulas do Módulo 5: `assets/module-05-content.js`
 - Enigma do Outro: `assets/outro-lab-data.js`, `assets/outro-lab.js`, `assets/outro-lab.css`
+- Aulas do Módulo 6: `assets/module-06-content.js`
+- Circuito do Desejo: `assets/desejo-lab-data.js`, `assets/desejo-lab.js`, `assets/desejo-lab.css`
 - Sistema visual: `assets/styles.css`, `assets/theme.css`, `assets/lessons.css`
 
 ## Limitações desta versão
 
 - O progresso e as anotações ficam **somente no navegador utilizado**, via localStorage. Não há login, sincronização entre dispositivos ou backup automático.
 - A conclusão de uma avaliação não substitui leitura integral das obras de Lacan, discussão teórica ou formação clínica.
-- Os Módulos 1 a 5 oferecem atualmente **30 aulas com conteúdos desenvolvidos**. A publicação é pedagógica e continua sujeita a revisão bibliográfica e aprofundamento editorial.
-- Os outros 13 módulos têm títulos, descrições e objetivos planejados; **ainda não têm aulas integrais publicadas**.
-- As aulas publicadas contêm três questões por aula. Os cinco laboratórios atuais são experiências conceituais adicionais e não substituem a formação teórica nem a leitura das fontes.
-- O Módulo 2 agora está disponível. A sequência introdutória recomendada é Módulo 1 → Módulo 2 → Módulo 3 → Módulo 4 → Módulo 5.
+- Os Módulos 1 a 6 oferecem atualmente **36 aulas com conteúdos desenvolvidos**. A publicação é pedagógica e continua sujeita a revisão bibliográfica e aprofundamento editorial.
+- Os outros 12 módulos têm títulos, descrições e objetivos planejados; **ainda não têm aulas integrais publicadas**.
+- As aulas publicadas contêm três questões por aula. Os seis laboratórios atuais são experiências conceituais adicionais e não substituem a formação teórica nem a leitura das fontes.
+- O Módulo 2 agora está disponível. A sequência introdutória recomendada é Módulo 1 → Módulo 2 → Módulo 3 → Módulo 4 → Módulo 5 → Módulo 6.
 - O laboratório do espelho **não simula a vida mental de uma criança** e não serve como prova empírica da teoria. Seu foco é exercitar distinções conceituais presentes no texto de 1949.
 
 ## Publicação
