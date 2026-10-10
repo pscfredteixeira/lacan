@@ -52,7 +52,7 @@
       <section class="lesson-notebook" aria-labelledby="notebookHeading"><span class="section-label">Caderno pessoal</span><h2 id="notebookHeading">O que ficou em aberto?</h2><p>Escreva uma dúvida, relação ou descoberta. Suas anotações ficam apenas neste navegador; não são enviadas à plataforma.</p><label for="notes">Minhas anotações da aula ${safe(id)}</label><textarea id="notes" placeholder="Que pergunta esta aula deixou para você?"></textarea><p class="notes-status" id="notesStatus">Salvo apenas neste dispositivo.</p></section>
       <nav class="lesson-pager" aria-label="Mudar de aula">
         ${index>0?`<button class="action-button" type="button" data-goto="${safe(lessons[index-1].id)}">← Aula anterior</button>`:'<span></span>'}
-        ${index<lessons.length-1?`<button class="action-button primary" type="button" data-goto="${safe(lessons[index+1].id)}">Próxima aula →</button>`:'<a class="action-button primary" href="index.html#modulos">Voltar ao percurso ↗</a>'}
+        ${index<lessons.length-1?`<button class="action-button primary" type="button" data-goto="${safe(lessons[index+1].id)}">Próxima aula →</button>`:'<a class="action-button primary" href="modulo-2.html?aula=2.1">Avançar ao Módulo 2 →</a>'}
       </nav>`;
     const note = document.getElementById("notes");
     note.value = getStorage(NOTES + id, "");
