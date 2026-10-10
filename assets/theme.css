@@ -51,3 +51,17 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .archive-promo-rule{font-size:2rem;color:#aa93bb}
 .archive-promo-figure small{position:absolute;bottom:16px;font-size:.6rem;letter-spacing:.1em;color:#796988}
 @media(max-width:700px){.archive-promo{padding:55px 20px}.archive-promo-inner{grid-template-columns:1fr;gap:28px}.archive-promo-figure{min-height:150px}.archive-promo-figure small{font-size:.55rem}}
+
+/* Sprint 4: divulgação do laboratório do espelho */
+.mirror-promo{background:linear-gradient(125deg,#f7f0e6,#f1e9f3);border-bottom:1px solid #d5c7df;padding:67px max(5vw,24px)}
+.mirror-promo-inner{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(200px,.47fr) minmax(0,1fr);gap:70px;align-items:center}
+.mirror-promo-art{aspect-ratio:1.25;max-width:360px;position:relative;border:1px solid #dacbdd;background:#e9def0;display:grid;place-items:center;overflow:hidden}
+.mirror-promo-circle{position:absolute;border-radius:50%;border:1px solid #b7a1c5}
+.circle-large{width:85%;aspect-ratio:1}
+.circle-small{width:58%;aspect-ratio:1;border-style:dashed}
+.mirror-promo-art>span:not(.mirror-promo-caption){font-family:"Libre Baskerville",Georgia,serif;font-size:6rem;font-style:italic;line-height:1;color:#766188;z-index:1}
+.mirror-promo-caption{position:absolute;bottom:20px;left:15px;right:15px;text-align:center;letter-spacing:.12em;font-size:.6rem;color:#695778}
+.mirror-promo h2{font-size:clamp(2rem,4vw,3.9rem);margin:12px 0 17px}
+.mirror-promo p:not(.kicker){font-size:.92rem;line-height:1.9;max-width:720px;color:#605769}
+.mirror-promo .button{margin-top:16px}
+@media(max-width:700px){.mirror-promo{padding:54px 20px}.mirror-promo-inner{grid-template-columns:1fr;gap:27px}.mirror-promo-art{max-width:100%;width:100%;aspect-ratio:1.8}.mirror-promo-art>span:not(.mirror-promo-caption){font-size:3.8rem}}
