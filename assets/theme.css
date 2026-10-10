@@ -1,0 +1,38 @@
+/* Paleta editorial: papel bege, lavanda clara e violeta para contraste. */
+:root{
+  --paper:#f6efe3;
+  --ink:#332d3c;
+  --muted:#655e6c;
+  --wine:#6e577f;
+  --wine-dark:#503f66;
+  --line:#dfd5da;
+  --cream:#efe5da;
+  --lavender:#e8dff0;
+  --lavender-mid:#d2c3e0;
+  --beige:#f6efe3;
+  --beige-card:#fffbf5;
+  background:var(--paper);
+}
+body{background:var(--paper)}
+::selection{background:#d5c4e8;color:#2e2535}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #735a90;outline-offset:3px}
+.hero{background:linear-gradient(125deg,#fbf6ed 0%,#f6efe3 55%,#eee7f4 100%)}
+.hero .lead,.sectionaside{color:var(--muted)}
+.hero-art{background:radial-gradient(circle at 50% 50%,rgba(216,199,233,.52),rgba(243,232,219,.05) 68%);border-radius:50%}
+.figure-ring{border-color:rgba(109,84,133,.4)}
+.ring-inner{background:rgba(187,163,208,.13)}
+.hero-glyph{text-shadow:12px 8px 0 #e2d4e7}
+.route,.method{background:#eee7de}
+.cycle-card{background:#fbf7f0;border-color:#ded2d9;box-shadow:0 9px 35px rgba(72,57,84,.025)}
+.cycle-card:nth-child(2){background:#f4eef7}
+.cycle-card:nth-child(3){background:#eee5f1}
+.modules{background:#f8f2e8}
+.module-card{background:#fffbf6;border-color:#e4dae0;border-radius:3px}
+.module-card:hover,.module-card:focus-visible{border-color:#9b87b2;box-shadow:0 12px 32px rgba(80,63,102,.1)}
+.chip.selected,.button.primary{background:var(--wine);border-color:var(--wine);color:white}
+.chip:not(.selected):hover{background:#eee4f4;color:var(--wine)}
+.searchwrap{background:#fffbf6}
+.notice{background:#f2ebf7;border-color:#d8c8e1}
+.detail{background:#faf5ed}
+.detail-notice{background:#ece3f3;color:#493a5c}
+.footer{background:#f6efe3}
