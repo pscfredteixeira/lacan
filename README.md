@@ -12,7 +12,9 @@ Plataforma de estudo progressivo do pensamento de Jacques Lacan, em português. 
 
 **Sprint 4 — publicado no repositório:** Laboratório do Estádio do Espelho (`espelho.html`). Contém três movimentos: comparar forma especular e coordenação, explorar imagem/identificação/alienação/alteridade e resolver uma investigação conceitual com três fases e feedback fundamentado. Diagrama SVG responsivo, botões para toque e teclado, ajuste de fonte e conclusão salva localmente. Integrado à página inicial e ao modal do módulo 4, sem marcar as aulas ainda não redigidas como concluídas.
 
-**Próximos sprints:** ampliar a pesquisa e revisão bibliográfica, criar o Laboratório dos Significantes, produzir aulas do módulo 4 e aplicar testes com estudantes reais.
+**Sprint 5 — enviado ao repositório:** Laboratório dos Significantes (`significantes.html`). Três mesas de aprendizagem: montagem de uma narrativa com escolha de palavras e comparação de versões; classificação explicada de operações de substituição e conexão em quatro exemplos; avaliação progressiva de reconhecimento, compreensão e aplicação crítica. A interface funciona sem arrastar, com botões grandes e progresso local nos dossiês e na avaliação. A atividade evita qualquer promessa de interpretação clínica automática.
+
+**Próximos sprints:** revisar conceitos com especialistas, desenvolver aulas integrais do módulo 3, aprofundar exemplos e testar as três experiências com usuários e leitores de tela.
 
 ## Acessar
 
@@ -22,11 +24,13 @@ Site do GitHub Pages, quando a publicação pela branch `main` estiver ativa: ht
 - Primeira aula: `modulo-1.html?aula=1.1`
 - Laboratório 01: `arquivo.html`
 - Laboratório 02: `espelho.html`
+- Laboratório 03: `significantes.html`
 - Dados dos 18 módulos: `assets/course-data.js`
 - Conteúdo do módulo 1: `assets/module-01-content.js`
 - Navegação e avaliações: `assets/lessons.js`
 - Arquivo histórico: `assets/archive-data.js`, `assets/archive.js`, `assets/archive.css`
 - Espelho: `assets/mirror-data.js`, `assets/mirror.js`, `assets/mirror.css`
+- Significantes: `assets/significantes-data.js`, `assets/significantes.js`, `assets/significantes.css`
 - Sistema visual: `assets/styles.css`, `assets/theme.css`, `assets/lessons.css`
 
 ## Limitações desta versão
@@ -35,7 +39,7 @@ Site do GitHub Pages, quando a publicação pela branch `main` estiver ativa: ht
 - A conclusão de uma avaliação não substitui leitura integral das obras de Lacan, discussão teórica ou formação clínica.
 - As seis aulas constituem a primeira publicação pedagógica, ainda sujeita a revisão bibliográfica e aprofundamento editorial.
 - Os outros 17 módulos têm títulos, descrições e objetivos planejados; **não têm aulas integrais publicadas**.
-- O primeiro conjunto de avaliações contém três questões por aula. Os laboratórios de Arquivo e Estádio do Espelho são experiências conceituais adicionais; o Laboratório dos Significantes ainda será desenvolvido.
+- O primeiro conjunto de avaliações contém três questões por aula. Os três laboratórios atuais são experiências conceituais adicionais e não substituem as aulas completas dos módulos.
 - O laboratório do espelho **não simula a vida mental de uma criança** e não serve como prova empírica da teoria. Seu foco é exercitar distinções conceituais presentes no texto de 1949.
 
 ## Publicação
