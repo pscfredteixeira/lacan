@@ -1,4 +1,4 @@
-/* Formação Lacaniana · Módulo 01 · edição didática para iniciantes (outubro de 2026). */
+/* Formação Lacaniana · Módulo 01 · leitura para iniciantes absolutos (edição de 10/10/2026). */
 window.LACAN_LESSONS = [
   {
     "id": "1.1",
@@ -338,45 +338,53 @@ window.LACAN_LESSONS = [
   {
     "id": "1.4",
     "title": "Os interlocutores de Lacan",
-    "subtitle": "Filosofia, linguística, antropologia e clínica",
-    "duration": "40–55 min",
-    "question": "Como estudar as influências de um autor sem transformar sua obra numa colagem?",
-    "introduction": "Lacan dialogou com autores de disciplinas diferentes. Conhecer esses interlocutores ajuda a compreender seu vocabulário, desde que uma distinção permaneça clara: apropriar-se de um conceito não é utilizá-lo exatamente no sentido do autor de origem.",
+    "subtitle": "De quem Lacan aprendeu — e o que fez com essas ideias",
+    "duration": "35–50 min",
+    "question": "Por que conhecer alguns autores ajuda a entender Lacan, mesmo sem ler todos eles agora?",
+    "introduction": "Lacan não tirou todas as suas ideias do nada. Ele leu outros autores e conversou com problemas de diferentes áreas. A palavra <strong>interlocutor</strong> significa, aqui, alguém cujas ideias entraram em diálogo com as de Lacan. Nesta aula, vamos conhecer quatro aproximações simples. <strong>Não é necessário memorizar nomes, fórmulas nem teorias completas</strong>: basta reconhecer que uma ideia pode ser retomada e transformada.",
     "sections": [
       {
-        "title": "Freud: o interlocutor permanente",
+        "title": "1. Freud: o principal ponto de partida",
         "paragraphs": [
-          "Freud permanece central no percurso lacaniano. A interpretação dos sonhos, as formações do inconsciente, o narcisismo, a pulsão e a transferência não aparecem como referências ornamentais: são problemas aos quais Lacan retorna de formas diversas.",
-          "Ao ler uma passagem lacaniana, pergunte primeiro qual problema freudiano está em jogo. Em seguida, investigue se Lacan está retomando, deslocando ou criticando uma formulação. A resposta pode variar conforme o momento de seu ensino."
-        ]
+          "Comecemos pelo nome que você já conhece: <strong>Sigmund Freud</strong>. Ele desenvolveu a psicanálise e fez perguntas sobre sonhos, conflitos, sintomas e processos inconscientes. Lacan estudou essas questões durante grande parte de sua trajetória.",
+          "Imagine uma professora que dedica muitos anos a ler, discutir e propor novas respostas para as perguntas de um pesquisador anterior. Ela não está apenas copiando textos: está tentando compreender problemas e investigá-los novamente. É um bom primeiro exemplo do que Lacan fez com Freud.",
+          "Você aprenderá mais sobre sonhos, inconsciente e conflitos no Módulo 2. Por enquanto, o essencial é lembrar que Freud é o ponto de partida psicanalítico do trabalho de Lacan."
+        ],
+        "inShort": "Freud iniciou a psicanálise. Lacan releu Freud e transformou algumas maneiras de formular seus problemas."
       },
       {
-        "title": "Saussure e Jakobson: o problema da linguagem",
+        "title": "2. Pessoas que estudavam a linguagem",
         "paragraphs": [
-          "A linguística de Ferdinand de Saussure forneceu distinções importantes, especialmente entre significante e significado. Lacan as retoma, mas não mantém simplesmente sua organização original. Roman Jakobson também foi um interlocutor relevante para relações como metáfora e metonímia.",
-          "Uma cautela fundamental: dizer que Lacan se inspira na linguística não significa que a teoria psicanalítica seja idêntica a uma teoria científica da linguagem. A formação estudará tanto a apropriação quanto seus limites."
-        ]
+          "Outra pergunta interessava a Lacan: <strong>como as palavras funcionam?</strong> Uma palavra pode mudar de sentido dependendo do que vem antes e depois dela. Por exemplo, «banco» pode indicar um lugar para sentar ou uma instituição financeira. Não estamos lendo a mente de ninguém; estamos percebendo o papel das relações entre palavras.",
+          "Ferdinand de Saussure estudou a língua e tornou conhecida uma maneira de pensar os signos linguísticos como relações entre forma e conceito. Roman Jakobson também investigou o funcionamento da linguagem, incluindo diferentes tipos de relação entre termos. Lacan utilizou discussões desse campo para formular problemas próprios da psicanálise.",
+          "Não será preciso aprender agora as distinções técnicas desses autores. No Módulo 3, explicaremos passo a passo palavras como <em>significante</em>, <em>significado</em>, <em>metáfora</em> e <em>metonímia</em>. Nesta aula, guarde somente que Lacan se interessava pelo modo como falamos."
+        ],
+        "inShort": "Alguns interlocutores ajudaram Lacan a fazer perguntas sobre a linguagem. A teoria técnica virá depois."
       },
       {
-        "title": "Lévi-Strauss e Kojève: estruturas e reconhecimento",
+        "title": "3. Pessoas que estudavam relações entre seres humanos",
         "paragraphs": [
-          "A antropologia estrutural de Claude Lévi-Strauss contribuiu para os debates sobre parentesco, troca e ordem simbólica que atravessavam o ambiente intelectual de Lacan. As leituras de Hegel realizadas por Alexandre Kojève também participam do contexto de problemas como desejo, alteridade e reconhecimento.",
-          "Isso não autoriza uma tradução direta: «desejo em Hegel = desejo em Lacan». É preciso verificar as transformações de cada noção e evitar apagar as diferenças entre os projetos dos autores."
-        ]
+          "Claude Lévi-Strauss era um antropólogo, isto é, um pesquisador que estudava formas de organização das sociedades e das culturas. Alexandre Kojève ensinava e discutia filosofia, especialmente questões ligadas a reconhecimento e relações humanas.",
+          "O que isso tem a ver com Lacan? Ele não via uma pessoa como alguém que existisse fora de todas as relações. Crescemos em um mundo que já tem palavras, maneiras de chamar as pessoas, expectativas e formas de conviver. Essas observações ajudam a entender por que Lacan se interessou também pelas relações entre indivíduo, linguagem e sociedade.",
+          "Aqui é importante não exagerar: uma explicação simples da cultura não substitui uma teoria psicanalítica, e Lacan não concordou automaticamente com tudo o que esses autores afirmaram. São diálogos entre trabalhos diferentes."
+        ],
+        "inShort": "A experiência humana envolve relações com outras pessoas, linguagem e cultura; Lacan conversou com autores que estudavam isso."
       },
       {
-        "title": "Da interlocução à elaboração própria",
+        "title": "4. Como essas influências entram na formação?",
         "paragraphs": [
-          "O ensino de Lacan também dialoga com matemática, lógica e topologia, principalmente em seus desenvolvimentos posteriores. Essas ferramentas aparecem em situações precisas e não devem ser tratadas como provas automáticas de uma teoria clínica.",
-          "O método de leitura recomendado será sempre: localizar o problema, reconhecer a referência, identificar a transformação lacaniana e examinar as consequências. Uma boa comparação mostra tanto semelhanças quanto diferenças."
-        ]
+          "Uma boa maneira de estudar é criar uma pergunta muito simples: <strong>«De onde veio essa ideia e o que Lacan mudou nela?»</strong>. Você não precisa responder completamente agora. A pergunta será retomada quando estivermos estudando cada conceito.",
+          "Por exemplo, dizer que Lacan se interessava por linguagem não significa que sua psicanálise seja idêntica à linguística. E dizer que ele dialogou com a filosofia não faz de toda a sua obra uma repetição da filosofia. Cada área oferece instrumentos para problemas distintos.",
+          "Nesta aula, só precisamos reconhecer três caminhos: Freud ajuda a situar os problemas da psicanálise; pesquisadores da linguagem ajudam a formular perguntas sobre a fala; e outros pensadores ajudam a discutir relações humanas. Você já pode seguir adiante sem decorar os nomes."
+        ],
+        "inShort": "Uma influência é um ponto de diálogo, não uma cópia da ideia original."
       }
     ],
     "example": {
-      "title": "Um empréstimo conceitual",
-      "text": "Se um texto de Lacan utiliza «significante», não basta procurar a definição de Saussure e encerrá-la como explicação. É preciso perguntar como Lacan reorganiza a relação significante/significado e por que isso interessa à psicanálise."
+      "title": "Um exemplo simples: aprender e transformar",
+      "text": "Uma cozinheira aprende uma técnica com outra pessoa e depois a adapta a um novo prato. Ela não criou tudo do zero, mas também não copiou a receita inteira. Com cautela, a comparação ajuda a entender como Lacan dialogou com ideias anteriores sem repetir seus autores literalmente."
     },
-    "takeaway": "Os interlocutores de Lacan são indispensáveis, mas suas ideias não passam intactas para o ensino lacaniano. A relação entre origem e transformação deve ser examinada caso a caso.",
+    "takeaway": "Lacan partiu de Freud e dialogou com pesquisadores da linguagem, da filosofia e da cultura. Neste momento, não importa decorar quatro ou cinco nomes: importa perceber que suas ideias foram construídas em diálogo e também por transformações.",
     "references": [
       "Lacan, J. <em>A instância da letra no inconsciente ou a razão desde Freud</em> (1957), em <em>Escritos</em>.",
       "Saussure, F. de. <em>Curso de linguística geral</em> (edição póstuma de 1916).",
@@ -386,81 +394,109 @@ window.LACAN_LESSONS = [
     "quiz": [
       {
         "phase": "Reconhecimento",
-        "prompt": "Qual autor está associado à distinção linguística entre significante e significado?",
+        "prompt": "Quem foi a referência psicanalítica mais importante para Lacan?",
         "options": [
-          "Ferdinand de Saussure.",
           "Sigmund Freud.",
-          "Alexandre Kojève."
+          "Uma única escola de matemática.",
+          "Um autor de ficção contemporânea."
         ],
         "correct": 0,
-        "explanation": "Saussure é referência central dessa distinção linguística, que Lacan retoma e transforma."
+        "explanation": "Freud iniciou a psicanálise; Lacan voltou repetidamente à sua obra."
       },
       {
         "phase": "Compreensão",
-        "prompt": "Por que reconhecer uma influência não resolve a leitura de Lacan?",
+        "prompt": "Por que Lacan conversou com autores que estudavam a linguagem?",
         "options": [
-          "Porque os interlocutores não têm nenhuma importância.",
-          "Porque apropriações podem modificar o sentido e a função de uma ideia.",
-          "Porque todos os termos mantêm definições idênticas em todas as disciplinas."
+          "Porque a psicanálise deixou de envolver seres humanos.",
+          "Porque perguntas sobre como falamos e usamos palavras se tornaram importantes em sua elaboração.",
+          "Porque todas as teorias da linguagem são idênticas."
         ],
         "correct": 1,
-        "explanation": "Uma referência pode ser reelaborada. É preciso observar o problema e a função que o conceito adquire no novo contexto."
+        "explanation": "As relações entre palavras e a experiência da fala ajudam a situar um dos interesses de Lacan."
       },
       {
         "phase": "Aplicação",
-        "prompt": "Você lê que «desejo» aparece em Hegel e em Lacan. Qual é o melhor procedimento?",
+        "prompt": "Uma pessoa diz: «Se Lacan usou uma ideia de outro autor, deve ter concordado com tudo o que esse autor escreveu». Como responder?",
         "options": [
-          "Concluir que os dois usos são idênticos.",
-          "Ignorar Hegel para não dificultar o estudo.",
-          "Comparar os contextos e verificar aproximações e diferenças conceituais."
+          "Sim, todo diálogo implica concordância integral.",
+          "Não há qualquer relação entre Lacan e outros pesquisadores.",
+          "Não: é possível aprender com uma ideia e transformá-la para investigar outro problema."
         ],
         "correct": 2,
-        "explanation": "Uma aproximação produtiva não apaga divergências. O estudo exige exame das fontes e da transformação conceitual."
+        "explanation": "Uma influência não significa cópia ou concordância total."
+      }
+    ],
+    "goal": [
+      "Entender o que significa um autor dialogar com outro.",
+      "Reconhecer Freud como ponto de partida central de Lacan.",
+      "Saber, em termos cotidianos, por que linguagem, relações sociais e reconhecimento entraram nesse debate."
+    ],
+    "later": "Significante, metáfora, metonímia, ordem simbólica e desejo do Outro aparecerão apenas em módulos posteriores. Hoje os nomes dos autores funcionam como referências, não como conteúdo para decorar.",
+    "glossary": [
+      {
+        "term": "Interlocutor",
+        "meaning": "Pessoa cujas ideias participam de um diálogo; aqui, um autor com quem Lacan discutiu ou a quem recorreu."
+      },
+      {
+        "term": "Linguística",
+        "meaning": "Área de estudo que investiga as línguas e seu funcionamento."
+      },
+      {
+        "term": "Antropologia",
+        "meaning": "Área que pesquisa os seres humanos em suas formas de vida, culturas e relações sociais."
       }
     ]
   },
   {
     "id": "1.5",
     "title": "Como ler um texto lacaniano?",
-    "subtitle": "Um método para ler sem fingir compreensão",
-    "duration": "35–50 min",
-    "question": "O que fazer quando um parágrafo parece incompreensível — sem recorrer apenas à memorização?",
-    "introduction": "A dificuldade de Lacan não precisa ser escondida. É possível construir um método de leitura que preserve o rigor, reconheça os limites do que foi compreendido e permita voltar ao texto com melhores perguntas.",
+    "subtitle": "Um método de leitura que funciona mesmo quando o texto parece difícil",
+    "duration": "40–55 min",
+    "question": "Como começar a ler Lacan sem precisar entender todas as palavras de uma vez?",
+    "introduction": "Muitos textos de Lacan são difíceis até para leitores experientes. É comum encontrar frases longas e palavras que ainda não conhecemos. A boa notícia é que você <strong>não precisa começar pela parte mais difícil nem compreender tudo de primeira</strong>. Nesta aula, vamos montar um método de leitura em passos. Ele servirá também para outras matérias da formação.",
     "sections": [
       {
-        "title": "Comece pela pergunta, não pelo verbete",
+        "title": "1. Passo um: descubra qual é a pergunta",
         "paragraphs": [
-          "Antes de buscar uma definição, tente responder: «Que problema este trecho procura enfrentar?». Uma formulação sobre o sujeito pode estar discutindo o eu, a linguagem, a divisão subjetiva ou um problema clínico. O mesmo termo não aparece necessariamente com o mesmo alcance em todos os períodos.",
-          "Faça uma primeira leitura sem pretender traduzir cada frase. Identifique as palavras que se repetem, a questão central e o argumento que parece estar sendo construído. Registre o que você ainda não compreende."
-        ]
+          "Ao abrir um texto difícil, é tentador parar na primeira palavra desconhecida. Experimente outra estratégia: leia um pequeno trecho e pergunte <strong>«Sobre qual problema o autor está falando?»</strong>. Não é preciso responder perfeitamente. Basta identificar uma questão aproximada.",
+          "Vamos criar uma frase fictícia, que <strong>não é uma citação de Lacan</strong>: «Quando contamos nossa história, a maneira de contar também importa». Qual pode ser a pergunta por trás dela? Uma possibilidade: «Por que prestar atenção ao modo como alguém conta uma experiência?». Essa pergunta já orienta uma leitura, mesmo sem explicar toda a psicanálise.",
+          "Se você não conseguir reconhecer o problema, registre a dúvida e avance um pouco. Às vezes o parágrafo seguinte ajuda. Voltar depois não é fracasso; faz parte de uma leitura cuidadosa."
+        ],
+        "inShort": "Comece perguntando «O que o texto está tentando explicar?» antes de buscar definições."
       },
       {
-        "title": "Situe a passagem",
+        "title": "2. Passo dois: traduza para palavras comuns, com cuidado",
         "paragraphs": [
-          "Anote o título, a data de apresentação do texto ou da aula e a edição consultada. <em>Escritos</em> foi publicado como coletânea em 1966, mas reúne trabalhos anteriores. Já os seminários foram ensinados oralmente e publicados em momentos posteriores.",
-          "A data ajuda a investigar se o conceito estava em elaboração, sendo reformulado ou sendo revisitado. Não se trata de converter décadas em caixas rígidas, mas de evitar que um conceito posterior seja projetado automaticamente em textos anteriores."
-        ]
+          "Depois de ler um trecho, tente contar para si, com palavras simples, aquilo que compreendeu. Por exemplo: «O autor parece dizer que falar é mais do que transmitir informações». Você pode acrescentar «ainda não sei por quê». Uma frase incompleta e honesta é melhor do que repetir um termo que não entendeu.",
+          "Não transforme a sua tradução em uma citação. Há diferença entre dizer <strong>«Lacan escreveu exatamente isto»</strong> e <strong>«Eu entendi que Lacan está discutindo isto»</strong>. A primeira precisa corresponder às palavras do texto; a segunda expressa sua leitura provisória.",
+          "Quando aparecer um conceito ainda não ensinado, escreva-o no caderno como pergunta e continue. Você não precisa procurar dez verbetes externos para terminar uma aula introdutória."
+        ],
+        "inShort": "Reescrever com suas palavras ajuda, mas sua explicação não deve ser apresentada como frase literal do autor."
       },
       {
-        "title": "Diferencie três níveis de leitura",
+        "title": "3. Passo três: separe texto, explicação e exemplo",
         "paragraphs": [
-          "O primeiro nível é a <strong>formulação primária</strong>: o que está efetivamente no texto de Lacan. O segundo é a <strong>interpretação de um comentador</strong>: uma leitura que organiza, explica ou critica a formulação. O terceiro é a <strong>analogia pedagógica</strong>: um exemplo construído para facilitar a compreensão.",
-          "Os três níveis podem ser úteis, mas não são intercambiáveis. Uma analogia clara não substitui a leitura da fonte; uma interpretação brilhante não deve ser apresentada como uma citação literal de Lacan."
-        ]
+          "Nesta plataforma, usaremos três tipos de material. <strong>Texto de Lacan:</strong> a fonte original ou uma referência a ela. <strong>Explicação didática:</strong> aquilo que escrevemos para ajudar você a compreender a ideia. <strong>Exemplo inventado:</strong> uma cena criada para tornar uma diferença mais concreta.",
+          "Imagine uma aula sobre a importância de como uma história é contada. O professor inventa um diálogo entre duas amigas. Esse diálogo não é um caso clínico verdadeiro e não prova sozinho a teoria de Lacan. Ele serve para tornar a pergunta visível. É por isso que exemplos ajudam, mas têm limites.",
+          "Quando o curso trouxer um livro nas referências, você poderá consultá-lo. Não é obrigatório ler todos os textos primários antes de continuar a primeira formação. As referências mostram de onde partir para aprofundar e conferir o que está sendo ensinado."
+        ],
+        "inShort": "Fonte original, explicação da aula e exemplo inventado são três coisas diferentes."
       },
       {
-        "title": "Construa um caderno de questões",
+        "title": "4. Passo quatro: termine com uma ideia e uma dúvida",
         "paragraphs": [
-          "Depois de cada trecho, escreva quatro linhas: «Qual pergunta está em jogo?», «Qual tese aparece?», «Com quais conceitos ela se relaciona?» e «O que ainda não consigo explicar?». Em seguida, reformule o problema em português simples sem reduzir sua complexidade.",
-          "Voltar a um trecho depois de outros estudos faz parte do método. A impressão de compreender tudo imediatamente costuma ser menos útil do que identificar com precisão o que permanece difícil."
-        ]
+          "Depois de estudar, escreva duas frases no caderno: <strong>«O que eu entendi?»</strong> e <strong>«O que ainda não entendi?»</strong>. Exemplo: «Entendi que Lacan dava importância à fala. Ainda não entendi como ele relacionava isso ao inconsciente». Excelente: a primeira frase registra um avanço; a segunda aponta para o Módulo 3.",
+          "Você pode usar uma terceira pergunta: «Onde aprenderei isso?». A formação foi organizada para voltar aos conceitos de maneira progressiva. Não esperamos que uma pessoa saiba tudo antes de chegar à aula que vai ensinar o assunto.",
+          "Releia um pequeno trecho em outro dia. Compare a primeira anotação com a segunda. Uma leitura melhora quando você consegue fazer perguntas mais precisas — não quando finge já dominar todo o vocabulário."
+        ],
+        "inShort": "Entenda uma coisa, anote uma dúvida e saiba qual será o próximo passo."
       }
     ],
     "example": {
-      "title": "Uma leitura que precisa de cuidado",
-      "text": "Você encontra a frase «o inconsciente é estruturado como uma linguagem». Uma leitura apressada seria: «o inconsciente é um idioma». Uma pergunta melhor é: «o que Lacan procura demonstrar ao relacionar inconsciente e estrutura da linguagem?». Os próximos módulos desenvolverão a resposta."
+      "title": "Um roteiro de leitura com uma frase inventada",
+      "text": "Trecho didático, não uma citação: «Ao falar, às vezes descobrimos coisas que não esperávamos dizer». 1) Pergunta: «Por que a fala pode surpreender?». 2) Minha explicação: «O que digo nem sempre coincide inteiramente com o que planejei». 3) Limite: o exemplo não permite interpretar um lapso real. 4) Dúvida: «Como Freud e Lacan estudam essa diferença?». Essa resposta será aprofundada depois."
     },
-    "takeaway": "Ler Lacan exige contextualizar passagens, distinguir fonte e comentário, reconhecer analogias e construir perguntas que possam ser retomadas.",
+    "takeaway": "Para começar a ler Lacan, identifique a pergunta do trecho, traduza provisoriamente a ideia para uma linguagem simples, diferencie fonte de exemplo e registre uma dúvida. Não é necessário entender os conceitos avançados agora.",
     "references": [
       "Lacan, J. <em>Escritos</em> (coletânea publicada em francês em 1966).",
       "Lacan, J. <em>O Seminário, livro 1: Os escritos técnicos de Freud</em>.",
@@ -469,81 +505,110 @@ window.LACAN_LESSONS = [
     "quiz": [
       {
         "phase": "Reconhecimento",
-        "prompt": "Ao estudar uma passagem difícil, qual atitude é recomendada?",
+        "prompt": "Ao começar um texto difícil, qual é um primeiro passo útil?",
         "options": [
-          "Decorar uma frase sem verificar seu contexto.",
-          "Localizar o problema teórico, a data e as relações conceituais.",
-          "Tratar exemplos didáticos como citações literais."
+          "Memorizar todas as palavras técnicas antes de ler.",
+          "Perguntar qual problema o texto procura discutir.",
+          "Pular diretamente para uma fórmula avançada."
         ],
         "correct": 1,
-        "explanation": "Uma leitura rigorosa precisa identificar o problema e o contexto antes de fixar definições."
+        "explanation": "Uma pergunta inicial orienta a leitura, mesmo sem resolver todos os conceitos."
       },
       {
         "phase": "Compreensão",
-        "prompt": "Por que distinguir fonte primária, comentário e analogia?",
+        "prompt": "Por que uma frase inventada pelo professor não deve aparecer como citação de Lacan?",
         "options": [
-          "Porque desempenham funções diferentes e não têm o mesmo estatuto de evidência.",
-          "Porque nenhum comentário pode ser útil.",
-          "Porque uma analogia substitui o texto de Lacan."
+          "Porque exemplos são sempre inúteis.",
+          "Porque Lacan escreveu todos os exemplos do mundo.",
+          "Porque fonte original e exemplo pedagógico são materiais diferentes."
         ],
-        "correct": 0,
-        "explanation": "O texto de Lacan, sua interpretação e um exemplo didático são recursos distintos. Misturá-los produz falsas atribuições."
+        "correct": 2,
+        "explanation": "Uma analogia pode ajudar a aprender, mas não é uma frase literal nem prova clínica."
       },
       {
         "phase": "Aplicação",
-        "prompt": "Um vídeo afirma: «Lacan escreveu que o grande Outro é a sociedade», sem referência. Como estudar essa afirmação?",
+        "prompt": "Você leu uma página e compreendeu uma ideia, mas ficaram dúvidas. O que fazer?",
         "options": [
-          "Aceitar a frase porque parece didática.",
-          "Rejeitar qualquer estudo do grande Outro.",
-          "Pedir a fonte, situar a passagem e examinar se a frase é citação, interpretação ou analogia."
+          "Anotar o que entendeu, registrar as perguntas e avançar sabendo que o curso retomará conceitos.",
+          "Desistir da formação, pois dúvidas indicam incapacidade.",
+          "Declarar que já compreendeu toda a obra."
         ],
-        "correct": 2,
-        "explanation": "A verificação de origem e contexto é decisiva, sobretudo em conceitos que frequentemente recebem definições simplificadas."
+        "correct": 0,
+        "explanation": "A leitura progressiva trabalha com compreensão parcial bem identificada e retomadas."
+      }
+    ],
+    "goal": [
+      "Aprender um método simples de leitura em quatro passos.",
+      "Saber o que fazer quando aparece uma palavra desconhecida.",
+      "Distinguir uma frase do autor, a explicação de um professor e um exemplo inventado."
+    ],
+    "later": "Você não precisa decifrar agora frases famosas de Lacan, nem estudar sujeito barrado, grande Outro ou fórmulas. O objetivo de hoje é aprender <strong>como estudar</strong>, não resolver conceitos avançados.",
+    "glossary": [
+      {
+        "term": "Fonte primária",
+        "meaning": "Texto ou aula do próprio autor estudado, em edição identificada."
+      },
+      {
+        "term": "Comentário",
+        "meaning": "Explicação ou interpretação que outra pessoa faz de uma obra."
+      },
+      {
+        "term": "Exemplo didático",
+        "meaning": "Situação inventada para ajudar a entender uma ideia, sem equivaler a prova da teoria."
       }
     ]
   },
   {
     "id": "1.6",
     "title": "O pensamento lacaniano em movimento",
-    "subtitle": "Períodos, retornos e transformações",
-    "duration": "40–55 min",
-    "question": "Como acompanhar a transformação de um pensamento sem dividir sua história em compartimentos?",
-    "introduction": "Muitas apresentações do ensino de Lacan distinguem períodos. Essa divisão pode orientar os estudos, mas também pode produzir um problema: a falsa ideia de que Lacan abandonou completamente um conjunto de conceitos sempre que passou a formular outros.",
+    "subtitle": "Como estudar uma obra que mudou ao longo do tempo",
+    "duration": "35–50 min",
+    "question": "Por que as ideias de Lacan não precisam ser todas aprendidas na primeira aula?",
+    "introduction": "Você chegou à última aula de introdução. Talvez tenha encontrado alguns títulos que ainda não conhece. Isso é esperado: o pensamento de Lacan mudou ao longo de décadas, e nosso curso foi organizado para ensinar cada tema no momento certo. Vamos entender <strong>por que aprender em etapas faz sentido</strong>, sem pedir que você decore nomes de fases ou classificações.",
     "sections": [
       {
-        "title": "O valor e o limite das periodizações",
+        "title": "1. Uma ideia pode mudar com novas perguntas",
         "paragraphs": [
-          "É comum falar em um primeiro momento no qual ganham destaque o estádio do espelho e o Imaginário; em uma fase de elaboração da linguagem e do Simbólico; e em desdobramentos posteriores ligados ao Real, ao gozo e à topologia. Esse esquema é uma ferramenta de estudo, não uma lei histórica.",
-          "O interesse pelo Real, por exemplo, não começa apenas quando aparecem os nós. E questões imaginárias continuam a ter relevância após os anos 1950. O desafio é reconhecer mudanças de prioridade, de formulação e de articulação, sem supor que cada fase apague a anterior."
-        ]
+          "Pense em uma pessoa que começa estudando uma pergunta e, anos depois, percebe que precisa de novos conceitos para aprofundá-la. O pensamento dessa pessoa pode manter elementos antigos e também mudar. Essa é uma maneira simples de descrever a trajetória de Lacan: ele voltou a problemas semelhantes, mas nem sempre os formulou do mesmo jeito.",
+          "Por exemplo, a pergunta «Como alguém se reconhece como eu?» será trabalhada no Módulo 4. Outra pergunta, «O que a linguagem tem a ver com nossa experiência?», aparecerá no Módulo 3. Os dois temas se relacionam, mas você ainda não precisa dominar nenhum deles para saber quem foi Lacan.",
+          "Isso ajuda a entender por que estudar apenas uma frase famosa não resume décadas de trabalho. Uma formulação pode ganhar novas relações quando o autor enfrenta outros problemas."
+        ],
+        "inShort": "As ideias de Lacan foram sendo trabalhadas, retomadas e modificadas. Não apareceram prontas em um dia."
       },
       {
-        "title": "Um conceito que retorna",
+        "title": "2. O que é uma «fase» da obra?",
         "paragraphs": [
-          "Considere a noção de sujeito. Ao longo da formação, ela se relacionará com a diferença entre eu e sujeito, com os efeitos do significante, com a divisão subjetiva, com alienação e separação, com os discursos e, posteriormente, com o <em>parlêtre</em>.",
-          "Cada passagem acrescenta um problema. Uma definição dada no início não será simplesmente repetida: ela poderá mostrar-se insuficiente para responder a uma questão posterior. A insuficiência é uma oportunidade de aprofundamento, não um fracasso do estudo."
-        ]
+          "É comum dividir a trajetória de um autor em períodos para estudar melhor. Por exemplo, alguém pode dizer: «Primeiro se destacou uma preocupação com imagens; depois, com linguagem; em trabalhos posteriores, outras questões ganharam força». Essa organização é feita por quem pesquisa e ensina; <strong>não é uma teoria das datas criada por Lacan</strong>.",
+          "As datas não funcionam como portas que fecham um assunto e abrem outro. Um tema estudado antes pode continuar importante depois. Por isso, não vamos dizer que Lacan «abandonou todas as ideias antigas» quando começou a trabalhar outro problema.",
+          "Imagine uma cantora que explora um estilo em um álbum e outro no álbum seguinte. Você pode organizar os discos por períodos, mas não pode afirmar que todo recurso do primeiro desapareceu do segundo. A comparação ajuda a entender o limite de uma divisão histórica."
+        ],
+        "inShort": "Períodos são recursos de organização. Nenhuma data prova que um conceito tenha desaparecido."
       },
       {
-        "title": "O que significa uma reformulação?",
+        "title": "3. Por que voltaremos aos mesmos assuntos?",
         "paragraphs": [
-          "Uma reformulação não consiste apenas em escolher novas palavras para dizer a mesma coisa. Pode envolver uma mudança na função de um conceito, no problema privilegiado ou nas relações com outras formalizações.",
-          "O estudo do sintoma, por exemplo, permitirá mais tarde comparar formulações ligadas ao inconsciente e à interpretação com desenvolvimentos do último ensino em torno do <em>sinthoma</em>. Esse contraste precisará ser construído pelos textos, não presumido antecipadamente."
-        ]
+          "Este curso usa um método de aprendizagem por retomadas. Em vez de explicar todos os detalhes de uma vez, primeiro apresentamos uma pergunta. Depois, estudamos seus conceitos básicos e, mais adiante, voltamos a ela com ferramentas novas.",
+          "Exemplo: hoje você ouviu a expressão «formação do eu». No Módulo 4, aprenderá passo a passo como Lacan relacionou esse problema à imagem. Depois, ao estudar linguagem e sujeito, poderá perceber questões que a primeira explicação não resolvia. Isso não significa que a aula inicial estava errada; significa que ela foi planejada como porta de entrada.",
+          "O mesmo acontecerá com Freud. No Módulo 2, vamos aprender o que ele chamava de inconsciente antes de aprofundar a releitura lacaniana. Você não precisa pular diretamente para uma obra avançada para se considerar um estudante legítimo."
+        ],
+        "inShort": "Você verá conceitos mais de uma vez, com explicações progressivamente mais completas."
       },
       {
-        "title": "O método da espiral",
+        "title": "4. Seu mapa daqui para frente",
         "paragraphs": [
-          "Este curso utiliza uma progressão em espiral: o estudante encontra uma primeira apresentação de um conceito, aprende a utilizá-lo em relações simples e volta a ele diante de problemas mais difíceis. Isso permite aprofundar sem simular que todo o edifício teórico esteja pronto desde a primeira aula.",
-          "Ao final de cada módulo, você poderá revisitar as perguntas anteriores. O objetivo é formar uma leitura que resista a respostas fáceis e reconheça a complexidade de uma obra em transformação."
-        ]
+          "O caminho imediato é simples: <strong>Módulo 2:</strong> conhecer Freud e alguns fundamentos da psicanálise. <strong>Módulo 3:</strong> aprender por que Lacan se interessava tanto pelas palavras e pela linguagem. <strong>Módulo 4:</strong> estudar, enfim, a imagem e a formação do eu — é aqui que o estádio do espelho será explicado. <strong>Módulo 5:</strong> investigar como sujeito e linguagem se relacionam. <strong>Módulo 6:</strong> diferenciar necessidade, demanda e desejo.",
+          "Essas descrições são convites, não cobranças. Você não precisa saber agora o que significa cada expressão. Cada módulo será responsável por ensinar seu próprio vocabulário, partindo do que já apareceu anteriormente.",
+          "E as datas? O <strong>Arquivo de Lacan</strong>, nosso laboratório histórico, ficará disponível como material complementar e opcional. Ele mostra acontecimentos, aulas e publicações, mas não é um exame sobre as teorias. Se a cronologia parecer confusa, você pode deixá-la para depois sem prejudicar seu avanço ao Módulo 2.",
+          "Parabéns por concluir a introdução: o aprendizado essencial não é decorar Lacan, mas saber quem ele foi, por que voltou a Freud, como estudaremos seus textos e onde aprenderemos cada questão."
+        ],
+        "inShort": "Você está pronto para começar os fundamentos de Freud. Os temas mais difíceis serão ensinados no momento certo."
       }
     ],
     "example": {
-      "title": "O mapa com datas",
-      "text": "Imagine um mapa em que «Real», «Simbólico» e «Imaginário» aparecem desde cedo e, mais adiante, recebem novas relações. Ele não deve sugerir que três definições eternas explicam tudo, mas registrar mudanças, tensões e novas formulações."
+      "title": "Aprender música em etapas",
+      "text": "Uma pessoa que começa a estudar música conhece primeiro notas e ritmos básicos. Depois aprende acordes e harmonia. No início, ela pode ouvir a palavra «harmonia» sem precisar saber analisá-la. O nosso curso fará algo semelhante: apresentar o caminho sem exigir os conhecimentos das etapas seguintes."
     },
-    "takeaway": "A história do ensino de Lacan envolve permanências e deslocamentos. Periodizar ajuda a estudar desde que nenhuma divisão seja tratada como definitiva.",
+    "takeaway": "O pensamento de Lacan mudou e foi retomado ao longo do tempo. Dividir sua obra em períodos ajuda a estudar, mas não é uma teoria para decorar. O curso ensinará cada conceito quando ele for necessário.",
     "references": [
       "Lacan, J. <em>O Seminário, livro 11: Os quatro conceitos fundamentais da psicanálise</em>.",
       "Lacan, J. <em>O Seminário, livro 20: Mais, ainda</em>.",
@@ -553,36 +618,56 @@ window.LACAN_LESSONS = [
     "quiz": [
       {
         "phase": "Reconhecimento",
-        "prompt": "Qual afirmação sobre os períodos de Lacan é mais adequada?",
+        "prompt": "Por que podemos falar em momentos diferentes da obra de Lacan?",
         "options": [
-          "Uma divisão em períodos ajuda a estudar, mas não elimina continuidades entre eles.",
-          "Cada fase invalida inteiramente a anterior.",
-          "O ensino não sofreu nenhuma transformação."
+          "Porque ele estudou e reformulou questões durante várias décadas.",
+          "Porque cada ideia desaparecia na data seguinte.",
+          "Porque uma linha do tempo é uma lei psicológica."
         ],
         "correct": 0,
-        "explanation": "Há mudanças e continuidades. A periodização é útil como ferramenta e problemática quando vira uma regra rígida."
+        "explanation": "Os períodos ajudam a descrever mudanças e continuidades sem exigir decoreba."
       },
       {
         "phase": "Compreensão",
-        "prompt": "O que é importante investigar em uma reformulação conceitual?",
+        "prompt": "O que significa aprender por retomadas?",
         "options": [
-          "Apenas se a palavra usada mudou.",
-          "Se houve mudança de problema, função ou articulação do conceito.",
-          "Somente a década em que o autor escreveu."
+          "Decorar uma teoria inteira na primeira aula.",
+          "Voltar a um tema depois de adquirir novas explicações e ferramentas.",
+          "Evitar rever qualquer pergunta anterior."
         ],
         "correct": 1,
-        "explanation": "Uma reformulação pode alterar relações e problemas teóricos, mesmo quando o termo permanece."
+        "explanation": "Um tema pode ser apresentado de modo simples agora e aprofundado depois."
       },
       {
         "phase": "Aplicação",
-        "prompt": "Um resumo afirma: «No último Lacan, o Simbólico deixa de existir». Qual atitude é mais rigorosa?",
+        "prompt": "Você ainda não sabe explicar o estádio do espelho. O que o curso espera de você ao terminar o Módulo 1?",
         "options": [
-          "Aceitar porque toda periodização precisa eliminar uma fase.",
-          "Trocar «Simbólico» por «Real» em todos os textos.",
-          "Examinar as novas articulações dos registros sem concluir que o Simbólico foi simplesmente apagado."
+          "Que decore as datas e a teoria toda.",
+          "Que procure uma interpretação clínica em vídeos.",
+          "Que saiba que o tema será ensinado no Módulo 4 e prossiga para Freud com tranquilidade."
         ],
         "correct": 2,
-        "explanation": "A questão são as transformações na articulação dos registros, não uma substituição mecânica de um termo por outro."
+        "explanation": "O Módulo 1 apresenta o percurso; ele não exige conhecimentos que só serão ensinados adiante."
+      }
+    ],
+    "goal": [
+      "Entender que as ideias de Lacan foram se desenvolvendo.",
+      "Saber por que a formação volta a um tema mais de uma vez.",
+      "Sair com um mapa simples dos próximos módulos, sem memorizar seus conceitos."
+    ],
+    "later": "Imaginário, Simbólico, Real, gozo, topologia, sinthoma e outros termos avançados <strong>não são conteúdo obrigatório agora</strong>. Você encontrará explicações completas nos módulos correspondentes. Não os use como perguntas de prova nesta fase.",
+    "glossary": [
+      {
+        "term": "Período ou fase",
+        "meaning": "Divisão histórica aproximada usada por professores e pesquisadores para organizar um percurso intelectual."
+      },
+      {
+        "term": "Retomada",
+        "meaning": "Voltar a um assunto depois de aprender novas ferramentas, ampliando o entendimento anterior."
+      },
+      {
+        "term": "Linha do tempo",
+        "meaning": "Calendário de acontecimentos e publicações. Não é uma teoria psicológica nem uma prova sobre conceitos."
       }
     ]
   }
