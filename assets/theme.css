@@ -100,3 +100,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
 .freud-promo-card strong{font-family:"Libre Baskerville",serif;color:#745e86;font-size:7rem;line-height:1;font-weight:400}
 .freud-promo-card>span{font-family:"Libre Baskerville",serif;color:#796389;font-size:1.18rem}
 @media(max-width:740px){.freud-promo{padding:58px 20px}.freud-promo-inner{grid-template-columns:1fr;gap:28px}.freud-promo-card{min-height:190px;max-width:100%}.freud-promo-card strong{font-size:4.1rem}}
+
+/* Sprint 8 · destaque editorial compacto para o Módulo 4 */
+.sprint8-spotlight{background:linear-gradient(112deg,#ede3f0 0%,#faf2e6 78%);border-bottom:1px solid #d5c7db;padding:48px max(5vw,24px)}
+.sprint8-spotlight-inner{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(200px,.45fr);gap:38px;align-items:center}
+.sprint8-spotlight h2{font-size:clamp(2rem,3.3vw,3.15rem);margin:10px 0 12px}
+.sprint8-spotlight p:not(.kicker){font-size:.86rem;line-height:1.9;color:#5b5063;max-width:715px}
+.sprint8-links{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0 0}
+.sprint8-num{background:#faf5ee;border:1px solid #cdb9d9;box-shadow:10px 11px 0 rgba(106,75,122,.07);display:flex;flex-direction:column;align-items:center;justify-content:space-between;min-height:180px;padding:19px}
+.sprint8-num strong{font-family:"Libre Baskerville",serif;font-size:5rem;font-weight:400;line-height:1;color:#765d88}
+.sprint8-num small,.sprint8-num span{font-size:.59rem;letter-spacing:.13em;font-weight:700;color:#806c8d;text-align:center}
+@media(max-width:700px){.sprint8-spotlight{padding:44px 20px}.sprint8-spotlight-inner{grid-template-columns:1fr;gap:20px}.sprint8-num{min-height:125px}.sprint8-num strong{font-size:3.5rem}.sprint8-spotlight .button{gap:12px}}
