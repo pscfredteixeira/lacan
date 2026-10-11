@@ -163,3 +163,10 @@
 .lesson-study-feedback{flex:1 1 100%;font-size:.73rem;color:#776680;line-height:1.7;margin:1px 0 0}
 .quiz-save-confirmation{border-top:1px solid #bbd6bc;padding-top:8px;margin:11px 0 0;font-weight:700;font-size:.83rem;line-height:1.7;color:#3f714c}
 @media(max-width:700px){.lesson-study-mark{padding:16px}.lesson-study-mark .action-button{width:100%}}
+
+/* Recuperação opcional de aulas já realizadas antes da correção do salvamento */
+.lesson-restore-module{margin:22px 0 17px;border:1px solid #d8c9de;background:#f7f0f8;border-radius:13px;padding:13px 15px}
+.lesson-restore-module summary{cursor:pointer;font-size:.83rem;line-height:1.6;font-weight:700;color:#624b73}
+.lesson-restore-module p{font-size:.77rem;line-height:1.8;color:#72647a;margin:13px 0}
+.lesson-restore-module .action-button{min-height:46px;width:100%;padding:11px;font-size:.76rem;text-align:center;white-space:normal}
+.lesson-restore-module #restoreModule1Status{font-weight:700;color:#58755a}
