@@ -178,6 +178,20 @@
     document.querySelector("#quizArea .quiz-option:not([disabled]),#quizArea .quiz-finished button")?.focus({preventScroll:true});
     document.getElementById("assessment").scrollIntoView({block:"start",behavior:"smooth"});
   });
+  document.getElementById("restoreModule1")?.addEventListener("click",()=>{
+    const merged=lessons.map(l=>l.id);
+    const status=document.getElementById("restoreModule1Status");
+    if(!setStorage(KEY,merged)){
+      if(status)status.textContent="Não foi possível salvar neste navegador. Verifique as permissões de armazenamento.";
+      updateProgress();
+      return;
+    }
+    completed=merged;
+    lessons.forEach(l=>setStorage(PHASE+l.id,l.quiz.length));
+    updateProgress();
+    selectLesson(active,false);
+    if(status)status.textContent="✓ As seis aulas foram registradas como estudadas neste dispositivo.";
+  });
   nav.addEventListener("click",e=>{
     const button=e.target.closest("[data-lesson]");
     if(button) selectLesson(button.dataset.lesson,true,true);
