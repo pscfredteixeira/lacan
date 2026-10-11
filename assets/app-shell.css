@@ -1,0 +1,111 @@
+/* Formação Lacaniana · Navegação do aplicativo (v1)
+ * A navegação fica fora dos estilos das aulas e dos laboratórios.
+ * Sem bibliotecas, com foco visível, adaptação mobile e área segura do iPhone. */
+.lacan-menu-trigger{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid #d8c6df;background:#eee5f1;color:#594568;border-radius:13px;padding:10px 14px;min-width:44px;min-height:44px;font-size:.79rem;font-weight:700;white-space:nowrap;letter-spacing:.015em;transition:background .15s}
+.lacan-menu-trigger:hover{background:#e3d7ed}
+.topbar .lacan-menu-trigger{flex-shrink:0}
+.lacan-app-bar{display:none}
+.lacan-app-overlay[hidden]{display:none!important}
+.lacan-app-overlay{position:fixed;inset:0;z-index:2000;isolation:isolate;font-family:"DM Sans",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.55;color:#362c3e}
+.lacan-app-scrim{position:absolute;inset:0;background:rgba(31,21,38,.49);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.lacan-app-drawer{position:absolute;top:0;right:0;bottom:0;width:min(510px,100%);display:flex;flex-direction:column;background:#faf5ee;border-left:1px solid #d8c9de;box-shadow:-21px 0 65px rgba(32,20,40,.16);outline:0;overscroll-behavior:contain}
+.lacan-app-drawer-header{display:flex;align-items:center;gap:12px;padding:27px 26px 19px;background:linear-gradient(145deg,#faf5ed,#f1e8f4);flex-shrink:0}
+.lacan-app-logo{height:47px;width:47px;border-radius:16px;background:#6e577f;color:white;display:grid;place-items:center;font:italic 1.8rem "Libre Baskerville",Georgia,serif}
+.lacan-app-logo span{color:#e6cfd9}
+.lacan-app-drawer-brand{min-width:0;display:flex;flex-direction:column;flex:1;gap:2px}
+.lacan-app-drawer-brand>span{font-size:.61rem;font-weight:700;color:#8b7692;letter-spacing:.11em}
+.lacan-app-drawer-brand strong{font-family:"Libre Baskerville",Georgia,serif;font-size:1.22rem;line-height:1.35;font-weight:400;color:#47324e}
+.lacan-app-close{flex-shrink:0;width:44px;height:44px;border-radius:15px;background:#fffcf8;border:1px solid #d8cade;display:grid;place-items:center;color:#6e577f}
+.lacan-app-close:hover{background:#eadff1}
+.lacan-app-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:6px 22px 0;gap:5px;border-bottom:1px solid #ded0dc;background:#f6eff2;flex-shrink:0}
+.lacan-app-tabs button{border:0;background:transparent;min-height:50px;font-size:.69rem;font-weight:700;line-height:1.3;color:#786983;padding:11px 3px 13px;border-bottom:3px solid transparent}
+.lacan-app-tabs button:hover{color:#563c69}
+.lacan-app-tabs button[aria-selected="true"]{color:#5d3f70;border-color:#836795}
+.lacan-app-scroll{overflow-y:auto;flex:1;min-height:0;padding:29px 26px 35px;scrollbar-gutter:stable}
+.lacan-app-panel[hidden]{display:none}
+.lacan-app-eyebrow{font-size:.63rem;font-weight:700;letter-spacing:.17em;color:#876b94;margin:0 0 12px}
+.lacan-app-heading{font-family:"Libre Baskerville",Georgia,serif!important;line-height:1.32!important;font-size:clamp(1.75rem,2.9vw,2.25rem)!important;font-weight:400!important;letter-spacing:-.055em!important;color:#3d3243!important;margin:0 0 14px!important}
+.lacan-app-heading em{color:#74598b}
+.lacan-app-lead{font-size:.87rem;line-height:1.82;color:#6b5d71;margin:0 0 24px}
+.lacan-app-context{background:#eee4f1;color:#6c577b;font-size:.77rem;font-weight:700;padding:13px 15px;border:1px solid #dbccdf;display:flex;gap:10px;align-items:center;border-radius:13px;margin:18px 0 20px}
+.lacan-app-context svg{flex-shrink:0}
+.lacan-app-stat{background:#fffdfa;padding:21px;border:1px solid #e0d5df;border-radius:19px;margin:21px 0 18px;box-shadow:0 6px 20px rgba(56,38,69,.025)}
+.lacan-app-stat-top,.lacan-app-stat-bottom{display:flex;align-items:center;justify-content:space-between;gap:9px}
+.lacan-app-stat-top>span{font-size:.62rem;letter-spacing:.13em;color:#8b7396;font-weight:700}
+.lacan-app-stat-top strong{font-family:"Libre Baskerville",Georgia,serif;font-size:1.65rem;color:#604a75;font-weight:400}
+.lacan-app-stat-top small{font-family:"DM Sans",sans-serif;font-size:.77rem;color:#9a8aa4}
+.lacan-app-meter{height:9px;border-radius:12px;background:#e8ddeb;overflow:hidden;margin:14px 0 11px}
+.lacan-app-meter span{display:block;height:100%;background:linear-gradient(90deg,#9880aa,#665078);transition:width .2s}
+.lacan-app-stat-bottom{font-size:.71rem;color:#80718a;line-height:1.45}
+.lacan-app-continue{border-radius:18px;background:#6e577f;color:white!important;min-height:100px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 21px;text-decoration:none!important}
+.lacan-app-continue:hover{background:#5b456d}
+.lacan-app-continue-label{display:flex;flex-direction:column;gap:4px;min-width:0;font-size:.58rem;letter-spacing:.13em;font-weight:700;color:#e5d4ed}
+.lacan-app-continue-label strong{font-family:"Libre Baskerville",serif;font-size:1.03rem;line-height:1.45;letter-spacing:0;color:#fff;font-weight:400}
+.lacan-app-continue-label small{font-size:.73rem;letter-spacing:0;color:#e6dceb;font-weight:400;line-height:1.4}
+.lacan-app-continue svg{flex-shrink:0}
+.lacan-app-shortcuts{display:grid;gap:7px;margin:20px 0}
+.lacan-app-shortcuts>a,.lacan-app-shortcuts>button{width:100%;display:flex;align-items:center;gap:14px;min-height:55px;background:#fffdfa;border:1px solid #e4d7e2;border-radius:13px;padding:12px 15px;color:#574660;font-size:.82rem;font-weight:700;text-align:left;text-decoration:none}
+.lacan-app-shortcuts>a:hover,.lacan-app-shortcuts>button:hover{background:#f1e9f4}
+.lacan-app-shortcuts>a svg:first-child,.lacan-app-shortcuts>button svg:first-child{color:#836a96}
+.lacan-app-shortcuts>a span,.lacan-app-shortcuts>button span{flex:1}
+.lacan-app-shortcuts>a svg:last-child,.lacan-app-shortcuts>button svg:last-child{width:17px}
+.lacan-app-module-list,.lacan-app-lab-list{display:grid;gap:10px}
+.lacan-app-module{display:flex;align-items:center;gap:14px;padding:15px;border:1px solid #e0d5e0;background:#fffdfa;border-radius:15px;min-height:89px;text-decoration:none!important;color:#473d4f}
+.lacan-app-module.is-here,.lacan-app-lab.is-here{border-color:#9a80ae;background:#f4edf6}
+.lacan-app-module:hover,.lacan-app-lab:hover{background:#f5eef7}
+.lacan-app-module-number{font-family:"Libre Baskerville",Georgia,serif;font-size:1.5rem;color:#876c99;min-width:40px}
+.lacan-app-module-copy{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.lacan-app-module-copy strong{font-size:.82rem;font-weight:700;line-height:1.48}
+.lacan-app-module-copy small{font-size:.72rem;color:#837688}
+.lacan-app-module-meter{display:block;height:4px;border-radius:8px;background:#ede6ed;margin-top:6px;overflow:hidden}
+.lacan-app-module-meter>span{display:block;height:100%;background:#8c71a2}
+.lacan-app-module-check{width:30px;height:30px;display:grid;place-items:center;color:#557a60;background:#e6efe6;border-radius:50%}
+.lacan-app-module>svg{flex-shrink:0;width:18px;color:#917fa0}
+.lacan-app-planned{margin-top:21px;display:flex;align-items:center;justify-content:space-between;gap:15px;border:1px dashed #cbb9d0;border-radius:13px;color:#654d74;padding:17px;text-decoration:none!important;font-size:.79rem;line-height:1.5;font-weight:700}
+.lacan-app-planned svg{flex-shrink:0}
+.lacan-app-lab{display:flex;align-items:center;gap:15px;min-height:82px;background:#fffdfa;border-radius:15px;border:1px solid #e0d5e0;padding:15px;color:#473d4f;text-decoration:none!important}
+.lacan-app-lab-symbol{width:45px;height:45px;flex-shrink:0;background:linear-gradient(135deg,#e8dcee,#f2e6df);border-radius:15px;display:grid;place-items:center;color:#75568b;font-family:"Libre Baskerville",serif;font-size:1.4rem}
+.lacan-app-lab>span:nth-child(2){flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.lacan-app-lab strong{font-size:.84rem;line-height:1.5}
+.lacan-app-lab small{font-size:.72rem;line-height:1.5;color:#84748c}
+.lacan-app-lab>svg{width:18px;flex-shrink:0;color:#907c99}
+.lacan-app-progress-list{display:grid;gap:8px;margin-top:25px}
+.lacan-app-progress-row{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #e0d7df;padding:12px 5px;text-decoration:none!important}
+.lacan-app-progress-row>span:first-child{display:flex;flex-direction:column;gap:3px}
+.lacan-app-progress-row strong{font-size:.84rem;color:#504358}
+.lacan-app-progress-row small{font-size:.72rem;color:#83758b}
+.lacan-app-progress-indicator{width:33px;height:33px;flex-shrink:0;background:#eee3f2;border-radius:50%;display:grid;place-items:center;color:#765e89}
+.lacan-app-storage-note{margin:27px 0 0;padding:16px;background:#f1eaf3;border-radius:14px;font-size:.75rem;line-height:1.7;color:#766680}
+.lacan-app-drawer-footer{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:14px 26px calc(14px + env(safe-area-inset-bottom));border-top:1px solid #e0d4dc;background:#f7f0eb;font-size:.65rem;line-height:1.4;color:#86778b;flex-shrink:0}
+.lacan-app-drawer-footer span:first-child{color:#6d557b;font-weight:700}
+.lacan-app-is-open{overscroll-behavior:none}
+.lacan-app-dock-item:focus-visible,.lacan-app-drawer button:focus-visible,.lacan-app-drawer a:focus-visible,.lacan-menu-trigger:focus-visible{outline:3px solid #70528e;outline-offset:3px}
+@media(min-width:761px) and (max-width:1200px){.topbar .topnav{display:none}}
+@media(max-width:760px){
+body{padding-bottom:calc(80px + env(safe-area-inset-bottom))!important}
+.lacan-menu-trigger{padding:10px;min-width:44px;min-height:44px;border-radius:13px}
+.lacan-menu-trigger span{display:none}
+.lacan-app-bar{position:fixed;inset:auto 0 0;z-index:1900;height:calc(72px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:start;gap:2px;padding:6px 9px calc(5px + env(safe-area-inset-bottom));border-top:1px solid #dac8dd;background:rgba(255,251,246,.97);box-shadow:0 -8px 28px rgba(60,40,68,.09);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.lacan-app-dock-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:0;min-height:56px;background:transparent;border:0;border-radius:14px;color:#84718e;font-size:.63rem;font-weight:700;padding:5px 1px;text-decoration:none}
+.lacan-app-dock-item svg{width:21px;height:21px}
+.lacan-app-dock-item[aria-current="page"]{background:#ede3f3;color:#5f4674}
+.lacan-app-dock-item:hover{background:#f0e8f4;color:#604772}
+.lacan-app-drawer{top:auto;left:0;right:0;bottom:0;width:100%;max-height:min(92dvh,880px);border-radius:26px 26px 0 0;box-shadow:0 -19px 50px rgba(38,24,47,.20);border:1px solid #d9cadf;border-bottom:0}
+.lacan-app-drawer-header{padding:22px 20px 16px;border-radius:25px 25px 0 0}
+.lacan-app-logo{width:43px;height:43px;border-radius:14px}
+.lacan-app-tabs{padding:4px 12px 0;gap:2px}
+.lacan-app-tabs button{min-height:51px;font-size:.67rem;padding:8px 2px}
+.lacan-app-scroll{padding:25px 19px 32px}
+.lacan-app-drawer-footer{padding:12px 19px calc(12px + env(safe-area-inset-bottom));font-size:.60rem}
+.lacan-app-stat{padding:18px}
+.lacan-app-heading{font-size:1.8rem!important}
+.lacan-app-continue{padding:17px}
+}
+@media(max-width:370px){
+.lacan-app-drawer-header{padding:16px 14px 14px}
+.lacan-app-scroll{padding:20px 13px}
+.lacan-app-tabs button{font-size:.61rem}
+.lacan-app-dock-item{font-size:.59rem}
+.lacan-app-drawer-footer{font-size:.56rem}
+}
+@media(prefers-reduced-motion:reduce){.lacan-app-meter span{transition:none}}
