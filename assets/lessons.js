@@ -20,9 +20,9 @@
     ? "Não foi possível salvar neste navegador. Evite fechar o aplicativo antes de copiar suas anotações."
     : "O progresso fica salvo neste dispositivo.";
   function markCompleted(id) {
-    if (!completed.includes(id)) completed.push(id);
-    completed = [...new Set(completed)];
-    const ok = setStorage(KEY,completed);
+    const next=[...new Set([...completed,id])];
+    const ok=setStorage(KEY,next);
+    if(ok) completed=next;
     updateProgress();
     return ok;
   }
