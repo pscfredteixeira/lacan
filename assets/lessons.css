@@ -153,3 +153,13 @@
 .module-01 details.lesson-references>summary{padding:17px 15px;font-size:.91rem}
 .module-01 .lesson-references-inner{padding:16px 16px 20px}
 }
+
+/* Persistência de estudo · módulos 1 a 6 */
+.lesson-save-state{font-size:.73rem;line-height:1.65;color:#735e7c;margin:10px 0 15px;padding:0 2px}
+.lesson-study-mark{margin-top:24px;padding:19px 21px;background:#f6eef7;border:1px solid #d9cadd;border-radius:13px;display:flex;flex-wrap:wrap;align-items:center;gap:11px 16px}
+.lesson-study-mark-copy{font-size:.83rem;line-height:1.7;color:#66546e;flex:1 1 250px}
+.lesson-study-mark .action-button{font-size:.79rem;min-height:44px;padding:11px 16px;flex-shrink:0;text-align:center;white-space:normal}
+.lesson-study-mark .action-button[aria-pressed="true"]{border-color:#9fbd9e;background:#e9f2e9;color:#43654e}
+.lesson-study-feedback{flex:1 1 100%;font-size:.73rem;color:#776680;line-height:1.7;margin:1px 0 0}
+.quiz-save-confirmation{border-top:1px solid #bbd6bc;padding-top:8px;margin:11px 0 0;font-weight:700;font-size:.83rem;line-height:1.7;color:#3f714c}
+@media(max-width:700px){.lesson-study-mark{padding:16px}.lesson-study-mark .action-button{width:100%}}
