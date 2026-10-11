@@ -637,14 +637,14 @@ window.LACAN_LESSONS = [
       },
       {
         "phase": "Aplicação",
-        "prompt": "Você ainda não sabe explicar o estádio do espelho. O que o curso espera de você ao terminar o Módulo 1?",
+        "prompt": "Por que vale a pena estudar a obra de Lacan em etapas, voltando a alguns assuntos ao longo do curso?",
         "options": [
-          "Que decore as datas e a teoria toda.",
-          "Que procure uma interpretação clínica em vídeos.",
-          "Que saiba que o tema será ensinado no Módulo 4 e prossiga para Freud com tranquilidade."
+          "Porque cada período da obra substitui totalmente o anterior e não precisamos voltar aos assuntos.",
+          "Porque retomamos algumas perguntas depois de aprender novas ferramentas, compreendendo-as com mais profundidade.",
+          "Porque a ordem dos anos é mais importante do que entender os argumentos de cada texto."
         ],
-        "correct": 2,
-        "explanation": "O Módulo 1 apresenta o percurso; ele não exige conhecimentos que só serão ensinados adiante."
+        "correct": 1,
+        "explanation": "Lacan retomou e reformulou problemas ao longo dos anos. Estudar em etapas permite entender primeiro uma ideia básica e depois aprofundá-la com novas ferramentas. As datas ajudam a situar os textos, mas não substituem sua compreensão."
       }
     ],
     "goal": [
