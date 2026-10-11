@@ -81,6 +81,14 @@ O site também funciona como **aplicativo web instalável**, sem App Store nem h
 - O Módulo 2 agora está disponível. A sequência introdutória recomendada é Módulo 1 → Módulo 2 → Módulo 3 → Módulo 4 → Módulo 5 → Módulo 6.
 - O laboratório do espelho **não simula a vida mental de uma criança** e não serve como prova empírica da teoria. Seu foco é exercitar distinções conceituais presentes no texto de 1949.
 
+## Navegação do aplicativo · revisão do Módulo 1 (outubro de 2026)
+
+A navegação **está presente em todas as 14 páginas públicas** da versão atual: página inicial, instruções de instalação, seis módulos publicados e seis laboratórios. Em telas pequenas, uma barra inferior oferece **Início**, **Aulas**, **Laboratórios** e **Menu**; o botão superior abre o mesmo painel responsivo no computador. O painel contém quatro seções: visão geral, aulas disponíveis, laboratórios e **Meu progresso**. Há também um atalho de continuação que identifica, no dispositivo atual, a primeira aula cuja avaliação ainda não foi concluída. O progresso apresenta os dados dos módulos 1 a 6 (36 aulas) e não envia anotações ou informações a servidores.
+
+O menu é implementado em `assets/app-shell.js` e `assets/app-shell.css` e está incluído no cache da versão `lacan-study-pwa-v2` do service worker, para acesso no aplicativo instalado. Possui foco controlado, tecla Esc para fechar, navegação de abas por teclado e espaço seguro para a barra inferior do iPhone. O teste visual em aparelhos reais permanece pendente.
+
+A avaliação final da **Aula 1.6** foi revista: deixou de exigir referência antecipada ao estádio do espelho e agora verifica se o estudante entendeu por que a obra de Lacan é estudada de forma progressiva. As cinco aulas anteriores e os outros módulos mantiveram seus conteúdos.
+
 ## Publicação
 
 O site é estático e compatível com GitHub Pages. Em **Settings → Pages**, selecionar **Deploy from a branch → main → /(root)**. Após cada atualização na branch `main`, o GitHub Pages deve republicar o conteúdo automaticamente.
