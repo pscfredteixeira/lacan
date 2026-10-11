@@ -43,6 +43,15 @@
     const state=()=>modules.map(m=>({...m,completed:storage(m.number)}));
     const count=rows=>rows.reduce((n,m)=>n+m.completed.size,0);
     const resume=rows=>{
+      let last="";
+      try{last=JSON.parse(localStorage.getItem("lacan-study-last-lesson"))||"";}catch{}
+      const match=typeof last==="string"&&last.match(/^modulo-([1-6])\.html\?aula=\1\.([1-6])$/);
+      if(match){
+        const n=Number(match[1]),id=n+"."+match[2],found=rows.find(r=>r.number===n);
+        if(found&&!found.completed.has(id)){
+          return {href:last,label:"Continuar na aula "+id,detail:found.title};
+        }
+      }
       for (const r of rows) for (let i=1;i<=6;i++) if(!r.completed.has(r.number+"."+i)){
         return {href:"modulo-"+r.number+".html?aula="+r.number+"."+i,label:r.completed.size?"Continuar na aula "+r.number+"."+i:"Começar a aula "+r.number+"."+i,detail:r.title};
       }
