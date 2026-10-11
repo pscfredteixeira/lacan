@@ -28,9 +28,9 @@
   let current="",phase=0,answer=null;
   const progressMessage=()=>storageWarning?"Não foi possível salvar neste navegador. Copie suas anotações para preservá-las.":"Seu estudo fica registrado neste dispositivo.";
   function markCompleted(id){
-    if(!completed.includes(id))completed.push(id);
-    completed=[...new Set(completed)];
-    const saved=setValue(config.completionKey,completed);
+    const next=[...new Set([...completed,id])];
+    const saved=setValue(config.completionKey,next);
+    if(saved)completed=next;
     recordProgress();
     return saved;
   }
