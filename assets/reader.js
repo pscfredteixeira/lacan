@@ -165,9 +165,9 @@
       if(!Number.isInteger(index)||index<0||index>=lessons.find(l=>l.id===current).quiz[phase].options.length)return;
       answer=index;
       const lesson=lessons.find(l=>l.id===current);
-      if(answer===lesson.quiz[phase].correct && phase===lesson.quiz.length-1){
-        setValue(PHASE+current,lesson.quiz.length);
-        markCompleted(current);
+      if(answer===lesson.quiz[phase].correct){
+        setValue(PHASE+current,phase+1);
+        if(phase===lesson.quiz.length-1)markCompleted(current);
       }
       renderQuiz();updateStudyMark();
       const feedback=$("quizArea").querySelector(".quiz-feedback");
@@ -177,10 +177,13 @@
     const manual=event.target.closest("[data-study-action]");
     if(manual){
       if(completed.includes(current)){
-        completed=completed.filter(id=>id!==current);
-        setValue(config.completionKey,completed);
-        setValue(PHASE+current,0);
-        phase=0;answer=null;recordProgress();
+        const next=completed.filter(id=>id!==current);
+        if(setValue(config.completionKey,next)){
+          completed=next;
+          setValue(PHASE+current,0);
+          phase=0;answer=null;
+        }
+        recordProgress();
       }else{
         setValue(PHASE+current,lessons.find(l=>l.id===current).quiz.length);
         markCompleted(current);
