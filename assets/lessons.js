@@ -138,9 +138,9 @@
       const choice=Number(option.dataset.option);
       if(!Number.isInteger(choice)||choice<0||choice>=lesson.quiz[phase].options.length)return;
       result=choice;
-      if(choice===lesson.quiz[phase].correct && phase===lesson.quiz.length-1) {
-        setStorage(PHASE+active,lesson.quiz.length);
-        markCompleted(active);
+      if(choice===lesson.quiz[phase].correct) {
+        setStorage(PHASE+active,phase+1);
+        if(phase===lesson.quiz.length-1)markCompleted(active);
       }
       renderQuiz(lesson);updateStudyMark();
       const box=document.querySelector("#quizArea .quiz-feedback");if(box){box.tabIndex=-1;box.focus({preventScroll:true});}
@@ -149,10 +149,12 @@
     const manual=e.target.closest("[data-study-action]");
     if(manual){
       if(completed.includes(active)){
-        completed=completed.filter(id=>id!==active);
-        setStorage(KEY,completed);
-        setStorage(PHASE+active,0);
-        phase=0;result=null;
+        const next=completed.filter(id=>id!==active);
+        if(setStorage(KEY,next)){
+          completed=next;
+          setStorage(PHASE+active,0);
+          phase=0;result=null;
+        }
         updateProgress();renderQuiz(lessons.find(l=>l.id===active));
       }else {
         setStorage(PHASE+active,lessons.find(l=>l.id===active).quiz.length);
