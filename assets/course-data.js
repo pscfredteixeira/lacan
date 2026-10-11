@@ -20,7 +20,7 @@ window.LACAN_COURSE = {
       lessons: [
         ["Quem foi Jacques Lacan?", "Percurso intelectual, clínica e principais momentos de sua produção."],
         ["Por que Lacan retorna a Freud?", "O sentido do retorno a Freud e suas consequências."],
-        ["A psicanálise francesa do século XX", "Instituições e debates que moldaram esse contexto."],
+        ["Lacan e os debates de sua época", "As associações, a duração das sessões e a continuidade de seu ensino."],
         ["Os interlocutores de Lacan", "Filosofia, linguística, antropologia e psiquiatria."],
         ["Como ler um texto lacaniano?", "Estratégias para atravessar dificuldades conceituais."],
         ["O pensamento lacaniano em movimento", "Continuidades, rupturas e revisões de conceitos."]
