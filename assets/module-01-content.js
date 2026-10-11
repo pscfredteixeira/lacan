@@ -1,4 +1,4 @@
-/* Formação Lacaniana · Módulo 01 · roteiro de estudo. */
+/* Formação Lacaniana · Módulo 01 · revisão didática da aula 1.3 (outubro de 2026). */
 window.LACAN_LESSONS = [
   {
     "id": "1.1",
@@ -223,112 +223,115 @@ window.LACAN_LESSONS = [
   },
   {
     "id": "1.3",
-    "title": "A psicanálise francesa do século XX",
-    "subtitle": "As pessoas e instituições ao redor do trabalho de Lacan",
-    "duration": "35–50 min",
-    "question": "Por que conhecer o ambiente em que Lacan ensinava ajuda a entender sua trajetória?",
-    "introduction": "Ninguém desenvolve ideias completamente sozinho. Lacan estudava e trabalhava com outros profissionais, participava de associações e discordava de algumas práticas de sua época. Isso é o que chamamos de <strong>contexto histórico</strong>. Nesta aula, vamos conhecer esse cenário sem exigir que você decore siglas, nomes de instituições ou datas.",
+    "title": "Lacan e os debates de sua época",
+    "subtitle": "Entenda por que ele discordou de outros psicanalistas e o que aconteceu depois",
+    "duration": "25–35 min",
+    "question": "Por que Lacan entrou em desacordo com outras pessoas que trabalhavam com psicanálise?",
+    "introduction": "Na aula anterior, vimos que Lacan voltou a estudar as ideias de Freud e propôs maneiras próprias de entendê-las. Mas ele não trabalhava sozinho. Na França, havia muitos psicanalistas que discutiam como atender pacientes e como preparar novos profissionais. Lacan participou dessas discussões. Algumas discordâncias foram tão importantes que ele acabou mudando de associação e criando sua própria escola. Vamos conhecer essa história.",
     "sections": [
       {
-        "title": "1. O que é uma instituição psicanalítica?",
+        "title": "1. A psicanálise tinha grupos de profissionais",
         "paragraphs": [
-          "Uma instituição pode ser uma associação de profissionais que promove encontros, debates e formação. Pense em uma associação de médicos, professores ou pesquisadores: ela pode discutir critérios de formação, práticas de trabalho e maneiras de organizar seus cursos.",
-          "Na época de Lacan, havia associações desse tipo ligadas à psicanálise. Elas ajudavam a formar profissionais, mas também podiam ter divergências sobre o modo de trabalhar. Em outras palavras: <strong>a psicanálise não era um grupo em que todos pensavam igual</strong>.",
-          "É importante não misturar duas questões: «como uma instituição funciona?» e «uma teoria faz sentido?». Uma discussão administrativa ou profissional pode ter consequências relevantes sem resolver, sozinha, uma discussão teórica."
+          "Depois de Freud, a psicanálise se espalhou por diferentes países. Na França, profissionais se reuniam em <strong>associações de psicanálise</strong>. Uma associação é um grupo organizado para estudar, trocar experiências e estabelecer formas de trabalho e de formação.",
+          "Imagine uma associação de professores. Seus integrantes podem conversar sobre o que ensinar, quais experiências são necessárias para formar um novo professor e como organizar os cursos. Com os psicanalistas acontecia algo semelhante: eles também discutiam como formar pessoas que desejavam trabalhar nessa área.",
+          "Esses grupos não concordavam sempre. Alguns profissionais defendiam determinados procedimentos; outros acreditavam que era preciso trabalhar de maneira diferente. Lacan participava desse ambiente de estudo e de debates."
         ],
-        "inShort": "Instituições organizam profissionais e formação. Discordâncias institucionais e teóricas podem se relacionar, mas não são idênticas."
+        "inShort": "Os psicanalistas formavam associações para estudar e discutir a prática e a formação de novos profissionais. Nem todos concordavam entre si."
       },
       {
-        "title": "2. Qual foi o conflito envolvendo Lacan?",
+        "title": "2. Uma discordância concreta: quanto dura uma sessão?",
         "paragraphs": [
-          "Lacan discutia maneiras de conduzir o trabalho psicanalítico e de formar profissionais. Uma questão controversa era a duração das sessões — os encontros entre analista e paciente. Algumas instituições defendiam critérios mais padronizados; Lacan utilizava sessões de duração variável.",
-          "Houve desacordos ao longo dos anos. Em 1953, Lacan passou a participar de uma nova sociedade psicanalítica francesa. No início da década de 1960, novas divergências sobre reconhecimento institucional e formação fizeram com que sua posição no ensino e na formação de analistas mudasse.",
-          "Não é necessário decorar esses acontecimentos. O ponto que interessa agora é simples: <strong>Lacan desenvolvia suas ideias enquanto participava de debates reais sobre como a psicanálise deveria ser praticada e ensinada.</strong>"
+          "Para entender uma das discussões envolvendo Lacan, precisamos conhecer a palavra <strong>sessão</strong>. Na psicanálise, sessão é o encontro de atendimento entre um psicanalista e a pessoa que o procura. Não é a mesma coisa que um seminário: <strong>sessão é atendimento; seminário é aula</strong>.",
+          "Em muitas práticas psicanalíticas daquela época, esperava-se que os atendimentos seguissem uma duração previamente estabelecida. Lacan adotava um modo diferente: realizava sessões de <strong>duração variável</strong>, isto é, que podiam terminar em momentos diferentes.",
+          "Por que isso gerou discussão? Porque a duração da sessão envolve maneiras distintas de conduzir o atendimento. Lacan defendia que o momento de terminar podia fazer parte de seu modo de trabalhar. Outros psicanalistas criticavam essa prática e questionavam se ela respeitava os critérios exigidos para o atendimento e para a formação de novos analistas.",
+          "Não precisamos decidir quem estava certo para compreender a aula. O importante é perceber que <strong>havia uma discordância real sobre como praticar e ensinar a psicanálise</strong>. A controvérsia não era apenas uma disputa de opiniões pessoais."
         ],
-        "inShort": "A carreira de Lacan envolveu debates e mudanças de instituições; isso ajuda a entender sua trajetória."
+        "inShort": "Sessão é um atendimento. Lacan usava sessões de duração variável, enquanto outros profissionais questionavam essa maneira de trabalhar."
       },
       {
-        "title": "3. Ele continuou ensinando",
+        "title": "3. O que aconteceu depois dessas discordâncias?",
         "paragraphs": [
-          "Depois dos conflitos do início da década de 1960, Lacan passou a realizar seus seminários em outro local e criou uma escola de psicanálise. Os seminários continuaram atraindo profissionais e pessoas interessadas em filosofia, ciências humanas e outras áreas.",
-          "Quando estudamos um autor, é comum encontrar um livro, um curso ou uma aula que tenha surgido nesse tipo de contexto. Conhecer a ocasião ajuda a entender para quem ele falava e qual problema estava discutindo.",
-          "Mas cuidado: saber em que prédio Lacan ensinava não explica automaticamente suas teorias. A história é um apoio; a compreensão dos conceitos exige leitura e exemplos próprios."
+          "Lacan participava de uma associação chamada Sociedade Psicanalítica de Paris. Em <strong>1953</strong>, depois de divergências que envolviam também a formação de analistas, ele saiu desse grupo e passou a participar de uma nova associação, a Sociedade Francesa de Psicanálise. Ele não foi a única pessoa envolvida nessa mudança.",
+          "As discussões continuaram. Anos depois, a nova associação buscava reconhecimento de uma organização internacional de psicanálise. Uma das exigências era que Lacan não continuasse sendo reconhecido por ela como responsável pela formação de novos analistas. Em <strong>1963</strong>, esse conflito levou a outra ruptura.",
+          "E Lacan parou de ensinar? <strong>Não.</strong> Em <strong>1964</strong>, ele criou uma escola própria, que ficou conhecida como Escola Freudiana de Paris. Seus seminários continuaram, agora também frequentados por estudantes e pesquisadores de outras áreas.",
+          "As datas aparecem aqui apenas para deixar clara a ordem dos acontecimentos: <strong>primeiro houve uma separação, depois outra discordância, e Lacan continuou seu trabalho em uma escola própria</strong>. Não é necessário memorizá-las para compreender a história."
         ],
-        "inShort": "Os seminários continuaram depois dos conflitos. O local e a data ajudam a situar o ensino."
+        "inShort": "Lacan mudou de associação, viveu novas divergências e, em 1964, criou sua própria escola. Ele continuou ensinando."
       },
       {
-        "title": "4. O que vamos levar desta história?",
+        "title": "4. Por que essa história importa para quem vai estudar Lacan?",
         "paragraphs": [
-          "Imagine dois professores discordando sobre como ensinar uma matéria. O fato de um deles ter deixado uma escola não prova que toda a sua teoria esteja certa ou errada. Para avaliar suas ideias, precisamos ouvir os argumentos.",
-          "É assim que vamos estudar Lacan. Primeiro, reconhecer o contexto sem criar heróis ou vilões. Depois, procurar compreender os conceitos e os motivos dos debates. Se uma sigla ou uma data aparecer nas leituras, você poderá consultá-la em vez de decorá-la.",
-          "A pergunta para guardar é: <strong>qual diferença existe entre contar um acontecimento histórico e explicar uma teoria?</strong> Se você consegue responder, aprendeu o essencial desta aula."
+          "Agora podemos juntar as peças. Na primeira aula, conhecemos Lacan como médico, psicanalista e professor. Na segunda, entendemos por que ele voltou aos textos de Freud. Nesta terceira, vimos que suas ideias e sua maneira de trabalhar eram discutidas por outros psicanalistas.",
+          "Isso ajuda a compreender por que Lacan fundou uma escola e por que seus seminários se tornaram tão importantes. Ele não estava apenas escrevendo livros: também participava de debates sobre a psicanálise que se ensinava e se praticava em sua época.",
+          "Uma coisa merece atenção: <strong>sair de uma associação não prova que as ideias de alguém estejam certas ou erradas</strong>. Para compreender essas ideias, precisamos estudá-las. A história das associações nos mostra o que aconteceu ao redor desse trabalho.",
+          "Na próxima aula, conheceremos alguns autores de outras áreas com quem Lacan dialogou. Por enquanto, temos o essencial: ele estudava Freud, defendia determinadas maneiras de praticar a psicanálise e continuou ensinando mesmo depois de conflitos com outros profissionais."
         ],
-        "inShort": "Uma biografia explica onde e quando alguém trabalhou. Para compreender a teoria, precisamos examinar o que essa pessoa argumentou."
+        "inShort": "Os conflitos ajudam a explicar a trajetória de Lacan e sua escola. Para entender as ideias dele, vamos continuar estudando seus argumentos."
       }
     ],
     "example": {
-      "title": "Uma mudança de escola não resolve uma discussão",
-      "text": "Dois professores discordam sobre a duração das aulas. Um muda de instituição e continua ensinando. Esse acontecimento ajuda a contar sua história, mas não demonstra que seu método seja o melhor ou o pior. Algo semelhante orienta nosso cuidado ao estudar os conflitos profissionais de Lacan."
+      "title": "Um exemplo para entender a discordância",
+      "text": "Imagine uma associação de professores que precisa decidir como serão organizadas as aulas e a formação dos novos docentes. Alguns defendem um formato padronizado; outros propõem mais flexibilidade. Eles podem discordar, mudar de associação ou criar outra escola, sem deixar de ensinar. Esse exemplo ajuda a compreender por que um desacordo sobre práticas e formação pode mudar a trajetória de um profissional. É apenas uma comparação: uma sessão de psicanálise não é uma aula escolar."
     },
-    "takeaway": "Lacan desenvolveu suas ideias em um ambiente de debates e conflitos institucionais. Compreender esse contexto ajuda a situar sua carreira, mas não substitui entender os conceitos.",
+    "takeaway": "Lacan trabalhava em um meio no qual os psicanalistas discutiam como atender pacientes e formar novos profissionais. Sua prática de sessões de duração variável foi uma das questões controversas. Depois de conflitos institucionais, ele criou uma escola própria e continuou seus seminários.",
     "references": [
-      "Lacan, J. <em>O Seminário, livro 11: Os quatro conceitos fundamentais da psicanálise</em> (ensino de 1964).",
-      "Lacan, J. <em>Função e campo da fala e da linguagem em psicanálise</em> (1953).",
-      "Johnston, A. «Jacques Lacan», <em>Stanford Encyclopedia of Philosophy</em>."
+      "Johnston, A. «Jacques Lacan», <em>Stanford Encyclopedia of Philosophy</em>, histórico dos seminários e das rupturas institucionais. <a href=\"https://plato.stanford.edu/entries/lacan/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>",
+      "Société Psychanalytique de Paris. «Brève histoire de la Société Psychanalytique de Paris», histórico dos conflitos de formação e das associações. <a href=\"https://www.spp.asso.fr/breve-histoire-de-la-societe-psychanalytique-de-paris/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>",
+      "Association Psychanalytique de France. «L’APF : présentation», relato de sua formação após os desacordos dos anos 1960. <a href=\"https://associationpsychanalytiquedefrance.fr/lapf/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>"
     ],
     "quiz": [
       {
         "phase": "Reconhecimento",
-        "prompt": "Para que serve, em geral, uma instituição psicanalítica?",
+        "prompt": "Na psicanálise, qual é a diferença entre sessão e seminário?",
         "options": [
-          "Para reunir profissionais e organizar debates e formação.",
-          "Para provar que qualquer teoria de seus membros é verdadeira.",
-          "Para substituir completamente o estudo de Freud."
+          "Sessão é um encontro de atendimento; seminário é um encontro de ensino e estudo.",
+          "Sessão é uma reunião de uma associação; seminário é um atendimento individual.",
+          "São dois nomes para o mesmo tipo de encontro, sem diferença entre eles."
         ],
         "correct": 0,
-        "explanation": "Instituições podem organizar ensino e práticas; isso não torna suas posições automaticamente corretas."
+        "explanation": "Sessão é um atendimento. Seminário é uma atividade de estudo ou ensino, como as aulas que Lacan conduzia."
       },
       {
         "phase": "Compreensão",
-        "prompt": "Por que a mudança de uma instituição não explica sozinha uma teoria?",
+        "prompt": "O que significa dizer que Lacan realizava sessões de duração variável?",
         "options": [
-          "Porque datas não existem.",
-          "Porque um acontecimento histórico e um argumento teórico são coisas diferentes.",
-          "Porque Lacan nunca participou de instituições."
+          "Que ele sempre atendia todas as pessoas pelo mesmo tempo previamente estabelecido.",
+          "Que seus atendimentos podiam terminar após intervalos diferentes, o que gerou debates sobre sua prática.",
+          "Que ele trocava a duração de seus seminários de acordo com o público."
         ],
         "correct": 1,
-        "explanation": "A história dá contexto, mas compreender uma ideia exige analisar a própria ideia."
+        "explanation": "A duração variável dizia respeito aos atendimentos, e não à duração de suas aulas. Essa escolha estava entre os motivos de discordância com outros profissionais."
       },
       {
         "phase": "Aplicação",
-        "prompt": "Uma pessoa diz que «Lacan mudou de escola; logo, tudo que ele dizia era verdadeiro». O que responder?",
+        "prompt": "Depois das divergências com outras associações, o que aconteceu com o ensino de Lacan?",
         "options": [
-          "A mudança prova a teoria.",
-          "A instituição sempre deve ser ignorada.",
-          "Esse fato conta parte da história, mas não substitui estudar os argumentos."
+          "Ele abandonou a psicanálise e deixou de ensinar.",
+          "Ele passou a ensinar somente medicina, sem falar mais sobre Freud.",
+          "Ele criou uma escola própria e continuou realizando seus seminários."
         ],
         "correct": 2,
-        "explanation": "Não se deve transformar conflitos profissionais em prova automática de uma teoria."
+        "explanation": "Lacan continuou ensinando e fundou, em 1964, a escola que ficou conhecida como Escola Freudiana de Paris."
       }
     ],
     "goal": [
-      "Entender o que é uma instituição psicanalítica.",
-      "Saber que Lacan participou de debates e desacordos.",
-      "Distinguir fatos sobre a carreira de Lacan das ideias que ele desenvolveu."
+      "Distinguir uma sessão de atendimento de um seminário de ensino.",
+      "Compreender o motivo de uma das principais discordâncias sobre a prática de Lacan.",
+      "Entender por que ele criou uma escola e continuou ensinando."
     ],
-    "later": "Você não precisa guardar nomes de sociedades, siglas internacionais nem discussões técnicas sobre duração de sessões. Elas estarão disponíveis nas referências para quem quiser aprofundar.",
+    "later": "As datas e os nomes das associações ajudam a situar a história, mas não são o objetivo da avaliação. Esta aula não ensina uma técnica para conduzir sessões.",
     "glossary": [
       {
-        "term": "Instituição",
-        "meaning": "Organização que reúne pessoas e estabelece práticas, objetivos ou critérios de formação."
+        "term": "Associação de psicanálise",
+        "meaning": "Grupo de profissionais que se reúne para estudar, discutir práticas e estabelecer formas de formação."
       },
       {
-        "term": "Analista",
-        "meaning": "Profissional que exerce a psicanálise; o termo é usado aqui para situar debates de formação, sem ensinar prática clínica."
+        "term": "Sessão",
+        "meaning": "Encontro de atendimento entre um psicanalista e a pessoa atendida. É diferente de seminário, que é uma aula."
       },
       {
-        "term": "Contexto histórico",
-        "meaning": "Conjunto de acontecimentos e condições que ajudam a localizar uma obra e os debates de seu tempo."
+        "term": "Duração variável",
+        "meaning": "Quando os atendimentos não terminam necessariamente após o mesmo intervalo de tempo."
       }
     ]
   },
