@@ -89,6 +89,16 @@ O menu é implementado em `assets/app-shell.js` e `assets/app-shell.css` e está
 
 A avaliação final da **Aula 1.6** foi revista: deixou de exigir referência antecipada ao estádio do espelho e agora verifica se o estudante entendeu por que a obra de Lacan é estudada de forma progressiva. As cinco aulas anteriores e os outros módulos mantiveram seus conteúdos.
 
+## Correção do salvamento do progresso · outubro de 2026
+
+A conclusão de uma aula agora é registrada assim que a **terceira resposta do quiz é acertada**, sem depender de um clique posterior em «Concluir avaliação». A fase atual do quiz é guardada após **cada resposta correta**, e o leitor a restaura ao abrir a aula novamente. Isso vale para o Módulo 1 (`assets/lessons.js`) e para os Módulos 2 a 6 (`assets/reader.js`).
+
+O botão **Marcar esta aula como estudada** permite registrar uma aula já realizada anteriormente sem refazer seu quiz. No Módulo 1, o controle recolhido **Já concluiu este módulo antes?** oferece registro das seis aulas em uma só ação, para estudantes afetados pelo comportamento antigo. Essa recuperação é voluntária: não há como reconstruir automaticamente atividades antigas que nunca foram gravadas.
+
+A última aula visitada também é armazenada, e o menu **Continuar estudando** retoma essa aula quando ela ainda não estiver marcada como concluída. A interface informa falhas de escrita no armazenamento local, em vez de prometer salvamento indiscriminadamente.
+
+O progresso continua exclusivamente no armazenamento do navegador/PWA e não é sincronizado na nuvem. No iPhone, Safari e aplicativo instalado na tela inicial podem manter dados separados; trocar de dispositivo ou limpar dados pode perder os registros. A solução definitiva para sincronização entre dispositivos exigirá autenticação e armazenamento de dados no servidor, a desenvolver em etapa futura.
+
 ## Publicação
 
 O site é estático e compatível com GitHub Pages. Em **Settings → Pages**, selecionar **Deploy from a branch → main → /(root)**. Após cada atualização na branch `main`, o GitHub Pages deve republicar o conteúdo automaticamente.
