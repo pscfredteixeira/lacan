@@ -159,7 +159,7 @@
           const href=missing.length?'modulo-'+m.number+'.html?aula='+missing[0]:'modulo-'+m.number+'.html?aula='+m.number+'.1';
           return '<a href="'+href+'" class="lacan-app-progress-row"><span><strong>'+String(m.number).padStart(2,"0")+' · '+esc(m.short)+'</strong><small>'+m.completed.size+' de 6 aulas</small></span><span class="lacan-app-progress-indicator">'+(m.completed.size===6?icon("check"):icon("arrow"))+'</span></a>';
         }).join("")+'</div>'+
-        '<p class="lacan-app-storage-note">O progresso e as anotações ficam salvos apenas neste dispositivo. Se você limpar os dados do navegador ou trocar de aparelho, eles não serão transferidos automaticamente.</p>';
+        '<p class="lacan-app-storage-note">O progresso e as anotações ficam salvos neste navegador ou aplicativo instalado. No iPhone, o Safari e o aplicativo da tela inicial podem guardar dados separados. Não há sincronização entre aparelhos ou backup na nuvem.</p>';
     };
     const setTab=(tab,focus=false)=>{
       if(!appPanels.includes(tab))return;
