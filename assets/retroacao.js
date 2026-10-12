@@ -10,22 +10,6 @@
       endings: ["não queria que outra pessoa entrasse.", "precisaria abrir aquela porta na manhã seguinte."],
       meanings: ["Proteger o acesso.", "Preparar um retorno."],
       explanation: "O início permaneceu idêntico. O que veio depois permitiu reler «guardou a chave» de duas maneiras: como impedir uma entrada ou como preparar uma volta."
-    },
-    {
-      label: "A mensagem",
-      opening: "Ele releu a mensagem porque...",
-      guesses: ["Talvez estivesse contente.", "Talvez algo o preocupasse."],
-      endings: ["queria reviver a alegria daquela notícia.", "não conseguia entender a última frase."],
-      meanings: ["Repetir um momento agradável.", "Voltar a algo ainda incerto."],
-      explanation: "«Releu» não indicava, sozinho, alegria ou preocupação. O complemento posterior altera a maneira de compreender o mesmo gesto."
-    },
-    {
-      label: "O silêncio",
-      opening: "Ela ficou em silêncio ao ouvir seu nome porque...",
-      guesses: ["Talvez estivesse contrariada.", "Talvez tivesse sido surpreendida."],
-      endings: ["não concordava com a acusação que acabara de ouvir.", "era a primeira vez que alguém a chamava daquele modo."],
-      meanings: ["Uma reação a uma acusação.", "Uma surpresa com a forma de ser chamada."],
-      explanation: "Antes do desfecho, o silêncio admite diferentes hipóteses. As palavras posteriores reorganizam a leitura da cena sem revelar um sentido psicológico definitivo."
     }
   ];
   const defaultState = () => ({ index: 0, step: "predict", guess: null, warning: false });
@@ -38,7 +22,9 @@
     try {
       const old = JSON.parse(localStorage.getItem(STORE));
       if (!old || typeof old !== "object") return defaultState();
-      if (!Number.isInteger(old.index) || old.index < 0 || old.index > scenes.length) return defaultState();
+      if (!Number.isInteger(old.index) || old.index < 0 || old.index > 3) return defaultState();
+      // Ao reduzir o percurso, quem já avançou além da primeira cena mantém a conclusão.
+      if (old.index >= 1) return { index: 1, step: "done", guess: null, warning: false };
       const validSteps = ["predict", "first", "compare", "resolved", "done"];
       if (!validSteps.includes(old.step)) return defaultState();
       if (old.index === scenes.length && old.step !== "done") return defaultState();
@@ -75,44 +61,33 @@
       <div class="retro-ending-reading">${esc(scene.meanings[letter === "A" ? 0 : 1])}</div>
     </div>`;
   }
-  function bars(index, finished) {
-    return `<div class="retro-progress-head">
-      <span>${finished ? "Percurso concluído" : `CENA ${index + 1} DE ${scenes.length}`}</span>
-      <span>${finished ? "3 / 3" : `${index + 1} / ${scenes.length}`}</span>
-    </div>
-    <div class="retro-progress-bars" aria-label="${finished ? "Três cenas concluídas" : `${index} cena(s) concluída(s) de ${scenes.length}`}">
-      ${scenes.map((_, i) => `<span class="${i < index || finished ? "retro-done" : i === index ? "retro-current" : ""}"></span>`).join("")}
-    </div>`;
-  }
   function boardMarkup() {
     const finished = state.index >= scenes.length;
     if (finished) {
-      return `${bars(state.index, true)}
-        <div class="retro-finish">
+      return `<div class="retro-finish">
           <div class="retro-finish-mark" aria-hidden="true">✓</div>
-          ${heading("EXPERIMENTO CONCLUÍDO", "Agora volte ao início.", "Em três cenas, você observou como informações posteriores podem modificar a interpretação do que já foi dito.")}
-          <p>Esse movimento ajuda a introduzir a <strong>retroação</strong>. Não significa que todo sentido só exista ao final de uma frase, nem que esses exemplos permitam interpretar o inconsciente de alguém.</p>
-          <button type="button" class="retro-action retro-primary" data-retro-action="reset">Refazer as três cenas <span aria-hidden="true">↺</span></button>
+          ${heading("EXPERIMENTO CONCLUÍDO", "Agora volte ao início.", "Você observou como duas continuações da mesma frase podem modificar a leitura do começo.")}
+          <p>Esse movimento ajuda a introduzir a <strong>retroação</strong>. Não significa que todo sentido só exista ao final de uma frase, nem que esse exemplo permita interpretar o inconsciente de alguém.</p>
+          <button type="button" class="retro-action retro-primary" data-retro-action="reset">Refazer a experiência <span aria-hidden="true">↺</span></button>
         </div>`;
     }
     const scene = scenes[state.index];
-    const top = bars(state.index, false);
     if (state.step === "predict") {
-      return `${top}${heading(`CENA ${state.index + 1} · ${scene.label.toUpperCase()}`, "O que você imagina?", "Leia o começo da frase. Antes de conhecer o final, escolha uma hipótese provisória. Nenhuma delas é um diagnóstico ou uma resposta certa.")}
+      return `${heading(`EXPERIÊNCIA · ${scene.label.toUpperCase()}`, "O que você imagina?", "Leia o começo da frase. Antes de conhecer o final, escolha uma hipótese provisória. Nenhuma delas é um diagnóstico ou uma resposta certa.")}
         <div class="retro-stem"><span class="retro-stem-label">A FRASE COMEÇA ASSIM</span><p>${esc(scene.opening)}</p><span class="retro-cursor" aria-hidden="true"></span></div>
         <p class="retro-prompt">Qual leitura veio primeiro à sua cabeça?</p>
         <div class="retro-choices">${scene.guesses.map((g, i) => `<button type="button" class="retro-choice" data-retro-action="predict" data-retro-value="${i}"><span class="retro-choice-index">${i === 0 ? "A" : "B"}</span><span>${esc(g)}</span><span class="retro-choice-arrow" aria-hidden="true">↗</span></button>`).join("")}</div>
         <p class="retro-hint">Aqui, não existe resposta correta. Estamos registrando uma primeira expectativa.</p>`;
     }
     if (state.step === "first") {
-      return `${top}${heading(`CENA ${state.index + 1} · ${scene.label.toUpperCase()}`, "Um primeiro desfecho.", "Sua hipótese inicial é apenas uma possibilidade. Observe como a continuação orienta a leitura.")}
+      return `${heading(`EXPERIÊNCIA · ${scene.label.toUpperCase()}`, "Um primeiro desfecho.", "Sua hipótese inicial é apenas uma possibilidade. Observe como a continuação orienta a leitura.")}
         <div class="retro-guess"><span>SUA HIPÓTESE INICIAL</span><p>${esc(scene.guesses[state.guess])}</p></div>
         <div class="retro-endings retro-one">${sentence(scene, scene.endings[0], "A")}</div>
         <button type="button" class="retro-action retro-primary" data-retro-action="second">Revelar outro desfecho <span aria-hidden="true">→</span></button>`;
     }
     const comparison = `<div class="retro-endings">${sentence(scene, scene.endings[0], "A")}${sentence(scene, scene.endings[1], "B")}</div>`;
     if (state.step === "compare") {
-      return `${top}${heading(`CENA ${state.index + 1} · ${scene.label.toUpperCase()}`, "Mesmo começo. Leituras diferentes.", "Compare os dois desfechos. As palavras iniciais não mudaram, mas a compreensão da cena pode mudar.")}
+      return `${heading(`EXPERIÊNCIA · ${scene.label.toUpperCase()}`, "Mesmo começo. Leituras diferentes.", "Compare os dois desfechos. As palavras iniciais não mudaram, mas a compreensão da cena pode mudar.")}
         ${comparison}
         <div class="retro-question"><p class="retro-prompt">O que esta comparação ajuda a perceber?</p>
           <div class="retro-choices">
@@ -122,11 +97,11 @@
           ${state.warning ? '<p class="retro-feedback" role="alert">Reexamine a comparação: as mesmas palavras iniciais participam de leituras diferentes. Tente novamente.</p>' : ""}
         </div>`;
     }
-    return `${top}${heading(`CENA ${state.index + 1} · ${scene.label.toUpperCase()}`, "Você encontrou a retroação.", "O elemento posterior pode modificar a leitura do que veio antes.")}
+    return `${heading(`EXPERIÊNCIA · ${scene.label.toUpperCase()}`, "Você encontrou a retroação.", "O elemento posterior pode modificar a leitura do que veio antes.")}
       ${comparison}
       <div class="retro-insight"><span class="retro-insight-label">POR QUE ISSO IMPORTA?</span><p>${esc(scene.explanation)}</p></div>
       <p class="retro-caution">Esta é uma demonstração didática de um efeito de leitura, não uma interpretação clínica.</p>
-      <button type="button" class="retro-action retro-primary" data-retro-action="advance">${state.index === scenes.length - 1 ? "Concluir experimento" : "Ir para a próxima cena"} <span aria-hidden="true">→</span></button>`;
+      <button type="button" class="retro-action retro-primary" data-retro-action="advance">Concluir experiência <span aria-hidden="true">→</span></button>`;
   }
   function renderBoard(root, focus) {
     const board = root.querySelector("#retroBoard");
@@ -178,7 +153,7 @@
         <div class="retro-heading">
           <span class="retro-kicker">EXPERIÊNCIA INTERATIVA · AULA 3.3</span>
           <h2 id="retroTitle">O final muda <em>o começo.</em></h2>
-          <p>Experimente como uma continuação pode modificar a leitura das mesmas palavras. Três cenas, sem respostas psicológicas prontas.</p>
+          <p>Experimente como uma continuação pode modificar a leitura das mesmas palavras. Um exemplo, sem respostas psicológicas prontas.</p>
         </div>
         <div id="retroBoard" class="retro-board"></div>
         <p class="retro-footnote">Seu percurso é salvo apenas neste navegador. A atividade é independente do quiz da aula.</p>
