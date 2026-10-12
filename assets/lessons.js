@@ -45,6 +45,21 @@
     if(status) status.textContent=progressMessage();
     nav.innerHTML = lessons.map(lesson => `<button type="button" class="lesson-link" data-lesson="${safe(lesson.id)}" ${lesson.id===active?'aria-current="step"':''}><span class="lesson-link-index">${safe(lesson.id)}</span><span class="lesson-link-title">${safe(lesson.title)}</span>${completed.includes(lesson.id)?'<span class="lesson-check" aria-label="Avaliação concluída">✓</span>':''}</button>`).join("");
   }
+  // Abertura editorial específica da aula 1.1: preserva a introdução original.
+  function renderOpening(lesson) {
+    if (lesson.id !== "1.1") return `<div class="lesson-intro" aria-label="Introdução à aula">${lesson.introduction}</div>`;
+    return `<section class="lacan-editorial" aria-label="Apresentação ilustrada de Jacques Lacan">
+      <div class="lacan-editorial-copy">
+        <p class="lacan-editorial-eyebrow">JACQUES LACAN <span aria-hidden="true">·</span> 1901—1981</p>
+        ${renderOpening(lesson)}
+      </div>
+      <figure class="lacan-editorial-figure">
+        <span class="lacan-editorial-halo" aria-hidden="true"></span>
+        <img src="assets/lacan-portrait-editorial.webp" width="280" height="364" alt="Retrato artístico de Jacques Lacan em tons de sépia e lavanda" decoding="async" fetchpriority="high">
+        <figcaption>Retrato artístico de Jacques Lacan</figcaption>
+      </figure>
+    </section>`;
+  }
   function selectLesson(id, changeURL = true, focus = false) {
     const lesson = lessons.find(l=>l.id===id);
     if (!lesson) return;

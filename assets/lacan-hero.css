@@ -1,0 +1,65 @@
+/* Abertura editorial da aula 1.1 — retrato tratado, isolado das outras aulas. */
+.module-01 .lacan-editorial {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(190px, .74fr);
+  gap: clamp(18px, 3vw, 38px);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  margin: 20px 0 35px;
+  padding: clamp(20px, 3vw, 34px);
+  border: 1px solid #dcd0dc;
+  border-radius: 13px;
+  background: linear-gradient(115deg, #faf5ed 0%, #f6efe3 53%, #efe8f1 100%);
+  box-shadow: 0 14px 32px rgba(75, 55, 87, .04);
+}
+.module-01 .lacan-editorial-copy {position: relative; z-index: 2; min-width: 0;}
+.module-01 .lacan-editorial-eyebrow {
+  display: block; margin: 0 0 17px; color: #765e84;
+  font-size: .68rem; font-weight: 750; letter-spacing: .14em; line-height: 1.5;
+}
+.module-01 .lacan-editorial-eyebrow span {margin: 0 6px;}
+.module-01 .lacan-editorial .lesson-intro {
+  margin: 0; font-size: clamp(.98rem, 1.38vw, 1.07rem);
+  line-height: 1.85; color: #433b48;
+}
+.module-01 .lacan-editorial-figure {
+  isolation: isolate; position: relative; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; width: 100%; min-width: 0; margin: 0;
+}
+.module-01 .lacan-editorial-halo {
+  position: absolute; z-index: -1; inset: 13% 10% 12%; border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(167, 139, 184, .24), rgba(188, 168, 204, .09) 63%, transparent 76%);
+  animation: lacan-editorial-breathe 9s ease-in-out infinite; pointer-events: none;
+}
+.module-01 .lacan-editorial-figure img {
+  display: block; width: min(100%, 280px); height: auto; max-height: 365px;
+  object-fit: contain; mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 87%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 87%, transparent 100%);
+}
+.module-01 .lacan-editorial-figure figcaption {
+  position: relative; margin-top: -3px; font-size: .59rem; line-height: 1.5;
+  letter-spacing: .09em; text-transform: uppercase; text-align: center; color: #847288;
+}
+@keyframes lacan-editorial-breathe {
+  0%, 100% { opacity: .66; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.045); }
+}
+@media (max-width: 960px) {
+  .module-01 .lacan-editorial {grid-template-columns: 1fr; gap: 9px;}
+  .module-01 .lacan-editorial-figure {order: -1;}
+  .module-01 .lacan-editorial-figure img {width: min(100%, 225px); max-height: none;}
+  .module-01 .lacan-editorial-eyebrow {margin-top: 16px;}
+}
+@media (max-width: 700px) {
+  .module-01 .lacan-editorial {
+    margin: 8px 0 28px; padding: 20px 17px 23px; border-radius: 11px;
+  }
+  .module-01 .lacan-editorial-figure img {width: min(100%, 220px);}
+  .module-01 .lacan-editorial .lesson-intro {font-size: 1.025rem; line-height: 1.87;}
+}
+@media (prefers-reduced-motion: reduce) {
+  .module-01 .lacan-editorial-halo {animation: none;}
+}
