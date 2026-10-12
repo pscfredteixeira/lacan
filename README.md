@@ -99,6 +99,16 @@ A última aula visitada também é armazenada, e o menu **Continuar estudando** 
 
 O progresso continua exclusivamente no armazenamento do navegador/PWA e não é sincronizado na nuvem. No iPhone, Safari e aplicativo instalado na tela inicial podem manter dados separados; trocar de dispositivo ou limpar dados pode perder os registros. A solução definitiva para sincronização entre dispositivos exigirá autenticação e armazenamento de dados no servidor, a desenvolver em etapa futura.
 
+## Sprint 11 — Revisão didática iniciada pelo Módulo 2 (Aula 2.1)
+
+A aula **2.1 · A descoberta do inconsciente** foi integralmente reescrita em linguagem introdutória, com 4 seções encadeadas: (1) o que percebemos conscientemente; (2) lembrar uma informação versus investigar uma reação; (3) a hipótese de Freud de processos inconscientes ativos, conflito e resistência; (4) como Freud construiu suas perguntas ao escutar pessoas e investigar sonhos e sintomas.
+
+Para evitar antecipações, os modelos conhecidos como primeira e segunda tópicas foram retirados do desenvolvimento inicial da aula 2.1 e poderão ser estudados de modo progressivo posteriormente. A aula ganhou **4 resumos «Em palavras simples»**, duas cenas comparáveis com explicações expansíveis, quatro definições acessíveis, uma reflexão guiada e três questões novas de avaliação. As fontes completas permanecem disponíveis em um painel expansível. O texto deixa explícito que esquecimentos e reações isoladas não autorizam inferências sobre desejos inconscientes.
+
+O leitor reutilizável (`assets/reader.js`/`assets/reader.css`) ativa essa apresentação apenas para aulas com `learningMode:"primeiros-passos"`. As aulas 2.2 a 2.6 e os demais módulos não foram reescritos nesta etapa. O laboratório de Freud deixa de ser mostrado dentro da Aula 2.1 e continua acessível às aulas posteriores e pelo catálogo. As chaves existentes de progresso, avaliação e anotações **não foram modificadas**. O PWA passa a usar o cache `lacan-study-pwa-v14`.
+
+A publicação dos arquivos foi confirmada pelo conector GitHub e a renderização do leitor foi exercitada em teste com DOM simulado, tanto em 2.1 quanto em 2.2. Teste visual real no GitHub Pages/iPhone permanece pendente. **Próxima revisão: Aula 2.2 — Sonhos e formações do inconsciente**, após apreciação da didática da Aula 2.1.
+
 ## Publicação
 
 O site é estático e compatível com GitHub Pages. Em **Settings → Pages**, selecionar **Deploy from a branch → main → /(root)**. Após cada atualização na branch `main`, o GitHub Pages deve republicar o conteúdo automaticamente.
