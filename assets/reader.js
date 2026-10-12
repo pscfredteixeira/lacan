@@ -95,7 +95,7 @@
     <div class="reader-objectives"><span class="section-label">A pergunta que organiza esta aula</span><h2>${safe(lesson.question)}</h2></div>
     <div class="reader-lead"><p>${canRenderHTML(lesson.introduction)}</p></div>
     <div class="reader-separator"><span>DESENVOLVIMENTO TEÓRICO</span><span>${String(lesson.sections.length).padStart(2,"0")} PASSAGENS</span></div>
-    ${lesson.sections.map((section,i)=>`<section class="lesson-article-section reader-chapter" aria-labelledby="chapter-${i}"><div class="reader-chapter-label">${String(i+1).padStart(2,"0")} / ${String(lesson.sections.length).padStart(2,"0")}</div><h2 id="chapter-${i}">${safe(section.title)}</h2>${section.paragraphs.map(text=>'<p>'+canRenderHTML(text)+'</p>').join("")}</section>`).join("")}
+    ${lesson.sections.map((section,i)=>`<section class="lesson-article-section reader-chapter" aria-labelledby="chapter-${i}"><div class="reader-chapter-label">${String(i+1).padStart(2,"0")} / ${String(lesson.sections.length).padStart(2,"0")}</div><h2 id="chapter-${i}">${safe(section.title)}</h2>${section.paragraphs.map(text=>'<p>'+canRenderHTML(text)+'</p>').join("")}</section>${i===1 ? (window.LACAN_INLINE_ACTIVITY?.render?.(lesson) || "") : ""}`).join("")}
     <aside class="lesson-example reader-example"><span class="section-label">Uma cena para examinar</span><h2>${safe(lesson.example.title)}</h2><p>${safe(lesson.example.text)}</p><small>Exemplo construído para fins pedagógicos, não interpretação clínica.</small></aside>
     ${renderConcepts(lesson)}
     <aside class="lesson-takeaway"><span class="section-label">O que levar desta aula</span><h2>Uma ideia para guardar</h2><p>${safe(lesson.takeaway)}</p></aside>
@@ -119,6 +119,7 @@
     storageEditor("practiceNotes",config.notesPrefix+"practice-","practiceStorage");
     storageEditor("generalNotes",config.notesPrefix+"general-","generalStorage");
     renderQuiz();updateStudyMark();
+    window.LACAN_INLINE_ACTIVITY?.mount?.(article,lesson);
     if(moveFocus){article.focus({preventScroll:true});article.scrollIntoView({block:"start",behavior:"auto"});}
   }
   function updateStudyMark(){
