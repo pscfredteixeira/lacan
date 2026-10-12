@@ -69,8 +69,8 @@
     if (changeURL) history.pushState({aula:id},"", "?aula="+encodeURIComponent(id));
     updateProgress();
     const index = lessons.findIndex(l=>l.id===id);
-    const paragraphs = lesson.sections.map((section,i)=>`<section class="lesson-article-section" aria-labelledby="sect-${i}">
-      <h2 id="sect-${i}">${safe(section.title)}</h2>
+    const paragraphs = lesson.sections.map((section,i)=>`<section class="lesson-article-section" ${id==="1.1" && i===0?'aria-label="Apresentação de Jacques Lacan"':`aria-labelledby="sect-${i}"`}>
+      ${id==="1.1" && i===0?"":`<h2 id="sect-${i}">${safe(section.title)}</h2>`}
       ${section.paragraphs.map(p=>'<p>'+p+'</p>').join("")}
       ${section.inShort?`<div class="lesson-short"><strong>Em palavras simples</strong><p>${safe(section.inShort)}</p></div>`:""}
       </section>`).join("");
