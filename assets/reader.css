@@ -115,3 +115,12 @@
 .reader-easy-references summary{padding:17px}
 .reader-easy-references>div{padding:16px 17px}
 }
+
+/* Cards de comparação: a situação é legível antes de abrir a explicação. */
+.reader-easy-card-head{display:flex;align-items:center;gap:11px;padding:17px 17px 7px}
+.reader-easy-card-head h3{font-family:"Libre Baskerville",Georgia,serif;font-size:1rem;font-weight:400;line-height:1.5;color:#574461;margin:0}
+.reader-easy-compare-card .reader-easy-scene{padding:0 17px 15px;color:#5e5264;font-size:.87rem;line-height:1.86;margin:0}
+.reader-easy-card-answer{border-top:1px solid #e4d9e5}
+.reader-easy-compare-card .reader-easy-card-answer summary{display:block;min-height:52px;padding:15px 17px;color:#755788;background:#f5edf6;font-size:.79rem;font-weight:700;line-height:1.65;cursor:pointer}
+.reader-easy-compare-card .reader-easy-card-answer[open] summary{border-bottom:1px solid #e4d9e5;background:#eee2f1}
+.reader-easy-compare-card .reader-easy-card-answer .reader-easy-why{padding:17px;margin:0;color:#52465b;font-size:.86rem;line-height:1.83}
