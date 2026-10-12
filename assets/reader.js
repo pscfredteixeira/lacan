@@ -60,10 +60,11 @@
       <span class="section-label">Compare duas situações</span>
       <h2 id="easyCompareHeading">${safe(c.title)}</h2>
       <p class="reader-easy-compare-intro">${safe(c.intro)}</p>
-      <div class="reader-easy-compare-grid">${c.cases.map((item,i)=>`<details class="reader-easy-compare-card">
-        <summary><span class="reader-easy-index">0${i+1}</span><strong>${safe(item.title)}</strong><span class="reader-easy-prompt">Ver explicação ↓</span></summary>
-        <div class="reader-easy-case"><p>${safe(item.scene)}</p><p class="reader-easy-why"><strong>O que isso mostra?</strong> ${safe(item.why)}</p></div>
-      </details>`).join("")}</div>
+      <div class="reader-easy-compare-grid">${c.cases.map((item,i)=>`<article class="reader-easy-compare-card">
+        <div class="reader-easy-card-head"><span class="reader-easy-index">0${i+1}</span><h3>${safe(item.title)}</h3></div>
+        <p class="reader-easy-scene">${safe(item.scene)}</p>
+        <details class="reader-easy-card-answer"><summary>Entenda a diferença ↓</summary><p class="reader-easy-why"><strong>O que isso mostra?</strong> ${safe(item.why)}</p></details>
+      </article>`).join("")}</div>
       <p class="reader-easy-compare-footer">${safe(c.conclusion)}</p>
     </section>`;
   };
