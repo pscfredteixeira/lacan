@@ -51,7 +51,7 @@
     return `<section class="lacan-editorial" aria-label="Apresentação ilustrada de Jacques Lacan">
       <div class="lacan-editorial-copy">
         <p class="lacan-editorial-eyebrow">JACQUES LACAN <span aria-hidden="true">·</span> 1901—1981</p>
-        ${renderOpening(lesson)}
+        <div class="lesson-intro" aria-label="Introdução à aula">${lesson.introduction}</div>
       </div>
       <figure class="lacan-editorial-figure">
         <span class="lacan-editorial-halo" aria-hidden="true"></span>
@@ -81,7 +81,7 @@
       <h1 class="lesson-title">${safe(lesson.title)}</h1>
       <p class="lesson-subtitle">${safe(lesson.subtitle)}</p>
       <div class="lesson-info"><span>◷ ${safe(lesson.duration)} de estudo orientado</span><span>◈ Módulo 01 de 18</span><span>◎ ${completed.includes(id)?"Avaliação concluída":"Estudo em andamento"}</span></div>
-      <div class="lesson-intro" aria-label="Introdução à aula">${lesson.introduction}</div>
+      ${renderOpening(lesson)}
       ${id==="1.1"?"":`<section class="lesson-question"><span class="prompt-label">A pergunta desta aula</span><p>${safe(lesson.question)}</p></section>`}
       <div class="lesson-text">${paragraphs}</div>
       <aside class="lesson-example"><span class="section-label">Um exemplo para pensar</span><h2>${safe(lesson.example.title)}</h2><p>${safe(lesson.example.text)}</p></aside>
