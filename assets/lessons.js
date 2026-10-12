@@ -55,7 +55,7 @@
       </div>
       <figure class="lacan-editorial-figure">
         <span class="lacan-editorial-halo" aria-hidden="true"></span>
-        <img src="assets/lacan-portrait-editorial.webp" width="280" height="364" alt="Retrato artístico de Jacques Lacan em tons de sépia e lavanda" decoding="async" fetchpriority="high">
+        <img src="assets/lacan-portrait-editorial.webp?v=20261012b" width="280" height="364" alt="Retrato artístico de Jacques Lacan em tons de sépia e lavanda" decoding="async" fetchpriority="high">
         <figcaption>Retrato artístico de Jacques Lacan</figcaption>
       </figure>
     </section>`;
