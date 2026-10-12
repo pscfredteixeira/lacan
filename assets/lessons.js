@@ -47,15 +47,15 @@
   }
   // Abertura editorial específica da aula 1.1: preserva a introdução original.
   // Ilustração editorial discreta na primeira aula; a introdução continua como texto de leitura.
+  // A fotografia abre a aula 1.1; a explicação está reunida na seção "Quem foi Lacan?".
   function renderOpening(lesson) {
     if (lesson.id !== "1.1") return `<div class="lesson-intro" aria-label="Introdução à aula">${lesson.introduction}</div>`;
     return `<div class="lacan-editorial">
       <figure class="lacan-editorial-figure">
         <span class="lacan-editorial-halo" aria-hidden="true"></span>
-        <img src="assets/lacan-portrait-editorial.webp?v=20261012c" width="280" height="364" alt="Retrato editorial de Jacques Lacan em sépia e lavanda" decoding="async" fetchpriority="high">
+        <img src="assets/lacan-portrait-editorial.webp?v=20261012d" width="280" height="364" alt="Retrato editorial de Jacques Lacan em sépia e lavanda" decoding="async" fetchpriority="high">
         <figcaption>Jacques Lacan <span aria-hidden="true">·</span> 1901–1981</figcaption>
       </figure>
-      <div class="lesson-intro" aria-label="Introdução à aula">${lesson.introduction}</div>
     </div>`;
   }
   function selectLesson(id, changeURL = true, focus = false) {

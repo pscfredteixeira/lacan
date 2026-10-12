@@ -1,37 +1,25 @@
-/* Retrato editorial integrado à leitura, somente na aula 1.1. */
+/* A imagem acompanha a leitura da aula 1.1, sem card nem texto duplicado. */
 .module-01 .lacan-editorial {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, .74fr);
-  grid-template-areas: "copy portrait";
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: clamp(20px, 3vw, 42px);
   min-width: 0;
-  margin: 12px 0 38px;
+  margin: 4px 0 30px;
   padding: 0;
-  background: transparent;
   border: 0;
   border-radius: 0;
+  background: transparent;
   box-shadow: none;
 }
-.module-01 .lacan-editorial > .lesson-intro {
-  grid-area: copy;
-  min-width: 0;
-  margin: 0;
-  font-size: 1.04rem;
-  line-height: 1.95;
-  color: #433b49;
-}
 .module-01 .lacan-editorial-figure {
-  grid-area: portrait;
   isolation: isolate;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  min-width: 0;
-  margin: 0;
+  width: min(100%, 320px);
+  margin: 0 auto;
   padding: 0;
   background: transparent;
 }
@@ -68,25 +56,10 @@
   0%, 100% { opacity: .65; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.035); }
 }
-@media (max-width: 960px) {
-  .module-01 .lacan-editorial {
-    grid-template-columns: 1fr;
-    grid-template-areas: "portrait" "copy";
-    gap: 19px;
-  }
-  .module-01 .lacan-editorial-figure img {width: min(100%, 240px);}
-}
 @media (max-width: 700px) {
-  .module-01 .lacan-editorial {
-    margin: 10px 0 31px;
-    gap: 22px;
-  }
-  .module-01 .lacan-editorial-figure img {width: min(100%, 225px);}
-  .module-01 .lacan-editorial > .lesson-intro {
-    font-size: 1.03rem;
-    line-height: 1.87;
-  }
+  .module-01 .lacan-editorial { margin: 7px 0 32px; }
+  .module-01 .lacan-editorial-figure img { width: min(100%, 225px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .module-01 .lacan-editorial-halo {animation: none;}
+  .module-01 .lacan-editorial-halo { animation: none; }
 }

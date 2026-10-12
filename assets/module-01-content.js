@@ -11,9 +11,9 @@ window.LACAN_LESSONS = [
       {
         "title": "Quem foi Lacan?",
         "paragraphs": [
-          "Jacques Lacan viveu entre 1901 e 1981. Ele estudou medicina e trabalhou com <strong>psiquiatria</strong>, a especialidade médica que cuida de questões relacionadas à saúde mental.",
+          "Jacques Lacan (1901–1981) foi um médico e psicanalista francês. Estudou medicina e trabalhou com <strong>psiquiatria</strong>, a especialidade médica que cuida de questões relacionadas à saúde mental.",
           "Depois, Lacan passou a dedicar grande parte de seu trabalho à <strong>psicanálise</strong>. Um psicanalista trabalha com uma tradição de estudo e de atendimento em que a fala e a história de cada pessoa têm muita importância. Psiquiatria e psicanálise não são a mesma profissão, embora Lacan tenha trabalhado nas duas áreas.",
-          "Lacan também foi professor. Durante muitos anos, reuniu pessoas interessadas em psicanálise para estudar, apresentar ideias e discutir perguntas. Foi assim que sua obra se desenvolveu: em textos, aulas e debates."
+          "Lacan também foi professor. Tornou-se conhecido por estudar e discutir as ideias de Sigmund Freud e por desenvolver suas próprias questões. Durante muitos anos, reuniu pessoas interessadas em psicanálise para estudar e debater. Sua obra se desenvolveu em textos, aulas e discussões."
         ],
         "inShort": "Lacan foi um médico francês que também trabalhou como psicanalista e professor."
       },
