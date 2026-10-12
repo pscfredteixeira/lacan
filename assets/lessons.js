@@ -58,6 +58,16 @@
       </figure>
     </div>`;
   }
+  // Retrato editorial de Freud na primeira aula, sem alterar o texto didático.
+  function renderFreudPortrait() {
+    return `<div class="lacan-editorial freud-editorial" aria-label="Retrato ilustrativo de Sigmund Freud">
+      <figure class="lacan-editorial-figure">
+        <span class="lacan-editorial-halo" aria-hidden="true"></span>
+        <img src="assets/freud-portrait-editorial.webp?v=20261012f" width="320" height="427" alt="Retrato artístico de Sigmund Freud em tons de sépia e lavanda" loading="lazy" decoding="async">
+        <figcaption>Sigmund Freud <span aria-hidden="true">·</span> 1856–1939</figcaption>
+      </figure>
+    </div>`;
+  }
   function selectLesson(id, changeURL = true, focus = false) {
     const lesson = lessons.find(l=>l.id===id);
     if (!lesson) return;
@@ -71,6 +81,7 @@
     const index = lessons.findIndex(l=>l.id===id);
     const paragraphs = lesson.sections.map((section,i)=>`<section class="lesson-article-section" ${id==="1.1" && i===0?'aria-label="Apresentação de Jacques Lacan"':`aria-labelledby="sect-${i}"`}>
       ${id==="1.1" && i===0?"":`<h2 id="sect-${i}">${safe(section.title)}</h2>`}
+      ${id==="1.1" && i===1 ? renderFreudPortrait() : ""}
       ${section.paragraphs.map(p=>'<p>'+p+'</p>').join("")}
       ${section.inShort?`<div class="lesson-short"><strong>Em palavras simples</strong><p>${safe(section.inShort)}</p></div>`:""}
       </section>`).join("");
