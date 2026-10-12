@@ -50,8 +50,22 @@
   };
   const renderConcepts=lesson=>{
     if(!Array.isArray(lesson.concepts)||!lesson.concepts.length)return "";
-    return `<section class="reader-concepts" aria-label="Conceitos em foco"><div class="reader-inline-head"><span class="section-label">Caderno de conceitos</span><h2>O que cada termo permite pensar?</h2></div>
+    return `<section class="reader-concepts" aria-label="Conceitos em foco"><div class="reader-inline-head"><span class="section-label">${lesson.learningMode==="primeiros-passos"?"Palavras da aula":"Caderno de conceitos"}</span><h2>${lesson.learningMode==="primeiros-passos"?"Relembre estes termos":"O que cada termo permite pensar?"}</h2></div>
     <div class="reader-concept-grid">${lesson.concepts.map((c,i)=>`<details><summary><span>${String(i+1).padStart(2,"0")}</span>${safe(c.name)}</summary><p>${safe(c.definition)}</p></details>`).join("")}</div></section>`;
+  };
+  const renderComparison=lesson=>{
+    if(!lesson.comparison?.cases?.length)return "";
+    const c=lesson.comparison;
+    return `<section class="reader-easy-compare" aria-labelledby="easyCompareHeading">
+      <span class="section-label">Compare duas situações</span>
+      <h2 id="easyCompareHeading">${safe(c.title)}</h2>
+      <p class="reader-easy-compare-intro">${safe(c.intro)}</p>
+      <div class="reader-easy-compare-grid">${c.cases.map((item,i)=>`<details class="reader-easy-compare-card">
+        <summary><span class="reader-easy-index">0${i+1}</span><strong>${safe(item.title)}</strong><span class="reader-easy-prompt">Ver explicação ↓</span></summary>
+        <div class="reader-easy-case"><p>${safe(item.scene)}</p><p class="reader-easy-why"><strong>O que isso mostra?</strong> ${safe(item.why)}</p></div>
+      </details>`).join("")}</div>
+      <p class="reader-easy-compare-footer">${safe(c.conclusion)}</p>
+    </section>`;
   };
   const renderPractice=lesson=>{
     if(!lesson.practice)return "";
@@ -81,6 +95,8 @@
     const lesson=lessons.find(l=>l.id===id);
     if(!lesson)return;
     current=id;answer=null;
+    const firstSteps=lesson.learningMode==="primeiros-passos";
+    article.classList.toggle("reader-first-steps",firstSteps);
     const remembered=getValue(PHASE+id,completed.includes(id)?lesson.quiz.length:0);
     phase=Number.isInteger(remembered)?Math.max(0,Math.min(lesson.quiz.length,remembered)):0;
     setValue(LAST,"modulo-"+config.moduleNumber+".html?aula="+id);
@@ -92,18 +108,20 @@
     <h1 class="lesson-title">${safe(lesson.title)}</h1>
     <p class="lesson-subtitle">${safe(lesson.subtitle)}</p>
     <div class="lesson-info"><span>◷ ${safe(lesson.duration)} de estudo estimado</span><span>◈ Módulo ${String(config.moduleNumber).padStart(2,"0")} de 18</span><span>◎ ${completed.includes(id)?"Avaliação já concluída":"Estudo em andamento"}</span></div>
-    <div class="reader-objectives"><span class="section-label">A pergunta que organiza esta aula</span><h2>${safe(lesson.question)}</h2></div>
+    ${firstSteps?"":`<div class="reader-objectives"><span class="section-label">A pergunta que organiza esta aula</span><h2>${safe(lesson.question)}</h2></div>`}
     <div class="reader-lead"><p>${canRenderHTML(lesson.introduction)}</p></div>
-    <div class="reader-separator"><span>DESENVOLVIMENTO TEÓRICO</span><span>${String(lesson.sections.length).padStart(2,"0")} PASSAGENS</span></div>
-    ${lesson.sections.map((section,i)=>`<section class="lesson-article-section reader-chapter" aria-labelledby="chapter-${i}"><div class="reader-chapter-label">${String(i+1).padStart(2,"0")} / ${String(lesson.sections.length).padStart(2,"0")}</div><h2 id="chapter-${i}">${safe(section.title)}</h2>${section.paragraphs.map(text=>'<p>'+canRenderHTML(text)+'</p>').join("")}</section>${i===1 ? (window.LACAN_INLINE_ACTIVITY?.render?.(lesson) || "") : ""}`).join("")}
-    <aside class="lesson-example reader-example"><span class="section-label">Uma cena para examinar</span><h2>${safe(lesson.example.title)}</h2><p>${safe(lesson.example.text)}</p><small>Exemplo construído para fins pedagógicos, não interpretação clínica.</small></aside>
+    <div class="reader-separator"><span>${firstSteps?"ENTENDA PASSO A PASSO":"DESENVOLVIMENTO TEÓRICO"}</span><span>${String(lesson.sections.length).padStart(2,"0")} ${firstSteps?"PARTES":"PASSAGENS"}</span></div>
+    ${lesson.sections.map((section,i)=>`<section class="lesson-article-section reader-chapter" aria-labelledby="chapter-${i}"><div class="reader-chapter-label">${String(i+1).padStart(2,"0")} / ${String(lesson.sections.length).padStart(2,"0")}</div><h2 id="chapter-${i}">${safe(section.title)}</h2>${section.paragraphs.map(text=>'<p>'+canRenderHTML(text)+'</p>').join("")}${section.inShort?`<div class="reader-easy-summary"><strong>Em palavras simples</strong><p>${safe(section.inShort)}</p></div>`:""}</section>${i===1 ? renderComparison(lesson)+(window.LACAN_INLINE_ACTIVITY?.render?.(lesson) || "") : ""}`).join("")}
+    <aside class="lesson-example reader-example"><span class="section-label">${firstSteps?"Outro exemplo para entender":"Uma cena para examinar"}</span><h2>${safe(lesson.example.title)}</h2><p>${safe(lesson.example.text)}</p><small>Exemplo construído para fins pedagógicos, não interpretação clínica.</small></aside>
     ${renderConcepts(lesson)}
     <aside class="lesson-takeaway"><span class="section-label">O que levar desta aula</span><h2>Uma ideia para guardar</h2><p>${safe(lesson.takeaway)}</p></aside>
     ${renderPractice(lesson)}
     ${renderLaboratory(lesson)}
-    <section class="lesson-references"><h2>Fontes e leituras</h2><p class="reader-reference-note">Textos primários e leituras de contextualização. As datas do ensino oral podem diferir das datas das edições.</p><ul>${lesson.references.map(ref=>'<li>'+canRenderHTML(ref)+'</li>').join("")}</ul></section>
-    <section class="quiz-wrap reader-quiz" id="assessment" aria-labelledby="quizHeading"><span class="section-label">Avaliação formativa · três etapas</span><h2 class="quiz-heading" id="quizHeading">Compreender é relacionar.</h2>
-      <p class="quiz-help">Reconhecimento, compreensão e aplicação. Receba explicações para cada tentativa. Uma questão correta libera a etapa seguinte.</p>
+    ${firstSteps?
+     `<details class="reader-easy-references"><summary>Fontes e livros para aprofundar</summary><div><p>Estes materiais ajudam a conferir e aprofundar as explicações da aula.</p><ul>${lesson.references.map(ref=>'<li>'+canRenderHTML(ref)+'</li>').join("")}</ul></div></details>`:
+     `<section class="lesson-references"><h2>Fontes e leituras</h2><p class="reader-reference-note">Textos primários e leituras de contextualização. As datas do ensino oral podem diferir das datas das edições.</p><ul>${lesson.references.map(ref=>'<li>'+canRenderHTML(ref)+'</li>').join("")}</ul></section>`}
+    <section class="quiz-wrap reader-quiz" id="assessment" aria-labelledby="quizHeading"><span class="section-label">${firstSteps?"Revisão da aula":"Avaliação formativa · três etapas"}</span><h2 class="quiz-heading" id="quizHeading">${firstSteps?"Confira o que aprendeu":"Compreender é relacionar."}</h2>
+      <p class="quiz-help">${firstSteps?"São três perguntas sobre o conteúdo desta aula. Depois de cada resposta, você verá uma explicação.":"Reconhecimento, compreensão e aplicação. Receba explicações para cada tentativa. Uma questão correta libera a etapa seguinte."}</p>
       <div id="quizArea" aria-live="polite"></div>
       <div class="lesson-study-mark" id="studyMark"><span class="lesson-study-mark-copy">Já estudou esta aula? Registre o estudo sem repetir a avaliação.</span>
       <button type="button" class="action-button" data-study-action="toggle" id="studyToggle"></button>
