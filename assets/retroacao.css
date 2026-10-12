@@ -1,0 +1,73 @@
+
+/* Experiência de retroação — aula 3.3. Estilos isolados e mobile-first. */
+.retroacao{margin:44px 0 52px;border:1px solid #d9c6df;border-radius:17px;overflow:hidden;background:#fffaf4;color:#352b3d;box-shadow:0 12px 34px rgba(68,44,85,.065);min-width:0}
+.retroacao *{box-sizing:border-box}
+.retro-heading{padding:30px clamp(18px,4vw,38px) 24px;background:linear-gradient(115deg,#eee4f1,#faf3ed 78%);border-bottom:1px solid #e1d3e4}
+.retro-kicker,.retro-scene-kicker,.retro-stem-label,.retro-ending-label,.retro-insight-label{font-size:.73rem;letter-spacing:.11em;font-weight:800;color:#765684}
+.retro-heading h2{font-family:"Libre Baskerville",Georgia,serif!important;font-size:clamp(1.58rem,3vw,2.35rem)!important;line-height:1.38!important;margin:11px 0 12px!important;border:0!important;padding:0!important;font-weight:400}
+.retro-heading h2 em{font-weight:400;color:#80518e}
+.retro-heading>p{font-size:1rem;line-height:1.7;color:#584a5f;margin:0;max-width:680px}
+.retro-board{padding:26px clamp(17px,3.5vw,34px) 28px}
+.retro-progress-head{display:flex;justify-content:space-between;gap:12px;font-weight:800;color:#765784;font-size:.78rem;letter-spacing:.04em}
+.retro-progress-bars{display:flex;gap:8px;margin:12px 0 27px}
+.retro-progress-bars span{height:8px;border-radius:30px;background:#e7dfe9;flex:1;transition:background .25s ease}
+.retro-progress-bars .retro-done{background:#7f668e}
+.retro-progress-bars .retro-current{background:#bb9cc9}
+.retro-scene-intro{margin:0 0 21px}
+.retro-scene-kicker{font-size:.7rem;margin:0 0 8px}
+.retro-scene-title{font-family:"Libre Baskerville",Georgia,serif;font-size:clamp(1.24rem,2.5vw,1.58rem);line-height:1.5;margin:0 0 10px;outline-offset:5px}
+.retro-scene-desc{font-size:1rem;line-height:1.7;color:#64586a;margin:0}
+.retro-stem{position:relative;background:#f2e9f2;border:1px solid #d8c7dd;border-radius:12px;padding:25px 23px 30px;overflow:hidden}
+.retro-stem p{font-family:"Libre Baskerville",Georgia,serif;font-size:clamp(1.25rem,2.7vw,1.8rem);line-height:1.7;margin:12px 0 0;color:#382840}
+.retro-cursor{display:inline-block;width:28px;height:3px;border-radius:3px;background:#ab74ab;vertical-align:middle;animation:retroBlink 1.3s ease-in-out infinite}
+@keyframes retroBlink{0%,100%{opacity:1}50%{opacity:.2}}
+.retro-prompt{font-size:1.06rem;font-weight:750;line-height:1.5;margin:24px 0 12px;color:#43314f}
+.retro-choices{display:grid;gap:11px}
+.retro-choice{appearance:none;display:flex;align-items:center;gap:12px;text-align:left;width:100%;min-height:65px;border:1.5px solid #d2c0d9;border-radius:11px;padding:14px;background:#fff;color:#3e3046;font:inherit;font-size:1rem;line-height:1.5;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.retro-choice:hover{background:#f7edf7;border-color:#9471a6;transform:translateY(-1px)}
+.retro-choice:focus-visible,.retro-action:focus-visible{outline:3px solid #816297;outline-offset:3px}
+.retro-choice-index{display:grid;place-items:center;flex:0 0 32px;width:32px;height:32px;border-radius:9px;background:#eee3f0;color:#765088;font-weight:800;font-size:.9rem}
+.retro-choice-arrow{margin-left:auto;color:#9569a2;font-size:1.3rem}
+.retro-hint,.retro-caution{font-size:.88rem;line-height:1.65;color:#736677;margin:15px 0 0}
+.retro-guess{padding:13px 17px;border-left:3px solid #9676a3;background:#f3edf3;margin-bottom:19px}
+.retro-guess span{font-size:.72rem;font-weight:800;letter-spacing:.06em;color:#7a6086}
+.retro-guess p{font-size:1rem;line-height:1.6;margin:6px 0 0;color:#493751}
+.retro-endings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:19px 0}
+.retro-endings.retro-one{grid-template-columns:1fr}
+.retro-ending-card{border:1px solid #d7c6df;background:#fff;border-radius:12px;min-width:0;overflow:hidden;animation:retroRise .5s ease both}
+.retro-ending-card:nth-child(2){animation-delay:.13s}
+@keyframes retroRise{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.retro-ending-label{display:block;padding:15px 16px 0}
+.retro-ending-line{padding:10px 16px 18px;margin:0!important;font-family:"Libre Baskerville",Georgia,serif;font-size:1.04rem!important;line-height:1.8!important;color:#44384b;overflow-wrap:anywhere}
+.retro-ending-line strong{display:inline;background:#e9ddee;color:#624675;box-decoration-break:clone;-webkit-box-decoration-break:clone;border-radius:2px;padding:2px 3px;font-weight:700}
+.retro-ending-reading{border-top:1px solid #e9e0e9;background:#faf5fa;padding:13px 16px;color:#654e72;font-size:.94rem;line-height:1.5;font-weight:650}
+.retro-question{border-top:1px solid #e5dae5;margin-top:22px;padding-top:5px}
+.retro-feedback{background:#f8ece8;border-left:3px solid #ae7763;padding:13px 15px;margin:15px 0 0;font-size:.96rem;line-height:1.65;color:#704f43}
+.retro-insight{border-left:4px solid #806690;background:#f0e8f2;padding:18px 20px;margin:20px 0 0;border-radius:0 9px 9px 0}
+.retro-insight p{font-size:1rem!important;line-height:1.8!important;color:#4c3a57;margin:9px 0 0!important}
+.retro-action{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;border:0;border-radius:11px;padding:15px 20px;font:inherit;font-size:1rem;line-height:1.45;font-weight:800;cursor:pointer;margin-top:20px}
+.retro-primary{background:#745781;color:#fff}
+.retro-primary:hover{background:#60456e}
+.retro-action>span{font-size:1.3rem}
+.retro-footnote{border-top:1px solid #e7dde9;padding:14px clamp(17px,3.5vw,34px);margin:0;font-size:.86rem;line-height:1.6;color:#756677}
+.retro-save-warning{font-size:.88rem;background:#f9eae7;padding:12px 14px;color:#774c45;border-radius:8px}
+.retro-finish{padding-bottom:6px}
+.retro-finish-mark{width:56px;height:56px;display:grid;place-items:center;border-radius:50%;background:#e8f1e8;color:#4b7753;font-size:1.6rem;font-weight:800;margin:0 0 18px}
+.retro-finish>p{font-size:1rem;line-height:1.8;color:#605265}
+@media(max-width:700px){
+ .retroacao{margin:32px -4px 36px;border-radius:14px}
+ .retro-heading{padding:24px 19px 22px}
+ .retro-heading h2{font-size:1.68rem!important}
+ .retro-board{padding:22px 17px 26px}
+ .retro-endings{grid-template-columns:1fr;gap:10px}
+ .retro-ending-line{font-size:1rem!important}
+ .retro-choice{min-height:60px}
+ .retro-scene-title{font-size:1.28rem}
+ .retro-stem{padding:20px 18px}
+ .retro-stem p{font-size:1.25rem}
+ .retro-footnote{padding:15px 17px}
+}
+@media(prefers-reduced-motion:reduce){
+ .retroacao *, .retroacao *::before,.retroacao *::after{animation:none!important;transition:none!important}
+ .retro-choice:hover{transform:none}
+}
