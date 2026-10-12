@@ -66,3 +66,52 @@
 .reader-next-steps{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
 .reader-next-steps .action-button{max-width:none;font-size:.78rem;line-height:1.45;text-align:center;text-decoration:none}
 @media(max-width:700px){.reader-next-steps{flex-direction:column;align-items:stretch;width:100%}.reader-next-steps .action-button{max-width:100%;min-height:48px}}
+
+/* Sprint 11 — leitura dos fundamentos de Freud, começando por situações cotidianas.
+   O modo simplificado é ativado somente quando a aula solicita "primeiros-passos". */
+.reader-first-steps .reader-lead{max-width:790px;margin:22px 0 32px}
+.reader-first-steps .reader-lead p{font-size:1.055rem;line-height:1.96}
+.reader-first-steps .reader-chapter{margin:34px 0 40px}
+.reader-first-steps .reader-chapter h2{font-size:clamp(1.32rem,2.2vw,1.68rem);line-height:1.5}
+.reader-first-steps .reader-chapter>p{max-width:810px;line-height:1.97}
+.reader-easy-summary{background:#f2e8f3;border-left:3px solid #9075a3;padding:16px 20px;margin:24px 0 3px;max-width:850px}
+.reader-easy-summary strong{display:block;font-size:.81rem;font-weight:700;color:#645076;margin:0 0 5px}
+.reader-first-steps .reader-easy-summary p{font-size:.91rem;color:#594c62;line-height:1.82;margin:0}
+.reader-easy-compare{border:1px solid #d7c8dc;background:#fbf5ee;padding:clamp(20px,3vw,31px);margin:34px 0 39px}
+.reader-easy-compare h2{font-family:"Libre Baskerville",Georgia,serif;font-size:clamp(1.26rem,2.4vw,1.65rem);font-weight:400;line-height:1.48;margin:10px 0 14px}
+.reader-easy-compare-intro{font-size:.9rem;line-height:1.85;color:#5f5267;margin:0 0 24px}
+.reader-easy-compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.reader-easy-compare-card{border:1px solid #d6c6de;background:#fffdf8;min-width:0}
+.reader-easy-compare-card summary{cursor:pointer;display:flex;align-items:center;flex-wrap:wrap;gap:9px;padding:17px 16px;min-height:80px;color:#594669;list-style:none}
+.reader-easy-compare-card summary::-webkit-details-marker{display:none}
+.reader-easy-compare-card summary:focus-visible{outline:3px solid #8f70a8;outline-offset:-3px}
+.reader-easy-index{font-family:"Libre Baskerville",Georgia,serif;font-size:1.12rem;color:#947aaa}
+.reader-easy-compare-card summary strong{font-size:.84rem;line-height:1.55;flex:1 1 135px}
+.reader-easy-prompt{display:block;width:100%;font-size:.69rem;font-weight:700;color:#806a90;letter-spacing:.015em}
+.reader-easy-compare-card[open] summary{background:#f0e7f4;border-bottom:1px solid #d6c6de}
+.reader-easy-compare-card[open] .reader-easy-prompt{font-size:0}
+.reader-easy-compare-card[open] .reader-easy-prompt::after{content:"Explicação aberta";font-size:.69rem}
+.reader-easy-case{padding:15px 18px 18px}
+.reader-easy-case>p{font-size:.87rem;line-height:1.83;color:#5d5266;margin:0 0 12px}
+.reader-easy-case>.reader-easy-why{border-top:1px solid #e3d8e4;padding-top:13px;color:#4f4656}
+.reader-easy-why strong{display:block;color:#645176;font-size:.81rem;margin:0 0 3px}
+.reader-easy-compare-footer{font-size:.86rem;line-height:1.85;color:#665470;font-weight:600;margin:19px 0 0}
+.reader-easy-references{background:#f8f2eb;border:1px solid #e0d3dc;margin:44px 0 37px}
+.reader-easy-references summary{padding:19px 23px;min-height:59px;font-size:.89rem;font-weight:700;color:#6e5680;cursor:pointer;line-height:1.5}
+.reader-easy-references[open] summary{border-bottom:1px solid #e0d3dc;background:#f0e6f2}
+.reader-easy-references>div{padding:18px 23px 22px}
+.reader-easy-references p{font-size:.83rem;line-height:1.8;color:#726277;margin:0 0 14px}
+.reader-easy-references ul{padding-left:19px;margin:0}
+.reader-easy-references li{font-size:.82rem;line-height:1.9;margin:9px 0;overflow-wrap:break-word}
+.reader-easy-references a{color:#6c4e86;text-decoration:underline;text-underline-offset:2px}
+.reader-first-steps .reader-quiz{margin-top:38px}
+@media(max-width:700px){
+.reader-first-steps .reader-lead{margin:16px 0 28px}
+.reader-first-steps .reader-lead p{font-size:1.02rem;line-height:1.9}
+.reader-easy-compare{padding:21px 16px}
+.reader-easy-compare-grid{grid-template-columns:1fr}
+.reader-easy-compare-card summary{min-height:63px}
+.reader-easy-summary{padding:15px 17px}
+.reader-easy-references summary{padding:17px}
+.reader-easy-references>div{padding:16px 17px}
+}
