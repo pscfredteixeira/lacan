@@ -107,7 +107,17 @@ Para evitar antecipações, os modelos conhecidos como primeira e segunda tópic
 
 O leitor reutilizável (`assets/reader.js`/`assets/reader.css`) ativa essa apresentação apenas para aulas com `learningMode:"primeiros-passos"`. As aulas 2.2 a 2.6 e os demais módulos não foram reescritos nesta etapa. O laboratório de Freud deixa de ser mostrado dentro da Aula 2.1 e continua acessível às aulas posteriores e pelo catálogo. As chaves existentes de progresso, avaliação e anotações **não foram modificadas**. O PWA passa a usar o cache `lacan-study-pwa-v14`.
 
-A publicação dos arquivos foi confirmada pelo conector GitHub e a renderização do leitor foi exercitada em teste com DOM simulado, tanto em 2.1 quanto em 2.2. Teste visual real no GitHub Pages/iPhone permanece pendente. **Próxima revisão: Aula 2.2 — Sonhos e formações do inconsciente**, após apreciação da didática da Aula 2.1.
+A publicação dos arquivos foi confirmada pelo conector GitHub e a renderização do leitor foi exercitada em teste com DOM simulado, tanto em 2.1 quanto em 2.2. Teste visual real no GitHub Pages/iPhone permanece pendente. **Continuação do Sprint 11:** revisão da Aula 2.2, preservando o conteúdo e o progresso da Aula 2.1.
+
+## Sprint 11 — Aula 2.2: sonhos explicados desde o princípio
+
+A aula **2.2 · Sonhos e formações do inconsciente** foi reescrita para iniciantes, respeitando a sequência didática da 2.1. Suas quatro seções explicam: (1) o sonho como lembrado e relatado, para introduzir o **conteúdo manifesto**; (2) por que Freud utilizava as associações do sonhador e não uma tabela fixa de símbolos; (3) o **trabalho do sonho**, com exemplos simples de condensação, deslocamento, figurabilidade e elaboração secundária; (4) a importância dos sonhos e de outras formações do inconsciente para a teoria freudiana, incluindo a tese histórica da realização de desejo e os limites de sua aplicação.
+
+Incluí **quatro resumos «Em palavras simples»**, glossário com quatro definições, atividade de comparação entre uma interpretação automática e perguntas abertas, reflexão guiada e três questões novas de avaliação. A bibliografia fica recolhida e usa fontes verificáveis: <em>A interpretação dos sonhos</em> e o material didático do Freud Museum London. As cenas são fictícias e não se destinam a interpretar sonhos reais.
+
+Na Aula 2.2, o botão **Oficina do Inconsciente** agora abre diretamente a mesa **02 · O trabalho do sonho**, em `oficina-freud.html?sala=sonho#workshop`. As outras mesas permanecem disponíveis, mas os estudantes não são obrigados a passar primeiro pelas tópicas freudianas. O leitor usa campos opcionais de laboratório por aula; outros módulos continuam com os caminhos anteriores. O cache do PWA agora é `lacan-study-pwa-v15`.
+
+Verificações realizadas: conteúdo e scripts com sintaxe válida, seis aulas e três questões por aula mantidas, renderização simulada da 2.2 com os dois cartões comparativos e seu quiz, renderização da 2.1 e 2.3 preservada, e teste simulado de abertura direta da sala do sonho. Não houve verificação visual num aparelho real. As chaves de progresso e anotação existentes não foram modificadas. **Próximo trabalho sugerido: revisão didática da Aula 2.3, Recalque e conflito psíquico.**
 
 ## Publicação
 
