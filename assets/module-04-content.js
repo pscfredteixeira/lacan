@@ -385,306 +385,384 @@ window.LACAN_LESSONS = [
   {
     "id": "4.4",
     "title": "Narcisismo e agressividade",
-    "subtitle": "A tensão entre identificação, rivalidade e reconhecimento",
-    "duration": "50–65 min",
-    "question": "Como a imagem do semelhante pode despertar identificação e rivalidade, sem que isso signifique uma agressividade inevitável em toda relação?",
-    "introduction": "O Imaginário é frequentemente tratado como o lugar das imagens bonitas ou das fantasias pessoais. No ensino inicial de Lacan, porém, a identificação com o semelhante envolve também tensões. Sua discussão da <strong>agressividade</strong>, especialmente no texto de 1948, ajuda a compreender por que uma relação especular pode ser tanto constitutiva quanto conflitiva.",
+    "subtitle": "Como a admiração e a comparação podem se misturar",
+    "duration": "30–40 min",
+    "question": "Por que alguém pode admirar outra pessoa e, ao mesmo tempo, sentir rivalidade?",
+    "introduction": "Imagine dois colegas aprendendo a tocar um instrumento. Um admira o outro porque gostaria de tocar tão bem quanto ele. Mas, em uma competição, essa admiração pode se misturar com uma sensação de disputa. Lacan estudou relações desse tipo para pensar a ligação entre <strong>identificação, narcisismo e agressividade</strong>. Não está dizendo que admirar alguém sempre provoca brigas. Vamos compreender o que esses termos significam na teoria, começando pela situação.",
     "sections": [
       {
-        "title": "O narcisismo além da vaidade",
+        "title": "1. Narcisismo não quer dizer simplesmente vaidade",
         "paragraphs": [
-          "Freud, em <em>Introdução ao narcisismo</em> (1914), formula problemas sobre a libido e os investimentos do eu. Lacan retoma essas questões para discutir a formação especular. É incorreto reduzir narcisismo a «gostar muito de si» ou identificar automaticamente uma estrutura clínica a partir de selfies, autopromoção ou timidez.",
-          "O eu imaginário não é apenas uma coleção de características que alguém escolhe. Sua constituição envolve identificações, imagens de unidade e relações com o semelhante. Por isso, a ideia de narcisismo não cabe em uma escala simples entre «autoestima alta» e «autoestima baixa»."
-        ]
+          "No dia a dia, às vezes chamamos alguém de narcisista porque publica muitas fotografias, fala de suas conquistas ou gosta de receber elogios. Esse uso é diferente do conceito que Freud trabalhou e que Lacan retomou. <strong>Narcisismo</strong>, nessa discussão, está ligado ao modo como o eu é tomado como objeto de interesse e investimento afetivo.",
+          "Na Aula 4.2, vimos que o eu pode formar-se por meio de identificações com imagens. Na Aula 4.3, vimos como uma imagem valorizada de si participa dessa construção. É nesse caminho que o narcisismo interessa a Lacan: na relação que estabelecemos com nossa própria imagem e com outras pessoas.",
+          "Isso não significa que qualquer imagem admirada revele uma doença ou um defeito moral. É importante distinguir o <strong>conceito psicanalítico</strong> do insulto cotidiano e também dos diagnósticos utilizados em outros campos clínicos."
+        ],
+        "inShort": "Narcisismo, aqui, não é sinônimo de vaidade. É uma questão teórica sobre o eu, suas imagens e os investimentos afetivos."
       },
       {
-        "title": "Por que a rivalidade aparece na relação com o semelhante?",
+        "title": "2. Quando outra pessoa funciona como comparação",
         "paragraphs": [
-          "Quando a imagem de outro é percebida como próxima, admirada ou ameaçadora, podem surgir relações de competição e comparação. Na elaboração lacaniana, a identificação com o semelhante e a agressividade se articulam à estrutura imaginária do eu. O outro pode funcionar como referência de uma unidade desejada e, ao mesmo tempo, como rival.",
-          "Essa construção não afirma que todo encontro humano seja violento nem que se possa diagnosticar agressividade pela aparência de duas pessoas. Uma relação pode envolver cooperação, identificação e rivalidade em contextos muito diferentes. A teoria oferece uma pergunta estrutural, não um veredito comportamental."
-        ]
+          "Voltemos aos dois colegas músicos. Um deles pensa: «Eu gostaria de tocar com a mesma segurança que ela». A colega funciona, nesse exemplo, como uma <strong>referência de identificação</strong>. Ele encontra na outra uma imagem de algo que admira.",
+          "Agora imagine que os dois disputem uma única vaga numa apresentação. Pode aparecer um conflito: o que antes despertava admiração também participa de uma disputa por reconhecimento. Essa passagem ajuda a perceber que <strong>identificação e rivalidade podem estar ligadas</strong>.",
+          "Em sua discussão da relação imaginária, Lacan relaciona a identificação com o <strong>semelhante</strong> à possibilidade de competição. Semelhante, aqui, não significa alguém com o mesmo rosto ou a mesma idade; significa alguém com quem estabelecemos relações de comparação e identificação."
+        ],
+        "inShort": "O outro pode servir de referência para a identificação e, em algumas situações, também de rival. Isso não acontece necessariamente em toda relação."
       },
       {
-        "title": "O texto de 1948 e sua questão clínica",
+        "title": "3. O que Lacan chama de agressividade?",
         "paragraphs": [
-          "Em <em>A agressividade em psicanálise</em> (1948), Lacan articula agressividade, identificação e imagens do corpo. O texto precede a formulação preservada do estádio do espelho de 1949, mas participa de problemas semelhantes. Ler os dois textos próximos permite observar sua continuidade sem fingir que são uma única obra.",
-          "O tema das imagens de corpo fragmentado aparece nesse horizonte teórico. Ele não deve ser tratado como descrição empírica de todas as crianças, nem confundido com um diagnóstico universal. O uso cuidadoso da linguagem impede transformar imagens teóricas em evidências automáticas."
-        ]
+          "<strong>Agressividade</strong>, na elaboração de Lacan, não precisa significar uma pessoa atacando outra fisicamente. O termo participa de uma discussão mais ampla sobre tensões e rivalidades na formação do eu e nas relações com os semelhantes.",
+          "Pense numa disputa em que alguém se sente ameaçado pela habilidade do colega. Pode haver irritação, vontade de superar o outro ou desconforto diante da comparação. Isso ajuda a ilustrar uma possível tensão, mas não permite descobrir a história inconsciente de nenhum participante nem prever sua conduta.",
+          "Lacan trabalhou esses problemas em seu texto <em>A agressividade em psicanálise</em>, de 1948, e no estudo sobre o estádio do espelho, apresentado em 1949. As datas servem para localizar os textos: o que importa para nós é a ligação que ele propôs entre <strong>imagem, identificação e rivalidade</strong>."
+        ],
+        "inShort": "Agressividade, neste debate, está ligada a tensões na relação com o semelhante; não é uma previsão de violência."
       },
       {
-        "title": "A agressividade não explica sozinha o laço social",
+        "title": "4. O que a teoria pode explicar — e o que ela não pode",
         "paragraphs": [
-          "Lacan aprofundará depois as relações entre Imaginário, Simbólico e Real. A rivalidade especular não basta para pensar linguagem, instituições, regras e alianças sociais. Precisamos distinguir o pequeno outro, ligado ao semelhante no registro imaginário, do grande Outro e de funções simbólicas que não são apenas reflexos.",
-          "O próximo capítulo introduzirá essa diferença. Por ora, retenha a tensão: a imagem pode permitir uma identificação fundamental e também uma relação conflitiva com aquele que parece partilhar sua posição."
-        ]
+          "Seria um erro concluir que duas pessoas competindo são necessariamente agressivas no sentido clínico, ou que alguém que tira muitas selfies possui um problema psíquico. Esses comportamentos não bastam para estabelecer uma interpretação.",
+          "Também é possível cooperar com quem admiramos, aprender com colegas e sentir alegria pelas conquistas de outras pessoas. A possibilidade de rivalidade não elimina a variedade das relações humanas. A teoria de Lacan ajuda a formular perguntas sobre a <strong>relação entre eu e semelhante</strong>, não uma regra universal sobre como todo mundo age.",
+          "Na próxima aula, chamaremos de <strong>pequeno outro</strong> esse semelhante com quem podemos nos comparar e nos identificar no campo imaginário. É apenas o próximo nome de uma relação que já começamos a compreender."
+        ],
+        "inShort": "A relação com o semelhante pode envolver admiração, identificação e rivalidade. Não é uma maneira de classificar ou diagnosticar pessoas."
       }
     ],
     "example": {
-      "title": "O colega visto como espelho e rival",
-      "text": "Duas personagens fictícias estudam para o mesmo concurso. Uma admira a facilidade da outra e sente incômodo quando é comparada a ela. A cena ilustra uma possível tensão entre identificação e rivalidade, mas não comprova uma estrutura psíquica nem reduz toda competição à teoria lacaniana."
+      "title": "Duas pessoas e uma vaga",
+      "text": "Duas personagens fictícias estudam para a mesma bolsa. Uma aprende com a outra, mas às vezes teme ser superada. A cena ajuda a pensar como identificação e competição podem se aproximar. Não significa que toda competição esconda agressividade inconsciente."
     },
-    "takeaway": "No horizonte de Lacan, o narcisismo e a identificação imaginária podem envolver rivalidade e agressividade. Essa relação estrutural não deve ser convertida em previsão de violência ou diagnóstico automático.",
+    "takeaway": "O narcisismo, para Freud e Lacan, não se reduz à vaidade. No estudo do eu, a identificação com o semelhante pode envolver admiração e também rivalidade, sem determinar automaticamente o comportamento de ninguém.",
     "concepts": [
       {
         "name": "Narcisismo",
-        "definition": "Problema da libido e do investimento do eu na tradição freudiana, retomado por Lacan na discussão especular."
+        "definition": "Conceito psicanalítico relacionado ao investimento no eu e à relação com sua imagem; não equivale ao insulto cotidiano «vaidoso»."
+      },
+      {
+        "name": "Semelhante",
+        "definition": "Alguém com quem nos comparamos, nos identificamos ou estabelecemos uma relação de espelhamento; não precisa ter aparência semelhante."
       },
       {
         "name": "Agressividade",
-        "definition": "Em Lacan, noção trabalhada em relação a identificação, rivalidade e imagens do corpo, especialmente no texto de 1948."
-      },
-      {
-        "name": "Relação especular",
-        "definition": "Relação organizada em torno de imagens e identificações com o semelhante, que pode envolver admiração, tensão ou rivalidade."
+        "definition": "Na elaboração lacaniana, problema relacionado às tensões e rivalidades na relação imaginária, que não é sinônimo obrigatório de ataque físico."
       }
     ],
     "practice": {
-      "title": "Rivalidade não é diagnóstico",
-      "prompt": "Imagine uma cena fictícia de comparação entre colegas. Identifique o que poderia ser descrito como identificação e como rivalidade. Depois escreva o limite do exemplo: o que ele não revela sobre a história psíquica das personagens?"
+      "title": "Descreva antes de interpretar",
+      "prompt": "Crie uma situação fictícia entre duas pessoas que admiram a mesma habilidade. Mostre primeiro uma relação de aprendizado e depois uma possível rivalidade. Termine explicando o que não seria possível concluir sobre essas pessoas."
     },
     "references": [
       "Freud, S. <em>Introdução ao narcisismo</em> (1914).",
       "Lacan, J. <em>A agressividade em psicanálise</em> (1948), em <em>Escritos</em>.",
       "Lacan, J. <em>O estádio do espelho como formador da função do eu</em> (1949), em <em>Escritos</em>.",
-      "Artigo de contextualização em português: <em>Posição do estágio do espelho na teoria lacaniana do imaginário</em>. <a href=\"https://www.scielo.br/j/rdpsi/a/tj9BF4SPqhKFtqcD6YxbJQP/\" target=\"_blank\" rel=\"noopener noreferrer\">SciELO ↗</a>"
+      "Artigo acadêmico «Agressividade no espelho de Lacan». <a href=\"https://revistas.usp.br/humanidades/pt_BR/article/view/106195\" target=\"_blank\" rel=\"noopener noreferrer\">Universidade de São Paulo ↗</a>"
     ],
     "quiz": [
       {
-        "phase": "Reconhecimento",
-        "prompt": "Qual par de temas se articula na discussão lacaniana da relação especular?",
+        "phase": "Lembrar",
+        "prompt": "Nesta aula, por que não usamos narcisismo como simples sinônimo de vaidade?",
         "options": [
-          "Apenas um elogio à autonomia do eu.",
-          "Somente o desenvolvimento cerebral mensurável.",
-          "Identificação com o semelhante e possibilidade de rivalidade."
-        ],
-        "correct": 2,
-        "explanation": "A agressividade participa de uma investigação sobre identificação e relação com o semelhante, não de uma simples teoria de temperamentos."
-      },
-      {
-        "phase": "Compreensão",
-        "prompt": "Por que a agressividade imaginária não deve ser entendida como uma previsão universal de violência?",
-        "options": [
-          "Porque se trata de uma problemática teórica, que não determina automaticamente cada comportamento empírico.",
-          "Porque todas as relações entre semelhantes são necessariamente pacíficas.",
-          "Porque Lacan nunca relacionou agressividade a identificação."
+          "Porque o conceito de Freud e Lacan discute o eu e suas identificações, não apenas o hábito de exibir-se.",
+          "Porque a teoria se refere somente à quantidade de fotografias publicadas.",
+          "Porque narcisismo é o nome de qualquer disputa entre duas pessoas."
         ],
         "correct": 0,
-        "explanation": "O conceito não funciona como um teste capaz de prever a conduta de pessoas observadas."
+        "explanation": "Narcisismo, aqui, está ligado à constituição e aos investimentos no eu. Não pode ser identificado por uma atitude isolada."
       },
       {
-        "phase": "Aplicação",
-        "prompt": "Um vídeo afirma: «Todo indivíduo vaidoso é agressivo por causa do espelho». O que falta?",
+        "phase": "Entender",
+        "prompt": "Como admiração e rivalidade podem aparecer na mesma relação?",
         "options": [
-          "Uma análise da quantidade de fotos publicadas.",
-          "A distinção entre narcisismo teórico, identificação especular e afirmações comportamentais sem fundamento.",
-          "Um teste de memória visual."
+          "A admiração impede, em qualquer situação, que duas pessoas concorram entre si.",
+          "Uma pessoa pode tomar outra como referência e também entrar em competição com ela.",
+          "A rivalidade prova que nunca houve identificação com o outro."
         ],
         "correct": 1,
-        "explanation": "O raciocínio parte de rótulos cotidianos e infere uma relação causal universal não sustentada por uma cena isolada."
+        "explanation": "A relação imaginária pode envolver identificação com o semelhante e tensão competitiva, embora isso não seja inevitável."
+      },
+      {
+        "phase": "Aplicar",
+        "prompt": "Uma pessoa admira a habilidade de um colega e sente incômodo quando ele recebe um prêmio. O que podemos afirmar?",
+        "options": [
+          "Que o colega premiado tem um transtorno de personalidade.",
+          "Que a cena prova que todos os admiradores são violentos.",
+          "Que o exemplo pode ilustrar rivalidade, mas não permite diagnosticar as pessoas."
+        ],
+        "correct": 2,
+        "explanation": "O exemplo ajuda a distinguir identificação e rivalidade. Não fornece evidências suficientes para afirmar uma condição clínica de alguém."
       }
-    ]
+    ],
+    "learningMode": "primeiros-passos",
+    "comparison": {
+      "title": "O mesmo colega, duas relações possíveis",
+      "intro": "Em uma história inventada, duas pessoas treinam juntas. Compare duas situações para perceber como a relação muda.",
+      "cases": [
+        {
+          "title": "Admiração e aprendizado",
+          "scene": "Joana observa como sua colega toca e pede que ela lhe ensine uma passagem difícil.",
+          "why": "A colega serve de referência e pode participar de uma identificação. A cena não exige que exista rivalidade."
+        },
+        {
+          "title": "Admiração e competição",
+          "scene": "Joana admira a colega, mas fica desconfortável quando ambas disputam a mesma vaga.",
+          "why": "A comparação pode agora incluir rivalidade. Isso ilustra uma possibilidade discutida por Lacan, sem diagnosticar Joana."
+        }
+      ],
+      "conclusion": "Identificar-se com alguém e rivalizar com essa pessoa podem se relacionar; não são a mesma coisa e não precisam ocorrer sempre juntas."
+    }
   },
   {
     "id": "4.5",
     "title": "O pequeno outro",
-    "subtitle": "O semelhante no Imaginário e a diferença em relação ao grande Outro",
-    "duration": "55–70 min",
-    "question": "Se «outro» pode significar uma pessoa, por que Lacan distingue pequeno outro e grande Outro?",
-    "introduction": "A semelhança entre dois termos causa um dos tropeços mais frequentes entre iniciantes: <strong>pequeno outro</strong> e <strong>grande Outro</strong>. No começo, parece que a diferença depende apenas da importância de uma pessoa. Essa leitura está errada. Lacan mobiliza duas funções conceituais distintas: uma relacionada à identificação imaginária com o semelhante, outra ao campo simbólico no qual a fala e o sujeito se inscrevem.",
+    "subtitle": "Quem é o semelhante com quem nos comparamos e nos identificamos?",
+    "duration": "30–40 min",
+    "question": "Por que Lacan chama de «pequeno outro» alguém com quem estabelecemos uma relação de comparação?",
+    "introduction": "Até aqui falamos de imagens, identificação e relações de rivalidade. Agora vamos dar um nome a uma dessas relações: <strong>pequeno outro</strong>. O termo pode parecer estranho, mas ele não significa «alguém pequeno» ou «uma pessoa menos importante». Lacan o usa para pensar o <strong>semelhante</strong> — alguém com quem podemos nos comparar, nos identificar ou rivalizar. Vamos entender primeiro essa ideia antes de mencionar a outra expressão que aparece em seus textos: grande Outro.",
     "sections": [
       {
-        "title": "O pequeno outro e o semelhante",
+        "title": "1. O que significa «outro» nessa discussão?",
         "paragraphs": [
-          "O pequeno outro, frequentemente indicado como <em>autre</em> com inicial minúscula, diz respeito ao semelhante e ao parceiro da relação imaginária. Nesse campo, projetamos identificações, rivalidades e maneiras de reconhecer uma imagem de nós mesmos. Não se trata de uma categoria administrativa para designar pessoas jovens ou «menos importantes».",
-          "O eu também é, nesse sentido, atravessado pela alteridade: identifica-se com uma forma que não é uma essência interior originária. A relação especular ajuda a entender por que o eu pode ser concebido por Lacan como um objeto ligado às identificações, em vez de um sujeito plenamente senhor de si."
-        ]
+          "No dia a dia, «outro» é uma pessoa diferente de mim. Na teoria que estamos estudando, Lacan usa a expressão <strong>pequeno outro</strong> de uma forma mais precisa: ela aponta para o semelhante com quem o eu se relaciona por imagens, comparações e identificações.",
+          "Volte ao exemplo dos músicos da Aula 4.4. Um colega pode ser uma referência porque possui uma habilidade que admiro. Também pode surgir rivalidade, se nós dois disputamos um reconhecimento. São possibilidades de uma <strong>relação imaginária com o semelhante</strong>.",
+          "A palavra <strong>imaginária</strong>, aqui, não quer dizer inventada ou falsa. Lacan chama de Imaginário um campo de relações ligado às imagens e identificações. Você já estudou suas principais características nas aulas anteriores: imagem corporal, eu, semelhança e rivalidade."
+        ],
+        "inShort": "Pequeno outro é o semelhante enquanto participa das relações de imagem, comparação e identificação."
       },
       {
-        "title": "O grande Outro não é um indivíduo gigante",
+        "title": "2. O pequeno outro não é um tipo de pessoa",
         "paragraphs": [
-          "O grande Outro, com inicial maiúscula, será estudado amplamente no Módulo 5. Sua dimensão simbólica envolve o lugar da linguagem, das regras e das relações que precedem um sujeito individual. Não é simplesmente uma pessoa em posição de autoridade, como o professor, o chefe ou a mãe.",
-          "Pessoas concretas podem ocupar posições relacionadas ao Outro em determinadas formulações e situações, mas isso não faz da pessoa e do conceito a mesma coisa. Confundi-los apagaria a diferença entre o campo simbólico e um encontro empírico entre indivíduos."
-        ]
+          "É importante não transformar o conceito numa etiqueta. Um amigo não é «o pequeno outro» por ser jovem, e uma professora não deixa de participar de relações imaginárias por ocupar um cargo de autoridade. Não estamos dividindo a população entre pessoas pequenas e grandes.",
+          "Uma mesma pessoa pode aparecer em relações diferentes dependendo da situação. Podemos nos comparar a uma professora por sua habilidade, por exemplo. Em outra situação, a conversa pode envolver regras e expectativas da escola, que não se resumem à comparação de imagens.",
+          "Também o <strong>eu</strong> se forma, na proposta de Lacan, por meio dessas relações exteriores. Por isso, a relação com o outro não é apenas um detalhe acrescentado depois: ela participa da própria maneira como o eu se constitui."
+        ],
+        "inShort": "Pequeno outro é uma função na relação com o semelhante, não uma classificação de pessoas por idade, tamanho ou profissão."
       },
       {
-        "title": "Uma relação de imagens não esgota uma conversa",
+        "title": "3. E por que algumas vezes se escreve «grande Outro»?",
         "paragraphs": [
-          "Em uma discussão, duas personagens podem competir por reconhecimento, imitar gestos e comparar habilidades. Essas relações permitem ilustrar a identificação com o semelhante. Mas sua conversa acontece também em uma língua, em convenções sociais e em lugares de fala que não dependem da semelhança visual entre elas.",
-          "Distinguir pequeno outro e grande Outro ajuda a compreender por que Lacan não reduz o laço humano a um jogo de espelhos. O Simbólico não entra apenas depois de o Imaginário terminar: essas dimensões podem articular-se desde o início da experiência."
-        ]
+          "Você talvez encontre nos livros de Lacan a expressão <strong>grande Outro</strong>, escrita com inicial maiúscula. Vamos apenas preparar a diferença indispensável para não confundir os nomes. O pequeno outro diz respeito à identificação com um semelhante; o grande Outro, na elaboração de Lacan, refere-se a uma função ligada à <strong>linguagem e às regras que organizam nossas relações</strong>.",
+          "Imagine uma sala de aula. Você pode admirar a forma como um colega responde às perguntas: há aí uma possibilidade de identificação e comparação. Mas a própria aula também acontece numa língua, com papéis como «estudante» e «professor», e com expectativas sobre quem pode falar. Essa segunda dimensão não é a mesma coisa que se comparar ao colega.",
+          "Não vamos aprofundar agora o grande Outro. Isso é assunto do <strong>Módulo 5</strong>, que começa justamente explicando o termo. Nesta aula, você só precisa guardar que os dois nomes <strong>não indicam o tamanho nem a importância de uma pessoa</strong>."
+        ],
+        "inShort": "Pequeno outro: relação com o semelhante. Grande Outro: nome de uma função ligada à linguagem, que aprenderemos com mais calma no Módulo 5."
       },
       {
-        "title": "Cuidado com os símbolos usados na obra",
+        "title": "4. O que levar adiante?",
         "paragraphs": [
-          "Em diversos esquemas dos anos 1950, Lacan escreve o eu como <em>moi</em> e utiliza letras como <strong>a</strong> e <strong>a′</strong> para posições da relação imaginária. Essa notação precisa ser interpretada em seu contexto histórico. Mais tarde, a letra <em>a</em> estará envolvida em novas elaborações sobre o objeto a, mas isso não autoriza dizer que os termos sejam intercambiáveis.",
-          "A melhor estratégia é sempre ler a legenda de um esquema, localizar o texto e perguntar qual função está em jogo. Uma única letra pode participar de construções diferentes ao longo dos seminários."
-        ]
+          "Os termos pequeno outro e grande Outro podem parecer parecidos na escrita. Mas a primeira distinção é bem simples. O <strong>pequeno outro</strong> ajuda a pensar a relação imaginária entre eu e semelhante. O <strong>grande Outro</strong> será estudado como uma função diferente, ligada ao campo da linguagem.",
+          "Não é necessário decorar letras ou esquemas complicados neste momento. Em textos mais avançados, Lacan utiliza letras para marcar posições nas relações imaginárias, mas essas notações serão mais úteis quando já conhecermos as relações que elas procuram representar.",
+          "Na última aula deste módulo, voltaremos ao eu e faremos uma pergunta nova: <strong>se o eu se forma por imagens e identificações, será que ele explica sozinho tudo aquilo que dizemos e sentimos?</strong> É uma pergunta que nos liga ao inconsciente estudado com Freud."
+        ],
+        "inShort": "Para esta aula, basta compreender o pequeno outro como o semelhante na relação de identificação e comparação. O próximo módulo explicará o grande Outro."
       }
     ],
     "example": {
-      "title": "Duas perguntas sobre uma sala de aula",
-      "text": "Pergunta imaginária: «Com qual colega me comparo e em quem me reconheço?» Pergunta simbólica: «Que língua, regras, papéis e expectativas organizam a situação de falar como estudante?» As duas são diferentes; nenhuma se reduz a identificar uma pessoa como «o grande Outro»."
+      "title": "Uma relação de comparação",
+      "text": "Uma personagem aprende uma habilidade observando uma colega e começa a se comparar a ela. Isso ilustra a relação imaginária com o semelhante. Não significa que a colega seja, em todas as situações, «o pequeno outro» como se esse fosse seu cargo ou personalidade."
     },
-    "takeaway": "O pequeno outro designa a alteridade do semelhante na relação imaginária; o grande Outro, em sua dimensão simbólica, não é um indivíduo maior, mas um lugar estrutural. Sua articulação será aprofundada no Módulo 5.",
+    "takeaway": "O pequeno outro é o semelhante na relação imaginária: identificação, comparação e possível rivalidade. Não designa uma pessoa de menor importância. O grande Outro nomeia outra função, que será explicada no módulo seguinte.",
     "concepts": [
       {
-        "name": "Pequeno outro (autre)",
-        "definition": "Semelhante e alteridade imaginária em relações de identificação, comparação e rivalidade."
+        "name": "Pequeno outro",
+        "definition": "O semelhante com quem o eu entra em relações de identificação, comparação e rivalidade no campo imaginário."
       },
       {
-        "name": "Grande Outro (Autre)",
-        "definition": "Na dimensão simbólica, lugar da linguagem e da ordem social e significante; não coincide de maneira simples com uma pessoa concreta."
+        "name": "Imaginário",
+        "definition": "Nome usado por Lacan para pensar, entre outras coisas, as relações de imagem, identificação e semelhança. Não significa simplesmente fantasia inventada."
       },
       {
-        "name": "a / a′ nos esquemas",
-        "definition": "Letras usadas por Lacan para posições em esquemas imaginários; não devem ser equiparadas sem mediação ao desenvolvimento posterior de objeto a."
+        "name": "Grande Outro",
+        "definition": "Expressão que aponta para uma função simbólica ligada à linguagem; o conceito será estudado com detalhes no Módulo 5."
       }
     ],
     "practice": {
-      "title": "O que é relação e o que é lugar?",
-      "prompt": "Em uma cena fictícia com dois colegas, identifique um vínculo de comparação e uma regra linguística ou social que organize a conversa. Explique por que você não precisa apontar uma pessoa como «grande Outro»."
+      "title": "Reconheça a comparação",
+      "prompt": "Imagine duas pessoas aprendendo a desenhar. Descreva uma situação em que uma toma a outra como referência. Explique por que isso é mais próximo do conceito de pequeno outro do que uma classificação por idade ou cargo."
     },
     "references": [
-      "Lacan, J. <em>O Seminário, livro 2: O eu na teoria de Freud e na técnica da psicanálise</em> (1954–1955), esquemas imaginários.",
-      "Lacan, J. <em>O Seminário, livro 1: Os escritos técnicos de Freud</em> (1953–1954).",
-      "Johnston, A. «Jacques Lacan», <em>Stanford Encyclopedia of Philosophy</em>, seção «Otherness». <a href=\"https://plato.stanford.edu/entries/lacan/#OthOedComSex\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>"
+      "Lacan, J. <em>O Seminário, livro 2: O eu na teoria de Freud e na técnica da psicanálise</em> (1954–1955).",
+      "Lacan, J. <em>O estádio do espelho como formador da função do eu</em> (1949), em <em>Escritos</em>.",
+      "Johnston, A. «Jacques Lacan», <em>Stanford Encyclopedia of Philosophy</em>, discussão de pequeno outro e grande Outro. <a href=\"https://plato.stanford.edu/entries/lacan/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>"
     ],
     "quiz": [
       {
-        "phase": "Reconhecimento",
-        "prompt": "Na distinção introdutória, o pequeno outro se relaciona principalmente a quê?",
+        "phase": "Lembrar",
+        "prompt": "A que se refere principalmente o pequeno outro nesta aula?",
         "options": [
-          "Ao semelhante e às relações de identificação imaginária.",
-          "Ao nome de qualquer pessoa com autoridade política.",
-          "A uma versão pequena do grande Outro."
-        ],
-        "correct": 0,
-        "explanation": "O pequeno outro está ligado às relações imaginárias e não equivale a uma pessoa de status inferior."
-      },
-      {
-        "phase": "Compreensão",
-        "prompt": "Por que o grande Outro não pode ser identificado automaticamente com uma mãe ou um chefe?",
-        "options": [
-          "Porque ele só existe no momento em que alguém olha em um espelho.",
-          "Porque designa um lugar ou função estrutural simbólica, não uma pessoa empírica específica.",
-          "Porque o grande Outro significa apenas rivalidade visual."
-        ],
-        "correct": 1,
-        "explanation": "Uma pessoa pode ocupar posições relacionadas ao Outro, mas o conceito não se reduz à identidade dessa pessoa."
-      },
-      {
-        "phase": "Aplicação",
-        "prompt": "Um estudante diz: «Meu colega é o pequeno outro porque é baixo, minha professora é o grande Outro porque é mais velha». O que corrigir?",
-        "options": [
-          "Nada: a teoria utiliza estatura e idade como critérios.",
-          "Basta substituir estatura por profissão.",
-          "É preciso distinguir função imaginária do semelhante e lugar simbólico, sem classificá-los por tamanho ou idade."
+          "A uma pessoa mais jovem que exerce pouca influência na vida de alguém.",
+          "À pessoa que ocupa a função de professor numa instituição.",
+          "Ao semelhante com quem podemos nos identificar e nos comparar."
         ],
         "correct": 2,
-        "explanation": "Os termos são conceituais, não classificações biológicas ou hierárquicas de indivíduos."
+        "explanation": "O pequeno outro designa o semelhante na relação imaginária; não depende de idade ou autoridade."
+      },
+      {
+        "phase": "Entender",
+        "prompt": "Por que um amigo não é «o pequeno outro» em todas as situações?",
+        "options": [
+          "Porque o termo descreve uma relação de identificação ou comparação, e não um tipo fixo de pessoa.",
+          "Porque apenas parentes próximos podem ocupar esse lugar.",
+          "Porque os colegas de trabalho não participam de relações imaginárias."
+        ],
+        "correct": 0,
+        "explanation": "O conceito descreve uma função na relação com o semelhante. Não é uma etiqueta permanente para classificar indivíduos."
+      },
+      {
+        "phase": "Aplicar",
+        "prompt": "Uma estudante admira a habilidade de uma colega e se compara a ela. Qual ideia da aula ajuda a entender essa relação?",
+        "options": [
+          "A ideia de que toda admiração é uma forma de violência.",
+          "A relação imaginária de identificação com o pequeno outro.",
+          "A teoria de que uma pessoa só se identifica com quem tem a mesma idade."
+        ],
+        "correct": 1,
+        "explanation": "A comparação e a identificação com o semelhante ilustram o pequeno outro. A cena não exige rivalidade nem fornece uma interpretação clínica."
       }
-    ]
+    ],
+    "learningMode": "primeiros-passos",
+    "comparison": {
+      "title": "Na mesma sala, relações diferentes",
+      "intro": "A cena ocorre em uma sala de aula fictícia. Abra as explicações para reconhecer a diferença entre comparar-se a alguém e participar de uma situação organizada pela linguagem.",
+      "cases": [
+        {
+          "title": "Comparar-se ao colega",
+          "scene": "Uma estudante pensa: «Eu queria conseguir explicar as coisas tão bem quanto meu colega».",
+          "why": "A comparação com um semelhante ajuda a ilustrar a relação imaginária que Lacan associa ao pequeno outro."
+        },
+        {
+          "title": "Participar da aula",
+          "scene": "A professora explica a regra para levantar a mão, e os estudantes usam a mesma língua para conversar.",
+          "why": "A cena envolve regras e linguagem, para além da comparação entre duas pessoas. Essa outra dimensão preparará o estudo do grande Outro no Módulo 5."
+        }
+      ],
+      "conclusion": "Uma mesma situação pode ter relações de identificação e uma organização pela linguagem. Não precisamos apontar quem é «o grande Outro» entre as pessoas da sala."
+    }
   },
   {
     "id": "4.6",
     "title": "Por que o eu não é o sujeito?",
-    "subtitle": "Uma síntese que abre o caminho para o sujeito do inconsciente",
-    "duration": "60–75 min",
-    "question": "Se digo «eu», quem está falando — e por que essa pergunta não se resolve com uma fotografia de mim?",
-    "introduction": "A distinção entre <strong>eu</strong> e <strong>sujeito</strong> é uma das passagens mais importantes para entrar no pensamento lacaniano. O estádio do espelho permite examinar como o eu se forma por identificações imaginárias. A psicanálise, porém, interessa-se também pelo sujeito do inconsciente, que não coincide plenamente com a imagem coerente que alguém faz de si. Esta aula reúne o caminho percorrido sem antecipar como definições prontas todos os desenvolvimentos posteriores.",
+    "subtitle": "Uma síntese do eu, das identificações e do inconsciente",
+    "duration": "35–45 min",
+    "question": "A imagem que fazemos de nós explica tudo o que sentimos, dizemos e fazemos?",
+    "introduction": "Você chegou à última aula deste módulo. Nas anteriores, acompanhamos a formação do eu por imagens e identificações. Mas lembra do que aprendemos sobre Freud? Nem tudo o que acontece em nossa experiência pode ser explicado pelas intenções de que temos consciência. Lacan usa essa questão para distinguir duas palavras que parecem equivalentes: <strong>eu</strong> e <strong>sujeito do inconsciente</strong>. Vamos entender essa diferença sem imaginar que existe outra pessoa escondida dentro de nós.",
     "sections": [
       {
-        "title": "O eu é uma formação, não a origem absoluta",
+        "title": "1. O eu: a maneira como nos reconhecemos",
         "paragraphs": [
-          "A imagem de unidade assumida no estádio do espelho ajuda a pensar a constituição do eu. Esse eu sustenta experiências cotidianas indispensáveis: reconhecer-se, narrar-se, localizar-se em relações. Lacan não propõe que o eu deva desaparecer, mas critica a ideia de que ele seja um núcleo absolutamente autônomo e transparente.",
-          "O eu é atravessado por identificações e pela alteridade; não é simplesmente uma entidade interior que, um dia, encontra uma imagem que a retrata corretamente. A relação com a própria imagem já envolve uma forma exterior e expectativas de reconhecimento."
-        ]
+          "Imagine alguém dizendo «Eu sou uma pessoa muito organizada». Essa frase pode fazer parte da imagem que a pessoa tem de si. Todos formamos maneiras de nos apresentar e contar nossa história: «sou tímido», «sou músico», «sou alguém que gosta de ajudar».",
+          "Nas aulas sobre o espelho, vimos que Lacan não considera o eu uma identidade completamente pronta que só precisa ser descoberta. A proposta é que ele se forma por <strong>identificações</strong>, isto é, por relações com imagens e referências que participam de como nos reconhecemos.",
+          "Isso não significa que nossa autoimagem seja sempre mentira. Dizer «eu» e manter uma história sobre nós é importante para a vida cotidiana. O ponto da teoria é que essa imagem organizada <strong>não conta tudo</strong> sobre nossas experiências e conflitos."
+        ],
+        "inShort": "O eu participa da imagem que formamos de nós mesmos. Para Lacan, ele se constrói por identificações, não aparece totalmente pronto."
       },
       {
-        "title": "O sujeito do inconsciente não é outro personagem",
+        "title": "2. Por que a psicanálise pergunta por algo além do eu?",
         "paragraphs": [
-          "Na teoria de Lacan, o sujeito não deve ser imaginado como uma segunda pessoa secreta escondida atrás do eu. O sujeito do inconsciente é elaborado a partir de problemas relacionados à linguagem, aos significantes, ao desejo e à divisão subjetiva. Sua formulação se torna mais precisa à medida que o ensino avança.",
-          "É possível haver uma diferença entre a narrativa consciente que alguém faz de si e certos efeitos que emergem na própria fala. Isso não transforma qualquer lapso em prova de um desejo específico. A distinção entre eu e sujeito permite formular perguntas, não substituir a escuta por uma decodificação automática."
-        ]
+          "Voltemos ao exemplo: a personagem afirma que sempre é organizada, mas conta que, recentemente, perdeu um documento importante e não sabe explicar como aconteceu. Isso não prova que ela quis perdê-lo. Porém, mostra como uma narrativa sobre nós mesmos pode não corresponder perfeitamente a tudo o que vivemos.",
+          "Freud estudou sonhos, esquecimentos, atos falhos e conflitos porque não considerava que a intenção consciente explicasse toda a experiência psíquica. Lacan retoma essa investigação e utiliza a palavra <strong>sujeito</strong> de um modo próprio, relacionado ao inconsciente e à linguagem.",
+          "É aqui que precisamos de cuidado. O sujeito do inconsciente <strong>não é uma segunda pessoa morando dentro da cabeça</strong>, nem uma identidade secreta «mais verdadeira» que alguém descobriria num teste. A distinção serve para perguntar por aspectos da experiência que a imagem consciente do eu não consegue explicar inteiramente."
+        ],
+        "inShort": "O sujeito do inconsciente não é outro personagem oculto. O conceito aponta para uma questão que não se reduz à imagem consciente do eu."
       },
       {
-        "title": "Eu, pequeno outro e Outro: três posições que não se confundem",
+        "title": "3. Eu e sujeito: uma primeira diferença",
         "paragraphs": [
-          "O eu imaginário se constitui por identificações; o pequeno outro se relaciona ao semelhante e à relação especular; o grande Outro, em sua dimensão simbólica, refere-se ao campo da linguagem e de suas funções. Essas posições não podem ser reduzidas a «eu, outra pessoa e autoridade».",
-          "É por isso que o Módulo 5 aprofundará a ordem simbólica e o sujeito barrado. A distinção entre moi e sujeito prepara o caminho, mas não dispensa o estudo da cadeia significante e do grande Outro."
-        ]
+          "Vamos comparar duas perguntas. A primeira é: <strong>«Como me reconheço e me apresento?»</strong>. Ela nos aproxima do eu, das imagens e das identificações estudadas no módulo. A segunda é: <strong>«O que pode aparecer na minha fala e na minha experiência sem que eu compreenda inteiramente?»</strong>. Ela nos aproxima da questão do sujeito do inconsciente.",
+          "Lacan relacionará cada vez mais esse sujeito ao campo da linguagem: às palavras, aos sentidos que mudam e aos efeitos da fala. Vimos aspectos dessas questões no Módulo 3. Agora fica mais fácil entender por que a imagem de «quem sou» não resolve sozinha aquilo que a psicanálise investiga.",
+          "A distinção não permite ouvir um erro de palavra e declarar: «Descobri seu verdadeiro inconsciente». Para entender uma experiência individual seria necessário considerar o contexto e a história da pessoa. O objetivo da aula é <strong>distinguir funções teóricas</strong>, não aprender a diagnosticar os outros."
+        ],
+        "inShort": "Eu: imagem de si construída por identificações. Sujeito do inconsciente: questão que não se esgota nessa imagem e se relaciona à fala e ao inconsciente."
       },
       {
-        "title": "Uma teoria que continua se transformando",
+        "title": "4. Seu mapa do Módulo 4",
         "paragraphs": [
-          "No percurso de Lacan, o estádio do espelho, os esquemas ópticos, o imaginário, o sujeito da linguagem e, mais tarde, o gozo e o corpo articulam problemas que recebem formulações diferentes. Reduzir todo esse caminho à frase «o eu é falso» seria inadequado: o eu é uma formação real em seus efeitos, ainda que, na teoria, não constitua a verdade inteira do sujeito.",
-          "O objetivo desta conclusão é saber enunciar os limites do modelo: a imagem participa da constituição do eu; a unidade idealizada é uma identificação; o pequeno outro diz respeito ao semelhante; o sujeito do inconsciente não é igual a essa imagem. Essas quatro distinções permitirão prosseguir."
-        ]
+          "Vamos reunir as ideias numa sequência. <strong>Imagem corporal:</strong> a figura do corpo vista como conjunto. <strong>Estádio do espelho:</strong> a identificação com essa forma participa da formação do eu. <strong>Eu ideal e ideal do eu:</strong> distinguem uma imagem admirada e a referência pela qual ela ganha valor.",
+          "Depois, estudamos como <strong>identificação e rivalidade</strong> podem aparecer na relação com o semelhante, sem obrigatoriamente acontecerem juntas. Chamamos de <strong>pequeno outro</strong> esse semelhante enquanto participa dessas relações imaginárias. E agora chegamos ao contraste final: <strong>o eu não se confunde completamente com o sujeito do inconsciente</strong>.",
+          "No <strong>Módulo 5</strong>, começaremos a estudar com calma o grande Outro e a relação do sujeito com a linguagem. Você não precisa saber esses assuntos para concluir o módulo atual. Basta conseguir explicar, em suas palavras, por que a imagem que alguém faz de si não responde sozinha a todas as perguntas da psicanálise."
+        ],
+        "inShort": "A formação do eu envolve imagem e identificação. O sujeito do inconsciente é uma questão diferente, que será aprofundada no próximo módulo."
       }
     ],
     "example": {
-      "title": "«Eu sou sempre assim» e o que escapa à frase",
-      "text": "Uma personagem fictícia afirma ser sempre organizada, mas conta com surpresa que perdeu uma carta importante. Isso pode servir para ilustrar uma discordância entre autoimagem e relato, porém não autoriza afirmar que o ato tenha um significado inconsciente determinado."
+      "title": "Uma autoimagem e uma surpresa",
+      "text": "Uma personagem se apresenta como extremamente pontual e fica surpresa ao chegar atrasada a um encontro. Não podemos dizer por esse acontecimento que ela desejava evitar a pessoa. Podemos apenas usar a cena para mostrar que a imagem consciente de si não explica automaticamente tudo o que alguém vive."
     },
-    "takeaway": "O eu está ligado a formações identificatórias e imaginárias; o sujeito do inconsciente não se reduz a essa imagem. Essa diferença introduz a questão da divisão subjetiva e prepara o estudo do grande Outro.",
+    "takeaway": "O eu se forma por identificações e participa da imagem consciente que fazemos de nós. O sujeito do inconsciente, na teoria de Lacan, não se reduz a essa imagem: envolve perguntas sobre a fala e os processos psíquicos que não conhecemos plenamente.",
     "concepts": [
       {
-        "name": "Eu (moi)",
-        "definition": "Instância formada por identificações e ligadas ao registro imaginário; não o núcleo absolutamente autônomo do sujeito."
+        "name": "Eu",
+        "definition": "Na discussão do espelho, formação ligada às imagens e identificações por meio das quais alguém se reconhece."
       },
       {
         "name": "Sujeito do inconsciente",
-        "definition": "Conceito lacaniano elaborado em relação à linguagem e à divisão subjetiva, não uma pessoa secreta habitando o interior do eu."
+        "definition": "Conceito de Lacan que não se reduz ao eu como autoimagem e remete a questões sobre inconsciente e linguagem."
       },
       {
-        "name": "Desconhecimento (méconnaissance)",
-        "definition": "Problema de um reconhecimento de si que pode ignorar as condições identificatórias e exteriores de constituição do eu."
+        "name": "Identificação",
+        "definition": "Relação com imagens ou referências que participam da formação do eu, retomada ao longo de todo o módulo."
       }
     ],
     "practice": {
-      "title": "Síntese antes do Módulo 5",
-      "prompt": "Produza um esquema textual de quatro termos: imagem, eu, pequeno outro, sujeito. Explique a função de cada um e escreva uma pergunta que ainda não consegue responder sobre o grande Outro."
+      "title": "Faça sua síntese sem decorar",
+      "prompt": "Escreva quatro frases: uma explicando o estádio do espelho, outra diferenciando eu ideal e ideal do eu, outra sobre pequeno outro e a última sobre por que o eu não é idêntico ao sujeito do inconsciente."
     },
     "references": [
       "Lacan, J. <em>O estádio do espelho como formador da função do eu</em> (1949), em <em>Escritos</em>.",
       "Lacan, J. <em>O Seminário, livro 2: O eu na teoria de Freud e na técnica da psicanálise</em> (1954–1955).",
       "Johnston, A. «Jacques Lacan», <em>Stanford Encyclopedia of Philosophy</em>, «The Mirror Stage, the Ego, and the Subject». <a href=\"https://plato.stanford.edu/entries/lacan/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>",
-      "Lacan, J. <em>Função e campo da fala e da linguagem em psicanálise</em> (1953), em <em>Escritos</em>."
+      "Artigo em português «O registro imaginário nos antecedentes lacanianos». <a href=\"https://www.scielo.br/j/agora/a/6LsHg9pCnK7wLgxRJnmCJtp/\" target=\"_blank\" rel=\"noopener noreferrer\">SciELO ↗</a>"
     ],
     "quiz": [
       {
-        "phase": "Reconhecimento",
-        "prompt": "Qual é a distinção central desta aula?",
+        "phase": "Lembrar",
+        "prompt": "Qual é uma diferença importante entre eu e sujeito do inconsciente nesta aula?",
         "options": [
-          "O eu e o sujeito são apenas dois nomes do mesmo objeto visual.",
-          "O eu se constitui por identificações; o sujeito do inconsciente não se reduz a essa imagem.",
-          "O sujeito do inconsciente é um segundo indivíduo escondido na cabeça."
-        ],
-        "correct": 1,
-        "explanation": "O moi da identificação imaginária não equivale ao sujeito do inconsciente articulado por Lacan."
-      },
-      {
-        "phase": "Compreensão",
-        "prompt": "Por que a frase «o eu é falso» é um resumo inadequado?",
-        "options": [
-          "Porque Lacan afirma que a imagem não possui nenhum efeito.",
-          "Porque o eu é o único campo da psicanálise.",
-          "Porque o eu é uma formação com efeitos, embora sua unidade identificatória não revele toda a posição do sujeito."
-        ],
-        "correct": 2,
-        "explanation": "O caráter imaginário não significa inexistência ou irrelevância; refere-se a uma forma de constituição e de desconhecimento."
-      },
-      {
-        "phase": "Aplicação",
-        "prompt": "Uma pessoa erra uma palavra e outra afirma: «Apareceu seu verdadeiro sujeito inconsciente». Qual resposta é mais rigorosa?",
-        "options": [
-          "O lapso pode abrir uma investigação, mas não permite identificar automaticamente uma essência subjetiva por uma palavra isolada.",
-          "A afirmação é válida se o erro aparecer em público.",
-          "Qualquer erro gramatical anula o eu."
+          "O eu é a imagem de si construída por identificações, e o sujeito não se reduz a essa imagem.",
+          "O eu é uma pessoa real, e o sujeito é uma segunda pessoa escondida na cabeça.",
+          "O eu pertence apenas à infância, enquanto o sujeito aparece somente na vida adulta."
         ],
         "correct": 0,
-        "explanation": "O sujeito do inconsciente não é uma essência pronta que uma palavra isolada permitiria revelar sem contexto."
+        "explanation": "Lacan estuda o eu por meio das identificações e investiga o sujeito do inconsciente sem tratá-lo como mais uma imagem de si."
+      },
+      {
+        "phase": "Entender",
+        "prompt": "Por que dizer «o eu é uma mentira» seria uma conclusão inadequada?",
+        "options": [
+          "Porque o eu mostra sempre toda a verdade sobre uma pessoa.",
+          "Porque o eu é uma formação importante, embora não explique toda a experiência subjetiva.",
+          "Porque Lacan afirma que ninguém forma uma imagem de si."
+        ],
+        "correct": 1,
+        "explanation": "O eu tem funções na vida cotidiana. Na proposta lacaniana, sua constituição por imagens e identificações não o torna equivalente a todo o sujeito."
+      },
+      {
+        "phase": "Aplicar",
+        "prompt": "Uma pessoa se define como pontual, mas um dia se atrasa. O que podemos concluir a partir do que estudamos?",
+        "options": [
+          "Que seu atraso prova um desejo inconsciente de fugir das pessoas.",
+          "Que sua autoimagem deve ser descartada porque é sempre falsa.",
+          "Que a autoimagem não explica tudo o que acontece, mas o atraso não revela sozinho uma causa inconsciente."
+        ],
+        "correct": 2,
+        "explanation": "A discrepância entre uma descrição de si e um acontecimento permite formular perguntas, não diagnosticar um desejo por uma cena isolada."
       }
-    ]
+    ],
+    "learningMode": "primeiros-passos",
+    "comparison": {
+      "title": "Duas perguntas que não dizem a mesma coisa",
+      "intro": "Uma personagem fictícia narra um fato. As duas perguntas abaixo investigam aspectos diferentes dessa narrativa.",
+      "cases": [
+        {
+          "title": "Como ela se descreve?",
+          "scene": "«Sou alguém que cumpre todos os compromissos sem falta».",
+          "why": "A frase apresenta uma imagem organizada de si. Ela ajuda a introduzir a questão do eu e das identificações."
+        },
+        {
+          "title": "O que acontece além da descrição?",
+          "scene": "«Mas ontem esqueci uma reunião importante e isso me surpreendeu».",
+          "why": "O acontecimento abre uma pergunta sobre a experiência da personagem, mas não revela uma intenção inconsciente específica nem prova que ela quis faltar."
+        }
+      ],
+      "conclusion": "Uma descrição de si pode ser importante e ainda assim não explicar toda a experiência. É isso que ajuda a separar a questão do eu da questão do sujeito."
+    }
   }
 ];
