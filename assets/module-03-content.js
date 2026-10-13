@@ -1,4 +1,4 @@
-/* Formação Lacaniana · Módulo 03 · linguagem e inconsciente. Aula 3.5: quiz didático revisto para não antecipar conceitos. */
+/* Formação Lacaniana · Módulo 03 · linguagem e inconsciente. Revisão pedagógica do quiz 3.5. */
 window.LACAN_LESSONS = [
   {
     "id": "3.1",
@@ -485,8 +485,8 @@ window.LACAN_LESSONS = [
         "phase": "Compreensão",
         "prompt": "Como Lacan retoma os estudos de Freud sobre sonhos e atos falhos?",
         "options": [
-          "Ele procura um significado fixo para cada imagem ou palavra, que vale para todas as pessoas.",
-          "Ele deixa de considerar a fala e passa a estudar apenas as imagens dos sonhos.",
+          "Ele busca uma tradução fixa para cada símbolo do sonho, sem considerar as palavras usadas pela pessoa.",
+          "Ele analisa apenas o assunto da história contada, sem considerar como os elementos se relacionam.",
           "Ele observa como palavras e elementos se relacionam, se conectam e podem ser substituídos."
         ],
         "correct": 2,
@@ -494,14 +494,14 @@ window.LACAN_LESSONS = [
       },
       {
         "phase": "Aplicação",
-        "prompt": "Uma pessoa conta que sonhou com uma porta fechada. Um aplicativo responde: «Isso significa que você tem medo de mudanças». Qual é o problema dessa resposta?",
+        "prompt": "Uma pessoa sonha com uma porta fechada. Um aplicativo afirma: «Isso significa que você tem medo de mudanças». Qual resposta é mais adequada?",
         "options": [
-          "O aplicativo afirma o significado do sonho sem ouvir o que aquela porta lembra à pessoa.",
-          "O aplicativo deveria descobrir primeiro se a porta era grande ou pequena para definir o significado.",
-          "O aplicativo considera importante o sonho, embora Freud só estudasse acontecimentos ocorridos durante o dia."
+          "O aplicativo não tem informações suficientes: seria preciso considerar o que a imagem lembra à pessoa.",
+          "O aplicativo deveria comparar a porta com imagens de outros sonhos para encontrar um significado comum.",
+          "O aplicativo deveria identificar todas as imagens do sonho e aplicar uma interpretação geral a cada uma."
         ],
         "correct": 0,
-        "explanation": "A imagem de uma porta não tem um significado obrigatório para todas as pessoas. Para investigar um sonho, seria preciso considerar o relato, as associações e o contexto de quem sonhou. Nenhum aplicativo pode deduzir um desejo inconsciente apenas dessa imagem."
+        "explanation": "Na proposta estudada, nenhuma imagem possui um significado psicológico obrigatório para todas as pessoas. O contexto, o relato e as associações de quem sonhou são importantes. O exemplo não permite descobrir automaticamente seu desejo inconsciente."
       }
     ]
   },
