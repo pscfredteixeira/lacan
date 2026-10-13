@@ -167,7 +167,7 @@ window.LACAN_LESSONS = [
           "Freud procurou explicar por que um sonho pode apresentar pessoas e lugares misturados, mudanças inesperadas e detalhes que parecem mais importantes do que outros. Ele chamou o conjunto de operações envolvidas nessa formação de <strong>trabalho do sonho</strong>. Não se trata de alguém escolhendo conscientemente as imagens enquanto dorme, mas de uma explicação teórica para a forma assumida pelo sonho.",
           "Uma dessas operações recebeu o nome de <strong>condensação</strong>. Imagine uma personagem sonhada que tem a voz de um colega, o rosto de um familiar e a roupa de outra pessoa. O exemplo ajuda a entender a ideia de que diferentes elementos podem se reunir em uma única figura. Não significa que essa mistura tenha um único significado que possamos adivinhar.",
           "Outra operação é o <strong>deslocamento</strong>. Em uma história de sonho inventada, um detalhe pequeno — como um bilhete amassado — ocupa grande parte do relato, enquanto outra situação aparece rapidamente. Freud investigava a possibilidade de que a importância dada aos elementos do sonho fosse diferente da importância dos pensamentos relacionados a eles. Novamente, a cena inventada ilustra o conceito, mas não prova o que uma pessoa sentia.",
-          "O trabalho do sonho inclui outras operações que você encontrará no laboratório, como a transformação de pensamentos em imagens e a organização de um relato que parece mais contínuo. Nesta aula, vamos guardar principalmente duas diferenças: <strong>condensar é reunir elementos; deslocar é mudar a ênfase de um elemento para outro</strong>."
+          "O trabalho do sonho inclui ainda outras operações: a <strong>figurabilidade</strong> (pensamentos ganham forma de imagens e cenas) e a <strong>elaboração secundária</strong> (o relato ganha uma aparência mais organizada e contínua). Você verá esses nomes no laboratório; não precisa decorá-los para compreender a aula. Nesta aula, vamos guardar principalmente duas diferenças: <strong>condensar é reunir elementos; deslocar é mudar a ênfase de um elemento para outro</strong>."
         ],
         "inShort": "Na teoria freudiana, condensação reúne elementos diferentes; deslocamento altera a ênfase entre eles. São explicações da formação do sonho, não receitas para interpretá-lo."
       },
@@ -267,7 +267,10 @@ window.LACAN_LESSONS = [
         }
       ],
       "conclusion": "O exercício não serve para descobrir o significado da casa. Serve para distinguir uma afirmação pronta de uma pergunta que permite investigar."
-    }
+    },
+    "laboratoryUrl": "oficina-freud.html?sala=sonho#workshop",
+    "laboratoryText": "Experimente primeiro a mesa 02, «O trabalho do sonho», que ajuda a reconhecer as operações explicadas nesta aula. As outras mesas apresentam conteúdos de aulas posteriores.",
+    "laboratoryLabel": "Abrir a mesa dos sonhos ↗"
   },
   {
     "id": "2.3",
