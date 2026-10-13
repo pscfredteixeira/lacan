@@ -119,6 +119,18 @@ Na Aula 2.2, o botão **Oficina do Inconsciente** agora abre diretamente a mesa 
 
 Verificações realizadas: conteúdo e scripts com sintaxe válida, seis aulas e três questões por aula mantidas, renderização simulada da 2.2 com os dois cartões comparativos e seu quiz, renderização da 2.1 e 2.3 preservada, e teste simulado de abertura direta da sala do sonho. Não houve verificação visual num aparelho real. As chaves de progresso e anotação existentes não foram modificadas. **Próximo trabalho sugerido: revisão didática da Aula 2.3, Recalque e conflito psíquico.**
 
+## Revisão pedagógica do Módulo 4 — imagem, eu e estádio do espelho
+
+As seis aulas `4.1–4.6` foram reescritas para iniciantes, numa sequência que ensina os conceitos antes de cobrar seu vocabulário. O percurso começa na diferença entre corpo vivido e imagem corporal; explica identificação e alienação no estádio do espelho; introduz eu ideal e ideal do eu por comparação concreta; situa narcisismo, admiração e rivalidade sem transformá-los em diagnósticos; esclarece o pequeno outro sem antecipar toda a teoria do grande Outro; e encerra com a distinção entre o eu e o sujeito do inconsciente.
+
+Cada aula contém **quatro seções com resumo «Em palavras simples»**, **dois exemplos comparativos expansíveis**, novo glossário, exercício de reflexão, referências bibliográficas e **três questões reescritas** nas etapas Lembrar, Entender e Aplicar. As questões que exigiam saber desenvolvimentos posteriores de Lacan ou datas foram substituídas por perguntas exclusivamente sobre o que a aula já explicou. As cenas são invenções pedagógicas e não provas clínicas.
+
+No `modulo-4.html`, a apresentação e os textos de navegação foram simplificados; o laboratório do espelho só é oferecido junto das Aulas 4.2 e 4.6, depois de o conceito ter sido explicado, e não na primeira aula. `assets/mirror-data.js` e `espelho.html` foram revisados para usar a mesma linguagem didática nas três fases do laboratório. A matriz do catálogo também recebeu descrições claras.
+
+Fontes para conferir a elaboração: Lacan, «O estádio do espelho» (1949), «A agressividade em psicanálise» (1948), Seminários 1 e 2; Freud, «Introdução ao narcisismo» (1914); Stanford Encyclopedia of Philosophy, seção «The Mirror Stage, the Ego, and the Subject», revisada em janeiro de 2026; SciELO e estudos da USP sobre registro imaginário e agressividade.
+
+Validação feita no repositório: seis aulas com títulos alinhados ao catálogo, 24 resumos, 12 cartões comparativos, 18 questões válidas e três desafios do laboratório com uma única resposta correta por desafio. O leitor foi exercitado em testes simulados para todas as seis aulas; o progresso continua usando `lacan-module-04-completed`, e as chaves de anotações permanecem `lacan-study-notes-4-`. PWA atualizado para `lacan-study-pwa-v23`. **Não há ainda confirmação visual em um iPhone real nem acesso confiável ao GitHub Pages pelo navegador de verificação.**
+
 ## Publicação
 
 O site é estático e compatível com GitHub Pages. Em **Settings → Pages**, selecionar **Deploy from a branch → main → /(root)**. Após cada atualização na branch `main`, o GitHub Pages deve republicar o conteúdo automaticamente.
