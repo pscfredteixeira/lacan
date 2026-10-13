@@ -4,6 +4,8 @@
 (() => {
   "use strict";
   const TOTAL=182.204;
+  // Compensação do atraso percebido: o visual entra 0,8s antes do ponto marcado.
+  const VISUAL_LEAD_SECONDS=0.8;
   const FILE="assets/inconsciente-linguagem.mp3";
   const DB="lacan-motion-narracoes";
   const KEY="inconsciente-linguagem-v1";
@@ -102,7 +104,8 @@
     const count=root.querySelector("#lmSceneCount");
     let current=0,playing=false,hasAudio=false,frame=0,lastStamp=0,objectUrl="",scene=-1,demo=false,dead=false;
     function setScene(t){
-      let i=0; for(let k=1;k<cues.length;k++){if(t>=cues[k].at)i=k;else break;}
+      const visualTime=Math.max(0,t+VISUAL_LEAD_SECONDS);
+      let i=0; for(let k=1;k<cues.length;k++){if(visualTime>=cues[k].at)i=k;else break;}
       if(i===scene)return;
       scene=i;const cue=cues[i];
       stage.className="lm-stage lm-type-"+cue.type;
