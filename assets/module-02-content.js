@@ -1,5 +1,5 @@
-/* Formação Lacaniana · Módulo 02: base freudiana; aula 2.1 revista no Sprint 11.
- * Distinções apoiadas em Freud (1900, 1915) e nos materiais educativos do Freud Museum London. */
+/* Formação Lacaniana · Módulo 02 · revisão didática progressiva (Sprint 11).
+ * Aulas 2.1 e 2.2 começam por exemplos, explicam termos e evitam interpretações automáticas. */
 window.LACAN_LESSONS = [
   {
     "id": "2.1",
@@ -137,103 +137,137 @@ window.LACAN_LESSONS = [
   {
     "id": "2.2",
     "title": "Sonhos e formações do inconsciente",
-    "subtitle": "Do relato lembrado ao trabalho do sonho",
-    "duration": "50–65 min",
-    "question": "Por que Freud considera insuficiente procurar o significado de um sonho em um catálogo de símbolos?",
-    "introduction": "Os sonhos foram decisivos para a construção da teoria freudiana. Em <em>A interpretação dos sonhos</em> (1900), Freud investiga como uma experiência onírica pode ser produzida e interpretada, distinguindo a cena lembrada do trabalho que contribuiu para sua formação. É importante estudar essa teoria como uma proposta histórica da psicanálise, sem apresentá-la como consenso da neurociência atual.",
+    "subtitle": "Como Freud começou a estudar os sonhos e por que ele não usava um dicionário de significados",
+    "duration": "35–45 min",
+    "question": "Um sonho pode ter sentido? Como Freud procurava investigá-lo?",
+    "introduction": "Você já acordou lembrando de um sonho que parecia uma mistura de lugares, pessoas e acontecimentos? Talvez estivesse na escola onde estudou, conversando com alguém de hoje, e de repente tudo mudasse de cenário. <strong>Sigmund Freud</strong> se interessou por experiências como essa. Em vez de tratar o sonho como uma mensagem com significado pronto, ele procurou compreender como o sonho se forma e o que a própria pessoa associa ao que sonhou. Vamos começar pelas coisas mais simples.",
     "sections": [
       {
-        "title": "Conteúdo manifesto e pensamentos latentes",
+        "title": "1. O sonho que contamos ao acordar",
         "paragraphs": [
-          "O conteúdo manifesto é o sonho tal como a pessoa o recorda e relata. Os pensamentos latentes são aqueles reconstruídos no trabalho interpretativo por meio das associações do sonhador. A passagem de um ao outro não é uma tradução palavra por palavra. Freud insiste que a apresentação do sonho envolve transformações.",
-          "Também não é correto supor que os pensamentos latentes estejam inteiros, perfeitamente conhecidos e prontos atrás de uma cortina. A investigação depende de lembranças, associações, contexto e elaboração interpretativa — e permanece aberta a dificuldades e limites."
-        ]
+          "Quando acordamos, podemos lembrar de um sonho inteiro, de pequenos trechos ou apenas de uma imagem. Às vezes a história parece fazer sentido. Outras vezes, muda de lugar sem explicação, reúne pessoas que nunca se conheceram ou deixa uma sensação difícil de descrever.",
+          "Veja uma cena <strong>inventada</strong>: alguém conta «Sonhei que estava na escola onde estudei quando criança. A sala era igual ao meu local de trabalho atual. Tentei abrir uma porta e acordei». Essa descrição não revela, sozinha, o que a pessoa desejava ou sentia. É apenas a maneira como o sonho foi lembrado e colocado em palavras.",
+          "Freud deu um nome a esse relato: <strong>conteúdo manifesto</strong>. O termo parece complicado, mas significa algo bastante simples: <strong>o sonho tal como a pessoa se lembra dele e consegue contá-lo</strong>. Ele não é uma gravação perfeita da noite; é o relato que temos disponível."
+        ],
+        "inShort": "Conteúdo manifesto é o sonho lembrado e contado. Uma cena onírica, por si só, não mostra automaticamente o que ela significa."
       },
       {
-        "title": "Condensação: muitas relações em uma formação",
+        "title": "2. Por que Freud fazia perguntas em vez de procurar respostas prontas?",
         "paragraphs": [
-          "Freud descreve a condensação como um mecanismo pelo qual diferentes caminhos de pensamento participam de um elemento do sonho. Uma figura onírica pode reunir traços de pessoas diversas; um objeto pode carregar associações variadas. O efeito não é um código simples em que uma imagem corresponde a uma ideia oculta.",
-          "Em vez de declarar que «uma casa sempre simboliza a mãe», o método freudiano pergunta o que aquela imagem evoca para quem sonhou. Os mesmos elementos manifestos podem integrar histórias e associações completamente diferentes."
-        ]
+          "Imagine que alguém dissesse: «Você sonhou com uma porta? Isso sempre significa que está com medo de mudar de vida». Essa resposta parece fácil, mas apresenta um problema: <strong>não conhecemos a história de quem sonhou</strong>. A mesma imagem pode lembrar coisas muito diferentes a pessoas diferentes.",
+          "Freud propôs escutar o que a pessoa relacionava aos elementos do sonho. No exemplo da escola, ele poderia se interessar pelo que aquela escola fazia a pessoa lembrar. E pela sala que parecia seu trabalho. Não para escolher uma resposta secreta, mas para investigar as ligações que surgiam na própria fala.",
+          "Esse modo de investigar está ligado à <strong>associação livre</strong>: a pessoa é convidada a dizer o que lhe vem à mente sobre uma lembrança ou elemento do sonho, sem tentar organizar todas as ideias previamente. As associações podem levar a outras lembranças e pensamentos que não apareciam no relato inicial.",
+          "Freud chamava de <strong>pensamentos latentes</strong> os pensamentos relacionados ao sonho que procurava reconstruir por meio desse trabalho. A palavra «latente» indica aquilo que não está evidente no relato inicial. Isso não significa que um professor possa descobrir os pensamentos latentes de alguém olhando apenas para a imagem de uma porta."
+        ],
+        "inShort": "Para Freud, contar um sonho é o começo da investigação. Seu método valoriza as associações feitas por quem sonhou, em vez de usar significados universais."
       },
       {
-        "title": "Deslocamento e elaboração secundária",
+        "title": "3. Por que os sonhos parecem misturar tantas coisas?",
         "paragraphs": [
-          "No deslocamento, uma ênfase ou intensidade pode aparecer associada a elementos diferentes daqueles que ocupavam o centro dos pensamentos latentes. A elaboração secundária se refere, em termos gerais, a operações que conferem maior continuidade e aparência narrativa ao sonho lembrado.",
-          "A consideração pela figurabilidade também importa: o trabalho do sonho transforma relações e pensamentos em apresentações aptas à cena onírica. Esses termos descrevem uma teoria específica de Freud e merecem ser comparados diretamente ao texto original, e não tratados como regras universais para qualquer história inventada."
-        ]
+          "Freud procurou explicar por que um sonho pode apresentar pessoas e lugares misturados, mudanças inesperadas e detalhes que parecem mais importantes do que outros. Ele chamou o conjunto de operações envolvidas nessa formação de <strong>trabalho do sonho</strong>. Não se trata de alguém escolhendo conscientemente as imagens enquanto dorme, mas de uma explicação teórica para a forma assumida pelo sonho.",
+          "Uma dessas operações recebeu o nome de <strong>condensação</strong>. Imagine uma personagem sonhada que tem a voz de um colega, o rosto de um familiar e a roupa de outra pessoa. O exemplo ajuda a entender a ideia de que diferentes elementos podem se reunir em uma única figura. Não significa que essa mistura tenha um único significado que possamos adivinhar.",
+          "Outra operação é o <strong>deslocamento</strong>. Em uma história de sonho inventada, um detalhe pequeno — como um bilhete amassado — ocupa grande parte do relato, enquanto outra situação aparece rapidamente. Freud investigava a possibilidade de que a importância dada aos elementos do sonho fosse diferente da importância dos pensamentos relacionados a eles. Novamente, a cena inventada ilustra o conceito, mas não prova o que uma pessoa sentia.",
+          "O trabalho do sonho inclui outras operações que você encontrará no laboratório, como a transformação de pensamentos em imagens e a organização de um relato que parece mais contínuo. Nesta aula, vamos guardar principalmente duas diferenças: <strong>condensar é reunir elementos; deslocar é mudar a ênfase de um elemento para outro</strong>."
+        ],
+        "inShort": "Na teoria freudiana, condensação reúne elementos diferentes; deslocamento altera a ênfase entre eles. São explicações da formação do sonho, não receitas para interpretá-lo."
       },
       {
-        "title": "A associação livre contra o dicionário de sonhos",
+        "title": "4. O que os sonhos ensinaram a Freud sobre o inconsciente?",
         "paragraphs": [
-          "O procedimento que Freud privilegia exige que a pessoa apresente associações a elementos de seu sonho. A técnica se opõe à pretensão de adivinhar significados por símbolos fixos. Mesmo quando Freud discute simbolismos recorrentes, sua interpretação não deve ser resumida a uma tabela mecânica.",
-          "Para nossa formação, o objetivo é reconhecer as operações propostas, distinguir um relato manifesto de uma elaboração interpretativa e identificar os limites de qualquer atividade digital que pretenda revelar o inconsciente de alguém. O laboratório pode ensinar a estrutura de uma teoria; não interpreta um sonho real."
-        ]
+          "Freud reuniu essas ideias no livro <em>A interpretação dos sonhos</em>, publicado em 1900. Ele defendia que sonhos poderiam ser estudados como produções psíquicas relacionadas a pensamentos, desejos e conflitos. Também formulou a tese de que os sonhos realizam desejos de forma transformada. Essa é uma <strong>proposta da teoria de Freud</strong>, e não uma regra cientificamente comprovada que permita explicar todo sonho, inclusive pesadelos, em poucas palavras.",
+          "Os sonhos interessavam a Freud porque mostravam, em sua interpretação, que nossa vida psíquica poderia produzir relações que não controlamos conscientemente. Ele também estudou outros acontecimentos: por exemplo, <strong>atos falhos</strong>, como certas trocas de palavras, e <strong>chistes</strong>, isto é, piadas e jogos de palavras. Chamamos esses fenômenos, em sua elaboração teórica, de <strong>formações do inconsciente</strong>.",
+          "Mas atenção à diferença entre estudar uma hipótese e sair interpretando as pessoas. Uma troca de palavra pode ser apenas um engano. Um pesadelo não permite concluir, sozinho, que alguém deseja aquilo que aconteceu no sonho. Freud propunha uma investigação mais cuidadosa; nós também devemos reconhecer os limites de seus exemplos.",
+          "Se quiser experimentar uma atividade complementar, a <strong>Oficina do Inconsciente</strong> possui uma mesa chamada «O trabalho do sonho». Ela ajuda a diferenciar operações como condensação e deslocamento. As outras mesas tratam de assuntos que veremos mais adiante e podem ficar para outro momento."
+        ],
+        "inShort": "Freud estudou sonhos, atos falhos e jogos de palavras como possíveis caminhos para investigar a vida psíquica. Isso não torna cada sonho ou engano uma mensagem com tradução pronta."
       }
     ],
     "example": {
-      "title": "Uma imagem, muitas associações possíveis",
-      "text": "Em uma narrativa fictícia, aparece uma estação de trem vazia. Isso pode remeter a espera, despedida, viagem ou a experiências específicas — mas nenhuma opção é a «tradução correta». Freud exige o trabalho com associações da pessoa, não a escolha de um significado pronto pelo professor."
+      "title": "Por que uma figura pode parecer várias pessoas?",
+      "text": "Imagine um sonho fictício no qual uma professora tem a voz de uma vizinha e usa o casaco de uma amiga. É um exemplo útil para visualizar a condensação, tal como Freud a descreveu. Mas não temos como concluir o que essa figura representa para uma pessoa real sem conhecer suas associações e seu contexto."
     },
-    "takeaway": "O trabalho do sonho, em Freud, inclui condensação, deslocamento, figurabilidade e elaboração secundária. A investigação não se reduz a um dicionário de imagens.",
+    "takeaway": "Freud estudava os sonhos por meio do relato da pessoa e das associações que ela fazia. Chamou de conteúdo manifesto o sonho lembrado; de trabalho do sonho, as operações propostas para explicar sua formação. Condensação e deslocamento são duas dessas operações — não um dicionário de símbolos.",
     "concepts": [
       {
         "name": "Conteúdo manifesto",
-        "definition": "O sonho na forma em que é lembrado e narrado, distinto dos pensamentos latentes reconstruídos pela análise."
+        "definition": "O sonho na forma em que a pessoa consegue lembrá-lo e contá-lo ao acordar."
       },
       {
-        "name": "Condensação",
-        "definition": "Operação descrita por Freud em que múltiplas determinações e associações podem convergir em um mesmo elemento."
+        "name": "Associação livre",
+        "definition": "Procedimento em que a pessoa é convidada a dizer o que lhe vem à mente, sem procurar uma resposta pronta ou previamente organizada."
       },
       {
-        "name": "Deslocamento",
-        "definition": "Operação em que a ênfase ou intensidade se transfere entre elementos, tornando inadequada uma leitura direta e isolada do relato."
+        "name": "Pensamentos latentes",
+        "definition": "Na investigação de Freud, pensamentos relacionados ao sonho que são reconstruídos pelas associações e não aparecem diretamente no relato inicial."
+      },
+      {
+        "name": "Condensação e deslocamento",
+        "definition": "Duas operações do trabalho do sonho em Freud: reunir diferentes elementos em uma figura e deslocar a ênfase de um elemento para outro."
       }
     ],
     "practice": {
-      "title": "Uma pergunta melhor sobre sonhos",
-      "prompt": "Crie um exemplo fictício com uma imagem de sonho e escreva três associações diferentes que um sonhador poderia formular. Explique por que nenhuma associação pode ser atribuída automaticamente a uma pessoa real."
+      "title": "Explique como você começaria uma investigação",
+      "prompt": "Uma personagem fictícia sonha com uma estação de trem. Escreva duas perguntas abertas que ela poderia responder sobre essa imagem. Depois explique por que não podemos afirmar que a estação significa obrigatoriamente despedida, viagem ou abandono."
     },
     "references": [
-      "Freud, S. <em>A interpretação dos sonhos</em> (1900), especialmente capítulos II e VI.",
-      "Freud Museum London. <em>The Dream-Work</em> — condensação, deslocamento, figurabilidade e elaboração secundária. <a href=\"https://www.freud.org.uk/schools/resources/the-interpretation-of-dreams/the-dream-work/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>",
-      "Freud Museum London. <em>Freud’s Method for Interpreting Dreams</em>. <a href=\"https://www.freud.org.uk/schools/resources/the-interpretation-of-dreams/freuds-method-for-interpreting-dreams/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>"
+      "Freud, S. <em>A interpretação dos sonhos</em> (1900), capítulos II e VI. Obra em que desenvolve seu método e o trabalho do sonho. <a href=\"https://www.yorku.ca/pclassic/Freud/Dreams/dreams6a.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Trecho do capítulo VI em inglês ↗</a>",
+      "Freud Museum London. <em>Freud’s Method for Interpreting Dreams</em>. Mostra por que Freud se distancia de dicionários de sonhos. <a href=\"https://www.freud.org.uk/schools/resources/the-interpretation-of-dreams/freuds-method-for-interpreting-dreams/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>",
+      "Freud Museum London. <em>The Dream-Work</em>. Explica condensação, deslocamento e outras operações. <a href=\"https://www.freud.org.uk/schools/resources/the-interpretation-of-dreams/the-dream-work/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>",
+      "Freud Museum London. <em>Wish Fulfilment</em>. Contextualiza a tese freudiana da realização de desejo e seus limites. <a href=\"https://www.freud.org.uk/schools/resources/the-interpretation-of-dreams/wish-fulfilment/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar ↗</a>"
     ],
     "quiz": [
       {
-        "phase": "Reconhecimento",
-        "prompt": "O que designa o conteúdo manifesto do sonho?",
+        "phase": "Lembrar",
+        "prompt": "Como Freud chamou o sonho tal como ele é lembrado e contado?",
         "options": [
-          "Uma tradução universal de cada imagem.",
-          "O sonho como foi lembrado e relatado.",
-          "Um diagnóstico médico obtido de seus símbolos."
-        ],
-        "correct": 1,
-        "explanation": "O manifesto é a apresentação do sonho recordado, que Freud distingue dos pensamentos latentes."
-      },
-      {
-        "phase": "Compreensão",
-        "prompt": "Qual é a diferença didática central entre condensação e deslocamento?",
-        "options": [
-          "Condensação implica convergência de determinações; deslocamento, mudança de ênfase ou intensidade.",
-          "Condensação é esquecimento; deslocamento é exclusivamente movimento do corpo.",
-          "Ambos significam que qualquer símbolo tem um único significado."
+          "Conteúdo manifesto.",
+          "Pensamentos latentes reconstruídos pelas associações.",
+          "Um significado universal que vale para todas as pessoas."
         ],
         "correct": 0,
-        "explanation": "Freud descreve operações diferentes no trabalho do sonho; nenhuma produz uma tabela universal de símbolos."
+        "explanation": "Conteúdo manifesto é o relato do sonho lembrado. Freud distinguia esse relato do material que seria investigado a partir das associações."
       },
       {
-        "phase": "Aplicação",
-        "prompt": "Uma ferramenta diz: «Sonhar com uma porta fechada significa obrigatoriamente medo de intimidade». O que falta?",
+        "phase": "Entender",
+        "prompt": "Qual exemplo ajuda a entender a condensação?",
         "options": [
-          "Nada: o sentido está contido no objeto da cena.",
-          "A ferramenta só precisa saber a idade da pessoa.",
-          "O trabalho com associações, contexto e a distinção entre teoria interpretativa e código fixo."
+          "Um sonho em que tudo aparece exatamente como aconteceu no dia anterior.",
+          "Uma figura do sonho que reúne características de diferentes pessoas.",
+          "Uma imagem cujo significado pode ser descoberto sem perguntar nada a quem sonhou."
+        ],
+        "correct": 1,
+        "explanation": "Condensação é uma operação que Freud descreve como reunião de diferentes elementos em uma formação. Isso não revela automaticamente o sentido daquela figura."
+      },
+      {
+        "phase": "Aplicar",
+        "prompt": "Uma amiga conta que sonhou com uma casa antiga. Qual atitude combina melhor com o método de Freud?",
+        "options": [
+          "Informar que casa antiga significa necessariamente medo de envelhecer.",
+          "Escolher uma interpretação de um dicionário e encerrar o assunto.",
+          "Perguntar o que a imagem lhe lembra, sem determinar antecipadamente seu significado."
         ],
         "correct": 2,
-        "explanation": "Freud não reduz o método a um dicionário automático de imagens oníricas."
+        "explanation": "Freud dava importância às associações de quem sonhou. O objetivo não é impor a mesma tradução a todas as pessoas."
       }
-    ]
+    ],
+    "learningMode": "primeiros-passos",
+    "comparison": {
+      "title": "A mesma imagem, duas maneiras de responder",
+      "intro": "Uma pessoa fictícia conta: «Sonhei com uma casa antiga». Compare duas respostas possíveis. O sonho não pertence a uma pessoa real.",
+      "cases": [
+        {
+          "title": "Resposta com significado pronto",
+          "scene": "«Casa antiga no sonho significa que você sente saudade de sua infância. Não há outra possibilidade».",
+          "why": "O problema é afirmar um sentido universal sem conhecer as associações ou a história de quem sonhou. Essa não é uma forma responsável de apresentar o método freudiano."
+        },
+        {
+          "title": "Resposta que abre perguntas",
+          "scene": "«Essa casa lembra algum lugar? O que vem à sua mente quando pensa nela?».",
+          "why": "Essa resposta não define o sentido do sonho de antemão. Ela se aproxima da importância que Freud dava às associações da pessoa, embora uma única pergunta não seja uma análise."
+        }
+      ],
+      "conclusion": "O exercício não serve para descobrir o significado da casa. Serve para distinguir uma afirmação pronta de uma pergunta que permite investigar."
+    }
   },
   {
     "id": "2.3",
