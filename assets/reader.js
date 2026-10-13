@@ -78,9 +78,12 @@
   };
   const renderLaboratory=lesson=>{
     if(!config.laboratoryUrl || !config.laboratoryLessons?.includes(lesson.id))return "";
+    const target=lesson.laboratoryUrl||config.laboratoryUrl;
+    const description=lesson.laboratoryText||config.laboratoryText;
+    const label=lesson.laboratoryLabel||"Abrir laboratório ↗";
     return `<aside class="lesson-interactive"><span class="section-label">Experiência interativa · conectada à aula</span>
-      <h2>${safe(config.laboratoryName)}</h2><p>${safe(config.laboratoryText)}</p>
-      <a href="${safe(config.laboratoryUrl)}" class="action-button primary">Abrir laboratório ↗</a></aside>`;
+      <h2>${safe(config.laboratoryName)}</h2><p>${safe(description)}</p>
+      <a href="${safe(target)}" class="action-button primary">${safe(label)}</a></aside>`;
   };
   function storageEditor(id,prefix,statusId){
     const editor=$(id),status=$(statusId);
