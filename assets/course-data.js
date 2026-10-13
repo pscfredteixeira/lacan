@@ -55,17 +55,17 @@ window.LACAN_COURSE = {
       ]
     },
     {
-      id: 4, cycle: 1, level: "Introdução · Intermediário", title: "Espelho e formação do eu",
-      description: "Da imagem corporal à identificação, passando pelo narcisismo e a relação especular.",
-      outcome: "Distinguir o eu imaginário do sujeito do inconsciente.",
+      id: 4, cycle: 1, level: "Introdução", title: "Espelho e formação do eu",
+      description: "Comece pela diferença entre corpo e imagem e entenda, passo a passo, como Lacan explica a formação do eu.",
+      outcome: "Explicar, com exemplos, a formação do eu por imagens e identificações, e diferenciá-lo do sujeito do inconsciente.",
       prereqs: "Módulos 02 e 03",
       lessons: [
-        ["O problema da imagem corporal", "A unidade imaginária como problema teórico."],
-        ["O estádio do espelho", "Identificação e formação do eu."],
-        ["Eu ideal e ideal do eu", "Uma distinção fundamental introduzida progressivamente."],
-        ["Narcisismo e agressividade", "Rivalidade, identificação e relação especular."],
-        ["O pequeno outro", "A alteridade no registro imaginário."],
-        ["Por que o eu não é o sujeito?", "Uma síntese que prepara as próximas aulas."]
+        ["O problema da imagem corporal", "A diferença entre sentir o corpo e ver sua imagem."],
+        ["O estádio do espelho", "Como uma imagem participa da formação do eu."],
+        ["Eu ideal e ideal do eu", "A imagem admirada e a referência que lhe dá valor."],
+        ["Narcisismo e agressividade", "Por que admiração e competição podem aparecer juntas."],
+        ["O pequeno outro", "O semelhante com quem nos identificamos e nos comparamos."],
+        ["Por que o eu não é o sujeito?", "Por que nossa autoimagem não explica toda a experiência."]
       ]
     },
     {
