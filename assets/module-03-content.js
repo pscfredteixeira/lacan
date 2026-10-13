@@ -1,4 +1,4 @@
-/* Formação Lacaniana · Módulo 03 · linguagem e inconsciente. Revisão pedagógica do quiz 3.5. */
+/* Formação Lacaniana · Módulo 03 · quiz final 3.6 revisado para exemplos concretos e perguntas que cobrem o conteúdo ensinado. */
 window.LACAN_LESSONS = [
   {
     "id": "3.1",
@@ -573,37 +573,37 @@ window.LACAN_LESSONS = [
     ],
     "quiz": [
       {
-        "phase": "Reconhecimento",
-        "prompt": "Qual formulação respeita os limites do Ateliê dos Significantes?",
+        "phase": "Lembrar",
+        "prompt": "No laboratório, você troca uma palavra da frase «A casa virou um refúgio» por outra, como «prisão». O que esse exercício ajuda a perceber?",
         "options": [
-          "Alterar palavras permite diagnosticar uma pessoa com precisão.",
-          "Exercícios de substituição e conexão introduzem distinções, mas não comprovam mecanismos clínicos.",
-          "Toda frase ficcional é uma formação do inconsciente."
-        ],
-        "correct": 1,
-        "explanation": "O laboratório é uma analogia didática de operações significantes. Não fornece diagnóstico nem prova clínica."
-      },
-      {
-        "phase": "Compreensão",
-        "prompt": "Por que sonho, ato falho, chiste e sintoma não devem ser tratados como fenômenos idênticos?",
-        "options": [
-          "Porque só um deles foi estudado por Freud.",
-          "Porque cada um exige eliminar a fala de sua investigação.",
-          "Porque são formações com problemas específicos, embora possam ser articuladas na investigação do inconsciente."
-        ],
-        "correct": 2,
-        "explanation": "A expressão geral não dispensa investigar as singularidades de cada formação nem a história dos conceitos."
-      },
-      {
-        "phase": "Aplicação",
-        "prompt": "Após o laboratório, qual proposta de trabalho é mais rigorosa?",
-        "options": [
-          "Comparar uma hipótese ao texto primário, distinguir a analogia de seu alcance clínico e explicitar questões em aberto.",
-          "Criar um dicionário fixo que traduza qualquer palavra em uma intenção oculta.",
-          "Afirmar que já é possível interpretar sonhos de pacientes sem conhecer sua história."
+          "Que trocar uma palavra pode modificar os sentidos que uma frase permite construir.",
+          "Que cada palavra tem um único significado que não muda com o restante da frase.",
+          "Que uma frase inventada revela automaticamente o desejo de quem está estudando."
         ],
         "correct": 0,
-        "explanation": "Um estudo consistente reconhece o texto, os limites do exercício e o contexto necessário para uma interpretação."
+        "explanation": "Quando substituímos uma palavra, surgem outras relações e leituras possíveis. O laboratório ajuda a observar isso nas frases; ele não investiga o inconsciente de uma pessoa real."
+      },
+      {
+        "phase": "Entender",
+        "prompt": "Freud estudou sonhos, atos falhos e chistes (piadas ou jogos de palavras). Por que não devemos tratá-los como se fossem exatamente a mesma coisa?",
+        "options": [
+          "Porque um ato falho é sempre um sonho contado enquanto a pessoa está acordada.",
+          "Porque os três fenômenos podem interessar à investigação do inconsciente, mas acontecem de maneiras diferentes.",
+          "Porque apenas os sonhos envolvem palavras e podem ser estudados pela psicanálise."
+        ],
+        "correct": 1,
+        "explanation": "Um sonho é uma experiência durante o sono que pode ser relatada; um ato falho envolve, por exemplo, uma troca involuntária de palavras; um chiste produz efeitos de humor e linguagem. Freud os investigou, mas suas diferenças continuam importantes."
+      },
+      {
+        "phase": "Aplicar",
+        "prompt": "Depois de criar duas versões de uma frase no Ateliê dos Significantes, qual conclusão seria adequada?",
+        "options": [
+          "As duas frases provam que qualquer pessoa sente exatamente o mesmo ao ouvi-las.",
+          "O laboratório permite descobrir o significado secreto de um sonho sem conversar com quem sonhou.",
+          "O exercício mostra como mudanças nas palavras alteram leituras possíveis, mas não permite interpretar o inconsciente de alguém."
+        ],
+        "correct": 2,
+        "explanation": "Você observou relações entre palavras em uma situação criada para estudar. Isso é útil para aprender conceitos, mas não equivale a analisar uma pessoa nem comprova uma interpretação clínica."
       }
     ]
   }
