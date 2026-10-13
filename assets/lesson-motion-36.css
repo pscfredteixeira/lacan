@@ -1,0 +1,55 @@
+/* Motion editorial da aula 3.6. Complementa lesson-motion.css, sem afetar o vídeo 3.5. */
+#lacanMotion36{box-sizing:border-box;min-width:0;max-width:100%;overflow:hidden}
+#lacanMotion36 *{box-sizing:border-box}
+#lacanMotion36 .lm-stage{width:100%;max-width:100%;min-width:0;aspect-ratio:16/9;min-height:0;height:auto;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:clamp(38px,5.5vw,75px) clamp(14px,5vw,55px);background:radial-gradient(circle at 75% 18%,#e0d1ec 0%,transparent 42%),linear-gradient(125deg,#f9f2e7,#eee3f1)}
+#lacanMotion36 .lm-stage::after{pointer-events:none}
+#lacanMotion36 .lm-top,#lacanMotion36 .lm-bottom{z-index:4}
+#lacanMotion36 .lm36-inner{width:100%;max-width:670px;min-width:0;position:relative;z-index:2;text-align:center;transform:none!important}
+#lacanMotion36 .lm36-scene{width:100%;max-width:100%;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(7px,1.1vw,15px);animation:lm36-reveal .26s ease-out both}
+#lacanMotion36 .lm36-art{width:100%;max-width:100%;height:clamp(55px,12vw,130px);display:flex;align-items:center;justify-content:center;position:relative}
+#lacanMotion36 .lm36-symbol{display:block;width:auto;height:100%;max-width:min(42%,180px);color:#836795;filter:drop-shadow(1px 4px 0 rgba(108,84,132,.07));animation:lm36-draw .55s cubic-bezier(.25,.7,.3,1) both}
+#lacanMotion36 .lm36-scene h3{font-family:"Libre Baskerville",Georgia,serif;font-weight:400;font-size:clamp(1.24rem,3.45vw,2.85rem);line-height:1.19;letter-spacing:-.042em;margin:0;max-width:100%;color:#4c395d;text-wrap:balance;overflow-wrap:break-word}
+#lacanMotion36 .lm36-scene>p{margin:0!important;font-family:"DM Sans",sans-serif;font-size:clamp(.8rem,1.55vw,1.06rem)!important;line-height:1.55!important;color:#63536d;max-width:100%;text-wrap:balance;overflow-wrap:break-word}
+#lacanMotion36 .lm36-portrait{height:100%;width:clamp(67px,12vw,125px);background-repeat:no-repeat;background-position:center;background-size:contain;filter:sepia(.13) saturate(.7);mask-image:linear-gradient(to top,transparent 0%,black 21%)}
+#lacanMotion36 .lm36-portrait-freud{background-image:url("./freud-portrait-editorial.webp")}
+#lacanMotion36 .lm36-portrait-lacan{background-image:url("./lacan-portrait-editorial.webp")}
+#lacanMotion36 .lm36-swapping{display:flex;max-width:100%;align-items:center;justify-content:center;gap:clamp(5px,1.5vw,20px);font-family:"Libre Baskerville",serif;color:#66527a;font-size:clamp(.77rem,2vw,1.2rem)}
+#lacanMotion36 .lm36-swapping span{border:1px solid #b7a1c6;background:rgba(255,255,255,.38);padding:9px 12px;animation:lm36-swap .65s both}
+#lacanMotion36 .lm36-swapping span:last-child{animation-delay:.16s}
+#lacanMotion36 .lm36-swapping b{font-weight:400;font-size:1.8em}
+#lacanMotion36 .lm36-theme-dream,#lacanMotion36 .lm36-theme-door{background:radial-gradient(circle at 50% 20%,#dfd2ec,transparent 65%),#f6efe4}
+#lacanMotion36 .lm36-theme-speech,#lacanMotion36 .lm36-theme-swap,#lacanMotion36 .lm36-theme-laugh{background:linear-gradient(120deg,#f7efe6,#e8dbec)}
+#lacanMotion36 .lm36-theme-repeat,#lacanMotion36 .lm36-theme-dictionary{background:linear-gradient(120deg,#ede3eb,#faf3e8)}
+#lacanMotion36 .lm36-theme-listen{background:radial-gradient(circle,#f9f4ec,#dfd3e8)}
+#lacanMotion36 .lm36-theme-four{background:linear-gradient(135deg,#e9ddec,#f7f0e5)}
+#lacanMotion36 .lm-controls{min-width:0;max-width:100%;width:100%}
+#lacanMotion36 .lm-controls .lm-play{min-width:135px}
+#lacanMotion36 .lm36-load{background:#fdf9f3;padding:12px 16px 16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;border:1px solid #d8c8dd;border-top:0}
+#lacanMotion36 .lm36-load[hidden]{display:none!important}
+#lacanMotion36 .lm36-load p{font:400 .75rem/1.55 "DM Sans",sans-serif!important;color:#66586d;margin:0!important;flex:1 1 230px}
+#lacanMotion36 .lm36-load .lm-file-label{flex:0 0 auto}
+@keyframes lm36-reveal{from{opacity:.25;transform:translateY(3px)}to{opacity:1;transform:none}}
+@keyframes lm36-draw{from{opacity:.5;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+@keyframes lm36-swap{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:translateX(0)}}
+@media(max-width:700px){
+ #lacanMotion36{margin-left:0;margin-right:0}
+ #lacanMotion36 .lm-stage{width:100%;aspect-ratio:4/3;min-height:0;padding:34px 12px 31px}
+ #lacanMotion36 .lm36-inner{width:100%;max-width:100%;transform:none!important}
+ #lacanMotion36 .lm36-scene{gap:7px}
+ #lacanMotion36 .lm36-art{height:clamp(38px,11vw,60px)}
+ #lacanMotion36 .lm36-symbol{max-width:36%}
+ #lacanMotion36 .lm36-scene h3{font-size:clamp(1rem,4.3vw,1.55rem);line-height:1.18;letter-spacing:-.035em}
+ #lacanMotion36 .lm36-scene>p{font-size:clamp(.65rem,2.7vw,.85rem)!important;line-height:1.35!important}
+ #lacanMotion36 .lm36-portrait{width:clamp(42px,12vw,65px)}
+ #lacanMotion36 .lm-top,#lacanMotion36 .lm-bottom{font-size:.37rem;letter-spacing:.045em;left:9px;right:9px}
+ #lacanMotion36 .lm-clock{font-size:.6rem}
+ #lacanMotion36 .lm-controls{gap:8px;padding:9px}
+ #lacanMotion36 .lm-controls .lm-play{min-width:93px;font-size:.62rem;padding:9px 6px}
+ #lacanMotion36 .lm36-load{flex-direction:column;align-items:stretch}
+ #lacanMotion36 .lm36-load p{flex-basis:auto}
+ #lacanMotion36 .lm36-load .lm-file-label{width:100%;justify-content:center}
+}
+@media(max-width:370px){#lacanMotion36 .lm-stage{aspect-ratio:1.25}#lacanMotion36 .lm36-scene h3{font-size:.98rem}}
+@media(prefers-reduced-motion:reduce){
+ #lacanMotion36 .lm36-scene,#lacanMotion36 .lm36-symbol,#lacanMotion36 .lm36-swapping span{animation:none!important}
+}
