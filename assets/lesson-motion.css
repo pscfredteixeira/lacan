@@ -103,3 +103,7 @@
   .lm-scene h3,.lm-type-quote .lm-scene h3{font-size:clamp(.96rem,4.15vw,1.43rem)}
   .lm-scene-visual{height:40px}
 }
+
+/* O MP3 ja faz parte da aula; remover mensagens e seletor de upload abaixo do motion. */
+#lacanMotion .lm-audio-row,
+#lacanMotion .lm-disclaimer{display:none!important}
