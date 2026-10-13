@@ -7,24 +7,49 @@
   const FILE="assets/inconsciente-linguagem.mp3";
   const DB="lacan-motion-narracoes";
   const KEY="inconsciente-linguagem-v1";
+  // Tempo aproximado das frases, ancorado ao MP3 de 3:02.
   const cues=[
-    {at:0,type:"question",tag:"UMA PERGUNTA",title:"Por que eu disse isso?",sub:"A fala às vezes nos surpreende."},
-    {at:10,type:"words",tag:"O QUE ESCAPA",title:"Palavras inesperadas",sub:"Trocas, piadas, lapsos e hesitações."},
-    {at:19,type:"lacan",tag:"JACQUES LACAN",title:"Uma outra escuta da fala",sub:"O que dizemos nem sempre coincide com o que pretendíamos dizer."},
-    {at:27,type:"quote",tag:"UMA FORMULAÇÃO DECISIVA",title:"O inconsciente é estruturado como uma linguagem.",sub:"Não como um idioma secreto."},
-    {at:39,type:"space",tag:"ALÉM DA IMAGEM DO PORÃO",title:"Não é um depósito de segredos.",sub:"Lacan investiga relações e articulações."},
-    {at:51,type:"chain",tag:"COMO FUNCIONA A LINGUAGEM",title:"O sentido nasce nas relações.",sub:"As palavras não trabalham isoladas."},
-    {at:63,type:"chain",tag:"CADEIA SIGNIFICANTE",title:"Uma palavra altera a outra.",sub:"E o que fica de fora também pode importar."},
-    {at:76,type:"words",tag:"SIGNIFICANTES",title:"Repetir · associar · deslocar",sub:"A posição de uma palavra produz efeitos."},
-    {at:88,type:"origin",tag:"ANTES DE NASCERMOS",title:"Já existem palavras sobre nós.",sub:"Nomes, histórias, expectativas e desejos."},
-    {at:103,type:"replace",tag:"UM ATO FALHO?",title:"Chefe → pai",sub:"Um engano não possui interpretação automática."},
-    {at:115,type:"freud",tag:"FREUD E LACAN",title:"O sonho. O sintoma. O lapso.",sub:"Da descoberta freudiana às articulações da linguagem."},
-    {at:128,type:"replace",tag:"METÁFORA",title:"Substituição",sub:"Um significante pode ocupar o lugar de outro."},
-    {at:141,type:"chain",tag:"METONÍMIA",title:"Deslocamento",sub:"A significação desliza pela cadeia."},
-    {at:154,type:"space",tag:"NÃO HÁ CHAVE UNIVERSAL",title:"Cada história tem suas associações.",sub:"Sem dicionário fixo dos sonhos e dos atos falhos."},
-    {at:166,type:"quote",tag:"A EXPERIÊNCIA DE FALAR",title:"Nem tudo o que dizemos é controlado.",sub:"A escuta preserva a singularidade."},
-    {at:176,type:"question",tag:"UMA ÚLTIMA PERGUNTA",title:"O que apareceu no que eu disse?",sub:"O inconsciente é estruturado como uma linguagem."}
+    {at:0,type:"question",title:"Você já falou alguma coisa...",sub:"...e logo em seguida se perguntou?"},
+    {at:5,type:"question",title:"Por que eu disse isso?",sub:""},
+    {at:9,type:"speech",title:"Trocar o nome de alguém",sub:"Uma palavra inesperada."},
+    {at:14,type:"speech",title:"Uma piada que revelou demais",sub:""},
+    {at:19,type:"lacan",title:"Jacques Lacan",sub:"Psicanalista"},
+    {at:24,type:"quote",title:"O inconsciente é estruturado como uma linguagem.",sub:""},
+    {at:31,type:"question",title:"Mas o que isso significa?",sub:""},
+    {at:36,type:"basement",title:"Um porão da mente?",sub:"Pensamentos, lembranças e desejos secretos."},
+    {at:44,type:"vault",title:"Não é um depósito de coisas escondidas.",sub:""},
+    {at:50,type:"chain",title:"Relações entre palavras",sub:"Substituições, repetições e deslocamentos."},
+    {at:58,type:"words",title:"Pense em uma frase.",sub:"Uma palavra não produz sentido sozinha."},
+    {at:65,type:"chain",title:"O sentido depende de outras palavras.",sub:""},
+    {at:72,type:"silence",title:"Aquilo que não dizemos...",sub:"...também importa."},
+    {at:79,type:"chain",title:"Significantes",sub:"Elementos da linguagem que se relacionam."},
+    {at:89,type:"origin",title:"Antes mesmo de nascermos...",sub:""},
+    {at:94,type:"origin",title:"Um nome. Histórias familiares.",sub:"Expectativas e desejos de outras pessoas."},
+    {at:102,type:"world",title:"Chegamos a um mundo de linguagem.",sub:""},
+    {at:109,type:"people",title:"Uma pessoa conversando sobre o chefe.",sub:""},
+    {at:115,type:"replace",title:"Chefe → pai",sub:"Por que justamente aquele nome?"},
+    {at:124,type:"question",title:"Uma confusão? Talvez.",sub:"O sentido depende da história da pessoa."},
+    {at:133,type:"freud",title:"Sigmund Freud",sub:"Sonhos, sintomas e atos falhos."},
+    {at:141,type:"chain",title:"Dois mecanismos da linguagem",sub:""},
+    {at:146,type:"replace",title:"Metáfora",sub:"Um significante substitui outro."},
+    {at:153,type:"chain",title:"Metonímia",sub:"O sentido se desloca pela cadeia."},
+    {at:161,type:"book",title:"Não existe um dicionário universal.",sub:"Para interpretar sonhos ou atos falhos."},
+    {at:169,type:"speech",title:"Escutar como cada pessoa fala.",sub:"As palavras e suas associações."},
+    {at:175,type:"question",title:"O que eu quis dizer?",sub:"O que apareceu naquilo que eu disse?"}
   ];
+  const icon=(type)=>{
+    const paths={
+      basement:'<path d="M18 68V24h64v44M12 68h76M28 24v-10h44v10M43 68V45h16v23M25 36h12M65 36h12" />',
+      vault:'<rect x="17" y="16" width="66" height="67" rx="5"/><circle cx="50" cy="49" r="19"/><circle cx="50" cy="49" r="6"/><path d="M50 31v12m0 12v12M32 49h12m12 0h12M17 28H8v14h9M83 28h9v14h-9"/>',
+      speech:'<path d="M14 21q0-9 10-9h52q10 0 10 10v36q0 10-10 10H40L21 84V68q-7-2-7-10z"/><path d="M29 33h42M29 46h29"/>',
+      silence:'<path d="M14 21q0-9 10-9h52q10 0 10 10v36q0 10-10 10H40L21 84V68q-7-2-7-10z"/><path stroke-dasharray="3 8" d="M30 44h39"/>',
+      origin:'<circle cx="50" cy="27" r="14"/><path d="M23 82V65q0-19 27-19t27 19v17M14 18h13M73 18h13M10 35h18M72 35h18"/>',
+      world:'<circle cx="50" cy="50" r="36"/><ellipse cx="50" cy="50" rx="15" ry="36"/><path d="M14 50h72M23 27h54M23 73h54"/>',
+      people:'<circle cx="29" cy="28" r="12"/><circle cx="72" cy="28" r="12"/><path d="M9 77V61q0-21 20-21t20 21v16M52 77V61q0-21 20-21t20 21v16"/>',
+      book:'<path d="M50 80q-20-13-40-7V22q23-7 40 8q17-15 40-8v51q-20-6-40 7zM50 30v50M21 36h19M60 36h19M21 48h19M60 48h19"/>'
+    };
+    return '<svg class="lm-picture" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(paths[type]||'')+'</svg>';
+  };
   const escapeText=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const format=t=>{const n=Math.floor(Math.max(0,t));return Math.floor(n/60)+":"+String(n%60).padStart(2,"0");};
   function openStore(){
@@ -56,7 +81,7 @@
      +'<div class="lm-stage lm-type-question" id="lmStage" role="img" aria-label="Animação conceitual sobre o inconsciente e a linguagem">'
      +'<div class="lm-top"><span>FORMAÇÃO LACANIANA</span><span>03.5 / LINGUAGEM E INCONSCIENTE</span></div>'
      +'<div class="lm-orbit lm-orbit-a" aria-hidden="true"></div><div class="lm-orbit lm-orbit-b" aria-hidden="true"></div>'
-     +'<div class="lm-content" id="lmContent"></div><div class="lm-bottom"><span>JACQUES LACAN · UMA INTRODUÇÃO</span><span class="lm-scene-count" id="lmSceneCount">01 / 16</span></div></div>'
+     +'<div class="lm-content" id="lmContent"></div><div class="lm-bottom"><span>JACQUES LACAN · UMA INTRODUÇÃO</span><span class="lm-scene-count" id="lmSceneCount">01 / 27</span></div></div>'
      +'<div class="lm-controls"><button class="lm-play" type="button" id="lmPlay" aria-label="Iniciar animação">▶ <span>Reproduzir</span></button>'
      +'<label class="lm-seek-label" for="lmSeek">Posição da narração</label><input type="range" id="lmSeek" min="0" max="'+TOTAL+'" step=".1" value="0" aria-label="Avançar ou voltar na animação">'
      +'<span class="lm-clock" id="lmClock">0:00 / 3:02</span></div>'
@@ -81,12 +106,12 @@
       if(i===scene)return;
       scene=i;const cue=cues[i];
       stage.className="lm-stage lm-type-"+cue.type;
-      const decor=cue.type==="chain"?'<div class="lm-chain" aria-hidden="true"><span>S₁</span><i></i><span>S₂</span><i></i><span>S₃</span></div>'
-        :cue.type==="replace"?'<div class="lm-replace" aria-hidden="true"><span>significante</span><b>↔</b><span>significante</span></div>'
-        :cue.type==="words"?'<div class="lm-fragments" aria-hidden="true"><span>palavra</span><span>sentido</span><span>fala</span></div>'
-        :cue.type==="origin"?'<div class="lm-fragments" aria-hidden="true"><span>nome</span><span>história</span><span>outro</span></div>'
-        :cue.type==="lacan"||cue.type==="freud"?'<div class="lm-portrait" aria-hidden="true"></div>':"";
-      content.innerHTML='<div class="lm-scene" key="'+i+'"><p class="lm-tag">'+escapeText(cue.tag)+'</p><h3>'+escapeText(cue.title)+'</h3><p class="lm-caption">'+escapeText(cue.sub)+'</p>'+decor+'</div>';
+      let decor="";
+      if(cue.type==="chain")decor='<div class="lm-chain" aria-hidden="true"><span>S₁</span><i></i><span>S₂</span><i></i><span>S₃</span></div>';
+      else if(cue.type==="replace")decor='<div class="lm-replace" aria-hidden="true"><span>chefe</span><b>→</b><span>pai</span></div>';
+      else if(cue.type==="lacan"||cue.type==="freud")decor='<div class="lm-portrait" aria-hidden="true"></div>';
+      else if(["basement","vault","speech","silence","origin","world","people","book"].includes(cue.type))decor=icon(cue.type);
+      content.innerHTML='<div class="lm-scene"><div class="lm-scene-visual">'+decor+'</div><h3>'+escapeText(cue.title)+'</h3>'+(cue.sub?'<p class="lm-caption">'+escapeText(cue.sub)+'</p>':'')+'</div>';
       count.textContent=String(i+1).padStart(2,"0")+" / "+cues.length;
       stage.setAttribute("aria-label",cue.tag+". "+cue.title+". "+cue.sub);
     }
@@ -133,7 +158,7 @@
       try{
         const response=await fetch(FILE,{method:"HEAD"});
         if(response.ok){
-          if(dead)return;audio.src=FILE;hasAudio=true;status.textContent="Narração disponível no curso. Toque em Reproduzir.";setButton();return;
+          if(dead)return;audio.src=FILE;hasAudio=true;status.textContent="Narração pronta para acompanhar as cenas.";setButton();return;
         }
       }catch{}
       try{const saved=await fileStore("get");if(saved instanceof Blob && saved.size && !dead)attach(saved,"Narração recuperada deste dispositivo. Toque em Reproduzir.");}
