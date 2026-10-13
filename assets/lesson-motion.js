@@ -23,7 +23,8 @@
     {at:25.23,type:"question",title:"Mas o que isso realmente significa?",sub:""},
     {at:28.25,type:"question",title:"Quando pensamos no inconsciente...",sub:""},
     {at:30.12,type:"basement",title:"Um porão da mente?",sub:""},
-    {at:33.41,type:"basement",title:"Um lugar onde ficam guardados pensamentos...",sub:"Lembranças e desejos secretos."},
+    {at:33.41,type:"basement",title:"Um lugar onde ficam guardados pensamentos...",sub:""},
+    {at:36.33,type:"basement",title:"Lembranças e desejos mais secretos",sub:""},
     {at:39.20,type:"lacan",title:"Mas, para Lacan...",sub:""},
     {at:40.52,type:"vault",title:"Não é simplesmente um depósito de coisas escondidas.",sub:""},
     {at:44.67,type:"chain",title:"Relações entre palavras",sub:""},
@@ -63,9 +64,10 @@
     {at:163.69,type:"speech",title:"Não controlamos completamente aquilo que dizemos.",sub:""},
     {at:168.24,type:"speech",title:"Nem sempre sabemos tudo o que aparece em nossa fala.",sub:""},
     {at:172.34,type:"question",title:"Talvez a pergunta não seja apenas...",sub:""},
-    {at:173.61,type:"question",title:"O que eu quis dizer?",sub:""},
+    {at:173.61,type:"question",title:"A pergunta mais interessante não seja apenas...",sub:""},
+    {at:175.00,type:"question",title:"O que eu quis dizer?",sub:""},
     {at:176.38,type:"question",title:"Mas também...",sub:""},
-    {at:177.76,type:"question",title:"O que apareceu naquilo que eu disse...",sub:""},
+    {at:176.90,type:"question",title:"O que apareceu naquilo que eu disse...",sub:""},
     {at:178.87,type:"question",title:"...sem que eu soubesse?",sub:""}
   ];
   const icon=(type)=>{
@@ -112,7 +114,7 @@
      +'<div class="lm-stage lm-type-question" id="lmStage" role="img" aria-label="Animação conceitual sobre o inconsciente e a linguagem">'
      +'<div class="lm-top"><span>FORMAÇÃO LACANIANA</span><span>03.5 / LINGUAGEM E INCONSCIENTE</span></div>'
      +'<div class="lm-orbit lm-orbit-a" aria-hidden="true"></div><div class="lm-orbit lm-orbit-b" aria-hidden="true"></div>'
-     +'<div class="lm-content" id="lmContent"></div><div class="lm-bottom"><span>JACQUES LACAN · UMA INTRODUÇÃO</span><span class="lm-scene-count" id="lmSceneCount">01 / 55</span></div></div>'
+     +'<div class="lm-content" id="lmContent"></div><div class="lm-bottom"><span>JACQUES LACAN · UMA INTRODUÇÃO</span><span class="lm-scene-count" id="lmSceneCount">01 / 57</span></div></div>'
      +'<div class="lm-controls"><button class="lm-play" type="button" id="lmPlay" aria-label="Iniciar animação">▶ <span>Reproduzir</span></button>'
      +'<label class="lm-seek-label" for="lmSeek">Posição da narração</label><input type="range" id="lmSeek" min="0" max="'+TOTAL+'" step=".1" value="0" aria-label="Avançar ou voltar na animação">'
      +'<span class="lm-clock" id="lmClock">0:00 / 3:02</span></div>'
