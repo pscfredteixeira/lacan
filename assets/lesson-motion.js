@@ -113,7 +113,7 @@
       else if(["basement","vault","speech","silence","origin","world","people","book"].includes(cue.type))decor=icon(cue.type);
       content.innerHTML='<div class="lm-scene"><div class="lm-scene-visual">'+decor+'</div><h3>'+escapeText(cue.title)+'</h3>'+(cue.sub?'<p class="lm-caption">'+escapeText(cue.sub)+'</p>':'')+'</div>';
       count.textContent=String(i+1).padStart(2,"0")+" / "+cues.length;
-      stage.setAttribute("aria-label",cue.tag+". "+cue.title+". "+cue.sub);
+      stage.setAttribute("aria-label",cue.title+(cue.sub?". "+cue.sub:""));
     }
     function update(t){
       current=Math.max(0,Math.min(TOTAL,t));setScene(current);
