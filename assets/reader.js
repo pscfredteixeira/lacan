@@ -98,6 +98,7 @@
   function showLesson(id,withHistory=true,moveFocus=false){
     const lesson=lessons.find(l=>l.id===id);
     if(!lesson)return;
+    window.LACAN_MOTION?.unmount?.();
     current=id;answer=null;
     const firstSteps=lesson.learningMode==="primeiros-passos";
     article.classList.toggle("reader-first-steps",firstSteps);
@@ -114,6 +115,7 @@
     <div class="lesson-info"><span>◷ ${safe(lesson.duration)} de estudo estimado</span><span>◈ Módulo ${String(config.moduleNumber).padStart(2,"0")} de 18</span><span>◎ ${completed.includes(id)?"Avaliação já concluída":"Estudo em andamento"}</span></div>
     ${firstSteps?"":`<div class="reader-objectives"><span class="section-label">A pergunta que organiza esta aula</span><h2>${safe(lesson.question)}</h2></div>`}
     <div class="reader-lead"><p>${canRenderHTML(lesson.introduction)}</p></div>
+    ${window.LACAN_MOTION?.render?.(lesson) || ""}
     <div class="reader-separator"><span>${firstSteps?"ENTENDA PASSO A PASSO":"DESENVOLVIMENTO TEÓRICO"}</span><span>${String(lesson.sections.length).padStart(2,"0")} ${firstSteps?"PARTES":"PASSAGENS"}</span></div>
     ${lesson.sections.map((section,i)=>`<section class="lesson-article-section reader-chapter" aria-labelledby="chapter-${i}"><div class="reader-chapter-label">${String(i+1).padStart(2,"0")} / ${String(lesson.sections.length).padStart(2,"0")}</div><h2 id="chapter-${i}">${safe(section.title)}</h2>${section.paragraphs.map(text=>'<p>'+canRenderHTML(text)+'</p>').join("")}${section.inShort?`<div class="reader-easy-summary"><strong>Em palavras simples</strong><p>${safe(section.inShort)}</p></div>`:""}</section>${i===1 ? renderComparison(lesson)+(window.LACAN_INLINE_ACTIVITY?.render?.(lesson) || "") : ""}`).join("")}
     <aside class="lesson-example reader-example"><span class="section-label">${firstSteps?"Outro exemplo para entender":"Uma cena para examinar"}</span><h2>${safe(lesson.example.title)}</h2><p>${safe(lesson.example.text)}</p><small>Exemplo construído para fins pedagógicos, não interpretação clínica.</small></aside>
@@ -142,6 +144,7 @@
     storageEditor("generalNotes",config.notesPrefix+"general-","generalStorage");
     renderQuiz();updateStudyMark();
     window.LACAN_INLINE_ACTIVITY?.mount?.(article,lesson);
+    window.LACAN_MOTION?.mount?.(article,lesson);
     if(moveFocus){article.focus({preventScroll:true});article.scrollIntoView({block:"start",behavior:"auto"});}
   }
   function updateStudyMark(){
