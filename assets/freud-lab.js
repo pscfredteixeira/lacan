@@ -146,5 +146,7 @@
   }
   $("fontDown").addEventListener("click",()=>setScale(scale-.1));
   $("fontUp").addEventListener("click",()=>setScale(scale+.1));
-  setScale(scale);showRoom("topicas");progress();
+  // Deep link da aula 2.2: abrir diretamente a mesa de sonhos, sem começar por tópicas.
+  const requested=new URLSearchParams(location.search).get("sala");
+  setScale(scale);showRoom(validRooms.includes(requested)?requested:"topicas");progress();
 })();
