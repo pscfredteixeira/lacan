@@ -4,8 +4,6 @@
 (() => {
   "use strict";
   const TOTAL=182.204;
-  // Compensação do atraso percebido: o visual entra 0,8s antes do ponto marcado.
-  const VISUAL_LEAD_SECONDS=0.8;
   const FILE="assets/inconsciente-linguagem.mp3";
   const DB="lacan-motion-narracoes";
   const KEY="inconsciente-linguagem-v1";
