@@ -93,3 +93,13 @@
  .lm-scene-visual .lm-portrait{width:43px}
 }
 @media(max-width:370px){.lm-stage{aspect-ratio:1.22}.lm-scene h3,.lm-type-quote .lm-scene h3{font-size:1rem}}
+
+/* Sincronia fonema/visual: entrada imediata, sem blur que atrasava a leitura. */
+.lm-scene{animation:lm-cue-enter .2s ease-out both}
+.lm-picture,.lm-scene-visual .lm-portrait{animation:lm-cue-enter .2s ease-out both}
+@keyframes lm-cue-enter{from{opacity:.55;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){
+  .lm-scene{animation-duration:.15s}
+  .lm-scene h3,.lm-type-quote .lm-scene h3{font-size:clamp(.96rem,4.15vw,1.43rem)}
+  .lm-scene-visual{height:40px}
+}
