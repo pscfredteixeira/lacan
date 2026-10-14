@@ -1,0 +1,37 @@
+name: Publish Lacan 4.1 narration
+on:
+  push:
+    paths:
+      - ".github/workflows/publish-audio-41.yml"
+permissions:
+  contents: write
+jobs:
+  import_audio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout course
+        uses: actions/checkout@v4
+      - name: Import user-provided ElevenLabs narration
+        shell: bash
+        env:
+          AUDIO_DOWNLOAD: "https://at.adobe.com/tNFxMRVisMYCMqrm"
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 --max-time 120 --output assets/imagem-corporal.mp3 "$AUDIO_DOWNLOAD"
+          bytes=$(wc -c < assets/imagem-corporal.mp3)
+          echo "Audio bytes: $bytes"
+          test "$bytes" -gt 100000
+          signature=$(od -An -tx1 -N3 assets/imagem-corporal.mp3 | tr -d ' \n')
+          if [ "$signature" != "494433" ] && [ "${signature:0:2}" != "ff" ]; then
+            echo "Downloaded resource is not an MP3"
+            exit 1
+          fi
+      - name: Commit audio file to Github Pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/imagem-corporal.mp3
+          git commit -m "feat(module4): publish narrated audio for lesson 4.1"
+          git push
