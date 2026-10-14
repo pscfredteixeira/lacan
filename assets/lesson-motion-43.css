@@ -1,0 +1,47 @@
+/* Aula 4.3 | Eu ideal e ideal do eu — direção editorial papel/lavanda.
+   Layout exclusivo da aula para preservar as anteriores. */
+#lacanMotion43,#lacanMotion43 *{box-sizing:border-box}
+#lacanMotion43{width:100%;max-width:100%;min-width:0;overflow:hidden;margin:36px 0 46px;padding:clamp(12px,3vw,26px)}
+#lacanMotion43 .lm-intro h2{font-size:clamp(1.55rem,2.8vw,2.3rem)}
+#lacanMotion43 .lm-stage{display:flex;justify-content:center;align-items:center;min-width:0;min-height:0;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;overflow:hidden;padding:clamp(35px,4vw,65px) clamp(12px,3.5vw,45px);background:radial-gradient(ellipse at 35% 22%,#e5d7ed,transparent 55%),linear-gradient(125deg,#faf3e9,#eee4f1)}
+#lacanMotion43 .lm-stage::after{pointer-events:none}
+#lacanMotion43 .lm43-stage-musician{background:radial-gradient(circle at 50% 20%,#e5d7ef 0%,transparent 55%),linear-gradient(125deg,#fcf4e9,#e7d9eb)}
+#lacanMotion43 .lm43-stage-mirror{background:radial-gradient(circle at 63% 30%,#e6dbee,#f8f0e7)}
+#lacanMotion43 .lm43-stage-value{background:linear-gradient(125deg,#f7efe6,#e8dce9)}
+#lacanMotion43 .lm43-stage-symbolic{background:radial-gradient(circle at 35% 40%,#f7f0e8,#e9dbe9)}
+#lacanMotion43 .lm43-stage-question{background:radial-gradient(ellipse,#f8f1e9,#e5d9eb)}
+#lacanMotion43 .lm43-stage-rivalry{background:linear-gradient(120deg,#eee2ec,#faf2e7)}
+#lacanMotion43 .lm-top,#lacanMotion43 .lm-bottom{z-index:4}
+#lacanMotion43 .lm43-content{width:100%;max-width:740px;min-width:0;position:relative;z-index:3;text-align:center;display:flex;align-items:center;justify-content:center}
+#lacanMotion43 .lm43-scene{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(7px,1vw,14px);width:100%;max-width:100%;min-width:0;animation:lm43-arrive .2s ease-out both}
+#lacanMotion43 .lm43-art{width:100%;max-width:400px;height:clamp(85px,18vw,163px);min-width:0;display:flex;align-items:center;justify-content:center}
+#lacanMotion43 .lm43-svg{width:100%;max-width:310px;height:100%;filter:drop-shadow(0 6px 7px rgba(65,38,82,.10));overflow:visible}
+#lacanMotion43 .lm43-portrait{height:100%;width:clamp(70px,11vw,120px);background:url("./lacan-portrait-editorial.webp") center/contain no-repeat;filter:sepia(.13) saturate(.66);mask-image:linear-gradient(to top,transparent 0%,black 18%)}
+#lacanMotion43 .lm43-portrait.freud{background-image:url("./freud-portrait-editorial.webp")}
+#lacanMotion43 .lm43-scene h3{max-width:100%;margin:0!important;font:400 clamp(1.15rem,3.6vw,3rem)/1.2 "Libre Baskerville",Georgia,serif;letter-spacing:-.04em;color:#4d3b59;text-wrap:balance;overflow-wrap:anywhere}
+#lacanMotion43 .lm43-scene p{max-width:100%;margin:0!important;font:400 clamp(.75rem,1.42vw,1rem)/1.5 "DM Sans",sans-serif!important;color:#6e5e76;text-wrap:balance}
+#lacanMotion43 .lm-controls{width:100%;max-width:100%;min-width:0}
+#lacanMotion43 .lm43-fallback{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:11px 14px;background:#fbf5ec;border:1px solid #d4c6d9;border-top:0}
+#lacanMotion43 .lm43-fallback[hidden]{display:none!important}
+#lacanMotion43 .lm43-fallback span{font:400 .76rem/1.5 "DM Sans",sans-serif;color:#62506e}
+#lacanMotion43 .lm43-fallback label{flex:0 0 auto}
+@keyframes lm43-arrive{from{opacity:.35;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media(max-width:700px){
+ #lacanMotion43{margin:30px 0 42px;padding:10px}
+ #lacanMotion43 .lm-stage{aspect-ratio:4/3;padding:33px 12px 30px}
+ #lacanMotion43 .lm43-scene{gap:6px}
+ #lacanMotion43 .lm43-art{height:clamp(70px,19vw,100px)}
+ #lacanMotion43 .lm43-svg{max-width:220px}
+ #lacanMotion43 .lm43-scene h3{font-size:clamp(.98rem,4.15vw,1.54rem);line-height:1.2}
+ #lacanMotion43 .lm43-scene p{font-size:clamp(.64rem,2.65vw,.86rem)!important;line-height:1.38!important}
+ #lacanMotion43 .lm-top,#lacanMotion43 .lm-bottom{left:9px;right:9px;font-size:.37rem;letter-spacing:.046em}
+ #lacanMotion43 .lm-top span,#lacanMotion43 .lm-bottom span{min-width:0;max-width:50%}
+ #lacanMotion43 .lm-top span:last-child,#lacanMotion43 .lm-bottom span:last-child{text-align:right}
+ #lacanMotion43 .lm-controls{padding:9px;gap:7px}
+ #lacanMotion43 .lm-play{min-width:95px;padding:8px 6px;font-size:.63rem}
+ #lacanMotion43 .lm-clock{font-size:.6rem}
+ #lacanMotion43 .lm43-fallback{flex-direction:column;align-items:stretch}
+ #lacanMotion43 .lm43-fallback label{width:100%;justify-content:center}
+}
+@media(max-width:370px){#lacanMotion43 .lm-stage{aspect-ratio:1.25}#lacanMotion43 .lm43-scene h3{font-size:.96rem}#lacanMotion43 .lm43-art{height:67px}}
+@media(prefers-reduced-motion:reduce){#lacanMotion43 .lm43-scene{animation:none!important}}
