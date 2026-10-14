@@ -1,0 +1,62 @@
+name: Import and align narrated lesson 4.3
+on:
+  push:
+    paths:
+      - ".github/workflows/import-narration-43.yml"
+permissions:
+  contents: write
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Import supplied recording
+        shell: bash
+        env:
+          SOURCE_URL: "https://at.adobe.com/LQ5OOMoj9puIwEg3"
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 --max-time 150 --output /tmp/lacan43.wav "$SOURCE_URL"
+          test "$(wc -c < /tmp/lacan43.wav)" -gt 500000
+          ffmpeg -hide_banner -loglevel error -y -i /tmp/lacan43.wav -ac 1 -ar 44100 -b:a 96k assets/eu-ideal-ideal-do-eu-43.mp3
+          test "$(wc -c < assets/eu-ideal-ideal-do-eu-43.mp3)" -gt 100000
+          ffprobe -v error -show_entries format=duration -of default=nw=1 assets/eu-ideal-ideal-do-eu-43.mp3
+      - name: Prepare word timing analysis
+        run: python -m pip install --disable-pip-version-check -q faster-whisper==1.2.1
+      - name: Time align spoken Portuguese
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import av
+          old_open=av.open
+          def compat_open(*args,**kwargs):
+              kwargs.pop("metadata_errors",None)
+              return old_open(*args,**kwargs)
+          av.open=compat_open
+          from faster_whisper import WhisperModel
+          model=WhisperModel("small",device="cpu",compute_type="int8",cpu_threads=4,num_workers=2)
+          segments,info=model.transcribe(
+              "assets/eu-ideal-ideal-do-eu-43.mp3",language="pt",beam_size=5,
+              word_timestamps=True,vad_filter=False,
+              initial_prompt="Jacques Lacan, Freud, eu ideal, ideal do eu, narcisismo, identificação, imaginário, simbólico, Outro, violinista, espelho, olhar.")
+          data=[]
+          for seg in segments:
+              words=[{"text":w.word,"start":round(w.start,2),"end":round(w.end,2)} for w in (seg.words or [])]
+              data.append({"start":round(seg.start,2),"end":round(seg.end,2),"text":seg.text.strip(),"words":words})
+          with open("narration-alignment-43.json","w",encoding="utf8") as fp:
+              json.dump({"duration":info.duration,"segments":data},fp,ensure_ascii=False,indent=2)
+          print("Aligned",len(data),"segments",sum(len(x["words"]) for x in data),"words")
+          PY
+      - name: Publish narration and timed script
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/eu-ideal-ideal-do-eu-43.mp3 narration-alignment-43.json
+          git commit -m "feat(module4): upload narration and measured timestamps for lesson 4.3"
+          git pull --rebase origin main
+          git push
