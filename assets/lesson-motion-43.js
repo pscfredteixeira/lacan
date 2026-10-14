@@ -59,14 +59,8 @@
   // All artwork is native SVG with the same warm paper, violet and muted gold palette.
   const defs='<defs><linearGradient id="lm43Lavender" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bba2cc"/><stop offset="1" stop-color="#685578"/></linearGradient><linearGradient id="lm43Linen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8ed"/><stop offset="1" stop-color="#e6d7e9"/></linearGradient><linearGradient id="lm43Gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7e8b5"/><stop offset="1" stop-color="#d8b879"/></linearGradient></defs>';
   const bg='<ellipse cx="150" cy="167" rx="111" ry="5" fill="#a995b4" opacity=".22"/>';
-  const person='<path d="M129 53q-16-1-22 16l-11 62 63 2-10-67q-3-14-20-13Z" fill="url(#lm43Lavender)" stroke="#66536f" stroke-width="2"/>'+
-   '<path d="m111 71-13 26-21 11m62-38 17 21 20 5" fill="none" stroke="#ddbfad" stroke-width="12" stroke-linecap="round"/>'+
-   '<path d="M114 130 109 159M142 130l8 29" fill="none" stroke="#695673" stroke-width="15" stroke-linecap="round"/>'+
-   '<path d="M108 154h-6l-15 9h26m34-9h10l15 9h-25" fill="#514158"/>'+
-   '<path d="M116 30q-4-16 13-19 18 1 17 23l-3 12q-12 20-23 0Z" fill="#e0bfab" stroke="#8d7184" stroke-width="2"/>'+
-   '<path d="M115 31q-9-24 11-28 21 2 22 29l-8-12-25 11Z" fill="#5c4a66"/>'+
-   '<circle cx="126" cy="35" r="1.3" fill="#574662"/><circle cx="140" cy="35" r="1.3" fill="#574662"/>'+
-   '<path d="M128 43q5 3 9-1" stroke="#a4787b" stroke-width="1.6" stroke-linecap="round" fill="none"/>';
+  // Ilustração infantil: vestido lavanda, laço, olhos expressivos e sorriso.
+  const person="<g class='lm43-girl'>\n<ellipse cx='133' cy='166' rx='41' ry='3.5' fill='#9077a0' opacity='.16'/>\n<path d='M112 125l-4 29 15 1 7-24m9-1 6 25 15-2-7-27' fill='#e9c8b8' stroke='#a18a95' stroke-width='1.5'/>\n<path d='M108 145h16v11h-16zm38 0h15v11h-15z' fill='#fff8ef'/>\n<path d='M109 155q-10-2-18 8-2 5 4 5h29q5-1 3-6l-3-7Zm37 0 14-2q13 1 18 12 0 3-4 3h-30q-4-4 2-13Z' fill='#726082' stroke='#5b4b6b' stroke-width='1.7'/>\n<path d='M94 164h31m21 0h29' fill='none' stroke='#e5d9eb' stroke-width='2'/>\n<path d='M117 76q-17 2-20 17l-8 40q41 21 80 0l-9-40q-4-15-19-17Z' fill='#ac91bf' stroke='#745e87' stroke-width='2.3'/>\n<path d='M97 125q35 13 67 1l5 7q-39 21-80 0Z' fill='#c9b2d5'/>\n<path d='M121 78q11 8 20 0l5 8-14 10-16-10Z' fill='#fcf5ed' stroke='#9475a6' stroke-width='1.3'/>\n<path d='M130 97v28' stroke='#ddc8e7' stroke-width='1.8'/>\n<circle cx='131' cy='107' r='2.2' fill='#f7eee7'/><circle cx='131' cy='117' r='2.2' fill='#f7eee7'/>\n<path d='M102 93q-7 14-18 20m70-19q12 11 22 12' stroke='#e9c7b7' stroke-width='11' stroke-linecap='round' fill='none'/>\n<path d='M84 112q-5 4-8 0m101-6q6 2 7-3' stroke='#e9c7b7' stroke-width='8' stroke-linecap='round' fill='none'/>\n<path d='M101 51q-8-24 8-39 16-14 38-5 23 10 19 34l-3 31q-8 12-21 6h-31q-14-1-10-27Z' fill='#62506e' stroke='#554260' stroke-width='1.5'/>\n<path d='M106 39q0-25 26-28 26 1 27 29l-2 18q-7 18-25 20-20-2-26-20Z' fill='#f3d8ca' stroke='#a67f8a' stroke-width='1.7'/>\n<path d='M106 42q-6-17 9-28 14-10 30-3 14 6 14 24l-4 8q-4-15-14-18-10 12-22 12-7 0-13 5Z' fill='#62506e'/>\n<path d='M105 40q-8 12-3 24 2 7 7 8m47-30q7 11 3 22-2 7-8 9' fill='#62506e'/>\n<path d='M108 22q-16-10-16 2 0 9 15 5m6-6q16-11 17 0 0 10-17 6' fill='#c5a1d4' stroke='#8e6c9d' stroke-width='1.6'/>\n<circle cx='110' cy='26' r='4' fill='#9372a6'/>\n<path d='M116 44q5-4 12-1m13 0q5-3 10 1' stroke='#816374' stroke-width='1.7' fill='none' stroke-linecap='round'/>\n<ellipse cx='122' cy='49' rx='4.6' ry='6.2' fill='#443d55'/><ellipse cx='145' cy='49' rx='4.6' ry='6.2' fill='#443d55'/>\n<circle cx='123' cy='47' r='1.8' fill='#fffdf8'/><circle cx='146' cy='47' r='1.8' fill='#fffdf8'/>\n<ellipse cx='113' cy='58' rx='7' ry='4.1' fill='#dd9b9e' opacity='.62'/><ellipse cx='153' cy='58' rx='7' ry='4.1' fill='#dd9b9e' opacity='.62'/>\n<path d='M131 54q1 2 3 0' fill='none' stroke='#b99593' stroke-width='1.3' stroke-linecap='round'/>\n<path d='M126 62q7 8 15 0' stroke='#ad7780' stroke-width='2.4' stroke-linecap='round' fill='none'/>\n</g>";
   const violin='<g transform="rotate(-15 155 89)">'+
     '<path d="M162 69q15-19 27-5 7 8-1 18-5 7 0 14 8 12-3 20-13 10-23-9-7 18-19 9-10-8-2-20 6-9 0-15-9-13 0-20 12-9 21 8Z" fill="#c38d64" stroke="#8b6657" stroke-width="2.4"/>'+
     '<path d="M163 59v56m-6-44h12m-12 31h12" stroke="#8b6755" stroke-width="2"/>'+
@@ -80,9 +74,8 @@
   const mirror='<rect x="187" y="12" width="73" height="134" rx="24" fill="#d7c3e0" stroke="#796184" stroke-width="3"/>'+
     '<rect x="195" y="20" width="57" height="118" rx="18" fill="url(#lm43Linen)" stroke="#b8a2bf" stroke-width="1.5"/>'+
     '<path d="M201 70 240 29m-29 61 39-43" stroke="#fffdfa" stroke-width="5" opacity=".5"/>';
-  const eyes='<path d="M66 78q37-36 75 0-38 36-75 0Zm96 0q37-36 75 0-38 36-75 0Z" stroke="#8f76a0" stroke-width="3" fill="#fdf7ed"/>'+
-   '<circle cx="104" cy="78" r="13" fill="#c3a5ce"/><circle cx="200" cy="78" r="13" fill="#c3a5ce"/>'+
-   '<circle cx="104" cy="78" r="6" fill="#5a4967"/><circle cx="200" cy="78" r="6" fill="#5a4967"/>';
+  // Representação do olhar: um único olho, sem boca.
+  const eyes="<g class='lm43-single-eye'>\n<path d='M54 83Q103 26 150 26Q198 26 246 83Q199 141 150 141Q101 141 54 83Z' fill='#fffaf2' stroke='#896c9d' stroke-width='4' stroke-linejoin='round'/>\n<circle cx='150' cy='83' r='42' fill='#c6a9d5' stroke='#916da7' stroke-width='2.7'/>\n<circle cx='150' cy='83' r='25' fill='#76628f'/>\n<circle cx='150' cy='83' r='13' fill='#423b54'/>\n<ellipse cx='137' cy='65' rx='10' ry='12' fill='#fffdf9' opacity='.93'/>\n<circle cx='165' cy='100' r='5' fill='#f9f2fb' opacity='.7'/>\n<path d='M72 62Q97 39 122 32m106 30q-27-23-49-30' stroke='#af94bd' stroke-width='2.4' fill='none' stroke-linecap='round'/>\n</g>";
   const book='<rect x="81" y="22" width="141" height="122" rx="5" fill="#f7f0e9" stroke="#b79fc5" stroke-width="3"/>'+
    '<path d="M100 44h102m-102 19h91m-91 19h102m-102 19h85" stroke="#ab95b8" stroke-width="2.6" stroke-linecap="round"/>';
   function drawing(type){
@@ -100,8 +93,8 @@
         '<g transform="translate(-33 6) scale(.72 .92)">'+person+'</g>'+mirror+
         '<g transform="translate(120 12) scale(.72 .80)" opacity=".65">'+person+'</g>'+end;
     }
-    if(type==="gaze")return head+eyes+'<path d="M73 121q82-19 154 0" stroke="#c7b3ce" stroke-width="2" stroke-dasharray="3 6"/>'+end;
-    if(type==="value")return head+eyes+'<path d="M150 113c-31-30-60 7 0 43 60-36 31-73 0-43Z" fill="#c7a1aa" opacity=".55"/>'+end;
+    if(type==="gaze")return head+eyes+end;
+    if(type==="value")return head+eyes+end;
     if(type==="teacher"||type==="family"||type==="history"||type==="words"){
       const labels=type==="family"?["FAMÍLIA","EXPECTATIVAS","ORGULHO"]:type==="teacher"?["MESTRES","ELOGIOS","RECONHECIMENTO"]:type==="history"?["ANTES","HISTÓRIA","EXPECTATIVAS"]:["DISCIPLINA","MÉRITO","VALOR"];
       return head+book+labels.map((v,i)=>'<text x="151" y="'+(60+i*27)+'" font-family="Georgia" text-anchor="middle" fill="#6d557e" font-size="'+(v.length>11?11:14)+'">'+v+'</text>').join("")+end;
