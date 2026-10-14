@@ -1,0 +1,46 @@
+/* Aula 4.1 — Corpo vivido e imagem: editorial papel, lavanda e violeta.
+   Estilos restritos ao vídeo da aula 4.1; não alteram motions do módulo 3. */
+#lacanMotion41,#lacanMotion41 *{box-sizing:border-box}
+#lacanMotion41{width:100%;max-width:100%;min-width:0;overflow:hidden;margin-left:0;margin-right:0}
+#lacanMotion41 .lm-stage{aspect-ratio:16/9;width:100%;max-width:100%;min-width:0;min-height:0;height:auto;overflow:hidden;display:flex;justify-content:center;align-items:center;padding:clamp(41px,6vw,75px) clamp(18px,4vw,54px);background:radial-gradient(circle at 70% 26%,rgba(197,175,217,.28),transparent 53%),linear-gradient(125deg,#faf3e9,#eae0f0)}
+#lacanMotion41 .lm-stage::after{pointer-events:none}
+#lacanMotion41 .lm41-body{width:100%;max-width:690px;min-width:0;position:relative;z-index:3;text-align:center;transform:none!important}
+#lacanMotion41 .lm41-scene{width:100%;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(8px,2vw,20px);animation:lm41-entrance .25s ease-out both}
+#lacanMotion41 .lm41-visual{width:100%;height:clamp(60px,12vw,126px);display:flex;align-items:center;justify-content:center}
+#lacanMotion41 .lm41-symbol{width:auto;height:100%;max-width:45%;color:#806792;filter:drop-shadow(2px 4px 0 rgba(76,52,84,.06))}
+#lacanMotion41 .lm41-portrait{width:clamp(70px,12vw,138px);height:100%;background:url("./lacan-portrait-editorial.webp") center/contain no-repeat;filter:sepia(.17) saturate(.62);mask-image:linear-gradient(to top,transparent 0%,black 20%)}
+#lacanMotion41 .lm41-scene h3{margin:0!important;max-width:100%;font-family:"Libre Baskerville",Georgia,serif;font-weight:400;font-size:clamp(1.25rem,3.7vw,3.15rem);line-height:1.23;letter-spacing:-.045em;color:#4d3c5b;overflow-wrap:break-word;text-wrap:balance}
+#lacanMotion41 .lm-top,#lacanMotion41 .lm-bottom{z-index:4;overflow-wrap:break-word}
+#lacanMotion41 .lm-top span,#lacanMotion41 .lm-bottom span{max-width:50%;min-width:0}
+#lacanMotion41 .lm-top span:last-child,#lacanMotion41 .lm-bottom span:last-child{text-align:right}
+#lacanMotion41 .lm41-kind-photo,#lacanMotion41 .lm41-kind-mirror{background:radial-gradient(circle at 50% 27%,#e1d2eb 0%,transparent 55%),#f8f0e5}
+#lacanMotion41 .lm41-kind-walk,#lacanMotion41 .lm41-kind-child{background:linear-gradient(130deg,#f8f0e5,#ede1ed)}
+#lacanMotion41 .lm41-kind-contrast{background:linear-gradient(120deg,#e9deed,#faf1e7)}
+#lacanMotion41 .lm41-kind-lacan,#lacanMotion41 .lm41-kind-gestalt{background:radial-gradient(circle,#f6f0e7,#e8dbec)}
+#lacanMotion41 .lm-controls{width:100%;max-width:100%;min-width:0}
+#lacanMotion41 .lm41-fallback{width:100%;max-width:100%;padding:13px 15px;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid #d8cadc;border-top:none;background:#fffbf5}
+#lacanMotion41 .lm41-fallback[hidden]{display:none!important}
+#lacanMotion41 .lm41-fallback span{color:#6a5a75;font:400 .76rem/1.5 "DM Sans",sans-serif}
+#lacanMotion41 .lm41-fallback .lm-file-label{flex-shrink:0}
+@keyframes lm41-entrance{from{opacity:.48;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media(max-width:700px){
+  #lacanMotion41{margin:32px 0 44px;padding:11px}
+  #lacanMotion41 .lm-stage{aspect-ratio:4/3;padding:35px 13px 32px}
+  #lacanMotion41 .lm41-body{width:100%}
+  #lacanMotion41 .lm41-scene{gap:7px}
+  #lacanMotion41 .lm41-visual{height:clamp(38px,11vw,60px)}
+  #lacanMotion41 .lm41-symbol{max-width:38%}
+  #lacanMotion41 .lm41-scene h3{font-size:clamp(1rem,4.3vw,1.55rem);line-height:1.18}
+  #lacanMotion41 .lm41-portrait{width:clamp(44px,12vw,70px)}
+  #lacanMotion41 .lm-top,#lacanMotion41 .lm-bottom{font-size:.38rem;letter-spacing:.055em;left:9px;right:9px}
+  #lacanMotion41 .lm-controls{padding:9px;gap:8px}
+  #lacanMotion41 .lm-play{min-width:98px;padding:8px 7px;font-size:.64rem}
+  #lacanMotion41 .lm-clock{font-size:.6rem}
+  #lacanMotion41 .lm41-fallback{display:flex;flex-direction:column;align-items:stretch}
+  #lacanMotion41 .lm41-fallback .lm-file-label{width:100%;justify-content:center}
+}
+@media(max-width:370px){
+  #lacanMotion41 .lm-stage{aspect-ratio:1.23}
+  #lacanMotion41 .lm41-scene h3{font-size:.97rem}
+}
+@media(prefers-reduced-motion:reduce){#lacanMotion41 .lm41-scene{animation:none!important}}
