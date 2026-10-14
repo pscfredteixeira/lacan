@@ -4,64 +4,109 @@
 (() => {
   "use strict";
   const LESSON="4.1", FILE="assets/imagem-corporal.mp3", DURATION=242.103;
-  // Entradas alinhadas às pausas da nova narração.
+  // Nova edição: cenas posicionadas na FRASE correspondente.
+  // Os tempos foram confrontados com os 129 blocos de voz/pausas do MP3 Daniel.
+  // O som continua como relógio-mestre, inclusive após pausas e avanços.
   const scenes=[
-    [0,"photo","Uma fotografia de você"],
-    [9.86,"question","É uma sensação curiosa."],
-    [11.98,"body","Estamos olhando para o nosso próprio corpo."],
-    [16.18,"contrast","Ver um corpo ≠ viver em um corpo"],
-    [23.76,"lacan","Jacques Lacan"],
-    [30.8,"walk","Imagine uma situação simples."],
-    [37.04,"walk","Você sente o chão sob os pés."],
-    [44.1,"body","Seu corpo está em movimento."],
-    [49.27,"photo","Alguém tira uma fotografia."],
-    [54.91,"photo","A fotografia mostra seu corpo inteiro."],
-    [61.9,"contrast","Mas ela não mostra o que você sentia."],
-    [65.56,"walk","O esforço dos músculos. O equilíbrio."],
+    [0,"photo","Você já se olhou em uma fotografia?"],
+    [9.87,"question","É uma sensação curiosa."],
+    [11.99,"body","Estamos olhando para o nosso próprio corpo."],
+    [16.18,"contrast","Ver o corpo e viver a experiência de estar nele."],
+    [23.76,"contrast","Essa diferença ajuda a compreender uma ideia importante."],
+    [29.47,"lacan","Jacques Lacan"],
+    [30.80,"walk","Imagine uma situação simples."],
+    [32.35,"walk","Você está caminhando pela rua."],
+    [34.54,"walk","Sente o chão sob os pés."],
+    [37.04,"walk","Movimenta os braços."],
+    [38.17,"walk","Ajusta o equilíbrio."],
+    [40.02,"body","Seu corpo está em movimento."],
+    [41.40,"body","Você sente e experimenta esse movimento."],
+    [44.11,"photo","Agora imagine uma fotografia sua."],
+    [49.27,"photo","A fotografia mostra seu corpo inteiro."],
+    [53.20,"body","Rosto, braços, pernas e postura."],
+    [57.52,"contrast","Mas a fotografia não mostra o que você sentia."],
+    [63.09,"body","Não revela o esforço dos músculos."],
+    [68.66,"walk","As sensações do movimento e do equilíbrio."],
     [73.62,"contrast","Duas experiências diferentes."],
-    [77.58,"body","O corpo vivido."],
-    [80.93,"photo","A imagem do corpo."],
-    [83.52,"lacan","A diferença interessa a Lacan."],
-    [87.66,"child","Uma criança aprendendo a andar."],
-    [92.42,"photo","Uma fotografia mostra uma figura inteira."],
+    [76.13,"body","De um lado: o corpo vivido."],
+    [79.80,"photo","Do outro: a imagem do corpo."],
+    [83.52,"lacan","É essa diferença que interessa a Lacan."],
+    [87.66,"child","Uma criança pequena aprendendo a andar."],
+    [92.42,"photo","A fotografia mostra uma figura inteira."],
     [97.58,"shape","Cabeça, braços, pernas e tronco."],
-    [103.63,"child","Mas caminhar ainda é difícil."],
-    [108.79,"walk","Ela pode perder o equilíbrio."],
+    [103.64,"child","Mas a criança ainda pode ter dificuldade para caminhar."],
+    [107.45,"child","Pode perder o equilíbrio e precisar de apoio."],
     [119.74,"question","Percebe a diferença?"],
-    [121.61,"contrast","Uma imagem inteira."],
+    [121.61,"contrast","Uma imagem inteira. Movimentos em desenvolvimento."],
     [127.77,"shape","A unidade que a imagem oferece."],
-    [132.84,"gestalt","Gestalt"],
-    [138.95,"shape","Uma forma organizada, percebida como um todo."],
+    [132.84,"gestalt","Uma ideia conhecida como Gestalt."],
+    [138.96,"gestalt","Uma forma organizada, percebida como um todo."],
     [147.39,"question","Por que isso importa para a psicanálise?"],
-    [153.4,"lacan","A imagem participa da ideia de quem somos."],
-    [160.45,"body","Não somos apenas o corpo que sentimos."],
-    [168.97,"photo","Também encontramos imagens fora de nós."],
-    [174.35,"question","Uma questão fundamental."],
-    [177.71,"mirror","Uma criança diante do espelho."],
-    [181.84,"child","A coordenação ainda se desenvolve."],
-    [187.59,"mirror","Uma imagem organizada de seu corpo."],
-    [193.4,"shape","A imagem oferece unidade."],
-    [200.3,"question","Mas atenção."],
+    [153.40,"lacan","Para Lacan, a imagem participa da ideia de quem somos."],
+    [160.45,"body","Em outras palavras..."],
+    [162.66,"body","Nossa percepção não depende só das sensações corporais."],
+    [168.97,"photo","Ela também se relaciona com imagens fora de nós."],
+    [174.36,"question","E aqui chegamos a uma questão fundamental."],
+    [177.71,"mirror","Uma criança diante de um espelho."],
+    [180.44,"child","A coordenação motora ainda se desenvolve."],
+    [183.52,"mirror","Uma imagem organizada diante de si."],
+    [189.45,"lacan","Para Lacan..."],
+    [193.40,"shape","A imagem oferece uma unidade antecipada."],
+    [200.30,"question","Mas atenção."],
     [201.81,"theory","Estamos falando de uma proposta teórica."],
-    [206.35,"child","Não sabemos exatamente o que uma criança sente."],
-    [213.11,"lacan","Imagem corporal e formação do eu."],
-    [220.14,"question","Uma pergunta fascinante."],
-    [224.28,"mirror","A imagem que temos de nós mesmos..."],
-    [230.44,"contrast","Até que ponto o eu depende de algo fora de nós?"],
-    [236.61,"mirror","Na próxima aula..."],
+    [204.88,"child","Não sabemos exatamente o que uma criança sente."],
+    [213.12,"lacan","A relação entre imagem do corpo e formação do eu."],
+    [220.15,"question","Uma pergunta fascinante."],
+    [224.30,"mirror","A imagem que temos de nós mesmos..."],
+    [230.44,"contrast","Até que ponto nosso eu depende de algo fora de nós?"],
+    [236.61,"mirror","É a questão da próxima aula."],
     [240.62,"mirror","O estádio do espelho."]
   ];
   const escape=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const format=s=>{const n=Math.floor(Math.max(0,s));return Math.floor(n/60)+":"+String(n%60).padStart(2,"0");};
+  // Ilustrações editoriais próprias, preenchidas e anatômicas — sem bonecos de palito.
+  // Formas com contorno violeta e volumes em bege/lavanda, iguais à identidade da aula.
+  const people={
+    walk:'<ellipse cx="90" cy="157" rx="45" ry="5" fill="#bca9c6" opacity=".23"/>'+
+      '<path d="M80 48C76 45 73 40 74 32c1-12 8-18 19-17 9 1 15 9 13 20-2 10-9 16-17 15Z" fill="#e0c3b3" stroke="#755f82" stroke-width="2"/>'+
+      '<path d="M75 32c0-15 7-24 20-24 12 0 19 12 14 23-6-2-11-9-13-13-3 8-11 12-21 14Z" fill="#564765"/>'+
+      '<path d="M83 49c-12 1-18 8-19 20l-3 32 39 2 4-33c1-13-6-20-18-21Z" fill="#8c76a6" stroke="#675275" stroke-width="2"/>'+
+      '<path d="M71 62 56 85 41 92M100 64l16 18 17 2" stroke="#e0c3b3" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'+
+      '<path d="M42 92 35 99M133 84l9 10" stroke="#d5b5a2" stroke-width="7" stroke-linecap="round"/>'+
+      '<path d="M61 98h40l-4 13-17 14-20 21" stroke="#64546f" stroke-width="17" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'+
+      '<path d="M84 111 112 132 127 150" stroke="#64546f" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'+
+      '<path d="M52 147 66 149 61 157 41 157q-5-3 11-10ZM121 147l13-4 13 14h-25Z" fill="#514257"/>'+
+      '<path d="m84 66-3 23m-10 5h22" stroke="#eee2eb" stroke-width="2" opacity=".8"/>',
+    body:'<ellipse cx="90" cy="158" rx="45" ry="4" fill="#bca9c6" opacity=".26"/>'+
+      '<path d="M74 34c0-13 7-22 17-22s18 10 17 23c-1 12-8 20-17 20-10 0-17-9-17-21Z" fill="#dec1b2" stroke="#806887" stroke-width="2"/>'+
+      '<path d="M73 32c-2-16 5-25 18-25 12 0 19 8 18 25l-9-11-16-1-11 12Z" fill="#5c4c68"/>'+
+      '<path d="M80 54Q63 55 61 70L59 105Q90 116 121 105l-3-34q-2-16-19-17Z" fill="#967fac" stroke="#675479" stroke-width="2"/>'+
+      '<path d="M65 68 52 97l-6 23M114 69l13 28 7 23" stroke="#ddbead" stroke-width="12" fill="none" stroke-linecap="round"/>'+
+      '<path d="M78 112 75 153M101 112l6 41" stroke="#665572" stroke-width="18" fill="none" stroke-linecap="round"/>'+
+      '<path d="M62 155h26l-2 6H59q-4-3 3-6Zm39 0h25l6 6h-28Z" fill="#514258"/>'+
+      '<path d="M90 62v36m-22 8h44" stroke="#e7d9e9" stroke-width="2" opacity=".75"/>',
+    child:'<ellipse cx="90" cy="156" rx="52" ry="5" fill="#bca9c6" opacity=".24"/>'+
+      '<path d="M123 22q14-12 27-2M140 20l-4 44" stroke="#beadcb" stroke-width="4" fill="none" stroke-linecap="round"/>'+
+      '<path d="M66 46Q62 30 74 25c12-4 23 5 22 18-1 14-11 23-21 19-6-3-9-8-9-16Z" fill="#e1c6b5" stroke="#7c6889" stroke-width="2"/>'+
+      '<path d="M65 40q-2-18 16-18c12 0 17 9 15 19l-7-10q-11 13-24 9Z" fill="#584966"/>'+
+      '<path d="M66 65Q48 69 50 89l1 27q22 9 46 0l1-27q-1-20-21-24Z" fill="#a28ab1" stroke="#6b5678" stroke-width="2"/>'+
+      '<path d="M55 78 38 97m56-20 19-13 22-1" stroke="#dec3b4" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'+
+      '<path d="m62 117-8 24-12 13M85 117l15 22 16 15" stroke="#675674" stroke-width="15" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'+
+      '<path d="M38 149q15-2 17 6l-26 2q-2-6 9-8ZM111 148q18-3 22 8h-26Z" fill="#554665"/>'+
+      '<circle cx="140" cy="59" r="5" fill="#d8b9a7"/>',
+    shape:'<circle cx="90" cy="83" r="73" fill="#f5eee5" stroke="#c9b9d0" stroke-width="2" stroke-dasharray="3 6"/>'+
+      '<path d="M78 40c-1-12 5-19 14-19s15 9 14 20c-1 9-6 14-14 14s-14-6-14-15Z" fill="#ddc0b0" stroke="#755f82" stroke-width="2"/>'+
+      '<path d="M78 34q1-16 14-16 15 0 15 17l-8-8-21 7Z" fill="#584969"/>'+
+      '<path d="M81 54Q65 56 65 70l-2 33h55l-2-33q-1-14-20-16Z" fill="#a18aad" stroke="#725a83" stroke-width="2"/>'+
+      '<path d="M68 70 48 104m66-34 19 34" stroke="#ddc0b0" stroke-width="10" stroke-linecap="round"/>'+
+      '<path d="m77 105-5 37m29-37 6 37" stroke="#6a597b" stroke-width="17" stroke-linecap="round"/>'+
+      '<path d="M62 143h22v7H59ZM100 143h20l7 7h-25Z" fill="#554665"/>'
+  };
   const paths={
     photo:'<rect x="12" y="18" width="76" height="64" rx="2"/><circle cx="63" cy="38" r="9"/><path d="M17 73 39 50l18 18 13-13 16 17"/>',
-    walk:'<path d="m24 82 15-16 11-16-1-15-12 7-14 17M49 35l20 9 10 20M50 50l16 12-4 24M49 36l-3-13"/><circle cx="52" cy="14" r="9"/>',
-    body:'<circle cx="50" cy="18" r="10"/><path d="M50 29v37m0-26L25 59m25-19 25 19M50 66 31 87m19-21 19 21"/>',
-    child:'<circle cx="51" cy="20" r="11"/><path d="M51 32v29M51 40 34 55m17-15 14 17M51 61 36 79m15-18 18 20M17 37v47m66-47v47"/><path d="M18 38q15-14 26-2M58 37q10-10 24 0"/>',
     mirror:'<rect x="25" y="8" width="50" height="84" rx="21"/><rect x="31" y="14" width="38" height="72" rx="17"/><circle cx="50" cy="36" r="9"/><path d="M36 71V62q0-14 14-14t14 14v9M22 93h56"/>',
-    shape:'<circle cx="50" cy="16" r="10"/><path d="M50 27v38m0-28-25 18m25-18 25 18M50 65 31 86m19-21 19 21"/><circle cx="50" cy="50" r="43" stroke-dasharray="3 8"/>',
     gestalt:'<circle cx="50" cy="50" r="39"/><path d="M27 50a23 23 0 0 1 46 0 23 23 0 0 1-46 0M50 26v48M26 50h48"/>',
-    contrast:'<rect x="12" y="23" width="32" height="55" rx="3"/><circle cx="28" cy="39" r="8"/><path d="M20 62q0-14 8-14t8 14"/><path d="M52 50h13m-7-6 7 6-7 6"/><circle cx="78" cy="36" r="8"/><path d="M78 44v28m0-18-11 8m11-8 11 8m-11 10-8 13m8-13 8 13"/>',
+    contrast:'<rect x="13" y="17" width="29" height="60" rx="3"/><circle cx="27" cy="33" r="7"/><path d="M19 59q0-17 8-17t8 17M51 48h13m-6-6 6 6-6 6"/><circle cx="81" cy="36" r="9"/><path d="M81 46q-12 0-12 15v17h24V61q0-15-12-15Z"/>',
     question:'<path d="M33 34q0-18 18-18t18 17c0 13-18 12-18 28M51 74v5"/>',
     theory:'<path d="M20 20h60v61H20zM32 36h36M32 49h29M32 62h22M23 17V10h54v7"/>'
   };
@@ -98,7 +143,8 @@
         index=chosen;const [,kind,title]=scenes[chosen];
         stage.className="lm-stage lm41-stage lm41-kind-"+kind;
         const art=kind==="lacan"?'<div class="lm41-portrait" aria-hidden="true"></div>':
-          '<svg class="lm41-symbol" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(paths[kind]||paths.question)+'</svg>';
+          (people[kind]?'<svg class="lm41-human" viewBox="0 0 180 180" aria-hidden="true">'+people[kind]+'</svg>':
+          '<svg class="lm41-symbol" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(paths[kind]||paths.question)+'</svg>');
         body.innerHTML='<div class="lm41-scene"><div class="lm41-visual">'+art+'</div><h3>'+escape(title)+'</h3></div>';
         counter.textContent=String(index+1).padStart(2,"0")+" / "+scenes.length;
         stage.setAttribute("aria-label",title);
