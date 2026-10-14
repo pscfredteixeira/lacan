@@ -1,0 +1,3264 @@
+{
+  "language": "pt",
+  "duration": 242.07675,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 6.0,
+      "text": "Você já se olhou em uma fotografia e sentiu que aquela imagem não correspondia exatamente",
+      "words": [
+        {
+          "text": " Você",
+          "start": 0.0,
+          "end": 0.28,
+          "prob": 0.462
+        },
+        {
+          "text": " já",
+          "start": 0.28,
+          "end": 0.54,
+          "prob": 0.995
+        },
+        {
+          "text": " se",
+          "start": 0.54,
+          "end": 0.7,
+          "prob": 0.998
+        },
+        {
+          "text": " olhou",
+          "start": 0.7,
+          "end": 0.94,
+          "prob": 0.998
+        },
+        {
+          "text": " em",
+          "start": 0.94,
+          "end": 1.16,
+          "prob": 0.993
+        },
+        {
+          "text": " uma",
+          "start": 1.16,
+          "end": 1.32,
+          "prob": 0.996
+        },
+        {
+          "text": " fotografia",
+          "start": 1.32,
+          "end": 2.06,
+          "prob": 0.996
+        },
+        {
+          "text": " e",
+          "start": 2.06,
+          "end": 2.58,
+          "prob": 0.931
+        },
+        {
+          "text": " sentiu",
+          "start": 2.58,
+          "end": 3.04,
+          "prob": 0.994
+        },
+        {
+          "text": " que",
+          "start": 3.04,
+          "end": 3.26,
+          "prob": 0.998
+        },
+        {
+          "text": " aquela",
+          "start": 3.26,
+          "end": 3.56,
+          "prob": 0.994
+        },
+        {
+          "text": " imagem",
+          "start": 3.56,
+          "end": 4.0,
+          "prob": 0.998
+        },
+        {
+          "text": " não",
+          "start": 4.0,
+          "end": 4.62,
+          "prob": 0.982
+        },
+        {
+          "text": " correspondia",
+          "start": 4.62,
+          "end": 5.44,
+          "prob": 0.995
+        },
+        {
+          "text": " exatamente",
+          "start": 5.44,
+          "end": 6.0,
+          "prob": 0.951
+        }
+      ]
+    },
+    {
+      "start": 6.6,
+      "end": 8.68,
+      "text": "à maneira como você se enxergava?",
+      "words": [
+        {
+          "text": " à",
+          "start": 6.34,
+          "end": 6.76,
+          "prob": 0.926
+        },
+        {
+          "text": " maneira",
+          "start": 6.76,
+          "end": 7.16,
+          "prob": 0.998
+        },
+        {
+          "text": " como",
+          "start": 7.16,
+          "end": 7.52,
+          "prob": 0.988
+        },
+        {
+          "text": " você",
+          "start": 7.52,
+          "end": 7.94,
+          "prob": 0.998
+        },
+        {
+          "text": " se",
+          "start": 7.94,
+          "end": 8.06,
+          "prob": 0.997
+        },
+        {
+          "text": " enxergava?",
+          "start": 8.06,
+          "end": 8.68,
+          "prob": 0.983
+        }
+      ]
+    },
+    {
+      "start": 9.7,
+      "end": 16.96,
+      "text": "É uma sensação curiosa, afinal, estamos olhando para o nosso próprio corpo, mas existe uma",
+      "words": [
+        {
+          "text": " É",
+          "start": 9.7,
+          "end": 9.92,
+          "prob": 0.98
+        },
+        {
+          "text": " uma",
+          "start": 9.92,
+          "end": 10.06,
+          "prob": 0.999
+        },
+        {
+          "text": " sensação",
+          "start": 10.06,
+          "end": 10.6,
+          "prob": 0.997
+        },
+        {
+          "text": " curiosa,",
+          "start": 10.6,
+          "end": 11.36,
+          "prob": 1.0
+        },
+        {
+          "text": " afinal,",
+          "start": 11.94,
+          "end": 12.38,
+          "prob": 0.988
+        },
+        {
+          "text": " estamos",
+          "start": 12.92,
+          "end": 13.26,
+          "prob": 0.992
+        },
+        {
+          "text": " olhando",
+          "start": 13.26,
+          "end": 13.76,
+          "prob": 0.997
+        },
+        {
+          "text": " para",
+          "start": 13.76,
+          "end": 14.02,
+          "prob": 0.995
+        },
+        {
+          "text": " o",
+          "start": 14.02,
+          "end": 14.12,
+          "prob": 0.997
+        },
+        {
+          "text": " nosso",
+          "start": 14.12,
+          "end": 14.38,
+          "prob": 0.997
+        },
+        {
+          "text": " próprio",
+          "start": 14.38,
+          "end": 14.84,
+          "prob": 0.999
+        },
+        {
+          "text": " corpo,",
+          "start": 14.84,
+          "end": 15.36,
+          "prob": 0.999
+        },
+        {
+          "text": " mas",
+          "start": 16.0,
+          "end": 16.3,
+          "prob": 0.984
+        },
+        {
+          "text": " existe",
+          "start": 16.3,
+          "end": 16.64,
+          "prob": 0.998
+        },
+        {
+          "text": " uma",
+          "start": 16.64,
+          "end": 16.96,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "start": 16.96,
+      "end": 23.2,
+      "text": "diferença importante entre ver um corpo e viver a experiência de estar nele.",
+      "words": [
+        {
+          "text": " diferença",
+          "start": 16.96,
+          "end": 17.28,
+          "prob": 0.999
+        },
+        {
+          "text": " importante",
+          "start": 17.28,
+          "end": 18.2,
+          "prob": 0.997
+        },
+        {
+          "text": " entre",
+          "start": 18.2,
+          "end": 18.92,
+          "prob": 0.966
+        },
+        {
+          "text": " ver",
+          "start": 18.92,
+          "end": 19.18,
+          "prob": 0.989
+        },
+        {
+          "text": " um",
+          "start": 19.18,
+          "end": 19.32,
+          "prob": 0.994
+        },
+        {
+          "text": " corpo",
+          "start": 19.32,
+          "end": 19.7,
+          "prob": 1.0
+        },
+        {
+          "text": " e",
+          "start": 19.7,
+          "end": 20.56,
+          "prob": 0.951
+        },
+        {
+          "text": " viver",
+          "start": 20.56,
+          "end": 20.86,
+          "prob": 0.998
+        },
+        {
+          "text": " a",
+          "start": 20.86,
+          "end": 21.46,
+          "prob": 0.988
+        },
+        {
+          "text": " experiência",
+          "start": 21.46,
+          "end": 22.06,
+          "prob": 0.997
+        },
+        {
+          "text": " de",
+          "start": 22.06,
+          "end": 22.52,
+          "prob": 0.999
+        },
+        {
+          "text": " estar",
+          "start": 22.52,
+          "end": 22.78,
+          "prob": 0.992
+        },
+        {
+          "text": " nele.",
+          "start": 22.78,
+          "end": 23.2,
+          "prob": 0.99
+        }
+      ]
+    },
+    {
+      "start": 23.72,
+      "end": 30.34,
+      "text": "E essa diferença nos ajuda a compreender uma das ideias mais importantes do psicanalista",
+      "words": [
+        {
+          "text": " E",
+          "start": 23.4,
+          "end": 23.82,
+          "prob": 0.233
+        },
+        {
+          "text": " essa",
+          "start": 23.82,
+          "end": 24.0,
+          "prob": 0.946
+        },
+        {
+          "text": " diferença",
+          "start": 24.0,
+          "end": 24.52,
+          "prob": 0.999
+        },
+        {
+          "text": " nos",
+          "start": 24.52,
+          "end": 25.1,
+          "prob": 0.973
+        },
+        {
+          "text": " ajuda",
+          "start": 25.1,
+          "end": 25.52,
+          "prob": 0.995
+        },
+        {
+          "text": " a",
+          "start": 25.52,
+          "end": 25.7,
+          "prob": 0.99
+        },
+        {
+          "text": " compreender",
+          "start": 25.7,
+          "end": 26.3,
+          "prob": 0.995
+        },
+        {
+          "text": " uma",
+          "start": 26.3,
+          "end": 26.94,
+          "prob": 0.992
+        },
+        {
+          "text": " das",
+          "start": 26.94,
+          "end": 27.1,
+          "prob": 0.995
+        },
+        {
+          "text": " ideias",
+          "start": 27.1,
+          "end": 27.68,
+          "prob": 0.97
+        },
+        {
+          "text": " mais",
+          "start": 27.68,
+          "end": 28.2,
+          "prob": 0.995
+        },
+        {
+          "text": " importantes",
+          "start": 28.2,
+          "end": 28.82,
+          "prob": 0.997
+        },
+        {
+          "text": " do",
+          "start": 28.82,
+          "end": 29.54,
+          "prob": 0.99
+        },
+        {
+          "text": " psicanalista",
+          "start": 29.54,
+          "end": 30.34,
+          "prob": 0.96
+        }
+      ]
+    },
+    {
+      "start": 30.34,
+      "end": 31.62,
+      "text": "Jacques Lacan.",
+      "words": [
+        {
+          "text": " Jacques",
+          "start": 30.34,
+          "end": 31.08,
+          "prob": 0.225
+        },
+        {
+          "text": " Lacan.",
+          "start": 31.08,
+          "end": 31.62,
+          "prob": 0.991
+        }
+      ]
+    },
+    {
+      "start": 32.34,
+      "end": 36.28,
+      "text": "Imagine uma situação simples, você está caminhando pela rua.",
+      "words": [
+        {
+          "text": " Imagine",
+          "start": 32.34,
+          "end": 32.66,
+          "prob": 0.887
+        },
+        {
+          "text": " uma",
+          "start": 32.66,
+          "end": 32.96,
+          "prob": 0.979
+        },
+        {
+          "text": " situação",
+          "start": 32.96,
+          "end": 33.36,
+          "prob": 0.999
+        },
+        {
+          "text": " simples,",
+          "start": 33.36,
+          "end": 33.96,
+          "prob": 0.998
+        },
+        {
+          "text": " você",
+          "start": 34.48,
+          "end": 34.8,
+          "prob": 0.95
+        },
+        {
+          "text": " está",
+          "start": 34.8,
+          "end": 35.18,
+          "prob": 0.988
+        },
+        {
+          "text": " caminhando",
+          "start": 35.18,
+          "end": 35.66,
+          "prob": 0.991
+        },
+        {
+          "text": " pela",
+          "start": 35.66,
+          "end": 35.88,
+          "prob": 0.997
+        },
+        {
+          "text": " rua.",
+          "start": 35.88,
+          "end": 36.28,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "start": 36.96,
+      "end": 43.4,
+      "text": "Enquanto anda, sente o chão sob os pés, movimenta os braços e ajusta constantemente o equilíbrio.",
+      "words": [
+        {
+          "text": " Enquanto",
+          "start": 36.96,
+          "end": 37.36,
+          "prob": 0.994
+        },
+        {
+          "text": " anda,",
+          "start": 37.36,
+          "end": 37.66,
+          "prob": 0.987
+        },
+        {
+          "text": " sente",
+          "start": 38.26,
+          "end": 38.4,
+          "prob": 0.994
+        },
+        {
+          "text": " o",
+          "start": 38.4,
+          "end": 38.62,
+          "prob": 0.997
+        },
+        {
+          "text": " chão",
+          "start": 38.62,
+          "end": 38.86,
+          "prob": 0.998
+        },
+        {
+          "text": " sob",
+          "start": 38.86,
+          "end": 39.12,
+          "prob": 0.603
+        },
+        {
+          "text": " os",
+          "start": 39.12,
+          "end": 39.3,
+          "prob": 0.992
+        },
+        {
+          "text": " pés,",
+          "start": 39.3,
+          "end": 39.6,
+          "prob": 0.997
+        },
+        {
+          "text": " movimenta",
+          "start": 40.04,
+          "end": 40.46,
+          "prob": 0.893
+        },
+        {
+          "text": " os",
+          "start": 40.46,
+          "end": 40.58,
+          "prob": 0.998
+        },
+        {
+          "text": " braços",
+          "start": 40.58,
+          "end": 40.94,
+          "prob": 0.998
+        },
+        {
+          "text": " e",
+          "start": 40.94,
+          "end": 41.46,
+          "prob": 0.907
+        },
+        {
+          "text": " ajusta",
+          "start": 41.46,
+          "end": 41.96,
+          "prob": 0.989
+        },
+        {
+          "text": " constantemente",
+          "start": 41.96,
+          "end": 42.76,
+          "prob": 0.996
+        },
+        {
+          "text": " o",
+          "start": 42.76,
+          "end": 42.92,
+          "prob": 0.989
+        },
+        {
+          "text": " equilíbrio.",
+          "start": 42.92,
+          "end": 43.4,
+          "prob": 0.992
+        }
+      ]
+    },
+    {
+      "start": 44.0,
+      "end": 49.88,
+      "text": "Seu corpo está em movimento, você sente, percebe e experimenta esse movimento.",
+      "words": [
+        {
+          "text": " Seu",
+          "start": 44.0,
+          "end": 44.28,
+          "prob": 0.97
+        },
+        {
+          "text": " corpo",
+          "start": 44.28,
+          "end": 44.48,
+          "prob": 0.999
+        },
+        {
+          "text": " está",
+          "start": 44.48,
+          "end": 44.76,
+          "prob": 0.997
+        },
+        {
+          "text": " em",
+          "start": 44.76,
+          "end": 44.92,
+          "prob": 0.998
+        },
+        {
+          "text": " movimento,",
+          "start": 44.92,
+          "end": 45.22,
+          "prob": 0.997
+        },
+        {
+          "text": " você",
+          "start": 46.1,
+          "end": 46.34,
+          "prob": 0.989
+        },
+        {
+          "text": " sente,",
+          "start": 46.34,
+          "end": 46.76,
+          "prob": 0.997
+        },
+        {
+          "text": " percebe",
+          "start": 47.18,
+          "end": 47.76,
+          "prob": 0.997
+        },
+        {
+          "text": " e",
+          "start": 47.76,
+          "end": 48.2,
+          "prob": 0.944
+        },
+        {
+          "text": " experimenta",
+          "start": 48.2,
+          "end": 49.0,
+          "prob": 0.986
+        },
+        {
+          "text": " esse",
+          "start": 49.0,
+          "end": 49.48,
+          "prob": 0.919
+        },
+        {
+          "text": " movimento.",
+          "start": 49.48,
+          "end": 49.88,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "start": 50.88,
+      "end": 55.54,
+      "text": "Agora, imagine que alguém tira uma fotografia sua nesse momento.",
+      "words": [
+        {
+          "text": " Agora,",
+          "start": 50.74,
+          "end": 51.16,
+          "prob": 0.233
+        },
+        {
+          "text": " imagine",
+          "start": 51.68,
+          "end": 52.1,
+          "prob": 0.979
+        },
+        {
+          "text": " que",
+          "start": 52.1,
+          "end": 52.38,
+          "prob": 0.997
+        },
+        {
+          "text": " alguém",
+          "start": 52.38,
+          "end": 52.7,
+          "prob": 0.997
+        },
+        {
+          "text": " tira",
+          "start": 52.7,
+          "end": 53.36,
+          "prob": 0.792
+        },
+        {
+          "text": " uma",
+          "start": 53.36,
+          "end": 53.52,
+          "prob": 0.982
+        },
+        {
+          "text": " fotografia",
+          "start": 53.52,
+          "end": 54.08,
+          "prob": 0.992
+        },
+        {
+          "text": " sua",
+          "start": 54.08,
+          "end": 54.48,
+          "prob": 0.984
+        },
+        {
+          "text": " nesse",
+          "start": 54.48,
+          "end": 55.12,
+          "prob": 0.817
+        },
+        {
+          "text": " momento.",
+          "start": 55.12,
+          "end": 55.54,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "start": 56.28,
+      "end": 63.86,
+      "text": "A fotografia mostra seu corpo inteiro, seu rosto, seus braços, suas pernas e sua postura.",
+      "words": [
+        {
+          "text": " A",
+          "start": 56.28,
+          "end": 56.48,
+          "prob": 0.967
+        },
+        {
+          "text": " fotografia",
+          "start": 56.48,
+          "end": 57.14,
+          "prob": 0.997
+        },
+        {
+          "text": " mostra",
+          "start": 57.14,
+          "end": 57.74,
+          "prob": 0.99
+        },
+        {
+          "text": " seu",
+          "start": 57.74,
+          "end": 58.08,
+          "prob": 0.971
+        },
+        {
+          "text": " corpo",
+          "start": 58.08,
+          "end": 58.38,
+          "prob": 0.999
+        },
+        {
+          "text": " inteiro,",
+          "start": 58.38,
+          "end": 58.86,
+          "prob": 0.997
+        },
+        {
+          "text": " seu",
+          "start": 59.56,
+          "end": 59.76,
+          "prob": 0.983
+        },
+        {
+          "text": " rosto,",
+          "start": 59.76,
+          "end": 60.18,
+          "prob": 0.997
+        },
+        {
+          "text": " seus",
+          "start": 60.74,
+          "end": 60.84,
+          "prob": 0.981
+        },
+        {
+          "text": " braços,",
+          "start": 60.84,
+          "end": 61.32,
+          "prob": 0.997
+        },
+        {
+          "text": " suas",
+          "start": 61.9,
+          "end": 62.06,
+          "prob": 0.989
+        },
+        {
+          "text": " pernas",
+          "start": 62.06,
+          "end": 62.54,
+          "prob": 0.995
+        },
+        {
+          "text": " e",
+          "start": 62.54,
+          "end": 63.16,
+          "prob": 0.891
+        },
+        {
+          "text": " sua",
+          "start": 63.16,
+          "end": 63.34,
+          "prob": 0.993
+        },
+        {
+          "text": " postura.",
+          "start": 63.34,
+          "end": 63.86,
+          "prob": 0.992
+        }
+      ]
+    },
+    {
+      "start": 64.58,
+      "end": 70.42,
+      "text": "Mas ela não mostra tudo o que você estava sentindo, não revela o esforço dos músculos,",
+      "words": [
+        {
+          "text": " Mas",
+          "start": 64.58,
+          "end": 64.82,
+          "prob": 0.987
+        },
+        {
+          "text": " ela",
+          "start": 64.82,
+          "end": 65.06,
+          "prob": 0.971
+        },
+        {
+          "text": " não",
+          "start": 65.06,
+          "end": 65.66,
+          "prob": 0.949
+        },
+        {
+          "text": " mostra",
+          "start": 65.66,
+          "end": 66.02,
+          "prob": 0.999
+        },
+        {
+          "text": " tudo",
+          "start": 66.02,
+          "end": 66.28,
+          "prob": 0.998
+        },
+        {
+          "text": " o",
+          "start": 66.28,
+          "end": 66.48,
+          "prob": 0.976
+        },
+        {
+          "text": " que",
+          "start": 66.48,
+          "end": 66.56,
+          "prob": 0.999
+        },
+        {
+          "text": " você",
+          "start": 66.56,
+          "end": 66.86,
+          "prob": 0.996
+        },
+        {
+          "text": " estava",
+          "start": 66.86,
+          "end": 67.2,
+          "prob": 0.988
+        },
+        {
+          "text": " sentindo,",
+          "start": 67.2,
+          "end": 67.84,
+          "prob": 0.996
+        },
+        {
+          "text": " não",
+          "start": 68.28,
+          "end": 68.76,
+          "prob": 0.991
+        },
+        {
+          "text": " revela",
+          "start": 68.76,
+          "end": 69.26,
+          "prob": 0.995
+        },
+        {
+          "text": " o",
+          "start": 69.26,
+          "end": 69.38,
+          "prob": 0.997
+        },
+        {
+          "text": " esforço",
+          "start": 69.38,
+          "end": 69.78,
+          "prob": 0.998
+        },
+        {
+          "text": " dos",
+          "start": 69.78,
+          "end": 69.96,
+          "prob": 0.992
+        },
+        {
+          "text": " músculos,",
+          "start": 69.96,
+          "end": 70.42,
+          "prob": 0.997
+        }
+      ]
+    },
+    {
+      "start": 71.16,
+      "end": 75.3,
+      "text": "as sensações do movimento ou a experiência de manter o equilíbrio.",
+      "words": [
+        {
+          "text": " as",
+          "start": 71.16,
+          "end": 71.34,
+          "prob": 0.956
+        },
+        {
+          "text": " sensações",
+          "start": 71.34,
+          "end": 71.86,
+          "prob": 0.997
+        },
+        {
+          "text": " do",
+          "start": 71.86,
+          "end": 72.06,
+          "prob": 0.992
+        },
+        {
+          "text": " movimento",
+          "start": 72.06,
+          "end": 72.32,
+          "prob": 0.998
+        },
+        {
+          "text": " ou",
+          "start": 72.32,
+          "end": 73.3,
+          "prob": 0.768
+        },
+        {
+          "text": " a",
+          "start": 73.3,
+          "end": 73.68,
+          "prob": 0.986
+        },
+        {
+          "text": " experiência",
+          "start": 73.68,
+          "end": 74.18,
+          "prob": 0.996
+        },
+        {
+          "text": " de",
+          "start": 74.18,
+          "end": 74.42,
+          "prob": 0.998
+        },
+        {
+          "text": " manter",
+          "start": 74.42,
+          "end": 74.68,
+          "prob": 0.998
+        },
+        {
+          "text": " o",
+          "start": 74.68,
+          "end": 74.78,
+          "prob": 0.993
+        },
+        {
+          "text": " equilíbrio.",
+          "start": 74.78,
+          "end": 75.3,
+          "prob": 0.989
+        }
+      ]
+    },
+    {
+      "start": 75.98,
+      "end": 81.9,
+      "text": "Temos, portanto, duas experiências diferentes, de um lado o corpo vivido,",
+      "words": [
+        {
+          "text": " Temos,",
+          "start": 75.92,
+          "end": 76.36,
+          "prob": 0.706
+        },
+        {
+          "text": " portanto,",
+          "start": 76.46,
+          "end": 76.94,
+          "prob": 0.991
+        },
+        {
+          "text": " duas",
+          "start": 77.64,
+          "end": 77.86,
+          "prob": 0.992
+        },
+        {
+          "text": " experiências",
+          "start": 77.86,
+          "end": 78.48,
+          "prob": 0.993
+        },
+        {
+          "text": " diferentes,",
+          "start": 78.48,
+          "end": 78.94,
+          "prob": 0.997
+        },
+        {
+          "text": " de",
+          "start": 79.62,
+          "end": 79.86,
+          "prob": 0.981
+        },
+        {
+          "text": " um",
+          "start": 79.86,
+          "end": 79.98,
+          "prob": 0.999
+        },
+        {
+          "text": " lado",
+          "start": 79.98,
+          "end": 80.26,
+          "prob": 0.997
+        },
+        {
+          "text": " o",
+          "start": 80.26,
+          "end": 81.0,
+          "prob": 0.353
+        },
+        {
+          "text": " corpo",
+          "start": 81.0,
+          "end": 81.26,
+          "prob": 0.996
+        },
+        {
+          "text": " vivido,",
+          "start": 81.26,
+          "end": 81.9,
+          "prob": 0.986
+        }
+      ]
+    },
+    {
+      "start": 82.26,
+      "end": 88.86,
+      "text": "do outro a imagem do corpo, e é justamente essa diferença que interessa a Lacan.",
+      "words": [
+        {
+          "text": " do",
+          "start": 82.26,
+          "end": 82.58,
+          "prob": 0.988
+        },
+        {
+          "text": " outro",
+          "start": 82.58,
+          "end": 82.9,
+          "prob": 0.999
+        },
+        {
+          "text": " a",
+          "start": 82.9,
+          "end": 83.58,
+          "prob": 0.614
+        },
+        {
+          "text": " imagem",
+          "start": 83.58,
+          "end": 83.96,
+          "prob": 0.999
+        },
+        {
+          "text": " do",
+          "start": 83.96,
+          "end": 84.18,
+          "prob": 0.995
+        },
+        {
+          "text": " corpo,",
+          "start": 84.18,
+          "end": 84.62,
+          "prob": 0.999
+        },
+        {
+          "text": " e",
+          "start": 85.24,
+          "end": 85.4,
+          "prob": 0.983
+        },
+        {
+          "text": " é",
+          "start": 85.4,
+          "end": 85.48,
+          "prob": 0.996
+        },
+        {
+          "text": " justamente",
+          "start": 85.48,
+          "end": 85.9,
+          "prob": 0.994
+        },
+        {
+          "text": " essa",
+          "start": 85.9,
+          "end": 86.52,
+          "prob": 0.988
+        },
+        {
+          "text": " diferença",
+          "start": 86.52,
+          "end": 87.0,
+          "prob": 0.993
+        },
+        {
+          "text": " que",
+          "start": 87.0,
+          "end": 87.7,
+          "prob": 0.995
+        },
+        {
+          "text": " interessa",
+          "start": 87.7,
+          "end": 88.3,
+          "prob": 0.996
+        },
+        {
+          "text": " a",
+          "start": 88.3,
+          "end": 88.48,
+          "prob": 0.815
+        },
+        {
+          "text": " Lacan.",
+          "start": 88.48,
+          "end": 88.86,
+          "prob": 0.823
+        }
+      ]
+    },
+    {
+      "start": 89.62,
+      "end": 93.72,
+      "text": "Pense agora em uma criança pequena que está aprendendo a andar.",
+      "words": [
+        {
+          "text": " Pense",
+          "start": 89.62,
+          "end": 89.94,
+          "prob": 0.979
+        },
+        {
+          "text": " agora",
+          "start": 89.94,
+          "end": 90.32,
+          "prob": 0.949
+        },
+        {
+          "text": " em",
+          "start": 90.32,
+          "end": 90.92,
+          "prob": 0.97
+        },
+        {
+          "text": " uma",
+          "start": 90.92,
+          "end": 91.08,
+          "prob": 0.995
+        },
+        {
+          "text": " criança",
+          "start": 91.08,
+          "end": 91.44,
+          "prob": 0.995
+        },
+        {
+          "text": " pequena",
+          "start": 91.44,
+          "end": 91.98,
+          "prob": 0.998
+        },
+        {
+          "text": " que",
+          "start": 91.98,
+          "end": 92.46,
+          "prob": 0.948
+        },
+        {
+          "text": " está",
+          "start": 92.46,
+          "end": 92.7,
+          "prob": 0.995
+        },
+        {
+          "text": " aprendendo",
+          "start": 92.7,
+          "end": 93.32,
+          "prob": 0.994
+        },
+        {
+          "text": " a",
+          "start": 93.32,
+          "end": 93.44,
+          "prob": 0.999
+        },
+        {
+          "text": " andar.",
+          "start": 93.44,
+          "end": 93.72,
+          "prob": 0.989
+        }
+      ]
+    },
+    {
+      "start": 94.52,
+      "end": 101.88,
+      "text": "Se tirarmos uma fotografia dessa criança, veremos uma figura inteira, uma cabeça, dois braços,",
+      "words": [
+        {
+          "text": " Se",
+          "start": 94.52,
+          "end": 94.68,
+          "prob": 0.994
+        },
+        {
+          "text": " tirarmos",
+          "start": 94.68,
+          "end": 95.18,
+          "prob": 0.988
+        },
+        {
+          "text": " uma",
+          "start": 95.18,
+          "end": 95.34,
+          "prob": 0.997
+        },
+        {
+          "text": " fotografia",
+          "start": 95.34,
+          "end": 96.02,
+          "prob": 0.995
+        },
+        {
+          "text": " dessa",
+          "start": 96.02,
+          "end": 96.26,
+          "prob": 0.985
+        },
+        {
+          "text": " criança,",
+          "start": 96.26,
+          "end": 96.74,
+          "prob": 0.999
+        },
+        {
+          "text": " veremos",
+          "start": 97.34,
+          "end": 98.08,
+          "prob": 0.99
+        },
+        {
+          "text": " uma",
+          "start": 98.08,
+          "end": 98.34,
+          "prob": 0.996
+        },
+        {
+          "text": " figura",
+          "start": 98.34,
+          "end": 98.78,
+          "prob": 0.999
+        },
+        {
+          "text": " inteira,",
+          "start": 98.78,
+          "end": 99.38,
+          "prob": 0.997
+        },
+        {
+          "text": " uma",
+          "start": 99.98,
+          "end": 100.14,
+          "prob": 0.995
+        },
+        {
+          "text": " cabeça,",
+          "start": 100.14,
+          "end": 100.56,
+          "prob": 0.993
+        },
+        {
+          "text": " dois",
+          "start": 101.2,
+          "end": 101.36,
+          "prob": 0.974
+        },
+        {
+          "text": " braços,",
+          "start": 101.36,
+          "end": 101.88,
+          "prob": 0.998
+        }
+      ]
+    },
+    {
+      "start": 101.88,
+      "end": 106.64,
+      "text": "duas pernas e um tronco formando um conjunto organizado.",
+      "words": [
+        {
+          "text": " duas",
+          "start": 101.88,
+          "end": 102.58,
+          "prob": 0.002
+        },
+        {
+          "text": " pernas",
+          "start": 102.58,
+          "end": 103.12,
+          "prob": 0.991
+        },
+        {
+          "text": " e",
+          "start": 103.12,
+          "end": 103.7,
+          "prob": 0.803
+        },
+        {
+          "text": " um",
+          "start": 103.7,
+          "end": 103.82,
+          "prob": 0.996
+        },
+        {
+          "text": " tronco",
+          "start": 103.82,
+          "end": 104.2,
+          "prob": 0.978
+        },
+        {
+          "text": " formando",
+          "start": 104.2,
+          "end": 104.82,
+          "prob": 0.995
+        },
+        {
+          "text": " um",
+          "start": 104.82,
+          "end": 105.1,
+          "prob": 0.994
+        },
+        {
+          "text": " conjunto",
+          "start": 105.1,
+          "end": 105.62,
+          "prob": 0.997
+        },
+        {
+          "text": " organizado.",
+          "start": 105.62,
+          "end": 106.64,
+          "prob": 0.997
+        }
+      ]
+    },
+    {
+      "start": 107.2,
+      "end": 111.28,
+      "text": "Mas essa criança talvez ainda tenha dificuldade para caminhar.",
+      "words": [
+        {
+          "text": " Mas",
+          "start": 107.2,
+          "end": 107.56,
+          "prob": 0.979
+        },
+        {
+          "text": " essa",
+          "start": 107.56,
+          "end": 107.74,
+          "prob": 0.974
+        },
+        {
+          "text": " criança",
+          "start": 107.74,
+          "end": 108.2,
+          "prob": 0.995
+        },
+        {
+          "text": " talvez",
+          "start": 108.2,
+          "end": 109.02,
+          "prob": 0.653
+        },
+        {
+          "text": " ainda",
+          "start": 109.02,
+          "end": 109.34,
+          "prob": 0.982
+        },
+        {
+          "text": " tenha",
+          "start": 109.34,
+          "end": 109.74,
+          "prob": 0.947
+        },
+        {
+          "text": " dificuldade",
+          "start": 109.74,
+          "end": 110.42,
+          "prob": 0.989
+        },
+        {
+          "text": " para",
+          "start": 110.42,
+          "end": 110.74,
+          "prob": 0.994
+        },
+        {
+          "text": " caminhar.",
+          "start": 110.74,
+          "end": 111.28,
+          "prob": 0.993
+        }
+      ]
+    },
+    {
+      "start": 111.96,
+      "end": 118.68,
+      "text": "Pode perder o equilíbrio, precisar de apoio e não conseguir coordenar completamente seus movimentos.",
+      "words": [
+        {
+          "text": " Pode",
+          "start": 111.96,
+          "end": 112.28,
+          "prob": 0.993
+        },
+        {
+          "text": " perder",
+          "start": 112.28,
+          "end": 112.66,
+          "prob": 0.999
+        },
+        {
+          "text": " o",
+          "start": 112.66,
+          "end": 112.8,
+          "prob": 0.997
+        },
+        {
+          "text": " equilíbrio,",
+          "start": 112.8,
+          "end": 113.36,
+          "prob": 0.988
+        },
+        {
+          "text": " precisar",
+          "start": 113.98,
+          "end": 114.5,
+          "prob": 0.999
+        },
+        {
+          "text": " de",
+          "start": 114.5,
+          "end": 114.6,
+          "prob": 0.999
+        },
+        {
+          "text": " apoio",
+          "start": 114.6,
+          "end": 115.02,
+          "prob": 0.999
+        },
+        {
+          "text": " e",
+          "start": 115.02,
+          "end": 115.52,
+          "prob": 0.918
+        },
+        {
+          "text": " não",
+          "start": 115.52,
+          "end": 115.66,
+          "prob": 0.999
+        },
+        {
+          "text": " conseguir",
+          "start": 115.66,
+          "end": 116.14,
+          "prob": 0.994
+        },
+        {
+          "text": " coordenar",
+          "start": 116.14,
+          "end": 116.88,
+          "prob": 0.977
+        },
+        {
+          "text": " completamente",
+          "start": 116.88,
+          "end": 117.5,
+          "prob": 0.99
+        },
+        {
+          "text": " seus",
+          "start": 117.5,
+          "end": 117.96,
+          "prob": 0.82
+        },
+        {
+          "text": " movimentos.",
+          "start": 117.96,
+          "end": 118.68,
+          "prob": 0.997
+        }
+      ]
+    },
+    {
+      "start": 119.56,
+      "end": 124.4,
+      "text": "Percebe a diferença? A imagem apresenta um corpo inteiro,",
+      "words": [
+        {
+          "text": " Percebe",
+          "start": 119.56,
+          "end": 120.14,
+          "prob": 0.983
+        },
+        {
+          "text": " a",
+          "start": 120.14,
+          "end": 120.24,
+          "prob": 0.997
+        },
+        {
+          "text": " diferença?",
+          "start": 120.24,
+          "end": 120.52,
+          "prob": 0.999
+        },
+        {
+          "text": " A",
+          "start": 121.58,
+          "end": 121.72,
+          "prob": 0.988
+        },
+        {
+          "text": " imagem",
+          "start": 121.72,
+          "end": 122.16,
+          "prob": 0.998
+        },
+        {
+          "text": " apresenta",
+          "start": 122.16,
+          "end": 123.24,
+          "prob": 0.99
+        },
+        {
+          "text": " um",
+          "start": 123.24,
+          "end": 123.44,
+          "prob": 0.994
+        },
+        {
+          "text": " corpo",
+          "start": 123.44,
+          "end": 123.8,
+          "prob": 0.998
+        },
+        {
+          "text": " inteiro,",
+          "start": 123.8,
+          "end": 124.4,
+          "prob": 0.997
+        }
+      ]
+    },
+    {
+      "start": 125.04,
+      "end": 129.28,
+      "text": "mesmo quando o domínio dos movimentos ainda está em desenvolvimento.",
+      "words": [
+        {
+          "text": " mesmo",
+          "start": 125.04,
+          "end": 125.56,
+          "prob": 0.994
+        },
+        {
+          "text": " quando",
+          "start": 125.56,
+          "end": 125.88,
+          "prob": 0.998
+        },
+        {
+          "text": " o",
+          "start": 125.88,
+          "end": 126.12,
+          "prob": 0.997
+        },
+        {
+          "text": " domínio",
+          "start": 126.12,
+          "end": 126.5,
+          "prob": 0.998
+        },
+        {
+          "text": " dos",
+          "start": 126.5,
+          "end": 126.66,
+          "prob": 0.998
+        },
+        {
+          "text": " movimentos",
+          "start": 126.66,
+          "end": 127.24,
+          "prob": 0.996
+        },
+        {
+          "text": " ainda",
+          "start": 127.24,
+          "end": 127.94,
+          "prob": 0.994
+        },
+        {
+          "text": " está",
+          "start": 127.94,
+          "end": 128.28,
+          "prob": 0.998
+        },
+        {
+          "text": " em",
+          "start": 128.28,
+          "end": 128.44,
+          "prob": 0.999
+        },
+        {
+          "text": " desenvolvimento.",
+          "start": 128.44,
+          "end": 129.28,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "start": 129.28,
+      "end": 134.0,
+      "text": "Lacan se interessa por essa unidade que a imagem oferece.",
+      "words": [
+        {
+          "text": " Lacan",
+          "start": 129.28,
+          "end": 130.36,
+          "prob": 0.553
+        },
+        {
+          "text": " se",
+          "start": 130.36,
+          "end": 130.84,
+          "prob": 0.933
+        },
+        {
+          "text": " interessa",
+          "start": 130.84,
+          "end": 131.32,
+          "prob": 0.996
+        },
+        {
+          "text": " por",
+          "start": 131.32,
+          "end": 131.54,
+          "prob": 0.993
+        },
+        {
+          "text": " essa",
+          "start": 131.54,
+          "end": 131.76,
+          "prob": 0.974
+        },
+        {
+          "text": " unidade",
+          "start": 131.76,
+          "end": 132.26,
+          "prob": 0.99
+        },
+        {
+          "text": " que",
+          "start": 132.26,
+          "end": 132.86,
+          "prob": 0.988
+        },
+        {
+          "text": " a",
+          "start": 132.86,
+          "end": 132.96,
+          "prob": 0.996
+        },
+        {
+          "text": " imagem",
+          "start": 132.96,
+          "end": 133.36,
+          "prob": 0.997
+        },
+        {
+          "text": " oferece.",
+          "start": 133.36,
+          "end": 134.0,
+          "prob": 0.99
+        }
+      ]
+    },
+    {
+      "start": 134.58,
+      "end": 139.5,
+      "text": "Em seus estudos, ele utiliza uma ideia conhecida como Gestalt,",
+      "words": [
+        {
+          "text": " Em",
+          "start": 134.58,
+          "end": 134.76,
+          "prob": 0.989
+        },
+        {
+          "text": " seus",
+          "start": 134.76,
+          "end": 134.94,
+          "prob": 0.995
+        },
+        {
+          "text": " estudos,",
+          "start": 134.94,
+          "end": 135.58,
+          "prob": 0.993
+        },
+        {
+          "text": " ele",
+          "start": 135.84,
+          "end": 136.08,
+          "prob": 0.99
+        },
+        {
+          "text": " utiliza",
+          "start": 136.08,
+          "end": 136.66,
+          "prob": 0.994
+        },
+        {
+          "text": " uma",
+          "start": 136.66,
+          "end": 137.08,
+          "prob": 0.992
+        },
+        {
+          "text": " ideia",
+          "start": 137.08,
+          "end": 137.36,
+          "prob": 0.988
+        },
+        {
+          "text": " conhecida",
+          "start": 137.36,
+          "end": 137.96,
+          "prob": 0.998
+        },
+        {
+          "text": " como",
+          "start": 137.96,
+          "end": 138.32,
+          "prob": 0.997
+        },
+        {
+          "text": " Gestalt,",
+          "start": 138.32,
+          "end": 139.5,
+          "prob": 0.641
+        }
+      ]
+    },
+    {
+      "start": 140.14,
+      "end": 144.82,
+      "text": "uma palavra alemã que podemos compreender de maneira simplificada,",
+      "words": [
+        {
+          "text": " uma",
+          "start": 140.14,
+          "end": 140.42,
+          "prob": 0.99
+        },
+        {
+          "text": " palavra",
+          "start": 140.42,
+          "end": 140.84,
+          "prob": 0.998
+        },
+        {
+          "text": " alemã",
+          "start": 140.84,
+          "end": 141.36,
+          "prob": 0.994
+        },
+        {
+          "text": " que",
+          "start": 141.36,
+          "end": 141.88,
+          "prob": 0.978
+        },
+        {
+          "text": " podemos",
+          "start": 141.88,
+          "end": 142.2,
+          "prob": 0.99
+        },
+        {
+          "text": " compreender",
+          "start": 142.2,
+          "end": 142.88,
+          "prob": 0.995
+        },
+        {
+          "text": " de",
+          "start": 142.88,
+          "end": 143.56,
+          "prob": 0.967
+        },
+        {
+          "text": " maneira",
+          "start": 143.56,
+          "end": 143.84,
+          "prob": 0.996
+        },
+        {
+          "text": " simplificada,",
+          "start": 143.84,
+          "end": 144.82,
+          "prob": 0.984
+        }
+      ]
+    },
+    {
+      "start": 145.16,
+      "end": 148.44,
+      "text": "como uma forma organizada, percebida como um todo.",
+      "words": [
+        {
+          "text": " como",
+          "start": 145.16,
+          "end": 145.48,
+          "prob": 0.995
+        },
+        {
+          "text": " uma",
+          "start": 145.48,
+          "end": 145.68,
+          "prob": 0.992
+        },
+        {
+          "text": " forma",
+          "start": 145.68,
+          "end": 146.0,
+          "prob": 0.995
+        },
+        {
+          "text": " organizada,",
+          "start": 146.0,
+          "end": 146.8,
+          "prob": 0.997
+        },
+        {
+          "text": " percebida",
+          "start": 147.24,
+          "end": 147.82,
+          "prob": 0.994
+        },
+        {
+          "text": " como",
+          "start": 147.82,
+          "end": 148.06,
+          "prob": 0.999
+        },
+        {
+          "text": " um",
+          "start": 148.06,
+          "end": 148.22,
+          "prob": 0.99
+        },
+        {
+          "text": " todo.",
+          "start": 148.22,
+          "end": 148.44,
+          "prob": 0.943
+        }
+      ]
+    },
+    {
+      "start": 149.36,
+      "end": 152.46,
+      "text": "Mas por que isso seria tão importante para a psicanálise?",
+      "words": [
+        {
+          "text": " Mas",
+          "start": 149.36,
+          "end": 149.64,
+          "prob": 0.98
+        },
+        {
+          "text": " por",
+          "start": 149.64,
+          "end": 149.8,
+          "prob": 0.826
+        },
+        {
+          "text": " que",
+          "start": 149.8,
+          "end": 149.96,
+          "prob": 0.988
+        },
+        {
+          "text": " isso",
+          "start": 149.96,
+          "end": 150.18,
+          "prob": 0.997
+        },
+        {
+          "text": " seria",
+          "start": 150.18,
+          "end": 150.56,
+          "prob": 0.993
+        },
+        {
+          "text": " tão",
+          "start": 150.56,
+          "end": 150.8,
+          "prob": 0.998
+        },
+        {
+          "text": " importante",
+          "start": 150.8,
+          "end": 151.34,
+          "prob": 0.999
+        },
+        {
+          "text": " para",
+          "start": 151.34,
+          "end": 151.62,
+          "prob": 0.996
+        },
+        {
+          "text": " a",
+          "start": 151.62,
+          "end": 151.7,
+          "prob": 0.995
+        },
+        {
+          "text": " psicanálise?",
+          "start": 151.7,
+          "end": 152.46,
+          "prob": 0.911
+        }
+      ]
+    },
+    {
+      "start": 153.22,
+      "end": 161.82,
+      "text": "Porque Lacan propõe que essa imagem de unidade participa da maneira como construímos a ideia de quem somos.",
+      "words": [
+        {
+          "text": " Porque",
+          "start": 153.06,
+          "end": 153.54,
+          "prob": 0.216
+        },
+        {
+          "text": " Lacan",
+          "start": 153.54,
+          "end": 154.0,
+          "prob": 0.974
+        },
+        {
+          "text": " propõe",
+          "start": 154.0,
+          "end": 154.94,
+          "prob": 0.989
+        },
+        {
+          "text": " que",
+          "start": 154.94,
+          "end": 155.08,
+          "prob": 0.998
+        },
+        {
+          "text": " essa",
+          "start": 155.08,
+          "end": 155.3,
+          "prob": 0.969
+        },
+        {
+          "text": " imagem",
+          "start": 155.3,
+          "end": 155.86,
+          "prob": 0.993
+        },
+        {
+          "text": " de",
+          "start": 155.86,
+          "end": 156.12,
+          "prob": 0.993
+        },
+        {
+          "text": " unidade",
+          "start": 156.12,
+          "end": 156.68,
+          "prob": 0.981
+        },
+        {
+          "text": " participa",
+          "start": 156.68,
+          "end": 158.02,
+          "prob": 0.968
+        },
+        {
+          "text": " da",
+          "start": 158.02,
+          "end": 158.16,
+          "prob": 0.981
+        },
+        {
+          "text": " maneira",
+          "start": 158.16,
+          "end": 158.62,
+          "prob": 0.997
+        },
+        {
+          "text": " como",
+          "start": 158.62,
+          "end": 158.98,
+          "prob": 0.997
+        },
+        {
+          "text": " construímos",
+          "start": 158.98,
+          "end": 159.88,
+          "prob": 0.983
+        },
+        {
+          "text": " a",
+          "start": 159.88,
+          "end": 160.54,
+          "prob": 0.993
+        },
+        {
+          "text": " ideia",
+          "start": 160.54,
+          "end": 160.96,
+          "prob": 0.979
+        },
+        {
+          "text": " de",
+          "start": 160.96,
+          "end": 161.18,
+          "prob": 0.998
+        },
+        {
+          "text": " quem",
+          "start": 161.18,
+          "end": 161.34,
+          "prob": 0.992
+        },
+        {
+          "text": " somos.",
+          "start": 161.34,
+          "end": 161.82,
+          "prob": 0.998
+        }
+      ]
+    },
+    {
+      "start": 162.48,
+      "end": 170.52,
+      "text": "Em outras palavras, nossa percepção de nós mesmos não depende apenas das sensações que experimentamos em nosso corpo.",
+      "words": [
+        {
+          "text": " Em",
+          "start": 162.48,
+          "end": 162.78,
+          "prob": 0.993
+        },
+        {
+          "text": " outras",
+          "start": 162.78,
+          "end": 163.02,
+          "prob": 0.999
+        },
+        {
+          "text": " palavras,",
+          "start": 163.02,
+          "end": 163.52,
+          "prob": 0.996
+        },
+        {
+          "text": " nossa",
+          "start": 164.32,
+          "end": 164.72,
+          "prob": 0.977
+        },
+        {
+          "text": " percepção",
+          "start": 164.72,
+          "end": 165.34,
+          "prob": 0.995
+        },
+        {
+          "text": " de",
+          "start": 165.34,
+          "end": 165.46,
+          "prob": 0.999
+        },
+        {
+          "text": " nós",
+          "start": 165.46,
+          "end": 165.6,
+          "prob": 0.996
+        },
+        {
+          "text": " mesmos",
+          "start": 165.6,
+          "end": 166.08,
+          "prob": 0.993
+        },
+        {
+          "text": " não",
+          "start": 166.08,
+          "end": 166.58,
+          "prob": 0.967
+        },
+        {
+          "text": " depende",
+          "start": 166.58,
+          "end": 166.94,
+          "prob": 0.982
+        },
+        {
+          "text": " apenas",
+          "start": 166.94,
+          "end": 167.38,
+          "prob": 0.983
+        },
+        {
+          "text": " das",
+          "start": 167.38,
+          "end": 167.9,
+          "prob": 0.979
+        },
+        {
+          "text": " sensações",
+          "start": 167.9,
+          "end": 168.48,
+          "prob": 0.992
+        },
+        {
+          "text": " que",
+          "start": 168.48,
+          "end": 169.0,
+          "prob": 0.995
+        },
+        {
+          "text": " experimentamos",
+          "start": 169.0,
+          "end": 169.72,
+          "prob": 0.997
+        },
+        {
+          "text": " em",
+          "start": 169.72,
+          "end": 169.9,
+          "prob": 0.989
+        },
+        {
+          "text": " nosso",
+          "start": 169.9,
+          "end": 170.04,
+          "prob": 0.998
+        },
+        {
+          "text": " corpo.",
+          "start": 170.04,
+          "end": 170.52,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "start": 171.24,
+      "end": 176.0,
+      "text": "Ela também se relaciona com imagens que encontramos fora de nós.",
+      "words": [
+        {
+          "text": " Ela",
+          "start": 171.24,
+          "end": 171.58,
+          "prob": 0.996
+        },
+        {
+          "text": " também",
+          "start": 171.58,
+          "end": 171.94,
+          "prob": 0.996
+        },
+        {
+          "text": " se",
+          "start": 171.94,
+          "end": 172.44,
+          "prob": 0.997
+        },
+        {
+          "text": " relaciona",
+          "start": 172.44,
+          "end": 172.98,
+          "prob": 0.991
+        },
+        {
+          "text": " com",
+          "start": 172.98,
+          "end": 173.14,
+          "prob": 0.997
+        },
+        {
+          "text": " imagens",
+          "start": 173.14,
+          "end": 173.78,
+          "prob": 0.997
+        },
+        {
+          "text": " que",
+          "start": 173.78,
+          "end": 174.38,
+          "prob": 0.984
+        },
+        {
+          "text": " encontramos",
+          "start": 174.38,
+          "end": 174.94,
+          "prob": 0.989
+        },
+        {
+          "text": " fora",
+          "start": 174.94,
+          "end": 175.62,
+          "prob": 0.999
+        },
+        {
+          "text": " de",
+          "start": 175.62,
+          "end": 175.8,
+          "prob": 0.999
+        },
+        {
+          "text": " nós.",
+          "start": 175.8,
+          "end": 176.0,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "start": 176.74,
+      "end": 179.44,
+      "text": "E aqui chegamos a uma questão fundamental.",
+      "words": [
+        {
+          "text": " E",
+          "start": 176.74,
+          "end": 176.96,
+          "prob": 0.974
+        },
+        {
+          "text": " aqui",
+          "start": 176.96,
+          "end": 177.24,
+          "prob": 0.953
+        },
+        {
+          "text": " chegamos",
+          "start": 177.24,
+          "end": 178.06,
+          "prob": 0.897
+        },
+        {
+          "text": " a",
+          "start": 178.06,
+          "end": 178.38,
+          "prob": 0.928
+        },
+        {
+          "text": " uma",
+          "start": 178.38,
+          "end": 178.5,
+          "prob": 0.998
+        },
+        {
+          "text": " questão",
+          "start": 178.5,
+          "end": 178.82,
+          "prob": 0.999
+        },
+        {
+          "text": " fundamental.",
+          "start": 178.82,
+          "end": 179.44,
+          "prob": 0.998
+        }
+      ]
+    },
+    {
+      "start": 180.32,
+      "end": 182.98,
+      "text": "Imagine uma criança diante de um espelho.",
+      "words": [
+        {
+          "text": " Imagine",
+          "start": 180.18,
+          "end": 180.62,
+          "prob": 0.046
+        },
+        {
+          "text": " uma",
+          "start": 180.62,
+          "end": 181.02,
+          "prob": 0.977
+        },
+        {
+          "text": " criança",
+          "start": 181.02,
+          "end": 181.46,
+          "prob": 0.999
+        },
+        {
+          "text": " diante",
+          "start": 181.46,
+          "end": 182.2,
+          "prob": 0.967
+        },
+        {
+          "text": " de",
+          "start": 182.2,
+          "end": 182.38,
+          "prob": 0.996
+        },
+        {
+          "text": " um",
+          "start": 182.38,
+          "end": 182.46,
+          "prob": 0.995
+        },
+        {
+          "text": " espelho.",
+          "start": 182.46,
+          "end": 182.98,
+          "prob": 0.997
+        }
+      ]
+    },
+    {
+      "start": 183.26,
+      "end": 186.9,
+      "text": "Mesmo que ainda esteja desenvolvendo sua coordenação motora,",
+      "words": [
+        {
+          "text": " Mesmo",
+          "start": 183.26,
+          "end": 183.84,
+          "prob": 0.997
+        },
+        {
+          "text": " que",
+          "start": 183.84,
+          "end": 184.0,
+          "prob": 0.998
+        },
+        {
+          "text": " ainda",
+          "start": 184.0,
+          "end": 184.26,
+          "prob": 0.944
+        },
+        {
+          "text": " esteja",
+          "start": 184.26,
+          "end": 184.7,
+          "prob": 0.996
+        },
+        {
+          "text": " desenvolvendo",
+          "start": 184.7,
+          "end": 185.44,
+          "prob": 0.991
+        },
+        {
+          "text": " sua",
+          "start": 185.44,
+          "end": 185.68,
+          "prob": 0.974
+        },
+        {
+          "text": " coordenação",
+          "start": 185.68,
+          "end": 186.46,
+          "prob": 0.991
+        },
+        {
+          "text": " motora,",
+          "start": 186.46,
+          "end": 186.9,
+          "prob": 0.951
+        }
+      ]
+    },
+    {
+      "start": 187.2,
+      "end": 192.46,
+      "text": "ela encontra diante de si uma imagem organizada de seu próprio corpo.",
+      "words": [
+        {
+          "text": " ela",
+          "start": 187.2,
+          "end": 187.72,
+          "prob": 0.977
+        },
+        {
+          "text": " encontra",
+          "start": 187.72,
+          "end": 188.2,
+          "prob": 0.983
+        },
+        {
+          "text": " diante",
+          "start": 188.2,
+          "end": 188.6,
+          "prob": 0.996
+        },
+        {
+          "text": " de",
+          "start": 188.6,
+          "end": 188.76,
+          "prob": 0.995
+        },
+        {
+          "text": " si",
+          "start": 188.76,
+          "end": 189.0,
+          "prob": 0.993
+        },
+        {
+          "text": " uma",
+          "start": 189.0,
+          "end": 189.6,
+          "prob": 0.945
+        },
+        {
+          "text": " imagem",
+          "start": 189.6,
+          "end": 190.02,
+          "prob": 0.996
+        },
+        {
+          "text": " organizada",
+          "start": 190.02,
+          "end": 190.94,
+          "prob": 0.997
+        },
+        {
+          "text": " de",
+          "start": 190.94,
+          "end": 191.44,
+          "prob": 0.991
+        },
+        {
+          "text": " seu",
+          "start": 191.44,
+          "end": 191.64,
+          "prob": 0.997
+        },
+        {
+          "text": " próprio",
+          "start": 191.64,
+          "end": 192.0,
+          "prob": 0.998
+        },
+        {
+          "text": " corpo.",
+          "start": 192.0,
+          "end": 192.46,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "start": 193.26,
+      "end": 199.64,
+      "text": "Para Lacan, essa imagem pode oferecer uma unidade que antecipa o domínio efetivo dos movimentos.",
+      "words": [
+        {
+          "text": " Para",
+          "start": 193.26,
+          "end": 193.52,
+          "prob": 0.982
+        },
+        {
+          "text": " Lacan,",
+          "start": 193.52,
+          "end": 193.94,
+          "prob": 0.945
+        },
+        {
+          "text": " essa",
+          "start": 194.54,
+          "end": 194.76,
+          "prob": 0.977
+        },
+        {
+          "text": " imagem",
+          "start": 194.76,
+          "end": 195.22,
+          "prob": 0.999
+        },
+        {
+          "text": " pode",
+          "start": 195.22,
+          "end": 195.5,
+          "prob": 0.998
+        },
+        {
+          "text": " oferecer",
+          "start": 195.5,
+          "end": 196.0,
+          "prob": 0.997
+        },
+        {
+          "text": " uma",
+          "start": 196.0,
+          "end": 196.2,
+          "prob": 0.995
+        },
+        {
+          "text": " unidade",
+          "start": 196.2,
+          "end": 196.76,
+          "prob": 0.996
+        },
+        {
+          "text": " que",
+          "start": 196.76,
+          "end": 197.38,
+          "prob": 0.99
+        },
+        {
+          "text": " antecipa",
+          "start": 197.38,
+          "end": 197.94,
+          "prob": 0.983
+        },
+        {
+          "text": " o",
+          "start": 197.94,
+          "end": 198.02,
+          "prob": 0.996
+        },
+        {
+          "text": " domínio",
+          "start": 198.02,
+          "end": 198.36,
+          "prob": 0.998
+        },
+        {
+          "text": " efetivo",
+          "start": 198.36,
+          "end": 198.92,
+          "prob": 0.997
+        },
+        {
+          "text": " dos",
+          "start": 198.92,
+          "end": 199.1,
+          "prob": 0.994
+        },
+        {
+          "text": " movimentos.",
+          "start": 199.1,
+          "end": 199.64,
+          "prob": 0.994
+        }
+      ]
+    },
+    {
+      "start": 200.2,
+      "end": 204.22,
+      "text": "Mas atenção, estamos falando de uma proposta teórica.",
+      "words": [
+        {
+          "text": " Mas",
+          "start": 200.2,
+          "end": 200.44,
+          "prob": 0.936
+        },
+        {
+          "text": " atenção,",
+          "start": 200.44,
+          "end": 200.76,
+          "prob": 0.843
+        },
+        {
+          "text": " estamos",
+          "start": 201.74,
+          "end": 202.04,
+          "prob": 0.989
+        },
+        {
+          "text": " falando",
+          "start": 202.04,
+          "end": 202.52,
+          "prob": 0.997
+        },
+        {
+          "text": " de",
+          "start": 202.52,
+          "end": 202.96,
+          "prob": 0.997
+        },
+        {
+          "text": " uma",
+          "start": 202.96,
+          "end": 203.08,
+          "prob": 0.997
+        },
+        {
+          "text": " proposta",
+          "start": 203.08,
+          "end": 203.62,
+          "prob": 0.998
+        },
+        {
+          "text": " teórica.",
+          "start": 203.62,
+          "end": 204.22,
+          "prob": 0.987
+        }
+      ]
+    },
+    {
+      "start": 204.22,
+      "end": 212.18,
+      "text": "Isso não significa que podemos saber exatamente o que uma criança sente ao olhar para o espelho.",
+      "words": [
+        {
+          "text": " Isso",
+          "start": 204.22,
+          "end": 204.98,
+          "prob": 0.296
+        },
+        {
+          "text": " não",
+          "start": 204.98,
+          "end": 205.16,
+          "prob": 0.994
+        },
+        {
+          "text": " significa",
+          "start": 205.16,
+          "end": 205.74,
+          "prob": 0.999
+        },
+        {
+          "text": " que",
+          "start": 205.74,
+          "end": 206.38,
+          "prob": 0.916
+        },
+        {
+          "text": " podemos",
+          "start": 206.38,
+          "end": 206.68,
+          "prob": 0.978
+        },
+        {
+          "text": " saber",
+          "start": 206.68,
+          "end": 207.16,
+          "prob": 0.997
+        },
+        {
+          "text": " exatamente",
+          "start": 207.16,
+          "end": 207.94,
+          "prob": 0.981
+        },
+        {
+          "text": " o",
+          "start": 207.94,
+          "end": 208.9,
+          "prob": 0.997
+        },
+        {
+          "text": " que",
+          "start": 208.9,
+          "end": 209.0,
+          "prob": 0.999
+        },
+        {
+          "text": " uma",
+          "start": 209.0,
+          "end": 209.16,
+          "prob": 0.995
+        },
+        {
+          "text": " criança",
+          "start": 209.16,
+          "end": 209.64,
+          "prob": 0.997
+        },
+        {
+          "text": " sente",
+          "start": 209.64,
+          "end": 210.28,
+          "prob": 0.995
+        },
+        {
+          "text": " ao",
+          "start": 210.28,
+          "end": 210.92,
+          "prob": 0.987
+        },
+        {
+          "text": " olhar",
+          "start": 210.92,
+          "end": 211.2,
+          "prob": 0.998
+        },
+        {
+          "text": " para",
+          "start": 211.2,
+          "end": 211.46,
+          "prob": 0.994
+        },
+        {
+          "text": " o",
+          "start": 211.46,
+          "end": 211.56,
+          "prob": 0.992
+        },
+        {
+          "text": " espelho.",
+          "start": 211.56,
+          "end": 212.18,
+          "prob": 0.997
+        }
+      ]
+    },
+    {
+      "start": 212.86,
+      "end": 219.24,
+      "text": "O que Lacan está investigando é a relação entre a imagem do corpo e a formação do eu.",
+      "words": [
+        {
+          "text": " O",
+          "start": 212.86,
+          "end": 213.2,
+          "prob": 0.983
+        },
+        {
+          "text": " que",
+          "start": 213.2,
+          "end": 213.3,
+          "prob": 0.985
+        },
+        {
+          "text": " Lacan",
+          "start": 213.3,
+          "end": 213.7,
+          "prob": 0.984
+        },
+        {
+          "text": " está",
+          "start": 213.7,
+          "end": 214.06,
+          "prob": 0.997
+        },
+        {
+          "text": " investigando",
+          "start": 214.06,
+          "end": 214.86,
+          "prob": 0.991
+        },
+        {
+          "text": " é",
+          "start": 214.86,
+          "end": 215.5,
+          "prob": 0.976
+        },
+        {
+          "text": " a",
+          "start": 215.5,
+          "end": 215.6,
+          "prob": 0.998
+        },
+        {
+          "text": " relação",
+          "start": 215.6,
+          "end": 216.12,
+          "prob": 0.997
+        },
+        {
+          "text": " entre",
+          "start": 216.12,
+          "end": 216.46,
+          "prob": 0.998
+        },
+        {
+          "text": " a",
+          "start": 216.46,
+          "end": 216.62,
+          "prob": 0.996
+        },
+        {
+          "text": " imagem",
+          "start": 216.62,
+          "end": 216.92,
+          "prob": 0.999
+        },
+        {
+          "text": " do",
+          "start": 216.92,
+          "end": 217.14,
+          "prob": 0.997
+        },
+        {
+          "text": " corpo",
+          "start": 217.14,
+          "end": 217.52,
+          "prob": 0.998
+        },
+        {
+          "text": " e",
+          "start": 217.52,
+          "end": 218.06,
+          "prob": 0.996
+        },
+        {
+          "text": " a",
+          "start": 218.06,
+          "end": 218.16,
+          "prob": 0.996
+        },
+        {
+          "text": " formação",
+          "start": 218.16,
+          "end": 218.68,
+          "prob": 0.987
+        },
+        {
+          "text": " do",
+          "start": 218.68,
+          "end": 218.94,
+          "prob": 0.992
+        },
+        {
+          "text": " eu.",
+          "start": 218.94,
+          "end": 219.24,
+          "prob": 0.61
+        }
+      ]
+    },
+    {
+      "start": 219.96,
+      "end": 223.4,
+      "text": "E essa ideia nos conduza a uma pergunta fascinante.",
+      "words": [
+        {
+          "text": " E",
+          "start": 219.96,
+          "end": 220.22,
+          "prob": 0.934
+        },
+        {
+          "text": " essa",
+          "start": 220.22,
+          "end": 220.42,
+          "prob": 0.992
+        },
+        {
+          "text": " ideia",
+          "start": 220.42,
+          "end": 220.84,
+          "prob": 0.99
+        },
+        {
+          "text": " nos",
+          "start": 220.84,
+          "end": 221.4,
+          "prob": 0.997
+        },
+        {
+          "text": " conduza",
+          "start": 221.4,
+          "end": 221.92,
+          "prob": 0.848
+        },
+        {
+          "text": " a",
+          "start": 221.92,
+          "end": 222.02,
+          "prob": 0.937
+        },
+        {
+          "text": " uma",
+          "start": 222.02,
+          "end": 222.12,
+          "prob": 0.998
+        },
+        {
+          "text": " pergunta",
+          "start": 222.12,
+          "end": 222.6,
+          "prob": 0.998
+        },
+        {
+          "text": " fascinante.",
+          "start": 222.6,
+          "end": 223.4,
+          "prob": 0.995
+        }
+      ]
+    },
+    {
+      "start": 224.2,
+      "end": 229.4,
+      "text": "Se a imagem que temos de nós mesmos participa da formação do nosso eu.",
+      "words": [
+        {
+          "text": " Se",
+          "start": 224.2,
+          "end": 224.42,
+          "prob": 0.972
+        },
+        {
+          "text": " a",
+          "start": 224.42,
+          "end": 224.54,
+          "prob": 0.997
+        },
+        {
+          "text": " imagem",
+          "start": 224.54,
+          "end": 224.94,
+          "prob": 0.999
+        },
+        {
+          "text": " que",
+          "start": 224.94,
+          "end": 225.2,
+          "prob": 0.996
+        },
+        {
+          "text": " temos",
+          "start": 225.2,
+          "end": 225.46,
+          "prob": 0.997
+        },
+        {
+          "text": " de",
+          "start": 225.46,
+          "end": 225.64,
+          "prob": 0.998
+        },
+        {
+          "text": " nós",
+          "start": 225.64,
+          "end": 225.84,
+          "prob": 0.997
+        },
+        {
+          "text": " mesmos",
+          "start": 225.84,
+          "end": 226.36,
+          "prob": 0.995
+        },
+        {
+          "text": " participa",
+          "start": 226.36,
+          "end": 227.62,
+          "prob": 0.993
+        },
+        {
+          "text": " da",
+          "start": 227.62,
+          "end": 227.74,
+          "prob": 0.992
+        },
+        {
+          "text": " formação",
+          "start": 227.74,
+          "end": 228.38,
+          "prob": 0.998
+        },
+        {
+          "text": " do",
+          "start": 228.38,
+          "end": 228.7,
+          "prob": 0.991
+        },
+        {
+          "text": " nosso",
+          "start": 228.7,
+          "end": 229.06,
+          "prob": 0.997
+        },
+        {
+          "text": " eu.",
+          "start": 229.06,
+          "end": 229.4,
+          "prob": 0.848
+        }
+      ]
+    },
+    {
+      "start": 230.16,
+      "end": 235.7,
+      "text": "Até que ponto aquilo que chamamos de eu depende de algo que encontramos fora de nós?",
+      "words": [
+        {
+          "text": " Até",
+          "start": 230.16,
+          "end": 230.58,
+          "prob": 0.301
+        },
+        {
+          "text": " que",
+          "start": 230.58,
+          "end": 230.76,
+          "prob": 0.995
+        },
+        {
+          "text": " ponto",
+          "start": 230.76,
+          "end": 231.06,
+          "prob": 0.998
+        },
+        {
+          "text": " aquilo",
+          "start": 231.06,
+          "end": 231.84,
+          "prob": 0.747
+        },
+        {
+          "text": " que",
+          "start": 231.84,
+          "end": 232.08,
+          "prob": 0.987
+        },
+        {
+          "text": " chamamos",
+          "start": 232.08,
+          "end": 232.48,
+          "prob": 0.998
+        },
+        {
+          "text": " de",
+          "start": 232.48,
+          "end": 232.72,
+          "prob": 0.998
+        },
+        {
+          "text": " eu",
+          "start": 232.72,
+          "end": 232.92,
+          "prob": 0.604
+        },
+        {
+          "text": " depende",
+          "start": 232.92,
+          "end": 233.58,
+          "prob": 0.845
+        },
+        {
+          "text": " de",
+          "start": 233.58,
+          "end": 233.96,
+          "prob": 0.997
+        },
+        {
+          "text": " algo",
+          "start": 233.96,
+          "end": 234.24,
+          "prob": 0.999
+        },
+        {
+          "text": " que",
+          "start": 234.24,
+          "end": 234.44,
+          "prob": 0.998
+        },
+        {
+          "text": " encontramos",
+          "start": 234.44,
+          "end": 234.92,
+          "prob": 0.989
+        },
+        {
+          "text": " fora",
+          "start": 234.92,
+          "end": 235.28,
+          "prob": 0.999
+        },
+        {
+          "text": " de",
+          "start": 235.28,
+          "end": 235.44,
+          "prob": 0.998
+        },
+        {
+          "text": " nós?",
+          "start": 235.44,
+          "end": 235.7,
+          "prob": 0.989
+        }
+      ]
+    },
+    {
+      "start": 236.38,
+      "end": 241.66,
+      "text": "É essa questão que nos levará à próxima aula, o estádio do espelho.",
+      "words": [
+        {
+          "text": " É",
+          "start": 236.38,
+          "end": 236.72,
+          "prob": 0.975
+        },
+        {
+          "text": " essa",
+          "start": 236.72,
+          "end": 236.98,
+          "prob": 0.968
+        },
+        {
+          "text": " questão",
+          "start": 236.98,
+          "end": 237.4,
+          "prob": 0.551
+        },
+        {
+          "text": " que",
+          "start": 237.4,
+          "end": 238.14,
+          "prob": 0.968
+        },
+        {
+          "text": " nos",
+          "start": 238.14,
+          "end": 238.28,
+          "prob": 0.997
+        },
+        {
+          "text": " levará",
+          "start": 238.28,
+          "end": 238.78,
+          "prob": 0.995
+        },
+        {
+          "text": " à",
+          "start": 238.78,
+          "end": 239.02,
+          "prob": 0.746
+        },
+        {
+          "text": " próxima",
+          "start": 239.02,
+          "end": 239.34,
+          "prob": 0.999
+        },
+        {
+          "text": " aula,",
+          "start": 239.34,
+          "end": 239.76,
+          "prob": 0.998
+        },
+        {
+          "text": " o",
+          "start": 240.6,
+          "end": 240.66,
+          "prob": 0.857
+        },
+        {
+          "text": " estádio",
+          "start": 240.66,
+          "end": 241.08,
+          "prob": 0.906
+        },
+        {
+          "text": " do",
+          "start": 241.08,
+          "end": 241.2,
+          "prob": 0.994
+        },
+        {
+          "text": " espelho.",
+          "start": 241.2,
+          "end": 241.66,
+          "prob": 0.947
+        }
+      ]
+    }
+  ]
+}
