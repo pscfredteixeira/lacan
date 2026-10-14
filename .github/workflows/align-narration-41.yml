@@ -19,6 +19,12 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import av
+          old_open=av.open
+          def compatible_open(*args, **kwargs):
+              kwargs.pop('metadata_errors',None)
+              return old_open(*args,**kwargs)
+          av.open=compatible_open
           from faster_whisper import WhisperModel
           model=WhisperModel("small", device="cpu", compute_type="int8", cpu_threads=4, num_workers=2)
           segments,info=model.transcribe(
