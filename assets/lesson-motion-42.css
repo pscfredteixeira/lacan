@@ -1,0 +1,55 @@
+/* Aula 4.2 — O estádio do espelho. Design editorial linho/lavanda.
+   Isolado da aula 4.1 e com contenção rígida no iPhone. */
+#lacanMotion42,#lacanMotion42 *{box-sizing:border-box}
+#lacanMotion42{max-width:100%;width:100%;min-width:0;overflow:hidden;margin-left:0;margin-right:0}
+#lacanMotion42 .lm-stage{
+  display:flex;align-items:center;justify-content:center;width:100%;max-width:100%;
+  min-width:0;min-height:0;height:auto;aspect-ratio:16/9;overflow:hidden;
+  padding:clamp(38px,6vw,74px) clamp(13px,4vw,55px);
+  background:radial-gradient(circle at 46% 38%,#f8f1e9 0%,#eee3ec 85%);
+}
+#lacanMotion42 .lm-stage::after{pointer-events:none}
+#lacanMotion42 .lm-top,#lacanMotion42 .lm-bottom{z-index:5}
+#lacanMotion42 .lm42-inner{position:relative;z-index:3;width:100%;max-width:680px;min-width:0;display:flex;align-items:center;justify-content:center;text-align:center}
+#lacanMotion42 .lm42-scene{width:100%;min-width:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:clamp(9px,1.7vw,20px);animation:lm42in .18s ease-out both}
+#lacanMotion42 .lm42-illustration{position:relative;width:100%;max-width:380px;min-width:0;height:clamp(90px,18vw,170px);display:flex;align-items:center;justify-content:center}
+#lacanMotion42 .lm42-artwork{height:100%;width:100%;max-width:310px;display:block;overflow:visible;filter:drop-shadow(0 5px 9px rgba(70,47,92,.08))}
+#lacanMotion42 .lm42-scene h3{font:400 clamp(1.2rem,3.3vw,2.8rem)/1.2 "Libre Baskerville",Georgia,serif;margin:0!important;color:#503d61;letter-spacing:-.045em;max-width:100%;text-wrap:balance;overflow-wrap:anywhere}
+#lacanMotion42 .lm42-scene p{font:400 clamp(.74rem,1.5vw,1rem)/1.5 "DM Sans",sans-serif!important;color:#74637d;margin:0!important;max-width:100%;text-wrap:balance}
+#lacanMotion42 .lm42-stage-mirror{background:radial-gradient(circle at 54% 40%,#e6d9ec,#f9f3e9 76%)}
+#lacanMotion42 .lm42-stage-identity{background:linear-gradient(125deg,#f9f2e8,#ece1ef)}
+#lacanMotion42 .lm42-stage-external{background:radial-gradient(circle at 70% 23%,#e4d6eb,#faf5ed 79%)}
+#lacanMotion42 .lm42-stage-alienation{background:linear-gradient(135deg,#e8dceb,#f6eee4)}
+#lacanMotion42 .lm42-stage-theory{background:radial-gradient(circle at 38% 53%,#e8dcec,#fcf5e9)}
+#lacanMotion42 .lm42-stage-question{background:linear-gradient(140deg,#f7f0e7,#e8dceb)}
+#lacanMotion42 .lm42-stage-final{background:radial-gradient(circle at 50% 25%,#dac6e5,#f8f0e7)}
+#lacanMotion42 .lm42-portrait{width:auto;height:100%;max-width:38%;background:url("./lacan-portrait-editorial.webp") center/contain no-repeat;aspect-ratio:4/5;filter:sepia(.12) saturate(.67);mask-image:linear-gradient(to top,transparent 0%,black 16%);}
+#lacanMotion42 .lm-controls{width:100%;min-width:0;max-width:100%}
+#lacanMotion42 .lm42-file-row{padding:10px 14px;display:flex;gap:10px;align-items:center;justify-content:space-between;border:1px solid #ded0df;border-top:none;background:#fffcf6}
+#lacanMotion42 .lm42-file-row[hidden]{display:none!important}
+#lacanMotion42 .lm42-file-row span{font:400 .75rem/1.5 "DM Sans",sans-serif;color:#6b5874}
+#lacanMotion42 .lm42-file-row label{flex-shrink:0}
+@keyframes lm42in{from{opacity:.57;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){
+  #lacanMotion42{margin:30px 0 40px;padding:11px}
+  #lacanMotion42 .lm-stage{aspect-ratio:4/3;padding:36px 12px 32px}
+  #lacanMotion42 .lm42-scene{gap:9px}
+  #lacanMotion42 .lm42-illustration{height:clamp(75px,21vw,108px)}
+  #lacanMotion42 .lm42-artwork{max-width:225px}
+  #lacanMotion42 .lm42-scene h3{font-size:clamp(.98rem,4.25vw,1.48rem);line-height:1.2}
+  #lacanMotion42 .lm42-scene p{font-size:clamp(.65rem,2.7vw,.84rem)!important}
+  #lacanMotion42 .lm-top,#lacanMotion42 .lm-bottom{left:9px;right:9px;font-size:.38rem;letter-spacing:.05em}
+  #lacanMotion42 .lm-top span,#lacanMotion42 .lm-bottom span{min-width:0;max-width:50%}
+  #lacanMotion42 .lm-top span:last-child,#lacanMotion42 .lm-bottom span:last-child{text-align:right}
+  #lacanMotion42 .lm-controls{gap:8px;padding:9px}
+  #lacanMotion42 .lm-play{min-width:97px;font-size:.64rem;padding:8px 6px}
+  #lacanMotion42 .lm-clock{font-size:.6rem}
+  #lacanMotion42 .lm42-file-row{flex-direction:column;align-items:stretch}
+  #lacanMotion42 .lm42-file-row label{width:100%;justify-content:center}
+}
+@media(max-width:370px){
+  #lacanMotion42 .lm-stage{aspect-ratio:1.22}
+  #lacanMotion42 .lm42-scene h3{font-size:.94rem}
+  #lacanMotion42 .lm42-illustration{height:68px}
+}
+@media(prefers-reduced-motion:reduce){#lacanMotion42 .lm42-scene{animation:none!important}}
