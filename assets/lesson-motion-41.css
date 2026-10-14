@@ -44,3 +44,27 @@
   #lacanMotion41 .lm41-scene h3{font-size:.97rem}
 }
 @media(prefers-reduced-motion:reduce){#lacanMotion41 .lm41-scene{animation:none!important}}
+
+/* Ilustrações autorais com volume e proporções humanas.
+   Respeita a área segura do palco inclusive em iPhones estreitos. */
+#lacanMotion41 .lm41-human{
+  width:auto;
+  height:100%;
+  max-height:100%;
+  max-width:min(64%,200px);
+  overflow:visible;
+  display:block;
+  filter:drop-shadow(0 5px 9px rgba(89,65,102,.12));
+}
+#lacanMotion41 .lm41-visual{min-width:0}
+#lacanMotion41 .lm41-scene{width:100%;min-width:0}
+#lacanMotion41 .lm41-scene h3{overflow-wrap:anywhere}
+@media(max-width:700px){
+  #lacanMotion41 .lm41-visual{height:clamp(68px,19vw,88px)}
+  #lacanMotion41 .lm41-human{max-width:48%}
+  #lacanMotion41 .lm41-scene h3{font-size:clamp(1.02rem,4.2vw,1.52rem)}
+}
+@media(max-width:370px){
+  #lacanMotion41 .lm41-visual{height:63px}
+  #lacanMotion41 .lm41-human{max-width:50%}
+}
