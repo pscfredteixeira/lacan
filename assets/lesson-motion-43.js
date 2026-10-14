@@ -1,0 +1,202 @@
+/* Curso Lacan · Aula 4.3.
+ * Motion editorial acompanhado por narração real (130.32s).
+ * Mudanças de cena medidas pelas palavras da gravação, sem timers independentes.
+ */
+(() => {
+  "use strict";
+  const ID="4.3", FILE="assets/eu-ideal-ideal-do-eu-43.mp3", DURATION=130.32;
+  const cues=[
+    [0,"musician","Imagine uma jovem violinista."],
+    [2.46,"spotlight","Sob o calor dourado dos holofotes."],
+    [4.9,"violin","O arco desliza com precisão."],
+    [8.52,"notes","Cada nota ecoa diante da plateia."],
+    [14.04,"score","Na penumbra, não há apenas uma partitura."],
+    [18.52,"mirror","Uma versão irretocável de si mesma."],
+    [21.48,"ideal","Forte. Soberana. Completa."],
+    [24.94,"question","Uma miragem fascinante para a psicanálise."],
+    [29.48,"ideal","Eu ideal."],
+    [30.98,"mirror","A imagem em que desejamos nos reconhecer."],
+    [34.98,"ideal","Uma promessa imaginária de completude."],
+    [38.24,"question","Contudo..."],
+    [40.54,"gaze","Vamos desacelerar o olhar."],
+    [43.88,"question","Por que essa imagem é tão preciosa?"],
+    [48.48,"mirror","A resposta não repousa no reflexo."],
+    [50.84,"history","Mas naquilo que o antecede."],
+    [52.32,"history","Muito antes da primeira nota..."],
+    [56.76,"history","Expectativas silenciosas."],
+    [59.4,"teacher","Elogios de mestres."],
+    [61.2,"family","Ambições familiares."],
+    [62.96,"words","Discursos herdados."],
+    [64.52,"words","Disciplina. Mérito. Valor."],
+    [68.58,"lacan","Jacques Lacan."],
+    [70.08,"contrast","Uma distinção sutil."],
+    [73.44,"ideal","Eu ideal."],
+    [74.36,"musician","A imagem admirável no palco."],
+    [77.62,"mirror","O imaginário."],
+    [79.24,"symbolic","Ideal do eu."],
+    [80.74,"gaze","O ponto invisível a partir do qual a cena é julgada."],
+    [85.02,"symbolic","A ordem do simbólico."],
+    [86.6,"gaze","O lugar do Outro."],
+    [87.96,"words","A linguagem e as expectativas."],
+    [91.52,"value","O que vemos parece digno de amor?"],
+    [95.24,"ideal","O eu ideal responde..."],
+    [97.58,"mirror","Que imagem de mim parece impecável?"],
+    [100.5,"symbolic","O ideal do eu pergunta..."],
+    [102.7,"gaze","A partir de que olhar essa imagem ganha valor?"],
+    [105.94,"mirror","Quando nos olhamos no espelho..."],
+    [109.04,"question","Quem dita o valor do que vemos?"],
+    [112.28,"ideal","O eu ideal."],
+    [113.32,"portrait","O retrato que sustentamos."],
+    [117.18,"symbolic","O ideal do eu."],
+    [118.78,"lens","A lente que decide o aplauso."],
+    [121.76,"tension","Entre a figura e o olhar que julga."],
+    [123.38,"portrait","A figura que projetamos."],
+    [125.28,"gaze","O tribunal pelo qual nos julgamos."],
+    [128.8,"final","Nossa própria identidade."]
+  ];
+  const esc=s=>String(s).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+  const mmss=t=>{const n=Math.max(0,Math.floor(t));return Math.floor(n/60)+":"+String(n%60).padStart(2,"0");};
+  // All artwork is native SVG with the same warm paper, violet and muted gold palette.
+  const defs='<defs><linearGradient id="lm43Lavender" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bba2cc"/><stop offset="1" stop-color="#685578"/></linearGradient><linearGradient id="lm43Linen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8ed"/><stop offset="1" stop-color="#e6d7e9"/></linearGradient><linearGradient id="lm43Gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7e8b5"/><stop offset="1" stop-color="#d8b879"/></linearGradient></defs>';
+  const bg='<ellipse cx="150" cy="167" rx="111" ry="5" fill="#a995b4" opacity=".22"/>';
+  const person='<path d="M129 53q-16-1-22 16l-11 62 63 2-10-67q-3-14-20-13Z" fill="url(#lm43Lavender)" stroke="#66536f" stroke-width="2"/>'+
+   '<path d="m111 71-13 26-21 11m62-38 17 21 20 5" fill="none" stroke="#ddbfad" stroke-width="12" stroke-linecap="round"/>'+
+   '<path d="M114 130 109 159M142 130l8 29" fill="none" stroke="#695673" stroke-width="15" stroke-linecap="round"/>'+
+   '<path d="M108 154h-6l-15 9h26m34-9h10l15 9h-25" fill="#514158"/>'+
+   '<path d="M116 30q-4-16 13-19 18 1 17 23l-3 12q-12 20-23 0Z" fill="#e0bfab" stroke="#8d7184" stroke-width="2"/>'+
+   '<path d="M115 31q-9-24 11-28 21 2 22 29l-8-12-25 11Z" fill="#5c4a66"/>'+
+   '<circle cx="126" cy="35" r="1.3" fill="#574662"/><circle cx="140" cy="35" r="1.3" fill="#574662"/>'+
+   '<path d="M128 43q5 3 9-1" stroke="#a4787b" stroke-width="1.6" stroke-linecap="round" fill="none"/>';
+  const violin='<g transform="rotate(-15 155 89)">'+
+    '<path d="M162 69q15-19 27-5 7 8-1 18-5 7 0 14 8 12-3 20-13 10-23-9-7 18-19 9-10-8-2-20 6-9 0-15-9-13 0-20 12-9 21 8Z" fill="#c38d64" stroke="#8b6657" stroke-width="2.4"/>'+
+    '<path d="M163 59v56m-6-44h12m-12 31h12" stroke="#8b6755" stroke-width="2"/>'+
+    '<path d="M162 49V15m-6 18 12-1" stroke="#8b6755" stroke-width="5" stroke-linecap="round"/>'+
+    '<path d="M130 105 213 26" stroke="#80637c" stroke-width="3"/>'+
+    '<path d="M129 102 216 24" stroke="#f8ecd4" stroke-width="1.5"/></g>';
+  const curtain='<path d="M52 12Q38 54 49 138M244 11q20 56 5 125" stroke="#d1bfd7" stroke-width="9" fill="none" stroke-linecap="round" opacity=".34"/>';
+  const stage=curtain+'<path d="M70 167h160M92 144h119" stroke="#bfa9c7" stroke-width="2"/>'+
+    '<path d="M64 10 115 124 169 124 232 10" fill="#e7d6b0" opacity=".12"/>'+
+    '<path d="M80 10 135 152 174 152 209 10" fill="#f7eabf" opacity=".25"/>';
+  const mirror='<rect x="187" y="12" width="73" height="134" rx="24" fill="#d7c3e0" stroke="#796184" stroke-width="3"/>'+
+    '<rect x="195" y="20" width="57" height="118" rx="18" fill="url(#lm43Linen)" stroke="#b8a2bf" stroke-width="1.5"/>'+
+    '<path d="M201 70 240 29m-29 61 39-43" stroke="#fffdfa" stroke-width="5" opacity=".5"/>';
+  const eyes='<path d="M66 78q37-36 75 0-38 36-75 0Zm96 0q37-36 75 0-38 36-75 0Z" stroke="#8f76a0" stroke-width="3" fill="#fdf7ed"/>'+
+   '<circle cx="104" cy="78" r="13" fill="#c3a5ce"/><circle cx="200" cy="78" r="13" fill="#c3a5ce"/>'+
+   '<circle cx="104" cy="78" r="6" fill="#5a4967"/><circle cx="200" cy="78" r="6" fill="#5a4967"/>';
+  const book='<rect x="81" y="22" width="141" height="122" rx="5" fill="#f7f0e9" stroke="#b79fc5" stroke-width="3"/>'+
+   '<path d="M100 44h102m-102 19h91m-91 19h102m-102 19h85" stroke="#ab95b8" stroke-width="2.6" stroke-linecap="round"/>';
+  function drawing(type){
+    if(type==="lacan")return '<div class="lm43-portrait" aria-hidden="true"></div>';
+    const head='<svg class="lm43-svg" viewBox="0 0 300 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'+defs+bg;
+    const end='</svg>';
+    if(["musician","violin","spotlight","ideal","notes"].includes(type)){
+      const noteMarks=type==="notes"?'<text x="42" y="71" font-size="35" fill="#8f75a4">♫</text><text x="220" y="84" font-size="28" fill="#9c80ae">♪</text><text x="65" y="131" font-size="23" fill="#baa3c6">♬</text>':"";
+      return head+stage+person+violin+noteMarks+end;
+    }
+    if(type==="score")return head+book+'<path d="M100 78q22-18 44 0t43 0" stroke="#926fa6" stroke-width="3" fill="none"/>'+
+        '<text x="113" y="120" font-family="serif" font-size="26" fill="#876b99">♪ ♫</text>'+end;
+    if(["mirror","portrait","final"].includes(type)){
+      return head+'<rect x="39" y="28" width="99" height="130" rx="5" fill="#f8f1e8" stroke="#bda6c8" stroke-width="4"/>'+
+        '<g transform="translate(-33 6) scale(.72 .92)">'+person+'</g>'+mirror+
+        '<g transform="translate(120 12) scale(.72 .80)" opacity=".65">'+person+'</g>'+end;
+    }
+    if(type==="gaze")return head+eyes+'<path d="M73 121q82-19 154 0" stroke="#c7b3ce" stroke-width="2" stroke-dasharray="3 6"/>'+end;
+    if(type==="value")return head+eyes+'<path d="M150 113c-31-30-60 7 0 43 60-36 31-73 0-43Z" fill="#c7a1aa" opacity=".55"/>'+end;
+    if(type==="teacher"||type==="family"||type==="history"||type==="words"){
+      const labels=type==="family"?["FAMÍLIA","EXPECTATIVAS","ORGULHO"]:type==="teacher"?["MESTRES","ELOGIOS","RECONHECIMENTO"]:type==="history"?["ANTES","HISTÓRIA","EXPECTATIVAS"]:["DISCIPLINA","MÉRITO","VALOR"];
+      return head+book+labels.map((v,i)=>'<text x="151" y="'+(60+i*27)+'" font-family="Georgia" text-anchor="middle" fill="#6d557e" font-size="'+(v.length>11?11:14)+'">'+v+'</text>').join("")+end;
+    }
+    if(type==="symbolic")return head+
+      '<circle cx="150" cy="82" r="56" fill="#f9f3e8" stroke="#b29abd" stroke-width="3"/>'+
+      '<circle cx="150" cy="82" r="25" fill="#d8c3e3" stroke="#856b99" stroke-width="2"/>'+
+      '<circle cx="65" cy="30" r="17" fill="#efe1ec" stroke="#9479a6" stroke-width="2"/>'+
+      '<circle cx="246" cy="40" r="17" fill="#efe1ec" stroke="#9479a6" stroke-width="2"/>'+
+      '<circle cx="228" cy="146" r="17" fill="#efe1ec" stroke="#9479a6" stroke-width="2"/>'+
+      '<path d="M83 40 129 68m45-1 54-22m-54 31 43 57" stroke="#b89fc7" stroke-width="2"/>'+
+      '<text x="150" y="89" text-anchor="middle" font-family="Georgia" font-size="18" fill="#634d76">EU</text>'+end;
+    if(type==="lens")return head+'<circle cx="140" cy="79" r="46" fill="#f8f1e5" stroke="#8f75a6" stroke-width="8"/>'+
+      '<circle cx="140" cy="79" r="32" fill="#e7d8ed" opacity=".7"/><path d="m169 112 50 46" stroke="#8c7499" stroke-width="12" stroke-linecap="round"/>'+
+      '<text x="139" y="91" text-anchor="middle" fill="#745985" font-size="29">★</text>'+end;
+    if(type==="tension"||type==="contrast")return head+
+      '<rect x="32" y="28" width="104" height="118" rx="3" fill="#faf2e8" stroke="#b6a1c0" stroke-width="3"/>'+
+      '<circle cx="86" cy="63" r="18" fill="#e3c3b2"/><path d="M54 131q0-48 32-48t32 48" fill="#977ea8"/>'+
+      '<path d="M147 87h30m-9-10 9 10-9 10" stroke="#a48aad" stroke-width="2.5" fill="none"/>'+
+      '<circle cx="230" cy="82" r="40" stroke="#a68cb5" stroke-width="3" fill="#f4e9ed"/>'+
+      '<path d="M207 82q23-24 46 0-23 24-46 0Z" fill="#faf4ea" stroke="#9278a7" stroke-width="2.5"/>'+
+      '<circle cx="230" cy="82" r="9" fill="#665075"/>'+end;
+    return head+'<circle cx="150" cy="84" r="58" fill="#f8f1e8" stroke="#b7a1c5" stroke-width="3"/>'+
+      '<text x="150" y="117" font-family="Georgia" fill="#816691" text-anchor="middle" font-size="90">?</text>'+end;
+  }
+  let dispose=()=>{};
+  function render(lesson){
+    if(lesson.id!==ID)return "";
+    return '<section class="lm-wrap" id="lacanMotion43" aria-labelledby="lm43Title">'+
+      '<div class="lm-intro"><span class="section-label">NARRAÇÃO ILUSTRADA · 2 MIN 10 SEG</span>'+
+      '<h2 id="lm43Title">Eu ideal e ideal do eu.</h2>'+
+      '<p>Como uma imagem admirada e o ponto de onde ela recebe valor participam da formação do eu.</p></div>'+
+      '<div class="lm-stage lm43-stage-musician" id="lm43Stage" role="img" aria-label="Animação conceitual sobre eu ideal e ideal do eu">'+
+      '<div class="lm-top"><span>FORMAÇÃO LACANIANA</span><span>MÓDULO 04 · AULA 4.3</span></div>'+
+      '<div class="lm43-content" id="lm43Content"></div>'+
+      '<div class="lm-bottom"><span>IMAGEM · OLHAR · RECONHECIMENTO</span><span id="lm43Count">01 / '+cues.length+'</span></div></div>'+
+      '<div class="lm-controls"><button class="lm-play" type="button" id="lm43Play" aria-label="Reproduzir">▶ <span>Reproduzir</span></button>'+
+      '<label class="lm-seek-label" for="lm43Seek">Posição do vídeo</label>'+
+      '<input type="range" id="lm43Seek" min="0" max="'+DURATION+'" step=".05" value="0" aria-label="Avançar ou voltar a narração">'+
+      '<span class="lm-clock" id="lm43Clock">0:00 / 2:10</span></div>'+
+      '<div class="lm43-fallback" id="lm43Fallback" hidden><span id="lm43Message" role="status">Áudio temporariamente indisponível.</span>'+
+      '<label class="lm-file-label">Carregar narração <input type="file" id="lm43Upload" accept="audio/*,.mp3,.wav,.m4a"></label></div>'+
+      '<audio id="lm43Audio" preload="metadata"></audio></section>';
+  }
+  function mount(article,lesson){
+    dispose();if(lesson.id!==ID)return;
+    const root=article.querySelector("#lacanMotion43");if(!root)return;
+    const el=id=>root.querySelector("#"+id);
+    const stage=el("lm43Stage"),body=el("lm43Content"),counter=el("lm43Count"),seek=el("lm43Seek"),clock=el("lm43Clock"),
+          play=el("lm43Play"),audio=el("lm43Audio"),fallback=el("lm43Fallback"),message=el("lm43Message"),upload=el("lm43Upload");
+    let time=0,index=-1,playing=false,raf=0,disposed=false,objectUrl="";
+    function paint(t){
+      time=Math.max(0,Math.min(DURATION,t));
+      let n=0;for(let i=1;i<cues.length;i++){if(time+.06>=cues[i][0])n=i;else break;}
+      if(index!==n){
+        index=n;const [,kind,title]=cues[n];
+        const theme=["musician","spotlight","violin","notes","score"].includes(kind)?"musician":
+          ["mirror","ideal","portrait","final"].includes(kind)?"mirror":
+          ["teacher","family","history","words","value"].includes(kind)?"value":
+          ["symbolic","gaze","lens"].includes(kind)?"symbolic":kind==="tension"?"rivalry":"question";
+        stage.className="lm-stage lm43-stage-"+theme;
+        body.innerHTML='<div class="lm43-scene"><div class="lm43-art">'+drawing(kind)+'</div><h3>'+esc(title)+'</h3></div>';
+        counter.textContent=String(index+1).padStart(2,"0")+" / "+cues.length;
+        stage.setAttribute("aria-label",title);
+      }
+      seek.value=time.toFixed(2);seek.style.setProperty("--lm-pct",(time*100/DURATION)+"%");
+      clock.textContent=mmss(time)+" / "+mmss(DURATION);
+    }
+    function updateButton(){play.innerHTML=playing?'❚❚ <span>Pausar</span>':'▶ <span>Reproduzir</span>';play.setAttribute("aria-label",playing?"Pausar":"Reproduzir");}
+    function pause(){playing=false;cancelAnimationFrame(raf);audio.pause();updateButton();}
+    function loop(){
+      if(disposed||!playing)return;
+      paint(audio.currentTime||0);
+      raf=requestAnimationFrame(loop);
+    }
+    function start(){
+      if(playing){pause();return;}
+      if(time>=DURATION-.15)paint(0);
+      audio.currentTime=time;
+      Promise.resolve(audio.play()).then(()=>{if(disposed)return;playing=true;updateButton();raf=requestAnimationFrame(loop);})
+       .catch(()=>{if(disposed)return;fallback.hidden=false;message.textContent="Não consegui iniciar a narração. Selecione o arquivo WAV ou MP3.";pause();});
+    }
+    play.addEventListener("click",start);
+    seek.addEventListener("input",()=>{paint(Number(seek.value)||0);if(!Number.isNaN(audio.duration))audio.currentTime=time;});
+    audio.addEventListener("timeupdate",()=>{if(!disposed)paint(audio.currentTime||0);});
+    audio.addEventListener("ended",()=>{pause();paint(DURATION);});
+    audio.addEventListener("error",()=>{if(!disposed){fallback.hidden=false;message.textContent="Falha ao abrir a narração. Escolha o arquivo original.";}});
+    upload.addEventListener("change",()=>{const f=upload.files?.[0];if(!f)return;
+      if(!f.type.startsWith("audio/")&&!/\.(wav|mp3|m4a|ogg)$/i.test(f.name)){message.textContent="Selecione um arquivo de áudio válido.";return;}
+      if(objectUrl)URL.revokeObjectURL(objectUrl);objectUrl=URL.createObjectURL(f);
+      pause();audio.src=objectUrl;audio.load();fallback.hidden=true;paint(0);
+    });
+    audio.src=FILE;audio.load();
+    dispose=()=>{disposed=true;pause();if(objectUrl)URL.revokeObjectURL(objectUrl);audio.removeAttribute("src");audio.load();dispose=()=>{};};
+    paint(0);updateButton();
+  }
+  window.LACAN_MOTION_43={render,mount,unmount:()=>dispose()};
+})();
