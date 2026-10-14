@@ -1,0 +1,60 @@
+name: Import and align lesson 4.2 audio
+on:
+  push:
+    paths:
+      - ".github/workflows/import-narration-42.yml"
+permissions:
+  contents: write
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import narration and encode compact MP3
+        shell: bash
+        env:
+          SOURCE_URL: "https://at.adobe.com/w5e1qd8WxyWY2MJh"
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 3 --max-time 150 --output /tmp/lacan42.wav "$SOURCE_URL"
+          test "$(wc -c < /tmp/lacan42.wav)" -gt 500000
+          ffmpeg -hide_banner -loglevel error -y -i /tmp/lacan42.wav -ac 1 -ar 44100 -b:a 96k assets/estadio-espelho-42.mp3
+          test "$(wc -c < assets/estadio-espelho-42.mp3)" -gt 100000
+          ffprobe -v error -show_entries format=duration -of default=nw=1 assets/estadio-espelho-42.mp3
+      - name: Install speech alignment
+        run: python -m pip install --disable-pip-version-check -q faster-whisper==1.2.1
+      - name: Record word-level timings
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import av
+          real_open=av.open
+          def compatible_open(*args,**kwargs):
+              kwargs.pop("metadata_errors",None)
+              return real_open(*args,**kwargs)
+          av.open=compatible_open
+          from faster_whisper import WhisperModel
+          model=WhisperModel("small",device="cpu",compute_type="int8",cpu_threads=4,num_workers=2)
+          segments,info=model.transcribe(
+              "assets/estadio-espelho-42.mp3",language="pt",
+              beam_size=5,word_timestamps=True,vad_filter=False,
+              initial_prompt="Jacques Lacan, estádio do espelho, identificação, alienação, eu, corpo e imagem.")
+          content=[]
+          for seg in segments:
+              words=[{"text":w.word,"start":round(w.start,2),"end":round(w.end,2)}
+                     for w in seg.words or []]
+              content.append({"start":round(seg.start,2),"end":round(seg.end,2),
+                              "text":seg.text.strip(),"words":words})
+          with open("narration-alignment-42.json","w",encoding="utf8") as file:
+              json.dump({"duration":info.duration,"segments":content},file,ensure_ascii=False,indent=2)
+          print("Aligned",len(content),"sentences and",sum(len(s["words"]) for s in content),"words")
+          PY
+      - name: Commit narration and timestamps
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/estadio-espelho-42.mp3 narration-alignment-42.json
+          git commit -m "feat(module4): store narrated 4.2 audio and word-level timings"
+          git push
