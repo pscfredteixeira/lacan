@@ -70,8 +70,37 @@ function mount(article,lesson){
   draw(audio.currentTime||0);
  });
  seek.addEventListener("input",()=>{const t=Number(seek.value)*DURATION/1000;if(ready)audio.currentTime=t;draw(t);});
- file.addEventListener("change",()=>{const f=file.files?.[0];if(!f||!(f.type.startsWith("audio/")||/\.mp3$/i.test(f.name)))return;audio.pause();if(blobURL)URL.revokeObjectURL(blobURL);blobURL=URL.createObjectURL(f);audio.src=blobURL;audio.load();help.hidden=true;});
- audio.src=FILE;audio.load();draw(0);
+ function openSavedAudio(callback){
+  try{
+   const request=indexedDB.open("lacan-narracoes",1);
+   request.onupgradeneeded=()=>{if(!request.result.objectStoreNames.contains("mp3"))request.result.createObjectStore("mp3");};
+   request.onsuccess=()=>{const db=request.result;callback(db);};
+  }catch(e){ /* Armazenamento indisponível: continua com arquivo local. */ }
+ }
+ function loadBlob(f){
+  if(disposed)return;
+  audio.pause();
+  if(blobURL)URL.revokeObjectURL(blobURL);
+  blobURL=URL.createObjectURL(f);
+  audio.src=blobURL;audio.load();help.hidden=true;
+ }
+ function restoreSavedAudio(){
+  openSavedAudio(db=>{
+   const tx=db.transaction("mp3","readonly");
+   const q=tx.objectStore("mp3").get(LESSON);
+   q.onsuccess=()=>{if(!disposed&&!ready&&q.result instanceof Blob)loadBlob(q.result);};
+   tx.oncomplete=()=>db.close();
+  });
+ }
+ function rememberAudio(f){
+  openSavedAudio(db=>{
+   const tx=db.transaction("mp3","readwrite");
+   tx.objectStore("mp3").put(f,LESSON);
+   tx.oncomplete=()=>db.close();
+  });
+ }
+ file.addEventListener("change",()=>{const f=file.files?.[0];if(!f||!(f.type.startsWith("audio/")||/\\.mp3$/i.test(f.name)))return;loadBlob(f);rememberAudio(f);});
+ audio.src=FILE;audio.load();draw(0);restoreSavedAudio();
  cleanup=()=>{disposed=true;cancelAnimationFrame(raf);audio.pause();audio.removeAttribute("src");audio.load();if(blobURL)URL.revokeObjectURL(blobURL);timeline?.kill();};
 }
 window.LACAN_MOTION_45={render,mount,unmount:()=>cleanup()};
