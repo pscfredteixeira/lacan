@@ -22,6 +22,29 @@
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 
 </style>
+<script id="introEmbedMode">
+if(new URLSearchParams(window.location.search).get("embed")==="1") {
+  document.documentElement.classList.add("lacan-embed-mode");
+}
+</script>
+<style>
+/* Modo compacto: o mesmo filme aparece dentro das aulas e na capa do curso. */
+.lacan-embed-mode body{background:transparent}
+.lacan-embed-mode .intro-header,
+.lacan-embed-mode .intro-preface,
+.lacan-embed-mode .intro-notes,
+.lacan-embed-mode .intro-footnote,
+.lacan-embed-mode .intro-footer{display:none!important}
+.lacan-embed-mode .intro-main{width:100%;max-width:none;margin:0;padding:0}
+.lacan-embed-mode .player-wrap{border:0;border-radius:0;box-shadow:none}
+.lacan-embed-mode .player-controlpanel{border:0}
+.lacan-embed-mode .player-options label[for="audioFile"]{display:none}
+.lacan-embed-mode .stage-siderail{font-size:clamp(5px,.65vw,11px)}
+@media (max-width:570px){
+ .lacan-embed-mode .player-controlpanel{padding:11px!important}
+ .lacan-embed-mode .stage-siderail{display:none}
+}
+</style>
 </head>
 <body>
 <header class="intro-header"><a class="intro-brand" href="index.html" aria-label="Voltar para Formação Lacaniana"><span class="intro-mark">L<span>.</span></span><span>FORMAÇÃO<br>LACANIANA</span></a><a class="intro-back" href="index.html">← Voltar ao percurso</a></header>
