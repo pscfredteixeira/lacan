@@ -50,7 +50,12 @@
   // A fotografia abre a aula 1.1; a explicação está reunida na seção "Quem foi Lacan?".
   function renderOpening(lesson) {
     if (lesson.id !== "1.1") return `<div class="lesson-intro" aria-label="Introdução à aula">${lesson.introduction}</div>`;
-    return `<div class="lacan-editorial">
+    return `<section class="lesson-intro-film" aria-labelledby="lacanIntroFilmHeading">
+    <div class="lesson-intro-film-header"><span class="section-label">FILME DE ABERTURA · 2 MIN 01 S</span><h2 id="lacanIntroFilmHeading">Uma introdução à psicanálise lacaniana</h2><p>Antes da leitura, acompanhe uma primeira aproximação ao inconsciente, à linguagem e ao desejo. O vídeo já inclui narração sincronizada.</p></div>
+    <div class="lesson-intro-film-player"><iframe id="lacanIntroEmbed" title="Motion graphics: uma introdução à psicanálise lacaniana" src="introducao.html?embed=1" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+    <p class="lesson-intro-film-link"><a href="introducao.html" target="_blank" rel="noopener">Abrir o filme em página inteira ↗</a></p>
+    </section>
+    <div class="lacan-editorial">
       <figure class="lacan-editorial-figure">
         <span class="lacan-editorial-halo" aria-hidden="true"></span>
         <img src="assets/lacan-portrait-editorial.webp?v=20261012d" width="280" height="364" alt="Retrato editorial de Jacques Lacan em sépia e lavanda" decoding="async" fetchpriority="high">
