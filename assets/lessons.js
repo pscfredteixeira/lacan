@@ -52,7 +52,7 @@
     if (lesson.id !== "1.1") return `<div class="lesson-intro" aria-label="Introdução à aula">${lesson.introduction}</div>`;
     return `<section class="lesson-intro-film" aria-labelledby="lacanIntroFilmHeading">
     <div class="lesson-intro-film-header"><span class="section-label">FILME DE ABERTURA · 2 MIN 01 S</span><h2 id="lacanIntroFilmHeading">Uma introdução à psicanálise lacaniana</h2><p>Antes da leitura, acompanhe uma primeira aproximação ao inconsciente, à linguagem e ao desejo. O vídeo já inclui narração sincronizada.</p></div>
-    <div class="lesson-intro-film-player"><iframe id="lacanIntroEmbed" title="Motion graphics: uma introdução à psicanálise lacaniana" src="introducao.html?embed=1&v=20261017d" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+    <div class="lesson-intro-film-player"><iframe id="lacanIntroEmbed" title="Motion graphics: uma introdução à psicanálise lacaniana" src="introducao.html?embed=1&v=20261017e" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
     <p class="lesson-intro-film-link"><a href="introducao.html" target="_blank" rel="noopener">Abrir o filme em página inteira ↗</a></p>
     </section>
     <div class="lacan-editorial">
