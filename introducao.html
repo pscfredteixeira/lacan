@@ -121,6 +121,11 @@ if(new URLSearchParams(window.location.search).get("embed")==="1") {
  .lacan-embed-mode .player-controlpanel{padding:11px!important}
  .lacan-embed-mode .stage-siderail{display:none}
 }
+/* A entrada do título não pode sobrescrever translateY(-50%).
+   A animação antiga transformava o texto após 0,72s e o empurrava ao rodapé. */
+@keyframes lacanTitleFade{from{opacity:0;filter:blur(2px)}to{opacity:1;filter:blur(0)}}
+.scene-in .stage-copy{animation:lacanTitleFade .45s ease-out both}
+.motion-stage[data-playing="false"] .stage-copy{animation-play-state:running}
 /* Sprint de estabilização: não ampliar texto automaticamente no Safari/iPhone. */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .motion-stage{container-type:inline-size}
