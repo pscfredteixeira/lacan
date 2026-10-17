@@ -121,6 +121,45 @@ if(new URLSearchParams(window.location.search).get("embed")==="1") {
  .lacan-embed-mode .player-controlpanel{padding:11px!important}
  .lacan-embed-mode .stage-siderail{display:none}
 }
+/* Sprint de estabilização: não ampliar texto automaticamente no Safari/iPhone. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.motion-stage{container-type:inline-size}
+.motion-stage[data-scene] .stage-copy{
+ top:44%;
+ transform:translateY(-50%);
+ max-height:68%;
+}
+.motion-stage[data-scene] .stage-copy h2{
+ font-size:clamp(19px,4.7cqw,58px);
+ line-height:1.12;
+ letter-spacing:-.045em;
+ text-wrap:balance;
+}
+.motion-stage[data-scene="what"] .stage-copy{
+ top:41%;
+ left:10%;
+ width:75%;
+ text-align:center;
+}
+.motion-stage[data-scene="what"] .stage-copy h2{font-size:clamp(21px,5cqw,58px);line-height:1.10}
+.motion-stage[data-scene="desire"] .stage-copy,
+.motion-stage[data-scene="end"] .stage-copy,
+.motion-stage[data-scene="invite"] .stage-copy{top:43%}
+.motion-stage[data-scene="desire"] .stage-copy h2{font-size:clamp(36px,8cqw,107px)}
+.motion-stage[data-scene="psychoanalysis"] .stage-copy h2{font-size:clamp(22px,4.9cqw,60px)}
+.motion-stage[data-scene="lacan"] .stage-copy h2{font-size:clamp(25px,5cqw,65px)}
+.motion-stage[data-scene="end"] .stage-copy h2{font-size:clamp(21px,4.6cqw,55px)}
+.motion-stage[data-scene="invite"] .stage-copy h2{font-size:clamp(21px,4.8cqw,57px)}
+.lacan-embed-mode body{min-height:0;height:auto;overflow:hidden}
+.lacan-embed-mode .intro-main{overflow:hidden}
+@media (max-width:540px){
+ .motion-stage[data-scene] .stage-copy{top:43%;max-height:70%}
+ .motion-stage[data-scene="what"] .stage-copy{top:41%;left:9%;width:82%}
+ .motion-stage[data-scene="what"] .stage-copy h2{font-size:clamp(21px,5cqw,30px)}
+ .motion-stage[data-scene="desire"] .stage-copy h2{font-size:clamp(35px,9cqw,55px)}
+ .motion-stage[data-scene="lacan"] .stage-copy h2{font-size:clamp(22px,6cqw,33px)}
+ .motion-stage[data-scene="end"] .stage-copy h2{font-size:clamp(20px,5cqw,31px)}
+}
 </style>
 </head>
 <body>
@@ -256,5 +295,24 @@ function tick(){if(!audio.paused)render();requestAnimationFrame(tick);}requestAn
 showScene(0);render();playState();
 })();
 
+</script>
+<script>
+/* A altura é enviada apenas ao site de origem para evitar áreas vazias no iframe. */
+(() => {
+  "use strict";
+  if(!document.documentElement.classList.contains("lacan-embed-mode") || window.parent === window) return;
+  const player=document.querySelector(".player-wrap");
+  if(!player)return;
+  let last=-1;
+  function publishHeight(){
+    const h=Math.ceil(player.getBoundingClientRect().height);
+    if(h>0 && h!==last){last=h;window.parent.postMessage({type:"lacan-intro-player-height",height:h},location.origin);}
+  }
+  if("ResizeObserver" in window)new ResizeObserver(publishHeight).observe(player);
+  window.addEventListener("resize",publishHeight);
+  window.addEventListener("load",publishHeight);
+  if(document.fonts && document.fonts.ready)document.fonts.ready.then(publishHeight);
+  requestAnimationFrame(publishHeight);
+})();
 </script>
 </body></html>
