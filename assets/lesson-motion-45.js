@@ -55,7 +55,7 @@ const art=[
 '<g id="lm45-me" class="lm45-soft" transform="translate(690 375) scale(1.14)"><use href="#lm45-figure-form"/></g>',
 '<g id="lm45-other" class="lm45-strong" transform="translate(920 375) scale(1.14)"><use href="#lm45-figure-form"/></g>',
 '<g id="lm45-award"><circle cx="963" cy="164" r="65" fill="none" stroke="#977bb0" stroke-dasharray="3 9"/><path d="m963 115 13 35 38 3-29 25 9 38-31-21-32 21 10-38-30-25 38-3Z" fill="#c5a7cd" stroke="#886c9e" stroke-width="2"/></g>',
-'<g id="lm45-divide"><path d="M832 165V494" stroke="#826b96" stroke-width="1.5" stroke-dasharray="4 9"/><text x="1055" y="365" font-size="105" font-style="italic" fill="#755a8b" font-family="Georgia,serif">A</text></g>',
+'<g id="lm45-divide"><path d="M832 165V494" stroke="#826b96" stroke-width="1.5" stroke-dasharray="4 9"/><text x="1020" y="365" font-size="105" font-style="italic" fill="#755a8b" font-family="Georgia,serif">A</text></g>',
 '<text id="lm45-small-a" x="971" y="186" fill="#72568a" font-size="90" font-style="italic" font-family="Georgia,serif">a</text>',
 '</svg>',
 '<div class="lm45-focus" id="lm45Focus" aria-hidden="true"></div>'
@@ -118,6 +118,9 @@ function mount(article,lesson){
   objects.award.style.opacity=String(v(8));
   objects.divide.style.opacity=String(v(9)*v(10));
   objects.halo.style.opacity=String(v(11)*3);
+  objects.halo.setAttribute("cx",String(otherX-38+Math.sin(t*.21)*5));
+  objects.halo.setAttribute("cy",String(321+Math.sin(t*.16)*7));
+  objects.rings.setAttribute("transform","translate("+(Math.sin(t*.13)*6).toFixed(2)+" "+(Math.sin(t*.17)*5).toFixed(2)+")");
   objects.rings.style.opacity=String(.17+v(11)*1.2);
   objects.arc.style.opacity=String(.22+v(12)*.66);
   const mid=(meX+otherX)/2;
@@ -147,7 +150,7 @@ function mount(article,lesson){
  function verifyDuration(){
   const d=audio.duration;
   if(!Number.isFinite(d)||d<=0)return false;
-  if(Math.abs(d-EXPECTED)>3){ready=false;status.textContent="A gravação selecionada não é a narração nova de 2 minutos e 14 segundos. Selecione o MP3 correto.";return false;}
+  if(Math.abs(d-EXPECTED)>3){audio.pause();ready=false;status.textContent="A gravação selecionada não é a narração nova de 2 minutos e 14 segundos. Selecione o MP3 correto.";return false;}
   duration=d;ready=true;status.textContent="Narração carregada.";return true;
  }
  function unloadBlob(){if(blobURL){URL.revokeObjectURL(blobURL);blobURL=null;}}
