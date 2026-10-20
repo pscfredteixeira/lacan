@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6efe3">
+<meta name="description" content="Mapa conceitual interativo do pequeno outro em Lacan: semelhante, identificação, imagem do eu, rivalidade e distinção do grande Outro.">
+<title>Mapa do pequeno outro · Aula 4.5 · Formação Lacaniana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/theme.css">
+<link rel="stylesheet" href="assets/app-shell.css">
+<link rel="manifest" href="./manifest.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=1">
+<style>
+:root{--dd-paper:#f6efe3;--dd-card:#fffbf5;--dd-ink:#352743;--dd-purple:#624a7a;--dd-violet:#6e577f;--dd-lavender:#e8dff0;--dd-muted:#685d6f;--dd-hair:#d9cbdc}
+.dd-page{background:var(--dd-paper);color:var(--dd-ink)}
+.dd-shell{max-width:1320px;margin:0 auto;padding:39px clamp(16px,4vw,56px) 70px}
+.dd-trail{display:flex;gap:10px;align-items:center;flex-wrap:wrap;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:700;color:#70607a}
+.dd-trail a{text-decoration:underline;text-underline-offset:4px}
+.dd-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(250px,.65fr);gap:45px;align-items:end;padding:48px 0 33px}
+.dd-kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--dd-violet)}
+.dd-head h1{font:400 clamp(42px,5.3vw,76px)/1.14 "Libre Baskerville",Georgia,serif;letter-spacing:-.045em;margin:16px 0 22px;color:var(--dd-ink)}
+.dd-head h1 em{color:var(--dd-purple)}
+.dd-lead{font:400 clamp(14px,1.25vw,16px)/1.85 "DM Sans",sans-serif;color:#63566b;margin:0 0 6px;max-width:380px}
+.dd-rule{border-top:1px solid var(--dd-hair);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;color:#796783;font-size:10px;letter-spacing:.16em;font-weight:700;text-transform:uppercase}
+.dd-board{border:1px solid var(--dd-hair);background:#faf6ef;overflow:hidden}
+.dd-board-head{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:23px clamp(17px,3.6vw,39px);border-bottom:1px solid var(--dd-hair)}
+.dd-board-head strong{font:400 clamp(20px,2.2vw,28px)/1.3 "Libre Baskerville",Georgia,serif}
+.dd-board-head span{font-size:10px;letter-spacing:.17em;font-weight:700;color:#7b6982;text-transform:uppercase;white-space:nowrap}
+.dd-map{height:660px;position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 50% 49%,#eee5ef 0,#faf6ef 60%)}
+.dd-map::before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,transparent 99%,#d8c9dc22 99%),linear-gradient(0deg,transparent 99%,#d8c9dc22 99%);background-size:40px 40px;opacity:.5;pointer-events:none}
+.dd-links{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.dd-links path{fill:none;stroke:#9983a7;stroke-width:1.3;stroke-dasharray:4 6;vector-effect:non-scaling-stroke}
+.dd-links circle{fill:#faf6ef;stroke:#9983a7;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.dd-node{position:absolute;z-index:1;background:var(--dd-card);border:1px solid #cfc1d2;padding:21px 22px;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease,visibility .5s ease}
+.dd-node.is-on{opacity:1;visibility:visible;transform:translateY(0)}
+.dd-node small{display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#816d8c;margin-bottom:12px}
+.dd-node h2{font:400 clamp(20px,2vw,26px)/1.23 "Libre Baskerville",Georgia,serif;margin:0 0 12px;color:#493555;letter-spacing:-.025em}
+.dd-node p{font:400 14px/1.7 "DM Sans",sans-serif;margin:0;color:#64586b}
+.dd-core{left:35%;top:36%;width:30%;min-height:26%;background:#44344f;border:1px solid #44344f;color:#fcf6ef;padding:26px 28px;display:flex;flex-direction:column;justify-content:center}
+.dd-core small{color:#e0cce9}
+.dd-core h2{font-size:clamp(21px,2.3vw,33px);color:#fff8f0}
+.dd-core p{color:#e8dce9;font-size:14px}
+.dd-core .dd-symbol{position:absolute;right:16px;top:9px;font:italic 59px/1 "Libre Baskerville",Georgia,serif;color:#bda9cd;opacity:.5}
+.dd-top{left:34%;top:6%;width:32%;min-height:23%}
+.dd-left{left:4%;top:37%;width:27%;min-height:26%}
+.dd-right{right:4%;top:37%;width:27%;min-height:26%}
+.dd-bottom{left:33%;top:72%;width:34%;min-height:23%}
+.dd-compare{margin:0;border-top:1px solid var(--dd-hair);display:grid;grid-template-columns:1fr 1fr;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .45s ease,transform .45s ease,visibility .45s ease}
+.dd-compare.is-on{opacity:1;visibility:visible;transform:translateY(0)}
+.dd-compare article{padding:24px clamp(16px,3vw,39px);background:#eee5f1}
+.dd-compare article+article{border-left:1px solid #cab9d1;background:#f2e9ee}
+.dd-compare small{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#705d7c;font-weight:700}
+.dd-compare h3{font:400 22px/1.4 "Libre Baskerville",Georgia,serif;margin:9px 0;color:#443051}
+.dd-compare p{color:#65586c;font-size:13px;line-height:1.75;margin:0}
+.dd-controls{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding:18px 26px;border-top:1px solid var(--dd-hair);background:#fffaf3}
+.dd-buttons{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.dd-button{background:transparent;border:1px solid #c8b9ce;color:#493657;padding:11px 15px;font-size:12px;font-weight:700;letter-spacing:.02em;min-height:43px;border-radius:2px;cursor:pointer}
+.dd-button:hover:not(:disabled){border-color:#624a7a;background:#f1e9f4}
+.dd-button:disabled{opacity:.38;cursor:not-allowed}
+.dd-button-primary{background:#624a7a;color:white;border-color:#624a7a;min-width:118px}
+.dd-button-primary:hover:not(:disabled){background:#4d395f;color:white}
+.dd-stepstate{display:flex;align-items:center;gap:13px;font-size:11px;font-weight:700;letter-spacing:.13em;color:#716078;white-space:nowrap}
+.dd-meter{width:122px;height:3px;background:#e3d8e6;overflow:hidden}
+.dd-meter span{display:block;width:16.666%;height:100%;background:#624a7a;transition:width .35s ease}
+.dd-insight{padding:30px clamp(17px,3.6vw,39px);border-top:1px solid var(--dd-hair);display:grid;grid-template-columns:minmax(150px,.34fr) minmax(0,1fr);gap:28px;background:#f7f0e9}
+.dd-insight .dd-insight-label{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#80698c;padding-top:7px}
+.dd-insight p{font:400 clamp(15px,1.4vw,19px)/1.7 "Libre Baskerville",Georgia,serif;color:#4c3c57;margin:0;max-width:790px;min-height:60px}
+.dd-foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:26px;color:#6f6574;font-size:12px;line-height:1.7}
+.dd-foot a{text-decoration:underline;text-underline-offset:4px;color:#624a7a;font-weight:700}
+.dd-note{margin-top:17px;color:#726877;font:400 12px/1.7 "DM Sans",sans-serif}
+.dd-page a:focus-visible,.dd-page button:focus-visible{outline:3px solid #9076a4;outline-offset:4px}
+@media(max-width:1000px){.dd-map{height:700px}.dd-node{padding:17px}.dd-node p{font-size:13px}.dd-core{padding:19px}}
+@media(max-width:760px){
+.dd-shell{padding-top:22px}.dd-head{grid-template-columns:1fr;padding:30px 0 20px;gap:8px}.dd-head h1{font-size:clamp(36px,9vw,56px)}.dd-lead{max-width:unset}
+.dd-rule span:last-child{display:none}.dd-board-head{align-items:start;flex-wrap:wrap}.dd-board-head span{white-space:normal}
+.dd-map{height:auto;display:flex;flex-direction:column;gap:12px;padding:17px;background:#faf6ef}
+.dd-map::before{background-size:30px 30px}.dd-links{display:none}
+.dd-node{position:relative;left:auto;right:auto;top:auto;width:100%;min-height:0;display:none;transition:none;transform:none;padding:20px 21px}
+.dd-node.is-on{display:block;animation:dd-reveal .32s ease both}
+.dd-node h2{font-size:22px}.dd-node p{font-size:14px}.dd-core h2{font-size:25px}.dd-core .dd-symbol{font-size:49px}
+.dd-core{order:1}.dd-top{order:2}.dd-left{order:3}.dd-bottom{order:4}.dd-right{order:5}
+.dd-compare{grid-template-columns:1fr}.dd-compare article+article{border-left:0;border-top:1px solid #cab9d1}
+.dd-controls{padding:15px}.dd-buttons{width:100%}.dd-button{flex:1;min-width:0}.dd-stepstate{width:100%;justify-content:space-between}
+.dd-insight{grid-template-columns:1fr;gap:8px;padding:22px}.dd-insight p{min-height:90px}
+.dd-foot{flex-direction:column;gap:8px}
+}
+@keyframes dd-reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.dd-node,.dd-compare,.dd-meter span{transition:none!important;animation:none!important;transform:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="dd-page">
+<a class="skip" href="#dd-main">Ir para o diagrama</a>
+<header class="topbar">
+<a class="brand" href="index.html" aria-label="Início da Formação Lacaniana"><span class="brandmark">L<span class="brand-dot">.</span></span><span class="brandname">FORMAÇÃO<br>LACANIANA</span></a>
+<nav class="topnav" aria-label="Navegação"><a href="index.html#modulos">Módulos</a><a href="modulo-4.html?aula=4.5">Aula 4.5</a><a href="espelho.html">Laboratório do Espelho</a></nav>
+<div class="topactions"><a class="toplink" href="modulo-4.html?aula=4.5">Voltar à aula ↗</a></div>
+</header>
+<main id="dd-main" class="dd-shell">
+<div class="dd-trail"><a href="modulo-4.html?aula=4.5">Módulo 04</a><span aria-hidden="true">/</span><span>Aula 4.5</span><span aria-hidden="true">/</span><span>Mapa conceitual</span></div>
+<section class="dd-head" aria-labelledby="dd-title">
+<div><div class="dd-kicker">Formação Lacaniana · Atlas de conceitos / 01</div><h1 id="dd-title">O <em>pequeno</em> outro.</h1></div>
+<p class="dd-lead">O eu não se forma sozinho. No campo imaginário, imagens e semelhantes participam de identificações, admirações e rivalidades. Percorra o mapa em seis movimentos.</p>
+</section>
+<div class="dd-rule"><span>Figura 01 / Relações imaginárias</span><span>Diagrama didático · Leitura por etapas</span></div>
+<section class="dd-board" aria-label="Mapa interativo do pequeno outro">
+<div class="dd-board-head"><strong>Uma relação, quatro articulações.</strong><span>Imagem · Semelhança · Eu · Rivalidade</span></div>
+<div class="dd-map" id="dd-map">
+<svg class="dd-links" viewBox="0 0 1000 660" preserveAspectRatio="none" aria-hidden="true">
+<path d="M500 190V241M310 333H350M650 333H690M500 415V475"/>
+<circle cx="500" cy="241" r="4"/><circle cx="350" cy="333" r="4"/><circle cx="650" cy="333" r="4"/><circle cx="500" cy="475" r="4"/>
+</svg>
+<article class="dd-node dd-core" data-dd-step="1" aria-hidden="false">
+<span class="dd-symbol" aria-hidden="true">a</span><small>Conceito central</small><h2>pequeno outro (a)</h2><p>O semelhante na relação imaginária: imagem, identificação e comparação.</p>
+</article>
+<article class="dd-node dd-top" data-dd-step="2" aria-hidden="true">
+<small>01 / A alteridade próxima</small><h2>Semelhante</h2><p>O outro como par, imagem e referência na relação com o eu.</p>
+</article>
+<article class="dd-node dd-left" data-dd-step="3" aria-hidden="true">
+<small>02 / O laço especular</small><h2>Identificação</h2><p>O eu pode reconhecer-se em imagens exteriores a ele.</p>
+</article>
+<article class="dd-node dd-bottom" data-dd-step="4" aria-hidden="true">
+<small>03 / A formação do eu</small><h2>Eu e imagem</h2><p>A imagem de unidade participa da formação do eu, mas não esgota a experiência do sujeito.</p>
+</article>
+<article class="dd-node dd-right" data-dd-step="5" aria-hidden="true">
+<small>04 / A ambivalência</small><h2>Rivalidade</h2><p>Admiração, comparação, fascinação e disputa podem coexistir.</p>
+</article>
+</div>
+<div class="dd-compare" data-dd-step="6" aria-hidden="true">
+<article><small>No registro imaginário</small><h3>pequeno outro (a)</h3><p>O semelhante enquanto imagem, par e rival: relações de identificação e comparação.</p></article>
+<article><small>Na ordem simbólica</small><h3>grande Outro (A)</h3><p>O lugar da linguagem e dos significantes; não se reduz a uma pessoa concreta.</p></article>
+</div>
+<div class="dd-controls" aria-label="Controles do diagrama">
+<div class="dd-buttons">
+<button type="button" class="dd-button" id="dd-prev" aria-label="Voltar uma etapa">← Anterior</button>
+<button type="button" class="dd-button dd-button-primary" id="dd-play" aria-label="Reproduzir etapas">Reproduzir ▶</button>
+<button type="button" class="dd-button" id="dd-next" aria-label="Avançar uma etapa">Próximo →</button>
+</div>
+<div class="dd-stepstate"><span id="dd-count" aria-live="polite">01 / 06</span><div class="dd-meter" id="dd-meter" role="progressbar" aria-label="Etapas apresentadas" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1"><span id="dd-fill"></span></div></div>
+</div>
+<div class="dd-insight"><span class="dd-insight-label">Para compreender</span><p id="dd-insight" aria-live="polite">Pequeno outro não significa uma pessoa de menor importância. O termo designa uma modalidade de relação com o semelhante no campo imaginário.</p></div>
+</section>
+<p class="dd-note">Esquema introdutório, não um modelo clínico ou uma representação completa da teoria. A distinção com o grande Outro será aprofundada no Módulo 5.</p>
+<div class="dd-foot"><a href="modulo-4.html?aula=4.5">← Voltar à Aula 4.5</a><span>FORMAÇÃO LACANIANA · O EU NÃO É TODO O SUJEITO</span></div>
+</main>
+<script>
+(function(){
+"use strict";
+var texts=[
+"Pequeno outro não significa uma pessoa de menor importância. O termo designa uma modalidade de relação com o semelhante no campo imaginário.",
+"O semelhante pode funcionar como referência para nossa própria imagem; não é simplesmente qualquer pessoa que encontramos.",
+"Na identificação imaginária, reconhecemo-nos em uma imagem que está fora de nós. Esse reconhecimento também comporta alienação.",
+"O eu se organiza por identificações. Isso não significa que a imagem explique, por si só, o sujeito do inconsciente.",
+"O semelhante pode ser admirado e também vivido como rival. Uma mesma relação pode reunir fascinação e competição.",
+"O pequeno outro e o grande Outro não são duas pessoas de tamanhos diferentes. São noções de registros distintos; o grande Outro será estudado com mais cuidado no Módulo 5."
+];
+var groups=Array.from(document.querySelectorAll("[data-dd-step]"));
+var previous=document.getElementById("dd-prev");
+var next=document.getElementById("dd-next");
+var play=document.getElementById("dd-play");
+var count=document.getElementById("dd-count");
+var insight=document.getElementById("dd-insight");
+var fill=document.getElementById("dd-fill");
+var meter=document.getElementById("dd-meter");
+var reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var step=reduced?6:1,timer=null;
+function stop(){if(timer!==null){window.clearInterval(timer);timer=null;}play.textContent="Reproduzir ▶";play.setAttribute("aria-label","Reproduzir etapas");}
+function render(){
+groups.forEach(function(node){var visible=Number(node.getAttribute("data-dd-step"))<=step;node.classList.toggle("is-on",visible);node.setAttribute("aria-hidden",visible?"false":"true");});
+count.textContent=String(step).padStart(2,"0")+" / 06";
+insight.textContent=texts[step-1];fill.style.width=(step/6*100)+"%";meter.setAttribute("aria-valuenow",String(step));
+previous.disabled=step===1;next.disabled=step===6;
+}
+function advance(){if(step>=6){stop();return;}step++;render();if(step===6)stop();}
+function back(){if(step<=1)return;step--;render();}
+previous.addEventListener("click",function(){stop();back();});
+next.addEventListener("click",function(){stop();advance();});
+play.addEventListener("click",function(){
+if(timer!==null){stop();return;}
+if(step===6)step=1;render();play.textContent="Pausar Ⅱ";play.setAttribute("aria-label","Pausar etapas");
+timer=window.setInterval(advance,2900);
+});
+document.addEventListener("visibilitychange",function(){if(document.hidden)stop();});
+document.addEventListener("keydown",function(event){
+if(event.altKey||event.ctrlKey||event.metaKey||event.target.closest("button,input,textarea,select,[contenteditable]"))return;
+if(event.key==="ArrowRight"){stop();advance();}
+else if(event.key==="ArrowLeft"){stop();back();}
+});
+render();
+})();
+</script>
+<script defer src="assets/pwa.js"></script>
+<script defer src="assets/app-shell.js"></script>
+</body>
+</html>
