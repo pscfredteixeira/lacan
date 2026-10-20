@@ -81,6 +81,15 @@ function mount(article,lesson){
  const root=article.querySelector("#lacanMotion45");if(!root)return;
  const g=id=>root.querySelector("#"+id);
  const audio=g("lm45Audio"),play=g("lm45Play"),seek=g("lm45Seek"),clock=g("lm45Clock"),file=g("lm45File"),status=g("lm45Status"),focus=g("lm45Focus");
+ const canvas=root.querySelector(".lm45-canvas");
+ const stage=g("lm45Stage");
+ const adaptCanvas=()=>{
+  if(!canvas||!stage)return;
+  const ratio=stage.clientWidth/Math.max(1,stage.clientHeight);
+  canvas.setAttribute("viewBox",ratio<1.2?"455 0 585 675":"0 0 1200 675");
+ };
+ adaptCanvas();
+ window.addEventListener("resize",adaptCanvas);
  const objects={
  me:g("lm45-me"),other:g("lm45-other"),third:g("lm45-third"),glass:g("lm45-glass-panel"),
  ghost:g("lm45-ghost"),halo:g("lm45-halo"),rings:g("lm45-rings"),arc:g("lm45-arc"),
@@ -97,6 +106,8 @@ function mount(article,lesson){
   const a=states[index],b=states[index+1];
   const v=j=>lerp(a[j],b[j],progress);
   const meX=v(0),otherX=v(1),dist=v(3);
+  objects.me.style.opacity=String(reduced?1:smooth(t/2.6));
+  objects.other.style.opacity=String(reduced?1:smooth((t-1.0)/3.0));
   objects.me.setAttribute("transform","translate("+meX.toFixed(2)+" 375) scale("+(1.12*dist).toFixed(4)+")");
   objects.other.setAttribute("transform","translate("+otherX.toFixed(2)+" 375) scale("+(1.16*dist).toFixed(4)+")");
   objects.third.style.opacity=String(v(2));
@@ -182,7 +193,7 @@ function mount(article,lesson){
  });
  on(seek,"input",()=>{const t=Number(seek.value);if(ready)audio.currentTime=t;frame(t);});
  audio.src=AUDIO;audio.load();frame(0);restoreAudio();
- dispose=()=>{disposed=true;cancelAnimationFrame(raf);audio.pause();audio.removeAttribute("src");audio.load();unloadBlob();};
+ dispose=()=>{disposed=true;cancelAnimationFrame(raf);window.removeEventListener("resize",adaptCanvas);audio.pause();audio.removeAttribute("src");audio.load();unloadBlob();};
 }
 window.LACAN_MOTION_45={render,mount,unmount:()=>dispose()};
 })();
