@@ -51,6 +51,7 @@
 .dd-bottom{left:33%;top:72%;width:34%;min-height:23%}
 .dd-compare{margin:0;border-top:1px solid var(--dd-hair);display:grid;grid-template-columns:1fr 1fr;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .45s ease,transform .45s ease,visibility .45s ease}
 .dd-compare.is-on{opacity:1;visibility:visible;transform:translateY(0)}
+.dd-compare:not(.is-on){display:none}
 .dd-compare article{padding:24px clamp(16px,3vw,39px);background:#eee5f1}
 .dd-compare article+article{border-left:1px solid #cab9d1;background:#f2e9ee}
 .dd-compare small{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#705d7c;font-weight:700}
@@ -91,6 +92,7 @@
 @keyframes dd-reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.dd-node,.dd-compare,.dd-meter span{transition:none!important;animation:none!important;transform:none!important}html{scroll-behavior:auto}}
 </style>
+<noscript><style>.dd-node{opacity:1!important;visibility:visible!important;transform:none!important;display:block!important}.dd-compare{opacity:1!important;visibility:visible!important;transform:none!important;display:grid!important}@media(max-width:760px){.dd-compare{grid-template-columns:1fr!important}}</style></noscript>
 </head>
 <body class="dd-page">
 <a class="skip" href="#dd-main">Ir para o diagrama</a>
