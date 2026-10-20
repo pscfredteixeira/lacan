@@ -51,6 +51,7 @@ body{background:var(--cream);color:var(--ink)}
 .audio-request p{margin:0;flex:1;font:400 12px/1.65 "DM Sans",sans-serif;color:#615469}
 .audio-request label{background:#674e7a;color:#fff;cursor:pointer;display:inline-flex;align-items:center;padding:12px 16px;font:700 12px "DM Sans",sans-serif}
 .audio-request label:focus-within{outline:3px solid #a990be;outline-offset:3px}
+#audioRequest[hidden]{display:none!important}
 .audio-request input{position:absolute;width:1px;height:1px;opacity:0}
 .note{margin-top:15px;color:#75677a;font:400 12px/1.8 "DM Sans",sans-serif}
 .return-link{font-weight:700;text-decoration:underline;text-underline-offset:4px;color:#6a5080}
@@ -177,7 +178,7 @@ body{background:var(--cream);color:var(--ink)}
 <div class="footline"><span>DIAGRAMA EM MOVIMENTO / NÃO É LEGENDA</span><span>PSICANÁLISE · LACAN</span></div>
 </section>
 <div class="play-interface">
-<button class="play-main" id="play" type="button" aria-label="Reproduzir narração" disabled>▶</button>
+<button class="play-main" id="play" type="button" aria-label="Reproduzir narração">▶</button>
 <input class="seek" id="seek" type="range" min="0" max="134.4" step=".01" value="0" aria-label="Posição da narração">
 <span class="timecode" id="clock">00:00 / 02:14</span>
 <span class="audiostate" id="audioState">ÁUDIO</span>
@@ -194,7 +195,7 @@ body{background:var(--cream);color:var(--ink)}
 "use strict";
 if(new URLSearchParams(location.search).has("embed"))document.body.classList.add("embed");
 var AUDIO_PATH="assets/pequeno-outro-45-novo.mp3",CACHE_KEY="lacan-pequeno-outro-audio-v2",MAX=134.4;
-var cues=[
+var modernCues=[
 {t:0,k:"01 / O encontro",title:"Há pessoas que <em>nos fascinam.</em>",sub:"Admiração, inspiração, comparação."},
 {t:16.3,k:"02 / Uma ambivalência",title:"Admirar. <em>Rivalizar.</em>",sub:"Duas experiências podem nascer da mesma relação."},
 {t:27.55,k:"03 / O semelhante",title:"O outro também é <em>espelho.</em>",sub:"Uma imagem que vem de fora."},
@@ -206,6 +207,19 @@ var cues=[
 {t:114.9,k:"09 / Uma distinção",title:"Pequeno outro <em>≠</em> grande Outro.",sub:"Semelhante e Imaginário; linguagem e Simbólico."},
 {t:123.9,k:"10 / Uma pergunta",title:"O que vejo <em>no outro?</em>",sub:"Também uma imagem daquilo que desejo ser?"}
 ];
+var legacyCues=[
+{t:0,k:"01 / A pergunta",title:"Quem é o <em>outro</em> para mim?",sub:"Admiração, identificação, rivalidade."},
+{t:7.6,k:"02 / Uma ambivalência",title:"Admirar. <em>Rivalizar.</em>",sub:"A conquista do semelhante também nos afeta."},
+{t:13,k:"03 / O conceito",title:"O pequeno <em>outro.</em>",sub:"O semelhante com quem nos identificamos e nos comparamos."},
+{t:25.1,k:"04 / O espelho",title:"O eu se reconhece <em>fora de si.</em>",sub:"Uma imagem exterior participa de sua constituição."},
+{t:35.5,k:"05 / O paradoxo",title:"Reconhecer-se é <em>alienar-se.</em>",sub:"A imagem do eu não nasce inteiramente de dentro."},
+{t:43.6,k:"06 / O Imaginário",title:"Imagens e <em>identificações.</em>",sub:"O semelhante participa do campo imaginário."},
+{t:47.8,k:"07 / Um exemplo",title:"Por que o êxito do amigo <em>incomoda?</em>",sub:"Admiração e comparação podem coexistir."},
+{t:63.9,k:"08 / A distinção",title:"Pequeno outro <em>≠</em> grande Outro.",sub:"O semelhante não é o lugar da linguagem."},
+{t:73.6,k:"09 / Uma questão",title:"Quem é esse outro <em>para mim?</em>",sub:"O que minha identificação revela da imagem que faço de mim?"},
+{t:80.8,k:"10 / O percurso",title:"O pequeno <em>outro.</em>",sub:"Módulo 04 · Aula 4.5"}
+];
+var cues=modernCues,legacyMode=false;
 var film=document.getElementById("film"),audio=document.getElementById("narration"),play=document.getElementById("play"),seek=document.getElementById("seek"),clock=document.getElementById("clock"),state=document.getElementById("audioState");
 var request=document.getElementById("audioRequest"),message=document.getElementById("audioMessage"),fileInput=document.getElementById("audioFile"),copy=document.getElementById("sceneCopy"),title=document.getElementById("sceneTitle"),kicker=document.getElementById("sceneKicker"),sub=document.getElementById("sceneSub");
 var motifs=[...document.querySelectorAll(".motif")],backdrop=document.getElementById("globalLines"),bg=document.getElementById("filmBg");
@@ -223,8 +237,8 @@ var local=t-cues[index].t,entry=ease(local/1.5),transition=ease((local-.3)/2);
 var nextindex=index+1;
 for(var j=0;j<motifs.length;j++){
 var opacity=0,scale=1,shift=0;
-if(j===index){opacity=reduced?1:entry;scale=1+.028*(1-transition);shift=14*(1-entry);}
-else if(j===index-1){var elapsed=t-cues[index].t;opacity=reduced?0:1-ease(elapsed/1.7);scale=1+.045*ease(elapsed/1.7);}
+if(j===(legacyMode?[0,1,5,2,4,7,6,8,9,9][index]:index)){opacity=reduced?1:entry;scale=1+.028*(1-transition);shift=14*(1-entry);}
+else if(j===(legacyMode?[0,1,5,2,4,7,6,8,9,9][index-1]:index-1)){var elapsed=t-cues[index].t;opacity=reduced?0:1-ease(elapsed/1.7);scale=1+.045*ease(elapsed/1.7);}
 motifs[j].style.opacity=String(opacity);
 motifs[j].style.transform="translate("+shift+"px,"+(7*(1-entry))+"px) scale("+scale+")";
 motifs[j].style.transformOrigin="860px 305px";
@@ -250,11 +264,24 @@ audio.addEventListener("seeked",stopFrame);
 audio.addEventListener("ended",stopFrame);
 audio.addEventListener("loadedmetadata",function(){
 var d=audio.duration;if(Number.isFinite(d)&&d>0){tmax=d;MAX=d;}
-ready=true;play.disabled=false;state.textContent="PRONTO";request.hidden=true;draw(audio.currentTime||0);
+ready=true;play.disabled=false;state.textContent=legacyMode?"ÁUDIO ANTERIOR":"NOVA NARRAÇÃO";
+if(legacyMode)showMessage("A gravação nova ainda não está no servidor. O Play já funciona com a narração anterior (1min23s). Para ouvir a nova voz de 2min14s, selecione seu MP3 aqui uma única vez neste navegador.");
+else request.hidden=true;
+draw(audio.currentTime||0);
 });
-audio.addEventListener("error",function(){if(!ready){state.textContent="ESCOLHA O MP3";showMessage("Para ouvir sua nova narração, selecione o MP3 enviado nesta conversa. O arquivo pode ficar salvo apenas neste navegador.");}});
+audio.addEventListener("error",function(){
+if(ready)return;
+if(!legacyMode && !currentObjectURL){
+ legacyMode=true;cues=legacyCues;tmax=82.678;active=-1;
+ showMessage("A gravação nova ainda não foi publicada neste site. Carregando a narração anterior, que já está no GitHub. Para ouvir a gravação nova, escolha o MP3 nesta página.");
+ state.textContent="ÁUDIO ANTERIOR";
+ audio.src="assets/pequeno-outro-45.mp3";audio.load();return;
+}
+state.textContent="SELECIONE O MP3";
+showMessage("O áudio não pôde ser carregado. Selecione o MP3 desta conversa para reproduzir a animação.");
+});
 play.addEventListener("click",async function(){
-if(!ready){showMessage("Selecione primeiro o MP3 desta narração.");return;}
+if(!ready){showMessage("Selecione seu MP3 para iniciar a narração.");fileInput.click();return;}
 if(!audio.paused){audio.pause();return;}
 if(audio.currentTime>=tmax-.1)audio.currentTime=0;
 try{await audio.play();}catch(e){showMessage("O navegador bloqueou a reprodução. Toque em Reproduzir novamente.");}
@@ -262,7 +289,8 @@ try{await audio.play();}catch(e){showMessage("O navegador bloqueou a reproduçã
 seek.addEventListener("input",function(){var t=Number(seek.value);if(ready)audio.currentTime=t;draw(t);});
 function setFile(blob){
 if(currentObjectURL)URL.revokeObjectURL(currentObjectURL);
-audio.pause();currentObjectURL=URL.createObjectURL(blob);
+audio.pause();legacyMode=false;cues=modernCues;tmax=134.426;active=-1;ready=false;
+currentObjectURL=URL.createObjectURL(blob);
 audio.src=currentObjectURL;audio.load();state.textContent="CARREGANDO";
 }
 function persist(blob){
@@ -280,7 +308,7 @@ function restore(){
 try{var req=indexedDB.open("lacan-narracoes",1);
 req.onupgradeneeded=function(){if(!req.result.objectStoreNames.contains("mp3"))req.result.createObjectStore("mp3");};
 req.onsuccess=function(){var db=req.result,tx=db.transaction("mp3","readonly"),get=tx.objectStore("mp3").get(CACHE_KEY);
-get.onsuccess=function(){if(!ready&&get.result instanceof Blob)setFile(get.result);};
+get.onsuccess=function(){if(get.result instanceof Blob)setFile(get.result);};
 tx.oncomplete=function(){db.close();};};
 }catch(e){}
 }
