@@ -1,200 +1,294 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f6efe3">
-<meta name="description" content="Mapa conceitual interativo do pequeno outro em Lacan: semelhante, identificação, imagem do eu, rivalidade e distinção do grande Outro.">
-<title>Mapa do pequeno outro · Aula 4.5 · Formação Lacaniana</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<link rel="stylesheet" href="assets/theme.css">
-<link rel="stylesheet" href="assets/app-shell.css">
-<link rel="manifest" href="./manifest.webmanifest?v=1">
-<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=1">
+<meta name="description" content="O pequeno outro em Lacan: experiência visual narrada, com animação contínua sincronizada ao áudio da Aula 4.5.">
+<title>O pequeno outro · Narrativa visual · Formação Lacaniana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css"><link rel="stylesheet" href="assets/theme.css"><link rel="stylesheet" href="assets/app-shell.css">
 <style>
-:root{--dd-paper:#f6efe3;--dd-card:#fffbf5;--dd-ink:#352743;--dd-purple:#624a7a;--dd-violet:#6e577f;--dd-lavender:#e8dff0;--dd-muted:#685d6f;--dd-hair:#d9cbdc}
-.dd-page{background:var(--dd-paper);color:var(--dd-ink)}
-.dd-shell{max-width:1320px;margin:0 auto;padding:39px clamp(16px,4vw,56px) 70px}
-.dd-trail{display:flex;gap:10px;align-items:center;flex-wrap:wrap;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:700;color:#70607a}
-.dd-trail a{text-decoration:underline;text-underline-offset:4px}
-.dd-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(250px,.65fr);gap:45px;align-items:end;padding:48px 0 33px}
-.dd-kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--dd-violet)}
-.dd-head h1{font:400 clamp(42px,5.3vw,76px)/1.14 "Libre Baskerville",Georgia,serif;letter-spacing:-.045em;margin:16px 0 22px;color:var(--dd-ink)}
-.dd-head h1 em{color:var(--dd-purple)}
-.dd-lead{font:400 clamp(14px,1.25vw,16px)/1.85 "DM Sans",sans-serif;color:#63566b;margin:0 0 6px;max-width:380px}
-.dd-rule{border-top:1px solid var(--dd-hair);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;color:#796783;font-size:10px;letter-spacing:.16em;font-weight:700;text-transform:uppercase}
-.dd-board{border:1px solid var(--dd-hair);background:#faf6ef;overflow:hidden}
-.dd-board-head{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:23px clamp(17px,3.6vw,39px);border-bottom:1px solid var(--dd-hair)}
-.dd-board-head strong{font:400 clamp(20px,2.2vw,28px)/1.3 "Libre Baskerville",Georgia,serif}
-.dd-board-head span{font-size:10px;letter-spacing:.17em;font-weight:700;color:#7b6982;text-transform:uppercase;white-space:nowrap}
-.dd-map{height:660px;position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 50% 49%,#eee5ef 0,#faf6ef 60%)}
-.dd-map::before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,transparent 99%,#d8c9dc22 99%),linear-gradient(0deg,transparent 99%,#d8c9dc22 99%);background-size:40px 40px;opacity:.5;pointer-events:none}
-.dd-links{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
-.dd-links path{fill:none;stroke:#9983a7;stroke-width:1.3;stroke-dasharray:4 6;vector-effect:non-scaling-stroke}
-.dd-links circle{fill:#faf6ef;stroke:#9983a7;stroke-width:1.5;vector-effect:non-scaling-stroke}
-.dd-node{position:absolute;z-index:1;background:var(--dd-card);border:1px solid #cfc1d2;padding:21px 22px;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease,visibility .5s ease}
-.dd-node.is-on{opacity:1;visibility:visible;transform:translateY(0)}
-.dd-node small{display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#816d8c;margin-bottom:12px}
-.dd-node h2{font:400 clamp(20px,2vw,26px)/1.23 "Libre Baskerville",Georgia,serif;margin:0 0 12px;color:#493555;letter-spacing:-.025em}
-.dd-node p{font:400 14px/1.7 "DM Sans",sans-serif;margin:0;color:#64586b}
-.dd-core{left:35%;top:36%;width:30%;min-height:26%;background:#44344f;border:1px solid #44344f;color:#fcf6ef;padding:26px 28px;display:flex;flex-direction:column;justify-content:center}
-.dd-core small{color:#e0cce9}
-.dd-core h2{font-size:clamp(21px,2.3vw,33px);color:#fff8f0}
-.dd-core p{color:#e8dce9;font-size:14px}
-.dd-core .dd-symbol{position:absolute;right:16px;top:9px;font:italic 59px/1 "Libre Baskerville",Georgia,serif;color:#bda9cd;opacity:.5}
-.dd-top{left:34%;top:6%;width:32%;min-height:23%}
-.dd-left{left:4%;top:37%;width:27%;min-height:26%}
-.dd-right{right:4%;top:37%;width:27%;min-height:26%}
-.dd-bottom{left:33%;top:72%;width:34%;min-height:23%}
-.dd-compare{margin:0;border-top:1px solid var(--dd-hair);display:grid;grid-template-columns:1fr 1fr;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .45s ease,transform .45s ease,visibility .45s ease}
-.dd-compare.is-on{opacity:1;visibility:visible;transform:translateY(0)}
-.dd-compare:not(.is-on){display:none}
-.dd-compare article{padding:24px clamp(16px,3vw,39px);background:#eee5f1}
-.dd-compare article+article{border-left:1px solid #cab9d1;background:#f2e9ee}
-.dd-compare small{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#705d7c;font-weight:700}
-.dd-compare h3{font:400 22px/1.4 "Libre Baskerville",Georgia,serif;margin:9px 0;color:#443051}
-.dd-compare p{color:#65586c;font-size:13px;line-height:1.75;margin:0}
-.dd-controls{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding:18px 26px;border-top:1px solid var(--dd-hair);background:#fffaf3}
-.dd-buttons{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
-.dd-button{background:transparent;border:1px solid #c8b9ce;color:#493657;padding:11px 15px;font-size:12px;font-weight:700;letter-spacing:.02em;min-height:43px;border-radius:2px;cursor:pointer}
-.dd-button:hover:not(:disabled){border-color:#624a7a;background:#f1e9f4}
-.dd-button:disabled{opacity:.38;cursor:not-allowed}
-.dd-button-primary{background:#624a7a;color:white;border-color:#624a7a;min-width:118px}
-.dd-button-primary:hover:not(:disabled){background:#4d395f;color:white}
-.dd-stepstate{display:flex;align-items:center;gap:13px;font-size:11px;font-weight:700;letter-spacing:.13em;color:#716078;white-space:nowrap}
-.dd-meter{width:122px;height:3px;background:#e3d8e6;overflow:hidden}
-.dd-meter span{display:block;width:16.666%;height:100%;background:#624a7a;transition:width .35s ease}
-.dd-insight{padding:30px clamp(17px,3.6vw,39px);border-top:1px solid var(--dd-hair);display:grid;grid-template-columns:minmax(150px,.34fr) minmax(0,1fr);gap:28px;background:#f7f0e9}
-.dd-insight .dd-insight-label{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#80698c;padding-top:7px}
-.dd-insight p{font:400 clamp(15px,1.4vw,19px)/1.7 "Libre Baskerville",Georgia,serif;color:#4c3c57;margin:0;max-width:790px;min-height:60px}
-.dd-foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:26px;color:#6f6574;font-size:12px;line-height:1.7}
-.dd-foot a{text-decoration:underline;text-underline-offset:4px;color:#624a7a;font-weight:700}
-.dd-note{margin-top:17px;color:#726877;font:400 12px/1.7 "DM Sans",sans-serif}
-.dd-page a:focus-visible,.dd-page button:focus-visible{outline:3px solid #9076a4;outline-offset:4px}
-@media(max-width:1000px){.dd-map{height:700px}.dd-node{padding:17px}.dd-node p{font-size:13px}.dd-core{padding:19px}}
-@media(max-width:760px){
-.dd-shell{padding-top:22px}.dd-head{grid-template-columns:1fr;padding:30px 0 20px;gap:8px}.dd-head h1{font-size:clamp(36px,9vw,56px)}.dd-lead{max-width:unset}
-.dd-rule span:last-child{display:none}.dd-board-head{align-items:start;flex-wrap:wrap}.dd-board-head span{white-space:normal}
-.dd-map{height:auto;display:flex;flex-direction:column;gap:12px;padding:17px;background:#faf6ef}
-.dd-map::before{background-size:30px 30px}.dd-links{display:none}
-.dd-node{position:relative;left:auto;right:auto;top:auto;width:100%;min-height:0;display:none;transition:none;transform:none;padding:20px 21px}
-.dd-node.is-on{display:block;animation:dd-reveal .32s ease both}
-.dd-node h2{font-size:22px}.dd-node p{font-size:14px}.dd-core h2{font-size:25px}.dd-core .dd-symbol{font-size:49px}
-.dd-core{order:1}.dd-top{order:2}.dd-left{order:3}.dd-bottom{order:4}.dd-right{order:5}
-.dd-compare{grid-template-columns:1fr}.dd-compare article+article{border-left:0;border-top:1px solid #cab9d1}
-.dd-controls{padding:15px}.dd-buttons{width:100%}.dd-button{flex:1;min-width:0}.dd-stepstate{width:100%;justify-content:space-between}
-.dd-insight{grid-template-columns:1fr;gap:8px;padding:22px}.dd-insight p{min-height:90px}
-.dd-foot{flex-direction:column;gap:8px}
+:root{--cream:#f6efe3;--paper:#fbf7ef;--ink:#33273c;--lilac:#b8a2c7;--violet:#725585;--line:#d6c8d8}
+*{box-sizing:border-box}
+body{background:var(--cream);color:var(--ink)}
+.narrative{max-width:1240px;margin:auto;padding:25px clamp(14px,3.6vw,52px) 60px}
+.narrative-header{padding:28px 0 25px;display:flex;align-items:end;justify-content:space-between;gap:25px}
+.narrative-kicker{font:700 10px/1.6 "DM Sans",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#755e85}
+.narrative h1{font:400 clamp(29px,4.4vw,56px)/1.15 "Libre Baskerville",Georgia,serif;margin:8px 0 0;letter-spacing:-.04em}
+.narrative h1 em{color:#76588e}
+.narrative-description{font-size:13px;color:#706375;line-height:1.8;max-width:380px;margin:0}
+.film{background:#e8deeb;position:relative;overflow:hidden;aspect-ratio:16/9;border:1px solid var(--line);isolation:isolate}
+.film::before{content:"";position:absolute;inset:0;z-index:8;pointer-events:none;opacity:.17;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='.11'/%3E%3C/svg%3E")}
+.film svg{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1}
+.film .topline{position:absolute;z-index:9;top:4.5%;left:5.4%;right:5.4%;border-bottom:1px solid #78638966;padding-bottom:13px;display:flex;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.17em;color:#6e597c;font-weight:700}
+.scene-copy{position:absolute;z-index:5;left:7.5%;bottom:13%;width:54%;pointer-events:none;color:var(--ink)}
+.scene-kicker{display:block;font:700 clamp(9px,.94vw,13px)/1.6 "DM Sans",sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#7a6190;margin-bottom:16px}
+.scene-title{margin:0;font:400 clamp(29px,5.1vw,75px)/1.14 "Libre Baskerville",Georgia,serif;letter-spacing:-.055em}
+.scene-title em{color:#785792}
+.scene-sub{display:block;margin-top:18px;max-width:450px;font:400 clamp(12px,1.25vw,17px)/1.65 "DM Sans",sans-serif;color:#685875}
+.film .scene-copy.final{left:10%;bottom:25%;width:80%;text-align:center}
+.film .scene-copy.final .scene-title{font-size:clamp(29px,4.5vw,65px)}
+.film .footline{position:absolute;z-index:7;left:5.4%;right:5.4%;bottom:4%;display:flex;justify-content:space-between;font:700 9px/1.4 "DM Sans",sans-serif;letter-spacing:.18em;color:#816f87}
+.film #filmBg{transition:fill .15s linear}
+.motif{opacity:0;pointer-events:none}
+.figure{fill:#bcabc9;stroke:#70598b;stroke-width:2}
+.figure-light{fill:#e8dded;stroke:#8d76a1;stroke-width:2}
+.fine{fill:none;stroke:#9781a5;stroke-width:1.6;vector-effect:non-scaling-stroke}
+.fine-soft{fill:none;stroke:#ad9bbc;stroke-width:1.2;stroke-dasharray:4 9;vector-effect:non-scaling-stroke}
+.symbol{fill:#70558a;font:italic 120px Georgia,serif}
+.motif-label{font:700 13px "DM Sans",sans-serif;letter-spacing:4px;fill:#7a6786}
+.film.is-dark .scene-title,.film.is-dark .scene-title em{color:#f7efe8}
+.film.is-dark .scene-sub,.film.is-dark .scene-kicker,.film.is-dark .topline,.film.is-dark .footline{color:#d7c6dc}
+.play-interface{display:flex;align-items:center;gap:13px;padding:15px 18px;background:#fffbf5;border:1px solid #ddd0dc;border-top:0}
+.play-main{border:0;min-width:46px;height:46px;background:#644c78;color:#fff;cursor:pointer;font-size:15px;display:grid;place-items:center}
+.play-main:disabled{opacity:.45;cursor:not-allowed}
+.play-main:focus-visible,.play-interface input:focus-visible,.audio-request button:focus-visible{outline:3px solid #a990be;outline-offset:4px}
+.seek{flex:1;min-width:70px;width:100%;accent-color:#725585;cursor:pointer}
+.timecode{color:#6b5877;white-space:nowrap;font:600 12px "DM Sans",sans-serif;font-variant-numeric:tabular-nums}
+.audiostate{color:#795e87;font:700 11px "DM Sans",sans-serif;letter-spacing:.08em}
+.audio-request{background:#f4edf3;border:1px solid #d7c5dc;padding:17px 22px;margin-top:15px;display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.audio-request p{margin:0;flex:1;font:400 12px/1.65 "DM Sans",sans-serif;color:#615469}
+.audio-request label{background:#674e7a;color:#fff;cursor:pointer;display:inline-flex;align-items:center;padding:12px 16px;font:700 12px "DM Sans",sans-serif}
+.audio-request label:focus-within{outline:3px solid #a990be;outline-offset:3px}
+.audio-request input{position:absolute;width:1px;height:1px;opacity:0}
+.note{margin-top:15px;color:#75677a;font:400 12px/1.8 "DM Sans",sans-serif}
+.return-link{font-weight:700;text-decoration:underline;text-underline-offset:4px;color:#6a5080}
+.embed .topbar,.embed .narrative-header,.embed .note,.embed .return-link{display:none!important}
+.embed{background:transparent}
+.embed .narrative{padding:0;margin:0;max-width:none}
+.embed .film{border:0}
+.embed .play-interface{border-left:0;border-right:0}
+@media(max-width:750px){
+.narrative-header{display:block;padding:14px 0 18px}
+.narrative-description{margin-top:14px}
+.film{aspect-ratio:4/5}
+.film svg{width:100%;height:100%}
+.film .topline{font-size:7px;letter-spacing:.08em}
+.scene-copy{bottom:10%;left:7%;width:86%}
+.scene-kicker{font-size:9px;margin-bottom:10px}
+.scene-title{font-size:clamp(30px,8vw,54px)}
+.scene-sub{font-size:12px;margin-top:12px;max-width:90%}
+.film .scene-copy.final{left:6%;width:88%;bottom:28%}
+.film .scene-copy.final .scene-title{font-size:clamp(27px,7vw,44px)}
+.film .footline{font-size:7px;letter-spacing:.05em}
+.play-interface{gap:8px;padding:10px}
+.timecode{font-size:10px}
+.audiostate{display:none}
+.audio-request{padding:15px}
 }
-@keyframes dd-reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-@media(prefers-reduced-motion:reduce){.dd-node,.dd-compare,.dd-meter span{transition:none!important;animation:none!important;transform:none!important}html{scroll-behavior:auto}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
-<noscript><style>.dd-node{opacity:1!important;visibility:visible!important;transform:none!important;display:block!important}.dd-compare{opacity:1!important;visibility:visible!important;transform:none!important;display:grid!important}@media(max-width:760px){.dd-compare{grid-template-columns:1fr!important}}</style></noscript>
 </head>
-<body class="dd-page">
-<a class="skip" href="#dd-main">Ir para o diagrama</a>
-<header class="topbar">
-<a class="brand" href="index.html" aria-label="Início da Formação Lacaniana"><span class="brandmark">L<span class="brand-dot">.</span></span><span class="brandname">FORMAÇÃO<br>LACANIANA</span></a>
-<nav class="topnav" aria-label="Navegação"><a href="index.html#modulos">Módulos</a><a href="modulo-4.html?aula=4.5">Aula 4.5</a><a href="espelho.html">Laboratório do Espelho</a></nav>
-<div class="topactions"><a class="toplink" href="modulo-4.html?aula=4.5">Voltar à aula ↗</a></div>
-</header>
-<main id="dd-main" class="dd-shell">
-<div class="dd-trail"><a href="modulo-4.html?aula=4.5">Módulo 04</a><span aria-hidden="true">/</span><span>Aula 4.5</span><span aria-hidden="true">/</span><span>Mapa conceitual</span></div>
-<section class="dd-head" aria-labelledby="dd-title">
-<div><div class="dd-kicker">Formação Lacaniana · Atlas de conceitos / 01</div><h1 id="dd-title">O <em>pequeno</em> outro.</h1></div>
-<p class="dd-lead">O eu não se forma sozinho. No campo imaginário, imagens e semelhantes participam de identificações, admirações e rivalidades. Percorra o mapa em seis movimentos.</p>
-</section>
-<div class="dd-rule"><span>Figura 01 / Relações imaginárias</span><span>Diagrama didático · Leitura por etapas</span></div>
-<section class="dd-board" aria-label="Mapa interativo do pequeno outro">
-<div class="dd-board-head"><strong>Uma relação, quatro articulações.</strong><span>Imagem · Semelhança · Eu · Rivalidade</span></div>
-<div class="dd-map" id="dd-map">
-<svg class="dd-links" viewBox="0 0 1000 660" preserveAspectRatio="none" aria-hidden="true">
-<path d="M500 190V241M310 333H350M650 333H690M500 415V475"/>
-<circle cx="500" cy="241" r="4"/><circle cx="350" cy="333" r="4"/><circle cx="650" cy="333" r="4"/><circle cx="500" cy="475" r="4"/>
+<body>
+<header class="topbar"><a class="brand" href="index.html" aria-label="Início da formação"><span class="brandmark">L<span class="brand-dot">.</span></span><span class="brandname">FORMAÇÃO<br>LACANIANA</span></a><nav class="topnav" aria-label="Navegação"><a href="index.html#modulos">Módulos</a><a href="modulo-4.html?aula=4.5">Aula 4.5</a></nav><div class="topactions"><a class="toplink" href="modulo-4.html?aula=4.5">Voltar à aula ↗</a></div></header>
+<main class="narrative">
+<div class="narrative-header"><div><div class="narrative-kicker">Formação Lacaniana / Módulo 04 / Aula 4.5</div><h1>O <em>pequeno</em> outro.</h1></div><p class="narrative-description">Uma experiência visual contínua. As imagens acompanham a voz e mudam de sentido com ela.</p></div>
+<section class="film" id="film" aria-label="Animação sincronizada à narração sobre o pequeno outro">
+<div class="topline"><span>FORMAÇÃO LACANIANA</span><span>04.5 / IMAGEM E ALTERIDADE</span></div>
+<svg viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Figuras abstratas em transformação: semelhantes, espelho, identificação, rivalidade, Imaginário e Outro.">
+<defs>
+<radialGradient id="warm"><stop stop-color="#faf3e7"/><stop offset="1" stop-color="#e6d9e6"/></radialGradient>
+<radialGradient id="night"><stop stop-color="#675072"/><stop offset="1" stop-color="#392d48"/></radialGradient>
+<linearGradient id="glass"><stop stop-color="#cab7d4" stop-opacity=".8"/><stop offset=".5" stop-color="#f9f2ed" stop-opacity=".85"/><stop offset="1" stop-color="#bcabd0" stop-opacity=".85"/></linearGradient>
+<g id="person"><circle cx="0" cy="-77" r="40"/><path d="M-89 98V70Q-87 18-34 -12Q0 4 34-12Q87 18 89 70V98Z"/></g>
+<g id="personThin"><circle cx="0" cy="-77" r="40"/><path d="M-89 98V70Q-87 18-34 -12Q0 4 34-12Q87 18 89 70V98Z" fill="none" /></g>
+</defs>
+<rect id="filmBg" x="-20" y="-20" width="1240" height="715" fill="url(#warm)"/>
+<g id="globalLines" opacity=".55"><circle cx="860" cy="300" r="225" class="fine-soft"/><circle cx="860" cy="300" r="185" class="fine-soft"/></g>
+<g class="motif" data-motif="0">
+<circle cx="838" cy="290" r="230" fill="#d8c7df" opacity=".35"/>
+<g class="figure-light" transform="translate(660 323) scale(1.13)"><use href="#person"/></g>
+<g class="figure" transform="translate(874 333) scale(1.28)"><use href="#person"/></g>
+<g class="figure-light" transform="translate(1073 336) scale(.87)"><use href="#person"/></g>
+<path class="fine-soft" d="M612 245Q862 50 1096 245"/>
+</g>
+<g class="motif" data-motif="1">
+<circle cx="832" cy="280" r="207" class="fine"/>
+<g transform="translate(725 335) scale(1.19)" class="figure-light"><use href="#person"/></g>
+<g transform="translate(952 335) scale(1.19)" class="figure"><use href="#person"/></g>
+<path d="M845 100V440" class="fine-soft"/><path d="M735 156Q845 62 950 156" class="fine"/>
+<circle cx="845" cy="120" r="18" fill="#9b7898"/><circle cx="845" cy="120" r="30" class="fine-soft"/>
+</g>
+<g class="motif" data-motif="2">
+<rect x="795" y="102" width="255" height="408" rx="128" fill="url(#glass)" stroke="#866c9a" stroke-width="3"/>
+<rect x="811" y="118" width="223" height="375" rx="112" class="fine-soft"/>
+<g class="figure" transform="translate(927 371) scale(.92)"><use href="#person"/></g>
+<g class="figure-light" transform="translate(642 383) scale(.89)"><use href="#person"/></g>
+<path d="M728 270h86" class="fine-soft"/>
+</g>
+<g class="motif" data-motif="3">
+<rect x="750" y="77" width="315" height="462" rx="158" fill="url(#glass)" stroke="#836994" stroke-width="2"/>
+<g class="figure-light" transform="translate(615 375) scale(.96)"><use href="#person"/></g>
+<g class="figure" transform="translate(909 359) scale(1.29)"><use href="#person"/></g>
+<path class="fine-soft" d="M742 278Q640 226 653 182M1052 278Q1133 235 1110 170"/><text x="900" y="210" text-anchor="middle" font="italic 75px Georgia,serif" fill="#6c507e">eu</text>
+</g>
+<g class="motif" data-motif="4">
+<g transform="translate(704 342) scale(1.12)" class="figure-light"><use href="#personThin"/></g>
+<g transform="translate(955 342) scale(1.12)" class="figure"><use href="#person"/></g>
+<circle cx="830" cy="282" r="205" class="fine-soft"/>
+<path d="M763 198Q830 136 904 198" stroke="#7a608e" stroke-width="2" fill="none"/>
+<path d="M901 192l11 9-14 1" stroke="#7a608e" stroke-width="2" fill="none"/>
+<path d="M903 405Q833 467 757 405" stroke="#7a608e" stroke-width="2" fill="none"/>
+<path d="M767 411l-12-9 14-1" stroke="#7a608e" stroke-width="2" fill="none"/>
+<text x="832" y="305" class="motif-label" text-anchor="middle">SOU EU</text>
+</g>
+<g class="motif" data-motif="5">
+<circle cx="844" cy="320" r="190" fill="#dbcee5" opacity=".4"/>
+<circle cx="844" cy="320" r="162" class="fine-soft"/>
+<circle cx="844" cy="320" r="112" class="fine"/>
+<text x="844" y="360" class="symbol" text-anchor="middle">a</text>
+<g transform="translate(670 312) scale(.68)" class="figure-light"><use href="#person"/></g>
+<g transform="translate(1031 315) scale(.68)" class="figure-light"><use href="#person"/></g>
+<path class="fine-soft" d="M748 320h-27m221 0h26"/>
+</g>
+<g class="motif" data-motif="6">
+<g transform="translate(735 367) scale(1.08)" class="figure-light"><use href="#person"/></g>
+<g transform="translate(1010 367) scale(1.08)" class="figure"><use href="#person"/></g>
+<circle cx="1009" cy="199" r="101" class="fine-soft"/>
+<path d="M1009 122l17 38 42 5-31 30 8 43-36-20-38 20 8-43-31-30 43-5Z" fill="#c3a9ca" stroke="#76558d" stroke-width="2"/>
+<path d="M828 213Q879 156 930 212" class="fine-soft"/>
+</g>
+<g class="motif" data-motif="7">
+<circle cx="852" cy="297" r="224" fill="#d7c5e0" opacity=".35"/>
+<g class="fine-soft"><path d="M645 170l192 97 205-157M837 267l-80 186 289-76-209-110M645 170l112 283m285-343 4 267"/></g>
+<g fill="#c6afd4" stroke="#755b86" stroke-width="2"><circle cx="645" cy="170" r="33"/><circle cx="837" cy="267" r="52"/><circle cx="1042" cy="110" r="37"/><circle cx="757" cy="453" r="28"/><circle cx="1046" cy="377" r="41"/></g>
+<circle cx="837" cy="267" r="11" fill="#76558c"/>
+<text x="837" y="375" class="motif-label" text-anchor="middle">IMAGINÁRIO</text>
+</g>
+<g class="motif" data-motif="8">
+<circle cx="744" cy="290" r="161" class="fine"/>
+<circle cx="1030" cy="290" r="161" class="fine-soft"/>
+<text x="742" y="342" class="symbol" text-anchor="middle">a</text>
+<text x="1030" y="342" class="symbol" text-anchor="middle" fill="#503b68">A</text>
+<path class="fine" d="M908 202l-27 53m0-53 27 53" stroke-width="3"/>
+<text x="744" y="478" class="motif-label" text-anchor="middle">IMAGINÁRIO</text>
+<text x="1028" y="478" class="motif-label" text-anchor="middle">SIMBÓLICO</text>
+</g>
+<g class="motif" data-motif="9">
+<circle cx="857" cy="294" r="223" class="fine-soft"/>
+<circle cx="857" cy="294" r="165" class="fine"/>
+<g class="figure-light" transform="translate(779 340) scale(.95)"><use href="#person"/></g>
+<g class="figure" transform="translate(930 340) scale(.95)"><use href="#person"/></g>
+<path class="fine-soft" d="M854 91v412"/>
+</g>
 </svg>
-<article class="dd-node dd-core" data-dd-step="1" aria-hidden="false">
-<span class="dd-symbol" aria-hidden="true">a</span><small>Conceito central</small><h2>pequeno outro (a)</h2><p>O semelhante na relação imaginária: imagem, identificação e comparação.</p>
-</article>
-<article class="dd-node dd-top" data-dd-step="2" aria-hidden="true">
-<small>01 / A alteridade próxima</small><h2>Semelhante</h2><p>O outro como par, imagem e referência na relação com o eu.</p>
-</article>
-<article class="dd-node dd-left" data-dd-step="3" aria-hidden="true">
-<small>02 / O laço especular</small><h2>Identificação</h2><p>O eu pode reconhecer-se em imagens exteriores a ele.</p>
-</article>
-<article class="dd-node dd-bottom" data-dd-step="4" aria-hidden="true">
-<small>03 / A formação do eu</small><h2>Eu e imagem</h2><p>A imagem de unidade participa da formação do eu, mas não esgota a experiência do sujeito.</p>
-</article>
-<article class="dd-node dd-right" data-dd-step="5" aria-hidden="true">
-<small>04 / A ambivalência</small><h2>Rivalidade</h2><p>Admiração, comparação, fascinação e disputa podem coexistir.</p>
-</article>
-</div>
-<div class="dd-compare" data-dd-step="6" aria-hidden="true">
-<article><small>No registro imaginário</small><h3>pequeno outro (a)</h3><p>O semelhante enquanto imagem, par e rival: relações de identificação e comparação.</p></article>
-<article><small>Na ordem simbólica</small><h3>grande Outro (A)</h3><p>O lugar da linguagem e dos significantes; não se reduz a uma pessoa concreta.</p></article>
-</div>
-<div class="dd-controls" aria-label="Controles do diagrama">
-<div class="dd-buttons">
-<button type="button" class="dd-button" id="dd-prev" aria-label="Voltar uma etapa">← Anterior</button>
-<button type="button" class="dd-button dd-button-primary" id="dd-play" aria-label="Reproduzir etapas">Reproduzir ▶</button>
-<button type="button" class="dd-button" id="dd-next" aria-label="Avançar uma etapa">Próximo →</button>
-</div>
-<div class="dd-stepstate"><span id="dd-count" aria-live="polite">01 / 06</span><div class="dd-meter" id="dd-meter" role="progressbar" aria-label="Etapas apresentadas" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1"><span id="dd-fill"></span></div></div>
-</div>
-<div class="dd-insight"><span class="dd-insight-label">Para compreender</span><p id="dd-insight" aria-live="polite">Pequeno outro não significa uma pessoa de menor importância. O termo designa uma modalidade de relação com o semelhante no campo imaginário.</p></div>
+<div class="scene-copy" id="sceneCopy" aria-live="off"><span class="scene-kicker" id="sceneKicker">01 / O encontro</span><h2 class="scene-title" id="sceneTitle">Há pessoas que <em>nos fascinam.</em></h2><span class="scene-sub" id="sceneSub">O outro nos atrai, nos inspira e nos faz comparar.</span></div>
+<div class="footline"><span>DIAGRAMA EM MOVIMENTO / NÃO É LEGENDA</span><span>PSICANÁLISE · LACAN</span></div>
 </section>
-<p class="dd-note">Esquema introdutório, não um modelo clínico ou uma representação completa da teoria. A distinção com o grande Outro será aprofundada no Módulo 5.</p>
-<div class="dd-foot"><a href="modulo-4.html?aula=4.5">← Voltar à Aula 4.5</a><span>FORMAÇÃO LACANIANA · O EU NÃO É TODO O SUJEITO</span></div>
+<div class="play-interface">
+<button class="play-main" id="play" type="button" aria-label="Reproduzir narração" disabled>▶</button>
+<input class="seek" id="seek" type="range" min="0" max="134.4" step=".01" value="0" aria-label="Posição da narração">
+<span class="timecode" id="clock">00:00 / 02:14</span>
+<span class="audiostate" id="audioState">ÁUDIO</span>
+</div>
+<div class="audio-request" id="audioRequest" role="status" hidden><p id="audioMessage">A gravação nova ainda não foi publicada neste endereço. Selecione o MP3 que você criou para reproduzir a animação sincronizada.</p>
+<label>Selecionar MP3<input id="audioFile" type="file" accept="audio/mpeg,audio/*,.mp3"></label>
+</div>
+<p class="note">A narração controla o movimento. Pausar ou avançar a gravação também pausa ou reposiciona os elementos visuais. Esta animação foi construída para o áudio completo de 2min14s, sem legendas automáticas.</p>
+<p class="note"><a class="return-link" href="modulo-4.html?aula=4.5">← Voltar à Aula 4.5</a></p>
+<audio id="narration" preload="metadata"></audio>
 </main>
 <script>
 (function(){
 "use strict";
-var texts=[
-"Pequeno outro não significa uma pessoa de menor importância. O termo designa uma modalidade de relação com o semelhante no campo imaginário.",
-"O semelhante pode funcionar como referência para nossa própria imagem; não é simplesmente qualquer pessoa que encontramos.",
-"Na identificação imaginária, reconhecemo-nos em uma imagem que está fora de nós. Esse reconhecimento também comporta alienação.",
-"O eu se organiza por identificações. Isso não significa que a imagem explique, por si só, o sujeito do inconsciente.",
-"O semelhante pode ser admirado e também vivido como rival. Uma mesma relação pode reunir fascinação e competição.",
-"O pequeno outro e o grande Outro não são duas pessoas de tamanhos diferentes. São noções de registros distintos; o grande Outro será estudado com mais cuidado no Módulo 5."
+if(new URLSearchParams(location.search).has("embed"))document.body.classList.add("embed");
+var AUDIO_PATH="assets/pequeno-outro-45-novo.mp3",CACHE_KEY="lacan-pequeno-outro-audio-v2",MAX=134.4;
+var cues=[
+{t:0,k:"01 / O encontro",title:"Há pessoas que <em>nos fascinam.</em>",sub:"Admiração, inspiração, comparação."},
+{t:16.3,k:"02 / Uma ambivalência",title:"Admirar. <em>Rivalizar.</em>",sub:"Duas experiências podem nascer da mesma relação."},
+{t:27.55,k:"03 / O semelhante",title:"O outro também é <em>espelho.</em>",sub:"Uma imagem que vem de fora."},
+{t:34.65,k:"04 / Estádio do espelho",title:"Uma imagem de <em>unidade.</em>",sub:"A identificação participa da formação do eu."},
+{t:51.9,k:"05 / O paradoxo",title:"Reconhecer-se é também <em>alienar-se.</em>",sub:"Aquilo que dizemos ser “eu” vem de fora."},
+{t:67.3,k:"06 / O conceito",title:"O pequeno <em>outro.</em>",sub:"O semelhante nas relações de imagem e identificação."},
+{t:84.8,k:"07 / A vida cotidiana",title:"O sucesso do outro <em>me afeta.</em>",sub:"Admiração e comparação podem se misturar."},
+{t:103.75,k:"08 / Um registro",title:"O campo do <em>Imaginário.</em>",sub:"Imagens, semelhanças e identificações."},
+{t:114.9,k:"09 / Uma distinção",title:"Pequeno outro <em>≠</em> grande Outro.",sub:"Semelhante e Imaginário; linguagem e Simbólico."},
+{t:123.9,k:"10 / Uma pergunta",title:"O que vejo <em>no outro?</em>",sub:"Também uma imagem daquilo que desejo ser?"}
 ];
-var groups=Array.from(document.querySelectorAll("[data-dd-step]"));
-var previous=document.getElementById("dd-prev");
-var next=document.getElementById("dd-next");
-var play=document.getElementById("dd-play");
-var count=document.getElementById("dd-count");
-var insight=document.getElementById("dd-insight");
-var fill=document.getElementById("dd-fill");
-var meter=document.getElementById("dd-meter");
-var reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-var step=reduced?6:1,timer=null;
-function stop(){if(timer!==null){window.clearInterval(timer);timer=null;}play.textContent="Reproduzir ▶";play.setAttribute("aria-label","Reproduzir etapas");}
-function render(){
-groups.forEach(function(node){var visible=Number(node.getAttribute("data-dd-step"))<=step;node.classList.toggle("is-on",visible);node.setAttribute("aria-hidden",visible?"false":"true");});
-count.textContent=String(step).padStart(2,"0")+" / 06";
-insight.textContent=texts[step-1];fill.style.width=(step/6*100)+"%";meter.setAttribute("aria-valuenow",String(step));
-previous.disabled=step===1;next.disabled=step===6;
+var film=document.getElementById("film"),audio=document.getElementById("narration"),play=document.getElementById("play"),seek=document.getElementById("seek"),clock=document.getElementById("clock"),state=document.getElementById("audioState");
+var request=document.getElementById("audioRequest"),message=document.getElementById("audioMessage"),fileInput=document.getElementById("audioFile"),copy=document.getElementById("sceneCopy"),title=document.getElementById("sceneTitle"),kicker=document.getElementById("sceneKicker"),sub=document.getElementById("sceneSub");
+var motifs=[...document.querySelectorAll(".motif")],backdrop=document.getElementById("globalLines"),bg=document.getElementById("filmBg");
+var tmax=MAX,frame=0,active=-1,currentObjectURL=null,ready=false;
+var reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+function clip(x,a,b){return Math.max(a,Math.min(b,x));}
+function ease(x){x=clip(x,0,1);return x*x*(3-2*x);}
+function fmt(t){var s=Math.floor(Math.max(0,t));return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");}
+function showMessage(msg){request.hidden=false;message.textContent=msg;}
+function draw(t){
+t=clip(t,0,tmax);
+var index=cues.length-1;for(var i=0;i<cues.length-1;i++){if(t<cues[i+1].t){index=i;break;}}
+if(index!==active){active=index;title.innerHTML=cues[index].title;kicker.textContent=cues[index].k;sub.textContent=cues[index].sub;copy.classList.toggle("final",index===9);}
+var local=t-cues[index].t,entry=ease(local/1.5),transition=ease((local-.3)/2);
+var nextindex=index+1;
+for(var j=0;j<motifs.length;j++){
+var opacity=0,scale=1,shift=0;
+if(j===index){opacity=reduced?1:entry;scale=1+.028*(1-transition);shift=14*(1-entry);}
+else if(j===index-1){var elapsed=t-cues[index].t;opacity=reduced?0:1-ease(elapsed/1.7);scale=1+.045*ease(elapsed/1.7);}
+motifs[j].style.opacity=String(opacity);
+motifs[j].style.transform="translate("+shift+"px,"+(7*(1-entry))+"px) scale("+scale+")";
+motifs[j].style.transformOrigin="860px 305px";
 }
-function advance(){if(step>=6){stop();return;}step++;render();if(step===6)stop();}
-function back(){if(step<=1)return;step--;render();}
-previous.addEventListener("click",function(){stop();back();});
-next.addEventListener("click",function(){stop();advance();});
-play.addEventListener("click",function(){
-if(timer!==null){stop();return;}
-if(step===6)step=1;render();play.textContent="Pausar Ⅱ";play.setAttribute("aria-label","Pausar etapas");
-timer=window.setInterval(advance,2900);
+var end=cues[index+1]?cues[index+1].t:tmax;
+var fadeout=1-ease((t-(end-1.35))/1.35);
+copy.style.opacity=String(reduced?1:clip(entry*fadeout,0,1));
+copy.style.transform=reduced?"none":"translateY("+((1-entry)*18)+"px)";
+backdrop.style.opacity=String(index===8||index===9?.2:.5);
+var dark=index===9;
+film.classList.toggle("is-dark",dark);
+bg.setAttribute("fill",dark?"url(#night)":"url(#warm)");
+seek.value=String(t);seek.max=String(tmax);
+clock.textContent=fmt(t)+" / "+fmt(tmax);
+play.textContent=audio.paused?"▶":"Ⅱ";
+play.setAttribute("aria-label",audio.paused?"Reproduzir narração":"Pausar narração");
+}
+function tick(){draw(audio.currentTime||0);if(!audio.paused&&!audio.ended)frame=requestAnimationFrame(tick);}
+function stopFrame(){cancelAnimationFrame(frame);draw(audio.currentTime||0);}
+audio.addEventListener("play",function(){cancelAnimationFrame(frame);tick();});
+audio.addEventListener("pause",stopFrame);
+audio.addEventListener("seeked",stopFrame);
+audio.addEventListener("ended",stopFrame);
+audio.addEventListener("loadedmetadata",function(){
+var d=audio.duration;if(Number.isFinite(d)&&d>0){tmax=d;MAX=d;}
+ready=true;play.disabled=false;state.textContent="PRONTO";request.hidden=true;draw(audio.currentTime||0);
 });
-document.addEventListener("visibilitychange",function(){if(document.hidden)stop();});
-document.addEventListener("keydown",function(event){
-if(event.altKey||event.ctrlKey||event.metaKey||event.target.closest("button,input,textarea,select,[contenteditable]"))return;
-if(event.key==="ArrowRight"){stop();advance();}
-else if(event.key==="ArrowLeft"){stop();back();}
+audio.addEventListener("error",function(){if(!ready){state.textContent="ESCOLHA O MP3";showMessage("Para ouvir sua nova narração, selecione o MP3 enviado nesta conversa. O arquivo pode ficar salvo apenas neste navegador.");}});
+play.addEventListener("click",async function(){
+if(!ready){showMessage("Selecione primeiro o MP3 desta narração.");return;}
+if(!audio.paused){audio.pause();return;}
+if(audio.currentTime>=tmax-.1)audio.currentTime=0;
+try{await audio.play();}catch(e){showMessage("O navegador bloqueou a reprodução. Toque em Reproduzir novamente.");}
 });
-render();
+seek.addEventListener("input",function(){var t=Number(seek.value);if(ready)audio.currentTime=t;draw(t);});
+function setFile(blob){
+if(currentObjectURL)URL.revokeObjectURL(currentObjectURL);
+audio.pause();currentObjectURL=URL.createObjectURL(blob);
+audio.src=currentObjectURL;audio.load();state.textContent="CARREGANDO";
+}
+function persist(blob){
+try{var req=indexedDB.open("lacan-narracoes",1);
+req.onupgradeneeded=function(){if(!req.result.objectStoreNames.contains("mp3"))req.result.createObjectStore("mp3");};
+req.onsuccess=function(){var db=req.result,tx=db.transaction("mp3","readwrite");tx.objectStore("mp3").put(blob,CACHE_KEY);tx.oncomplete=function(){db.close();};};
+}catch(e){}
+}
+fileInput.addEventListener("change",function(){
+var f=fileInput.files&&fileInput.files[0];if(!f)return;
+if(!(/\.mp3$/i.test(f.name)||f.type.startsWith("audio/"))){showMessage("Selecione um arquivo de áudio MP3 válido.");return;}
+setFile(f);persist(f);
+});
+function restore(){
+try{var req=indexedDB.open("lacan-narracoes",1);
+req.onupgradeneeded=function(){if(!req.result.objectStoreNames.contains("mp3"))req.result.createObjectStore("mp3");};
+req.onsuccess=function(){var db=req.result,tx=db.transaction("mp3","readonly"),get=tx.objectStore("mp3").get(CACHE_KEY);
+get.onsuccess=function(){if(!ready&&get.result instanceof Blob)setFile(get.result);};
+tx.oncomplete=function(){db.close();};};
+}catch(e){}
+}
+audio.src=AUDIO_PATH;
+draw(0);
+restore();
+window.addEventListener("pagehide",function(){cancelAnimationFrame(frame);});
 })();
 </script>
-<script defer src="assets/pwa.js"></script>
-<script defer src="assets/app-shell.js"></script>
-</body>
-</html>
+<script defer src="assets/pwa.js"></script><script defer src="assets/app-shell.js"></script>
+</body></html>
