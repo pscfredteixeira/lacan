@@ -1,0 +1,7 @@
+/* Aula 4.5: leitor de narrativa visual contínua; preserva os outros módulos. */
+.lm45-reimagined{margin:32px 0 40px;max-width:1040px}
+.lm45-reimagined .lm45-reimagined-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-bottom:13px;font:700 10px/1.5 'DM Sans',sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#725d83}
+.lm45-reimagined .lm45-iframe{display:block;width:100%;aspect-ratio:16/10.7;height:auto;border:1px solid #d8c8db;background:#f6efe3}
+.lm45-reimagined .lm45-reimagined-foot{padding:11px 2px 0;color:#6b5d73;font:400 12px/1.7 'DM Sans',sans-serif}
+.lm45-reimagined .lm45-reimagined-foot a{font-weight:700;color:#624a7a;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:650px){.lm45-reimagined .lm45-iframe{aspect-ratio:9/19.5}}
